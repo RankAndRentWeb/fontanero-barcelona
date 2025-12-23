@@ -8,9 +8,9 @@ const WhatsAppFloat = () => {
         aria-label="Abrir WhatsApp para chatear"
         title="Abrir WhatsApp para chatear"
         className="inline-flex items-center justify-center rounded-full shadow-cta
-                   bg-white text-blue-500 border border-blue-500 transition-colors
-                   hover:bg-blue-500 hover:text-white focus-visible:outline-none
-                   focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500
+                   bg-white text-primary border border-primary transition-colors
+                   hover:bg-primary hover:text-white focus-visible:outline-none
+                   focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary
                    w-14 h-14"
       >
         <MessageCircle className="w-7 h-7" aria-hidden="true" />

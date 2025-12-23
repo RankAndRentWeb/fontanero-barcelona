@@ -4,11 +4,11 @@
 }
 
 .custom-btn-orange {
-  @apply custom-btn bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-500 shadow-md hover:shadow-lg;
+  @apply custom-btn bg-accent text-white hover:bg-accent/90 focus:ring-accent shadow-md hover:shadow-lg;
 }
 
 .custom-btn-blue {
-  @apply custom-btn bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500 shadow-md hover:shadow-lg;
+  @apply custom-btn bg-primary text-white hover:bg-primary/90 focus:ring-primary shadow-md hover:shadow-lg;
 }
 
 .custom-btn-sm {

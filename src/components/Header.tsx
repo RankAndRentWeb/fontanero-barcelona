@@ -127,7 +127,7 @@ const Header = () => {
           {/* Desktop Phone Button */}
           <a
             href="tel:722208131"
-            className="hidden md:inline-flex items-center gap-2 rounded-md px-3 py-2 bg-blue-600 text-white hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
+            className="hidden md:inline-flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-white hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
             aria-label="Llamar al 722 208 131"
           >
             <Phone className="w-4 h-4" aria-hidden="true" />
@@ -137,7 +137,7 @@ const Header = () => {
           {/* Mobile Phone Button */}
           <a
             href="tel:722208131"
-            className="md:hidden inline-flex items-center gap-2 rounded-md px-3 py-2 bg-blue-600 text-white hover:bg-blue-700"
+            className="md:hidden inline-flex items-center gap-2 rounded-md px-3 py-2 bg-primary text-white hover:bg-primary/90"
             aria-label="Llamar al 722 208 131"
           >
             <Phone className="w-4 h-4" aria-hidden="true" />

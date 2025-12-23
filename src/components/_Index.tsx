@@ -353,7 +353,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               <Button
                 asChild
                 size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white shadow-lg font-bold text-lg py-4 px-8"
+                className="bg-accent hover:bg-accent/90 text-white shadow-lg font-bold text-lg py-4 px-8"
               >
                 <a href="/presupuesto/" className="flex items-center justify-center">
                   Presupuesto Gratis
@@ -364,7 +364,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               <Button
                 asChild
                 size="lg"
-                className="bg-blue-500 hover:bg-blue-600 text-white shadow-lg font-bold text-lg py-4 px-8"
+                className="bg-primary hover:bg-primary/90 text-white shadow-lg font-bold text-lg py-4 px-8"
               >
                 <a
                   href="tel:+34722208131"
@@ -445,7 +445,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
           <Button
             asChild
             size="sm"
-            className="bg-white text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white transition-colors"
+            className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
           >
             <a href="/servicios/quitar-gotele/">Ver detalles</a>
           </Button>
@@ -481,7 +481,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
           <Button
             asChild
             size="sm"
-            className="bg-white text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white transition-colors"
+            className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
           >
             <a href="/servicios/pintura-interior/">Ver detalles</a>
           </Button>
@@ -517,7 +517,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
           <Button
             asChild
             size="sm"
-            className="bg-white text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white transition-colors"
+            className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
           >
             <a href="/servicios/pintura-exterior-fachadas/">Ver detalles</a>
           </Button>
@@ -553,7 +553,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
           <Button
             asChild
             size="sm"
-            className="bg-white text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white transition-colors"
+            className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
           >
             <a href="/servicios/impermeabilizacion-terrazas/">Ver detalles</a>
           </Button>
@@ -589,7 +589,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
           <Button
             asChild
             size="sm"
-            className="bg-white text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white transition-colors"
+            className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
           >
             <a href="/servicios/pintura-locales-comerciales/">Ver detalles</a>
           </Button>
@@ -625,7 +625,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
           <Button
             asChild
             size="sm"
-            className="bg-white text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white transition-colors"
+            className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
           >
             <a href="/servicios/pintura-comunidades/">Ver detalles</a>
           </Button>
@@ -635,7 +635,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
 
     <div className="text-center">
       <CustomButton 
-        variant="orange" 
+        variant="accent" 
         size="lg" 
         asChild 
         href="/servicios/"
@@ -647,7 +647,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
 </section>
 
       {/* Nueva sección: ¿Qué servicio necesitas? */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 to-slate-50">
+      <section className="py-16 bg-gradient-to-br from-primary/5 to-slate-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
@@ -656,23 +656,23 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                <strong>Acabas de comprar un piso en Ruzafa o Benimaclet</strong> y quieres darle una mano de pintura antes de mudarte? Con nuestro servicio de <a href="/servicios/pintura-interior/" className="text-blue-600 hover:underline font-semibold">pintura interior</a> renovamos tu casa completa: preparamos paredes, tapamos imperfecciones, imprimamos y damos dos manos de acabado con pinturas lavables de calidad. Envíanos fotos y te decimos cuánto cuesta sin que tengas que estar en casa esperándonos.
+                <strong>Acabas de comprar un piso en Ruzafa o Benimaclet</strong> y quieres darle una mano de pintura antes de mudarte? Con nuestro servicio de <a href="/servicios/pintura-interior/" className="text-primary hover:underline font-semibold">pintura interior</a> renovamos tu casa completa: preparamos paredes, tapamos imperfecciones, imprimamos y damos dos manos de acabado con pinturas lavables de calidad. Envíanos fotos y te decimos cuánto cuesta sin que tengas que estar en casa esperándonos.
               </p>
               
               <p>
-                <strong>¿Tienes un piso antiguo con gotelé?</strong> Si esas paredes con textura ya no te gustan, podemos <a href="/servicios/quitar-gotele/" className="text-blue-600 hover:underline font-semibold">quitarlo y dejarte todo liso</a>. Lijamos sin llenar de polvo (usamos aspiración), enlucimos y alisamos hasta que quede perfecto para pintar. Es una buena forma de modernizar tu casa y que valga más si decides venderla.
+                <strong>¿Tienes un piso antiguo con gotelé?</strong> Si esas paredes con textura ya no te gustan, podemos <a href="/servicios/quitar-gotele/" className="text-primary hover:underline font-semibold">quitarlo y dejarte todo liso</a>. Lijamos sin llenar de polvo (usamos aspiración), enlucimos y alisamos hasta que quede perfecto para pintar. Es una buena forma de modernizar tu casa y que valga más si decides venderla.
               </p>
               
               <p>
-                <strong>¿Se te cuela el agua por la terraza?</strong> Si tienes problemas de filtraciones en Patraix, Campanar o donde sea, nuestro servicio de <a href="/servicios/impermeabilizacion-terrazas/" className="text-blue-600 hover:underline font-semibold">impermeabilización</a> lo arregla de verdad. Aplicamos membranas o láminas de calidad, sellamos juntas y desagües, y te damos <strong>garantía por escrito</strong> para que estés tranquilo.
+                <strong>¿Se te cuela el agua por la terraza?</strong> Si tienes problemas de filtraciones en Patraix, Campanar o donde sea, nuestro servicio de <a href="/servicios/impermeabilizacion-terrazas/" className="text-primary hover:underline font-semibold">impermeabilización</a> lo arregla de verdad. Aplicamos membranas o láminas de calidad, sellamos juntas y desagües, y te damos <strong>garantía por escrito</strong> para que estés tranquilo.
               </p>
               
               <p>
-                <strong>¿Tu fachada tiene moho o se está cayendo la pintura?</strong> Pintamos <a href="/servicios/pintura-exterior-fachadas/" className="text-blue-600 hover:underline font-semibold">fachadas de edificios, chalets y locales</a> con productos impermeables que aguantan bien la lluvia y el sol mediterráneo. Montamos andamios certificados y tenemos seguro de responsabilidad civil.
+                <strong>¿Tu fachada tiene moho o se está cayendo la pintura?</strong> Pintamos <a href="/servicios/pintura-exterior-fachadas/" className="text-primary hover:underline font-semibold">fachadas de edificios, chalets y locales</a> con productos impermeables que aguantan bien la lluvia y el sol mediterráneo. Montamos andamios certificados y tenemos seguro de responsabilidad civil.
               </p>
               
               <p>
-                <strong>¿Tienes un local o negocio que renovar?</strong> Pintamos <a href="/servicios/pintura-locales-comerciales/" className="text-blue-600 hover:underline font-semibold">locales comerciales</a> en horarios que no te compliquen (noches o fines de semana). Igualamos colores corporativos exactos y cumplimos los plazos que necesites.
+                <strong>¿Tienes un local o negocio que renovar?</strong> Pintamos <a href="/servicios/pintura-locales-comerciales/" className="text-primary hover:underline font-semibold">locales comerciales</a> en horarios que no te compliquen (noches o fines de semana). Igualamos colores corporativos exactos y cumplimos los plazos que necesites.
               </p>
             </div>
           </div>
@@ -680,7 +680,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
       </section>
 
       {/* Company Excellence Section */}
-      <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-primary/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -712,7 +712,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               ) : (
                 <div className="relative overflow-hidden rounded-2xl shadow-xl">
 
-                  <div className="w-full h-[300px] sm:h-[400px] md:h-[450px] bg-gradient-to-r from-orange-400 to-orange-600"></div>
+                  <div className="w-full h-[300px] sm:h-[400px] md:h-[450px] bg-gradient-to-r from-accent to-accent/80"></div>
                 </div>
               )}
             </div>
@@ -722,11 +722,11 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 lg:p-10 h-[300px] sm:h-[400px] md:h-[450px] flex flex-col justify-center">
                 <div className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed space-y-3 sm:space-y-4 md:space-y-6">
                   <p>
-                    Llevamos años pintando <a href="/servicios/pintura-interior/" className="text-blue-600 hover:underline"><strong>pisos</strong></a>, <a href="/servicios/pintura-exterior-fachadas/" className="text-blue-600 hover:underline"><strong>fachadas</strong></a>, <a href="/servicios/pintura-locales-comerciales/" className="text-blue-600 hover:underline"><strong>locales</strong></a> y comunidades por toda la ciudad y alrededores. También hacemos <a href="/servicios/impermeabilizacion-terrazas/" className="text-blue-600 hover:underline"><strong>impermeabilizaciones</strong></a> para que no se te cuele el agua por la terraza.
+                    Llevamos años pintando <a href="/servicios/pintura-interior/" className="text-primary hover:underline"><strong>pisos</strong></a>, <a href="/servicios/pintura-exterior-fachadas/" className="text-primary hover:underline"><strong>fachadas</strong></a>, <a href="/servicios/pintura-locales-comerciales/" className="text-primary hover:underline"><strong>locales</strong></a> y comunidades por toda la ciudad y alrededores. También hacemos <a href="/servicios/impermeabilizacion-terrazas/" className="text-primary hover:underline"><strong>impermeabilizaciones</strong></a> para que no se te cuele el agua por la terraza.
                   </p>
                   
                   <p>
-                    Trabajamos con materiales de calidad y te damos <strong>garantía por escrito</strong> en cada trabajo. <strong>Envíanos unas fotos de lo que necesitas</strong> y te mandamos presupuesto en menos de 24 horas, sin que tengas que perder tiempo con visitas. Mira ejemplos de trabajos hechos en <a href="/trabajos/" className="text-blue-600 hover:underline"><strong>proyectos realizados</strong></a>.
+                    Trabajamos con materiales de calidad y te damos <strong>garantía por escrito</strong> en cada trabajo. <strong>Envíanos unas fotos de lo que necesitas</strong> y te mandamos presupuesto en menos de 24 horas, sin que tengas que perder tiempo con visitas. Mira ejemplos de trabajos hechos en <a href="/trabajos/" className="text-primary hover:underline"><strong>proyectos realizados</strong></a>.
                   </p>
                 </div>
               </div>
@@ -763,48 +763,48 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             
             {/* Grid de beneficios */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
-                <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+              <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
+                <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Más de 10 años de experiencia</h3>
                   <p className="text-sm text-gray-600">Pintores profesionales certificados en Valencia</p>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
-                <Clock className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+              <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
+                <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Presupuesto por fotos en 24h</h3>
                   <p className="text-sm text-gray-600">Sin desplazamientos, detallado y sin compromiso</p>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
-                <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+              <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
+                <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Limpieza total incluida</h3>
                   <p className="text-sm text-gray-600">Protección de muebles y aspirado diario</p>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
-                <Shield className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+              <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
+                <Shield className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Garantía por escrito</h3>
                   <p className="text-sm text-gray-600">Factura oficial y seguro RC vigente</p>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
-                <Star className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+              <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
+                <Star className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Materiales de calidad</h3>
                   <p className="text-sm text-gray-600">Bruguer, Jotun y Titan</p>
                 </div>
               </div>
               
-              <div className="flex items-start space-x-3 p-4 bg-blue-50 rounded-lg">
-                <Building className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+              <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
+                <Building className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Valencia y área metropolitana</h3>
                   <p className="text-sm text-gray-600">Servicio en toda la provincia</p>
@@ -826,7 +826,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CustomButton
-              variant="orange"
+              variant="accent"
               size="lg"
               asChild
               href="/presupuesto"
@@ -834,7 +834,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               Pedir presupuesto gratis
             </CustomButton>
             <CustomButton
-              variant="blue"
+              variant="primary"
               size="lg"
               asChild
               href="tel:+34722208131"
@@ -848,7 +848,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-primary/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
