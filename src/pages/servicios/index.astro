@@ -1,0 +1,24 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { getCollection } from 'astro:content';
+
+const services = await getCollection('services');
+---
+
+<SiteLayout 
+  title="Servicios de Pintura en Valencia - Profesionales"
+  description="Servicios profesionales de pintura en Valencia: interior, exterior, quitar gotelé, lacado de puertas, impermeabilización. Calidad garantizada."
+  keywords="servicios pintura valencia, pintura interior exterior, quitar gotele valencia"
+>
+  <section class="container mx-auto px-4 py-10">
+    <h1 class="text-3xl md:text-4xl font-bold mb-6">Servicios</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {services.map(s => (
+        <a href={`/servicios/${s.slug}/`} class="rounded-lg border bg-white shadow-sm hover:shadow-md transition p-6 block">
+          <h2 class="text-lg font-semibold mb-2">{s.data.title.replace(" en Valencia","")}</h2>
+          <p class="text-gray-600">{s.data.subtitle || s.data.description || "Servicio profesional de pintura"}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</SiteLayout>

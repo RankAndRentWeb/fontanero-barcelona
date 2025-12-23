@@ -1,0 +1,71 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+---
+<SiteLayout 
+  title="Quiénes Somos - Pintores Profesionales en Valencia"
+  description="Equipo de pintores profesionales con más de 15 años de experiencia en Valencia. Conoce nuestra trayectoria, valores y compromiso con la calidad."
+  keywords="pintores valencia empresa, experiencia pintura valencia, equipo profesional"
+>
+  <div class="container mx-auto max-w-4xl px-4 py-12">
+    <!-- Breadcrumbs -->
+    <nav aria-label="Breadcrumb" class="mb-8">
+      <ol class="flex items-center space-x-2 text-sm text-gray-600">
+        <li><a href="/" class="hover:text-primary">Inicio</a></li>
+        <li class="mx-2">›</li>
+        <li class="text-gray-900 font-medium">Quiénes somos</li>
+      </ol>
+    </nav>
+
+    <main>
+      <h1 class="text-3xl md:text-4xl font-bold mb-8 text-gray-900">Quiénes somos</h1>
+      
+      <div class="prose max-w-none">
+        <p class="text-lg text-gray-700 mb-6">
+          Somos un equipo de <strong>pintores profesionales</strong> con más de <strong>15 años de experiencia</strong> en Valencia capital y provincia. 
+          Nos especializamos en servicios de pintura interior, exterior, eliminación de gotelé e impermeabilización.
+        </p>
+
+        <h2 class="text-2xl font-semibold mb-4 mt-8 text-gray-900">Nuestra experiencia</h2>
+        <p class="text-gray-700 mb-6">
+          Desde 2009, hemos realizado cientos de proyectos de pintura en Valencia, desde viviendas particulares hasta locales comerciales. 
+          Nuestro equipo está formado por profesionales cualificados que garantizan acabados de calidad con materiales de primeras marcas.
+        </p>
+
+        <h2 class="text-2xl font-semibold mb-4 mt-8 text-gray-900">Compromiso con la calidad</h2>
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <div>
+            <h3 class="text-lg font-medium mb-2 text-gray-900">✓ Garantía escrita</h3>
+            <p class="text-gray-600">Todos nuestros trabajos incluyen garantía por escrito hasta 3 años.</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium mb-2 text-gray-900">✓ Presupuesto gratuito</h3>
+            <p class="text-gray-600">Valoración sin compromiso en menos de 24 horas.</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium mb-2 text-gray-900">✓ Material incluido</h3>
+            <p class="text-gray-600">Trabajamos con pinturas Bruguer, Titan y Montó.</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium mb-2 text-gray-900">✓ Limpieza final</h3>
+            <p class="text-gray-600">Entregamos el espacio completamente limpio y listo.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg p-6 mt-8">
+          <h2 class="text-xl font-semibold mb-4 text-gray-900">¿Necesitas un presupuesto?</h2>
+          <p class="text-gray-700 mb-4">
+            Contacta con nosotros para recibir tu presupuesto personalizado sin compromiso. Atendemos toda Valencia y provincia.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="/presupuesto/" class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors">
+              Solicitar presupuesto
+            </a>
+            <a href="tel:+34722208131" class="inline-flex items-center justify-center px-6 py-3 bg-white border border-gray-300 text-gray-700 font-medium rounded-md hover:bg-gray-50 transition-colors">
+              📞 722 208 131
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</SiteLayout>

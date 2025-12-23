@@ -1,0 +1,17 @@
+---
+const { title = 'Pintores Valencia' } = Astro.props;
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.tsx';
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <Header />
+    <main class="flex-1"><slot /></main>
+    <Footer client:load />
+  </body>
+</html>

@@ -1,0 +1,28 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { getCollection } from 'astro:content';
+
+const cats = (await getCollection('blogCategories')).sort((a,b)=>(a.data.order??99)-(b.data.order??99));
+---
+
+<SiteLayout 
+  title="Blog - Pintores en Valencia" 
+  description="Consejos de pintura: gotelé, impermeabilización, colores, fachadas y barnices. Guías profesionales para tus proyectos de pintura."
+  keywords="blog pintura valencia, consejos pintar casa, guia gotele"
+>
+  <section class="container mx-auto px-4 py-10">
+    <h1 class="text-3xl md:text-4xl font-bold text-center mb-2">Categorías de Contenido</h1>
+    <p class="text-center text-gray-600 mb-8">Encuentra artículos especializados sobre el tema que necesitas</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {cats.map(c => (
+        <div class="rounded-2xl border bg-white p-6 hover:shadow transition">
+          <h2 class="text-xl font-semibold mb-2">{c.data.name}</h2>
+          <p class="text-gray-600 mb-4">{c.data.description}</p>
+          <a href={`/blogs/${c.data.slug}/`} class="inline-flex items-center gap-2 px-3 h-9 rounded-md border text-blue-700 hover:bg-blue-700 hover:text-white transition-colors">
+            Ver artículos
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+</SiteLayout>
