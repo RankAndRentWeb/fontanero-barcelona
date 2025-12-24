@@ -27,8 +27,8 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    /* Terracota #D4A276 -> HSL 28 52% 65% */
-    --accent: 28 52% 65%;
+    /* Coral #FF6F61 -> HSL 5 100% 69% */
+    --accent: 5 100% 69%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -42,12 +42,12 @@ All colors MUST be HSL.
     --gradient-hero: linear-gradient(135deg, hsl(153 40% 30%), hsl(153 40% 40%));
 
     /* Gradiente CTA ajustado al nuevo acento */
-    --gradient-cta: linear-gradient(135deg, hsl(28 52% 65%), hsl(28 52% 75%));
+    --gradient-cta: linear-gradient(135deg, hsl(5 100% 69%), hsl(5 100% 79%));
 
     --shadow-card: 0 4px 20px -2px hsl(153 40% 30% / 0.10);
 
     /* Sombra CTA con nuevo acento */
-    --shadow-cta: 0 8px 25px -5px hsl(28 52% 65% / 0.35);
+    --shadow-cta: 0 8px 25px -5px hsl(5 100% 69% / 0.35);
 
     --radius: 0.5rem;
 

@@ -410,7 +410,7 @@ const Precios = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <CustomButton 
-                variant="orange" 
+                variant="accent" 
                 size="lg" 
                 asChild 
                 href="/presupuesto"
@@ -418,7 +418,7 @@ const Precios = () => {
                 Solicitar presupuesto gratis
               </CustomButton>
               <CustomButton 
-                variant="blue" 
+                variant="primary" 
                 size="lg" 
                 asChild 
                 href="tel:722208131"

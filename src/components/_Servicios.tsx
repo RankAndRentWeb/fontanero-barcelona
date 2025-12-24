@@ -261,7 +261,7 @@ const Servicios = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <CustomButton
-                variant="orange"
+                variant="accent"
                 size="lg"
                 asChild
                 href="/presupuesto"
@@ -269,7 +269,7 @@ const Servicios = () => {
                 Pedir presupuesto gratis
               </CustomButton>
               <CustomButton
-                variant="blue"
+                variant="primary"
                 size="lg"
                 asChild
                 href="tel:+34722208131"
@@ -332,10 +332,10 @@ const Servicios = () => {
         {/* === NUEVO: Barra fija de CTA en móvil (mejora conversión) === */}
         <div className="md:hidden fixed bottom-0 left-0 right-0 bg-background/95 backdrop-blur border-t p-3 z-40">
           <div className="flex gap-3">
-            <CustomButton variant="orange" size="lg" asChild href="/presupuesto" >
+            <CustomButton variant="accent" size="lg" asChild href="/presupuesto" >
               Pedir presupuesto
-            </CustomButton>
-            <CustomButton variant="blue" size="lg" asChild href="tel:+34722208131">
+            </CustomButton>>
+            <CustomButton variant="primary" size="lg" asChild href="tel:+34722208131">
               Llamar
             </CustomButton>
           </div>
