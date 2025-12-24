@@ -339,7 +339,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="relative z-10 container mx-auto px-4 py-20 text-white">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Pintores Profesionales en Valencia
+              Empresa de reformas en Valencia
             </h1>
             <p className="text-2xl md:text-3xl mb-8 font-medium">
               Presupuesto en menos de 24h
@@ -404,13 +404,13 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
   <div className="container mx-auto px-4">
     <div className="text-center mb-12">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        Nuestros Servicios de Pintura en Valencia
+        Nuestros Servicios de Reformas en Valencia
       </h2>
       <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-6">
-        Pintamos pisos, casas, locales y comunidades en Valencia con <strong>materiales de calidad</strong> y sin complicarte la vida. Envíanos unas fotos de lo que necesitas y te mandamos un presupuesto sin que tengas que esperarnos en casa.
+        Reformamos pisos, casas, locales y comunidades en Valencia con <strong>materiales de calidad</strong> y sin complicarte la vida. Envíanos unas fotos de lo que necesitas y te mandamos un presupuesto sin que tengas que esperarnos en casa.
       </p>
       <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-        Como <strong>pintores profesionales en Valencia</strong>, trabajamos con pinturas de marcas reconocidas (Bruguer, Jotun, Titan) y nos encargamos de todo: desde preparar las superficies hasta dejarte el espacio limpio. Factura oficial y <strong>garantía por escrito</strong> en cada proyecto.
+        Como <strong>empresa de reformas en Valencia</strong>, trabajamos con materiales de marcas reconocidas y nos encargamos de todo: desde preparar las superficies hasta dejarte el espacio limpio. Factura oficial y <strong>garantía por escrito</strong> en cada proyecto.
       </p>
     </div>
 
@@ -423,10 +423,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <div className="p-2 bg-primary/10 rounded-lg text-primary">
               <Brush className="w-6 h-6" />
             </div>
-            <h3 className="text-lg font-semibold">Quitar Gotelé</h3>
+            <h3 className="text-lg font-semibold">Cocinas</h3>
           </div>
           <p className="text-muted-foreground mb-4">
-            Quitamos el gotelé de techos y paredes en Valencia sin llenar tu casa de polvo. Usamos lijadoras con aspiración continua, enlucimos, alisamos y dejamos todo listo para pintar. Perfecto para darle un aire nuevo a pisos antiguos. Protegemos muebles y limpiamos al terminar cada día.
+            Reformamos cocinas en Valencia sin llenar tu casa de polvo. Usamos lijadoras con aspiración continua, enlucimos, alisamos y dejamos todo listo para pintar. Perfecto para darle un aire nuevo a pisos antiguos. Protegemos muebles y limpiamos al terminar cada día.
           </p>
           <ul className="text-sm text-muted-foreground space-y-2 mb-4">
             <li className="flex items-center space-x-2">
@@ -435,11 +435,11 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             </li>
             <li className="flex items-center space-x-2">
               <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Alisado perfecto</span>
+              <span>Trabajo perfecto</span>
             </li>
             <li className="flex items-center space-x-2">
               <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Listo para pintar</span>
+              <span>Listo para reformar</span>
             </li>
           </ul>
           <Button
@@ -459,15 +459,15 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <div className="p-2 bg-primary/10 rounded-lg text-primary">
               <Home className="w-6 h-6" />
             </div>
-            <h3 className="text-lg font-semibold">Pintura Interior</h3>
+            <h3 className="text-lg font-semibold">Integrales</h3>
           </div>
           <p className="text-muted-foreground mb-4">
-            Pintamos pisos, casas y oficinas en Valencia con pinturas lavables de calidad. Preparamos las paredes, tapamos grietas pequeñas, imprimamos y damos dos manos de acabado. Ideal si quieres renovar tu casa antes de venderla, alquilarla o simplemente disfrutarla como nueva.
+            Reformamos pisos, casas y oficinas en Valencia con materiales de calidad. Preparamos las paredes, tapamos grietas pequeñas, imprimamos y damos dos manos de acabado. Ideal si quieres renovar tu casa antes de venderla, alquilarla o simplemente disfrutarla como nueva.
           </p>
           <ul className="text-sm text-muted-foreground space-y-2 mb-4">
             <li className="flex items-center space-x-2">
               <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Pinturas premium lavables</span>
+              <span>Materiales premium lavables</span>
             </li>
             <li className="flex items-center space-x-2">
               <CheckCircle className="w-4 h-4 text-primary" />
@@ -495,15 +495,15 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <div className="p-2 bg-primary/10 rounded-lg text-primary">
               <Building className="w-6 h-6" />
             </div>
-            <h3 className="text-lg font-semibold">Pintura Exterior y Fachadas</h3>
+            <h3 className="text-lg font-semibold">Exterior y Fachadas</h3>
           </div>
           <p className="text-muted-foreground mb-4">
-            Pintamos fachadas en Valencia con productos impermeables y anti-moho que aguantan bien el clima mediterráneo. Limpiamos a presión, arreglamos grietas, imprimamos y aplicamos revestimientos elásticos. Montamos andamios certificados y tenemos seguro de responsabilidad civil.
+            Reformamos fachadas en Valencia con productos impermeables y anti-moho que aguantan bien el clima mediterráneo. Limpiamos a presión, arreglamos grietas, imprimamos y aplicamos revestimientos elásticos. Montamos andamios certificados y tenemos seguro de responsabilidad civil.
           </p>
           <ul className="text-sm text-muted-foreground space-y-2 mb-4">
             <li className="flex items-center space-x-2">
               <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Pinturas impermeables</span>
+              <span>Productos impermeables</span>
             </li>
             <li className="flex items-center space-x-2">
               <CheckCircle className="w-4 h-4 text-primary" />
@@ -531,7 +531,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <div className="p-2 bg-primary/10 rounded-lg text-primary">
               <Shield className="w-6 h-6" />
             </div>
-            <h3 className="text-lg font-semibold">Impermeabilización</h3>
+            <h3 className="text-lg font-semibold">Baños</h3>
           </div>
           <p className="text-muted-foreground mb-4">
             Arreglamos filtraciones en terrazas, balcones y cubiertas en Valencia aplicando membranas líquidas o láminas asfálticas de calidad. Sellamos juntas y desagües, y dejamos acabados por los que puedes andar sin problema. Protegemos tu casa de humedades y goteras con <strong>garantía por escrito</strong>.
@@ -570,7 +570,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <h3 className="text-lg font-semibold">Locales Comerciales</h3>
           </div>
           <p className="text-muted-foreground mb-4">
-            Pintamos tu local, tienda, oficina o restaurante en Valencia en horarios que no te compliquen (noches o fines de semana). Usamos pinturas resistentes al tránsito, igualamos colores corporativos exactos (Pantone/RAL) y cumplimos los plazos que acordemos.
+             Reformamos tu local, tienda, oficina o restaurante en Valencia en horarios que no te compliquen (noches o fines de semana). Usamos productos resistentes al tránsito, igualamos colores corporativos exactos (Pantone/RAL) y cumplimos los plazos que acordemos.
           </p>
           <ul className="text-sm text-muted-foreground space-y-2 mb-4">
             <li className="flex items-center space-x-2">
@@ -606,7 +606,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <h3 className="text-lg font-semibold">Comunidades de Vecinos</h3>
           </div>
           <p className="text-muted-foreground mb-4">
-            Pintamos escaleras, portales, garajes y fachadas de comunidades de vecinos en Valencia. Hablamos con presidentes y administradores, trabajamos por fases para molestar lo menos posible y usamos pinturas resistentes para zonas de mucho paso. Señalizamos, protegemos accesos y limpiamos cada día.
+            Reformamos escaleras, portales, garajes y fachadas de comunidades de vecinos en Valencia. Hablamos con presidentes y administradores, trabajamos por fases para molestar lo menos posible y usamos productos resistentes para zonas de mucho paso. Señalizamos, protegemos accesos y limpiamos cada día.
           </p>
           <ul className="text-sm text-muted-foreground space-y-2 mb-4">
             <li className="flex items-center space-x-2">
@@ -615,7 +615,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             </li>
             <li className="flex items-center space-x-2">
               <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Pinturas extra-resistentes</span>
+              <span>Productos extra-resistentes</span>
             </li>
             <li className="flex items-center space-x-2">
               <CheckCircle className="w-4 h-4 text-primary" />
@@ -651,7 +651,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-              ¿Qué Necesitas Pintar?
+              ¿Qué Necesitas Reformar?
             </h2>
             
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
@@ -684,7 +684,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Pintores en Valencia que Trabajan Bien
+              Reformas en Valencia con Garantía y Limpieza
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Usamos buenos materiales, dejamos todo limpio y damos <strong>garantía por escrito</strong>. 
