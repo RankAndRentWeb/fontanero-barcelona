@@ -1,7 +1,7 @@
 ---
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.tsx';
-import pinturaInteriorImg from '../../../assets/pintor-profesional-interior-valencia.jpg';
+import fachadaExteriorImg from '../../../assets/pintura-comunidades-valencia-fachada-edificio.jpg';
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -75,20 +75,20 @@ const localBusinessSchema = {
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Catálogo de Pintura Interior en Valencia",
+    "name": "Catálogo de Pintura de Comunidades en Valencia",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Pintura Interior de Viviendas en Valencia",
-          "description": "Pintura profesional de paredes y techos interiores con acabados de alta calidad",
+          "name": "Pintura de Fachadas en Valencia",
+          "description": "Rehabilitación y pintura técnica de fachadas con garantía de 3 años",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Interior Painting",
+          "serviceType": "Exterior Painting",
           "provider": {
             "@id": "https://pintores-valencia.com/#business"
           }
@@ -100,38 +100,76 @@ const localBusinessSchema = {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Pintura Piso 70m² Completo",
-          "description": "Servicio completo de pintura interior para piso estándar de 70 metros cuadrados",
+          "name": "Pintura de Escaleras y Portales",
+          "description": "Pintura de zonas comunes interiores con pinturas lavables",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Apartment Interior Painting",
+          "serviceType": "Interior Painting",
           "provider": {
             "@id": "https://pintores-valencia.com/#business"
           }
         },
-        "price": "560.00",
+        "price": "12.00",
         "priceCurrency": "EUR"
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Pintura Piso 90m² Completo",
-          "description": "Servicio completo de pintura interior para piso grande de 90 metros cuadrados",
+          "name": "Pintura de Garajes y Sótanos",
+          "description": "Pintura técnica para garajes con pinturas especiales anti-humedad",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Apartment Interior Painting",
+          "serviceType": "Interior Painting",
           "provider": {
             "@id": "https://pintores-valencia.com/#business"
           }
         },
-        "price": "720.00",
+        "price": "6.00",
+        "priceCurrency": "EUR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Proyecto Completo Edificio 4 Plantas",
+          "description": "Pintura integral de edificio de comunidad incluyendo fachada y zonas comunes",
+          "areaServed": {
+            "@type": "City",
+            "name": "Valencia",
+            "sameAs": "https://www.wikidata.org/wiki/Q8818"
+          },
+          "serviceType": "Building Painting",
+          "provider": {
+            "@id": "https://pintores-valencia.com/#business"
+          }
+        },
+        "price": "3500.00",
+        "priceCurrency": "EUR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Proyecto Completo Edificio 6 Plantas",
+          "description": "Rehabilitación completa de edificio con fachada, escaleras y zonas comunes",
+          "areaServed": {
+            "@type": "City",
+            "name": "Valencia",
+            "sameAs": "https://www.wikidata.org/wiki/Q8818"
+          },
+          "serviceType": "Building Painting",
+          "provider": {
+            "@id": "https://pintores-valencia.com/#business"
+          }
+        },
+        "price": "5500.00",
         "priceCurrency": "EUR"
       }
     ]
@@ -144,26 +182,34 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Cuánto cuesta pintar las paredes de una vivienda en Valencia?",
+      "name": "¿Qué incluye el servicio de pintura de comunidades?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El precio de pintura interior en Valencia parte desde 8€/m² con materiales incluidos. Un piso de 70 m² cuesta desde 560€ y uno de 90 m² desde 720€. El precio final depende del estado de las paredes y tipo de pintura. Solicita presupuesto gratuito sin compromiso."
+        "text": "Incluye rehabilitación de fachadas, pintura de escaleras, portales, sótanos, garajes y todas las zonas comunes, con preparación completa de superficies, reparaciones menores, imprimación y acabado profesional."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto tiempo se tarda en pintar el interior de una casa?",
+      "name": "¿Necesito licencia de obra para pintar la fachada?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Para pintar el interior de una vivienda en Valencia de 70-90 m², el proceso completo tarda entre 3 y 5 días laborables. Esto incluye preparación de superficies, imprimación, dos manos de pintura y limpieza final. El tiempo exacto depende del estado de las paredes."
+        "text": "Normalmente no se necesita licencia de obra mayor para trabajos de mantenimiento y pintura de fachadas. Te asesoramos sobre la documentación necesaria según la normativa municipal de Valencia."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Qué incluye el precio de pintura interior?",
+      "name": "¿Cómo se organiza el trabajo en una comunidad?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El precio de pintura interior en Valencia incluye todos los materiales profesionales (pinturas de calidad, imprimación, masilla), mano de obra especializada, preparación de superficies, protección de suelos y muebles, y limpieza completa final. Presupuesto gratuito sin costes ocultos."
+        "text": "Coordinamos directamente con el administrador de fincas y la junta de propietarios. Planificamos los trabajos por fases para minimizar molestias y mantenemos comunicación constante sobre el progreso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué garantía ofrecen en trabajos de comunidades?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ofrecemos 3 años de garantía en fachadas y 2 años en zonas interiores. La garantía cubre defectos de aplicación y problemas relacionados con la calidad de los materiales utilizados."
       }
     }
   ]
@@ -171,22 +217,25 @@ const faqSchema = {
 ---
 
 <SiteLayout 
-  title="Pintura Exterior en Valencia | Fachadas Resistentes Desde 15€/m²"
-  description="Expertos en pintura interior de viviendas en Valencia. Precios competitivos desde 8€/m². Acabados de alta calidad para techos y paredes. Presupuesto gratuito."
-  keywords="pintura interior valencia, pintar paredes valencia, pintura casas valencia, precios pintura interior valencia, pintura techos valencia, pintores profesionales valencia"
-  canonical="https://pintores-valencia.com/servicios/pintura-interior/"
+  title="Pintura de comunidades en Valencia desde 8€/m² | Fachadas"
+  description="Especialistas en pintura de comunidades en Valencia. Fachadas, escaleras y zonas comunes. Trabajamos con administradores de fincas. Presupuesto en 24h."
+  keywords="pintura comunidades valencia, pintar fachada comunidad valencia, pintura edificios valencia, pintar zonas comunes valencia, precio pintar comunidad valencia"
+  canonical="https://pintores-valencia.com/servicios/pintura-comunidades/"
   schema={[localBusinessSchema, faqSchema]}
   ogImage="/og-home.webp"
 >
   <main class="flex-1">
     <!-- Breadcrumbs and Hero Section -->
+
       <section class="bg-gradient-to-br from-slate-50 to-blue-50">
       <!-- Breadcrumbs -->
         <div class="container mx-auto px-4">
           <Breadcrumbs items={[
               { label: "Servicios", href: "/servicios/" },
-              { label: "Pintura Interior" }
+              { label: "Pintura Comunidades" }
             ]}  client:load />
+  
+
       
 
       <!-- Hero Content -->
@@ -196,10 +245,10 @@ const faqSchema = {
           <!-- Left side - Content -->
           <div>
             <!-- Title -->
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pintura Interior de Viviendas en Valencia</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pintura de comunidades en Valencia</h1>
             
             <!-- Subtitle -->
-            <p class="text-xl text-gray-700 mb-6">Pintores profesionales para techos y paredes en Valencia. Desde 8€/m²</p>
+            <p class="text-xl text-gray-700 mb-6">Especialistas en rehabilitación de fachadas, escaleras y zonas comunes. Trabajamos con administradores de fincas</p>
             
             <!-- Price -->
             <div class="mb-6">
@@ -208,7 +257,7 @@ const faqSchema = {
             
             <!-- CTAs -->
             <div class="flex flex-col sm:flex-row gap-4 mb-8">
-              <a href="/presupuesto/" class="h-11 px-6 rounded-md bg-accent hover:bg-accent/90 text-white font-semibold shadow flex items-center justify-center">
+              <a href="/contacto/" class="h-11 px-6 rounded-md bg-accent hover:bg-accent/90 text-white font-semibold shadow flex items-center justify-center">
                 Presupuesto Gratis
               </a>
               <a href="tel:+34722208131" class="h-11 px-6 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-semibold inline-flex items-center justify-center gap-2">
@@ -225,136 +274,139 @@ const faqSchema = {
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Materiales premium</span>
+                <span class="text-gray-700">Con administradores de fincas</span>
               </div>
               <div class="flex items-center space-x-3">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Acabado perfecto</span>
+                <span class="text-gray-700">Sin licencias complejas</span>
               </div>
               <div class="flex items-center space-x-3">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Limpieza incluida</span>
+                <span class="text-gray-700">Garantía 3 años</span>
               </div>
             </div>
           </div>
-
+          
           <!-- Right side - Image -->
           <div class="order-first lg:order-last">
             <div class="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src={pinturaInteriorImg.src} alt="Pintura interior de viviendas en Valencia - Pintores profesionales trabajando en paredes" width={pinturaInteriorImg.width} height={pinturaInteriorImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
+              <img src={fachadaExteriorImg.src} alt="Pintores de comunidades trabajando en la rehabilitación de una fachada en el centro de Valencia - Servicio profesional con garantía" width={fachadaExteriorImg.width} height={fachadaExteriorImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
             </div>
           </div>
         </div>
       </div>
-      </div>
     </section>
 
-    <!-- Precio pintura interior Valencia -->
+    <!-- Precio Pintura Comunidades Valencia -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">
-              Precios de Pintura Interior en Valencia
+              Precio de Pintar Comunidades en Valencia
             </h2>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-              Presupuesto transparente desde 8€/m² con materiales y mano de obra incluidos
+              Presupuesto transparente desde 8€/m² con materiales incluidos
             </p>
           </div>
           
           <div class="space-y-6 text-gray-700 mb-10">
             <p class="text-lg leading-relaxed">
-              El <strong>precio de pintura interior en Valencia</strong> depende de la superficie a pintar, el tipo de pintura seleccionada y el estado de las paredes. Ofrecemos presupuestos cerrados y transparentes, sin sorpresas ni costes ocultos.
+              El <strong>precio de pintar comunidades en Valencia</strong> depende del tipo de superficie a pintar, la altura del edificio, el estado de conservación y los metros cuadrados totales. En todos los casos ofrecemos un presupuesto cerrado, detallado y transparente, sin sorpresas.
             </p>
             
             <p class="text-lg leading-relaxed">
-              Nuestros <strong>pintores profesionales en Valencia</strong> utilizan pinturas de alta calidad (Bruguer, Titan, Montó) con certificación ecológica, garantizando un acabado perfecto y duradero para tu vivienda.
+              Trabajamos directamente con <strong>administradores de fincas y juntas de propietarios</strong> para facilitar todo el proceso. Utilizamos pinturas específicas según la zona: <strong>resistentes a la intemperie para fachadas</strong>, lavables para escaleras, y pinturas técnicas especiales para garajes. Incluimos preparación de superficies, reparaciones menores, imprimación y acabado profesional con <strong>garantía de 3 años en fachadas</strong>.
+            </p>
+            
+            <p class="text-lg leading-relaxed">
+              Damos <strong>servicio técnico en todos los distritos de Valencia</strong>, desde fincas señoriales en <strong>L'Eixample y Ciutat Vella</strong> hasta edificios modernos en <strong>Campanar o la Avenida de Francia</strong>. Nuestra logística nos permite ofrecer <strong>presupuestos rápidos en menos de 24h</strong> en toda el área metropolitana, incluyendo <strong>Torrent y Paterna</strong>.
             </p>
           </div>
 
           <!-- Tabla de precios orientativos -->
           <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 mb-8">
-            <h3 class="text-2xl font-bold mb-6 text-center">Precios Orientativos de Pintura Interior</h3>
+            <h3 class="text-2xl font-bold mb-6 text-center">Precios Orientativos de Pintura de Comunidades en Valencia</h3>
             
             <div class="grid md:grid-cols-2 gap-6">
-              <!-- Precio por superficie completa -->
+              <!-- Precio por zona -->
               <div class="bg-white rounded-xl p-6 shadow-sm">
-                <h4 class="font-bold text-lg mb-4 text-gray-900">Por Superficie Completa</h4>
+                <h4 class="font-bold text-lg mb-4 text-gray-900">Por Tipo de Zona</h4>
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Piso 70 m²</span>
-                    <span class="font-bold text-accent">desde 560€</span>
-                  </li>
-                  <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Piso 90 m²</span>
-                    <span class="font-bold text-accent">desde 720€</span>
-                  </li>
-                  <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Piso 120 m²</span>
-                    <span class="font-bold text-accent">desde 960€</span>
-                  </li>
-                </ul>
-                <p class="text-sm text-gray-500 mt-4">*Incluye preparación, imprimación y 2 manos</p>
-              </div>
-
-              <!-- Precio por habitación -->
-              <div class="bg-white rounded-xl p-6 shadow-sm">
-                <h4 class="font-bold text-lg mb-4 text-gray-900">Por Habitaciones</h4>
-                <ul class="space-y-3">
-                  <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Habitación individual</span>
-                    <span class="font-bold text-accent">desde 150€</span>
-                  </li>
-                  <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Salón-comedor</span>
-                    <span class="font-bold text-accent">desde 250€</span>
-                  </li>
-                  <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Techos completos</span>
+                    <span class="text-gray-700">Fachada completa</span>
                     <span class="font-bold text-accent">desde 8€/m²</span>
                   </li>
+                  <li class="flex justify-between items-center">
+                    <span class="text-gray-700">Escaleras y portales</span>
+                    <span class="font-bold text-accent">desde 12€/m²</span>
+                  </li>
+                  <li class="flex justify-between items-center">
+                    <span class="text-gray-700">Garajes y sótanos</span>
+                    <span class="font-bold text-accent">desde 6€/m²</span>
+                  </li>
                 </ul>
-                <p class="text-sm text-gray-500 mt-4">*Precios pueden variar según estado</p>
+                <p class="text-sm text-gray-500 mt-4">*Incluye preparación y materiales</p>
+              </div>
+
+              <!-- Precio por edificio -->
+              <div class="bg-white rounded-xl p-6 shadow-sm">
+                <h4 class="font-bold text-lg mb-4 text-gray-900">Por Proyecto Completo</h4>
+                <ul class="space-y-3">
+                  <li class="flex justify-between items-center">
+                    <span class="text-gray-700">Edificio 4 plantas</span>
+                    <span class="font-bold text-accent">desde 3.500€</span>
+                  </li>
+                  <li class="flex justify-between items-center">
+                    <span class="text-gray-700">Edificio 6 plantas</span>
+                    <span class="font-bold text-accent">desde 5.500€</span>
+                  </li>
+                  <li class="flex justify-between items-center">
+                    <span class="text-gray-700">Zonas comunes completas</span>
+                    <span class="font-bold text-accent">desde 1.800€</span>
+                  </li>
+                </ul>
+                <p class="text-sm text-gray-500 mt-4">*Precios pueden variar según altura</p>
               </div>
             </div>
 
             <!-- Qué incluye el precio -->
             <div class="mt-8 bg-white rounded-xl p-6">
-              <h4 class="font-bold text-lg mb-4 text-gray-900">¿Qué Incluye el Precio de Pintura Interior?</h4>
+              <h4 class="font-bold text-lg mb-4 text-gray-900">¿Qué Incluye el Precio de Pintar Comunidades?</h4>
               <div class="grid md:grid-cols-2 gap-4">
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Pinturas de alta calidad incluidas</span>
+                  <span class="text-gray-700">Coordinación con administrador</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Preparación completa de superficies</span>
+                  <span class="text-gray-700">Andamios y protecciones</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Imprimación selladora</span>
+                  <span class="text-gray-700">Reparación de grietas</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Mano de obra profesional</span>
+                  <span class="text-gray-700">Imprimación profesional</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Protección de suelos y muebles</span>
+                  <span class="text-gray-700">Pinturas de alta calidad</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
@@ -365,126 +417,30 @@ const faqSchema = {
               </div>
             </div>
 
-            <div class="mt-8 bg-white rounded-xl p-6">
-              <p class="text-lg text-gray-700 mb-6">
-                <strong>¿Quieres renovar tu vivienda?</strong> Consulta nuestro <strong>precio de pintura interior en Valencia</strong> y descubre cómo podemos transformar tus espacios con acabados profesionales de alta calidad.
-              </p>
-              <div class="flex justify-center text-center">
-                <a href="/presupuesto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-accent text-white hover:bg-accent/90 focus:ring-accent shadow-md hover:shadow-lg px-8 py-3 text-lg rounded-lg">
-                  Solicitar Presupuesto Gratuito
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Beneficios de pintura interior -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">
-              Beneficios de Pintar el Interior de tu Vivienda en Valencia
-            </h2>
-            <p class="text-xl text-gray-600">
-              Mejora la estética y el confort de tu hogar
+          <div class="mt-8 bg-white rounded-xl p-6">
+            <p class="text-lg text-gray-700 mb-6">
+              <strong>¿Necesitas renovar tu comunidad?</strong> Consulta nuestro <strong>precio de pintar comunidades en Valencia</strong> y descubre cómo podemos mejorar tu edificio con nuestro servicio profesional especializado en trabajos comunitarios.
             </p>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-6 mb-10">
-            <!-- Beneficio 1 -->
-            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-                    <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Acabado Perfecto y Duradero</h3>
-                  <p class="text-gray-700">
-                    La <strong>pintura interior en Valencia</strong> con productos de alta calidad garantiza un acabado profesional que mantiene su aspecto impecable durante años.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Beneficio 2 -->
-            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Ambientes Renovados y Luminosos</h3>
-                  <p class="text-gray-700">
-                    Pintar techos y paredes en tonos claros aumenta la luminosidad de tus espacios, creando ambientes más amplios y acogedores en tu vivienda.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Beneficio 3 -->
-            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path>
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Revaloriza tu Vivienda</h3>
-                  <p class="text-gray-700">
-                    Una vivienda con <strong>pintura interior profesional</strong> aumenta significativamente su valor de mercado y resulta más atractiva para posibles compradores o inquilinos.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Beneficio 4 -->
-            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Fácil Mantenimiento y Limpieza</h3>
-                  <p class="text-gray-700">
-                    Las <strong>pinturas modernas lavables</strong> permiten limpiar las paredes fácilmente, manteniendo tu vivienda en perfectas condiciones con mínimo esfuerzo.
-                  </p>
-                </div>
-              </div>
+            <div class="flex justify-center text-center">
+              <a href="/contacto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-accent text-white hover:bg-accent/90 focus:ring-accent shadow-md hover:shadow-lg px-8 py-3 text-lg rounded-lg">
+                Solicitar Presupuesto Gratuito
+              </a>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Cómo trabajamos: Proceso paso a paso -->
+    <!-- Proceso Pintura Comunidades Valencia -->
     <section class="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Cómo Pintamos el Interior de tu Vivienda en Valencia
+            Cómo Pintamos Comunidades en Valencia
           </h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Proceso profesional en 4 pasos para garantizar acabados perfectos
+            Proceso paso a paso coordinado con administradores de fincas
           </p>
         </div>
         
@@ -497,9 +453,9 @@ const faqSchema = {
                   1
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Protección de Muebles y Suelos</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Reunión con Administrador</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Antes de iniciar la <strong>pintura interior en Valencia</strong>, protegemos completamente todos tus muebles y suelos con plásticos y papel profesional. Sellamos puertas para evitar que el polvo se disperse por otras habitaciones de tu vivienda.
+                    Coordinamos con el <strong>administrador de fincas y la junta de propietarios</strong> para definir el alcance del trabajo, establecer las fases de ejecución y acordar los horarios más convenientes para los vecinos. Planificamos todo el proyecto para minimizar molestias a la comunidad.
                   </p>
                 </div>
               </div>
@@ -512,9 +468,12 @@ const faqSchema = {
                   2
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Preparación de las Superficies</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Preparación y Protección</h3>
+                  <p class="text-gray-700 leading-relaxed mb-3">
+                    Instalamos <strong>andamios seguros</strong> y protegemos vehículos, plantas y accesos. Colocamos lonas y plásticos profesionales para evitar salpicaduras. Avisamos previamente a todos los vecinos del inicio de los trabajos y del calendario previsto.
+                  </p>
                   <p class="text-gray-700 leading-relaxed">
-                    Lijamos y reparamos todas las imperfecciones de <strong>paredes y techos</strong>. Aplicamos masilla profesional donde sea necesario y realizamos un lijado fino para conseguir superficies perfectamente lisas. Este paso es fundamental para obtener un acabado profesional duradero.
+                    La seguridad y la protección de las propiedades de los vecinos son nuestra prioridad en la <strong>pintura de comunidades en Valencia</strong>.
                   </p>
                 </div>
               </div>
@@ -527,9 +486,12 @@ const faqSchema = {
                   3
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Aplicación de Pintura de Alta Calidad</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Reparaciones Previas</h3>
+                  <p class="text-gray-700 leading-relaxed mb-3">
+                    <strong>Reparamos grietas y fisuras</strong>, tratamos humedades, lijamos y preparamos todas las superficies. Este paso es fundamental para conseguir un acabado duradero y de calidad en fachadas y zonas comunes.
+                  </p>
                   <p class="text-gray-700 leading-relaxed">
-                    Aplicamos imprimación selladora de calidad y <strong>dos manos de pintura</strong> con productos premium (Bruguer, Titan, Montó). Utilizamos técnica profesional que garantiza cobertura uniforme y acabado impecable en todas las superficies de tu vivienda en Valencia.
+                    Utilizamos materiales específicos para cada tipo de reparación, garantizando la máxima durabilidad.
                   </p>
                 </div>
               </div>
@@ -542,9 +504,39 @@ const faqSchema = {
                   4
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Limpieza Final y Verificación de Calidad</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Imprimación y Pintura</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Retiramos todas las protecciones y realizamos una <strong>limpieza completa</strong> de la vivienda. Inspeccionamos minuciosamente el trabajo para garantizar que cada detalle sea perfecto. Te entregamos tu hogar impecable y listo para disfrutar.
+                    Aplicamos <strong>imprimación profesional</strong> y dos capas de pintura específica según la zona: pinturas resistentes a la intemperie para fachadas, pinturas lavables para escaleras, y pinturas técnicas especiales para garajes y sótanos. Respetamos estrictamente los horarios acordados con la comunidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 5 -->
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-10 h-10 bg-accent text-white rounded-full flex items-center justify-center text-base font-bold">
+                  5
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Acabados y Retoques</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    Realizamos una <strong>revisión completa</strong> de todo el trabajo realizado. Hacemos los retoques finales necesarios y aplicamos nuestro estricto control de calidad. Nos aseguramos de que cada detalle quede perfecto antes de dar por finalizado el trabajo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 6 -->
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-10 h-10 bg-accent text-white rounded-full flex items-center justify-center text-base font-bold">
+                  6
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Entrega y Garantía</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    Realizamos la <strong>limpieza final completa</strong>, retiramos los andamios y todos los materiales. Entregamos al administrador de fincas el <strong>certificado de garantía por escrito</strong>: 3 años en fachadas y 2 años en zonas interiores.
                   </p>
                 </div>
               </div>
@@ -554,14 +546,103 @@ const faqSchema = {
       </div>
     </section>
 
+    <!-- Beneficios de Pintar Comunidades en Valencia -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Beneficios de Pintar tu Comunidad en Valencia
+            </h2>
+            <p class="text-xl text-gray-600">
+              Mejora la imagen y el valor de tu edificio
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-10">
+            <!-- Beneficio 1 -->
+            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Revalorización del Inmueble</h3>
+                  <p class="text-gray-700">
+                    La <strong>pintura de comunidades en Valencia</strong> mejora significativamente el aspecto del edificio, aumentando el valor de las viviendas y facilitando la venta o alquiler de los pisos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Beneficio 2 -->
+            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Protección de la Fachada</h3>
+                  <p class="text-gray-700">
+                    Las pinturas profesionales protegen las fachadas de la lluvia, el sol y la contaminación, evitando humedades y grietas que pueden generar problemas estructurales graves y costosos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Beneficio 3 -->
+            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Ahorro a Largo Plazo</h3>
+                  <p class="text-gray-700">
+                    El mantenimiento preventivo mediante <strong>pintura profesional</strong> evita reparaciones costosas futuras. Una fachada bien mantenida dura muchos más años sin necesitar obras mayores.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Beneficio 4 -->
+            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path>
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Gestión sin Complicaciones</h3>
+                  <p class="text-gray-700">
+                    Trabajamos directamente con el <strong>administrador de fincas</strong>, coordinando toda la documentación, permisos y comunicación con los vecinos. Tu comunidad no tiene que preocuparse por nada.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Contact Section -->
     <section class="py-12 bg-blue-600 text-white">
       <div class="container mx-auto px-4 text-center">
-        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Necesitas pintar tu casa?</h2>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Necesitas pintar tu comunidad?</h2>
         <p class="text-xl mb-8">Te respondemos en menos de 24 horas</p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/presupuesto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-500 shadow-md hover:shadow-lg px-6 py-3 text-lg rounded-lg">
+          <a href="/contacto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-500 shadow-md hover:shadow-lg px-6 py-3 text-lg rounded-lg">
             Pedir presupuesto gratis
           </a>
           <a href="tel:+34722208131" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-white text-blue-600 hover:bg-gray-100 focus:ring-blue-500 shadow-md hover:shadow-lg px-6 py-3 text-lg rounded-lg gap-2">
@@ -573,54 +654,61 @@ const faqSchema = {
         </div>
       </div>
     </section>
-
-    <!-- FAQ Optimizadas para SEO -->
-    <section class="py-16 bg-white">
+    
+    <!-- FAQ Optimizadas para SEO Local Valencia -->
+    <section class="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Preguntas Frecuentes sobre Pintura Interior en Valencia
+            Preguntas Frecuentes sobre Pintura de Comunidades en Valencia
           </h2>
           <p class="text-lg text-gray-600">
             Resolvemos todas tus dudas sobre nuestro servicio profesional
           </p>
         </div>
 
-        <div class="max-w-3xl mx-auto space-y-6">
+        <div class="max-w-4xl mx-auto space-y-6">
           <!-- FAQ 1 -->
-          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm">
-            <h3 class="font-bold text-lg mb-3 text-gray-900">
-              ¿Cuánto cuesta pintar las paredes de una vivienda en Valencia?
+          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-xl mb-3 text-gray-900">
+              ¿Qué incluye el servicio de pintura de comunidades?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              El <strong>precio de pintura interior en Valencia</strong> parte desde <strong>8€/m²</strong> con materiales incluidos. Un piso de 70 m² cuesta desde 560€ y uno de 90 m² desde 720€. El precio final depende del estado de las paredes, el tipo de pintura seleccionada y los metros cuadrados a pintar. <strong>Solicita un presupuesto gratuito</strong> sin compromiso y te daremos un precio exacto para tu vivienda.
+              El servicio incluye <strong>rehabilitación de fachadas, pintura de escaleras, portales, sótanos, garajes y todas las zonas comunes</strong>, con preparación completa de superficies, reparación de grietas, tratamiento de humedades, imprimación profesional y acabado de alta calidad. También incluye coordinación con el administrador y limpieza final completa.
             </p>
           </div>
 
           <!-- FAQ 2 -->
-          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm">
-            <h3 class="font-bold text-lg mb-3 text-gray-900">
-              ¿Cuánto tiempo se tarda en pintar el interior de una casa?
+          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-xl mb-3 text-gray-900">
+              ¿Necesito licencia de obra para pintar la fachada?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Para <strong>pintar el interior de una vivienda en Valencia</strong> de 70-90 m², el proceso completo tarda entre <strong>3 y 5 días laborables</strong>. Esto incluye la preparación de superficies (lijado y masillado), imprimación, aplicación de dos manos de pintura y limpieza final completa. El tiempo exacto depende del estado de las paredes y del número de habitaciones. Te proporcionaremos un calendario detallado con tu presupuesto.
+              <strong>Normalmente no</strong> se necesita licencia de obra mayor para trabajos de <strong>mantenimiento y pintura de fachadas</strong>. Sin embargo, te asesoramos sobre la documentación necesaria según el tipo de trabajo y las normativas específicas del ayuntamiento de Valencia. Nos encargamos de toda la gestión documental.
             </p>
           </div>
 
           <!-- FAQ 3 -->
-          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm">
-            <h3 class="font-bold text-lg mb-3 text-gray-900">
-              ¿Qué incluye el precio de pintura interior?
+          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-xl mb-3 text-gray-900">
+              ¿Cómo se organiza el trabajo en una comunidad?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Nuestro <strong>precio de pintura interior en Valencia</strong> incluye todos los materiales profesionales (pinturas premium, imprimación, masilla), mano de obra especializada de pintores profesionales, preparación completa de superficies (lijado y masillado), protección de suelos y muebles, y limpieza completa final. Presupuesto gratuito sin costes ocultos.
+              Coordinamos directamente con el <strong>administrador de fincas y la junta de propietarios</strong>. Planificamos los trabajos por fases para minimizar molestias a los vecinos, establecemos horarios adecuados y mantenemos <strong>comunicación constante</strong> sobre el progreso de la obra. Avisamos previamente a todos los vecinos de los trabajos.
+            </p>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-xl mb-3 text-gray-900">
+              ¿Qué garantía ofrecen en trabajos de comunidades?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Ofrecemos <strong>3 años de garantía en fachadas</strong> y <strong>2 años en zonas interiores</strong>. La garantía cubre defectos de aplicación y problemas relacionados con la calidad de los materiales utilizados. Entregamos el certificado de garantía por escrito al administrador de fincas al finalizar el trabajo.
             </p>
           </div>
         </div>
-      </div>
-    </section>
-          </div>
-        </div>
+
       </div>
     </section>
   </main>

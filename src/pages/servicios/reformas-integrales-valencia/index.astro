@@ -1,7 +1,7 @@
 ---
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.tsx';
-import pinturaInteriorImg from '../../../assets/pintor-profesional-interior-valencia.jpg';
+import quitarGoteleImg from '../../../assets/quitar-gotelé-valencia.png';
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -75,63 +75,63 @@ const localBusinessSchema = {
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Catálogo de Pintura Interior en Valencia",
+    "name": "Catálogo de Eliminación de Gotelé en Valencia",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Pintura Interior de Viviendas en Valencia",
-          "description": "Pintura profesional de paredes y techos interiores con acabados de alta calidad",
+          "name": "Quitar Gotelé y Alisar Paredes en Valencia",
+          "description": "Eliminación profesional de gotelé con lijado sin polvo y alisado completo de paredes",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Interior Painting",
+          "serviceType": "Wall Smoothing Service",
           "provider": {
             "@id": "https://pintores-valencia.com/#business"
           }
         },
-        "price": "8.00",
+        "price": "10.00",
         "priceCurrency": "EUR"
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Pintura Piso 70m² Completo",
-          "description": "Servicio completo de pintura interior para piso estándar de 70 metros cuadrados",
+          "name": "Alisado de Gotelé en Habitación Individual",
+          "description": "Servicio de eliminación de gotelé y alisado para habitaciones individuales",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Apartment Interior Painting",
+          "serviceType": "Room Wall Smoothing",
           "provider": {
             "@id": "https://pintores-valencia.com/#business"
           }
         },
-        "price": "560.00",
+        "price": "350.00",
         "priceCurrency": "EUR"
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Pintura Piso 90m² Completo",
-          "description": "Servicio completo de pintura interior para piso grande de 90 metros cuadrados",
+          "name": "Quitar Gotelé Piso Completo 70m²",
+          "description": "Eliminación completa de gotelé y alisado de paredes para piso estándar",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Apartment Interior Painting",
+          "serviceType": "Apartment Wall Smoothing",
           "provider": {
             "@id": "https://pintores-valencia.com/#business"
           }
         },
-        "price": "720.00",
+        "price": "1200.00",
         "priceCurrency": "EUR"
       }
     ]
@@ -144,26 +144,26 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Cuánto cuesta pintar las paredes de una vivienda en Valencia?",
+      "name": "¿Cuánto cuesta quitar el gotelé y alisar las paredes en Valencia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El precio de pintura interior en Valencia parte desde 8€/m² con materiales incluidos. Un piso de 70 m² cuesta desde 560€ y uno de 90 m² desde 720€. El precio final depende del estado de las paredes y tipo de pintura. Solicita presupuesto gratuito sin compromiso."
+        "text": "El precio de quitar gotelé en Valencia y alisar paredes parte desde 10€/m² con todos los materiales incluidos (lijado, enlucido, imprimación). Los precios varían según el tamaño y el estado de las paredes. Solicita un presupuesto gratuito y personalizado para conocer el precio exacto de tu vivienda."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto tiempo se tarda en pintar el interior de una casa?",
+      "name": "¿Cuánto tiempo tardan en alisar las paredes de mi casa?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Para pintar el interior de una vivienda en Valencia de 70-90 m², el proceso completo tarda entre 3 y 5 días laborables. Esto incluye preparación de superficies, imprimación, dos manos de pintura y limpieza final. El tiempo exacto depende del estado de las paredes."
+        "text": "El proceso completo de eliminar gotelé y alisar paredes en un piso estándar de 70-90 m² suele tardar entre 3 y 5 días laborables. Esto depende del tamaño de la vivienda y el estado de las paredes. Para habitaciones individuales, podemos realizar el trabajo en 1-2 días. Te daremos un calendario exacto con el presupuesto."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Qué incluye el precio de pintura interior?",
+      "name": "¿Qué incluye el precio de quitar el gotelé en Valencia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El precio de pintura interior en Valencia incluye todos los materiales profesionales (pinturas de calidad, imprimación, masilla), mano de obra especializada, preparación de superficies, protección de suelos y muebles, y limpieza completa final. Presupuesto gratuito sin costes ocultos."
+        "text": "El precio incluye todos los materiales profesionales (pasta niveladora, imprimación, lijas), mano de obra especializada, protección de suelos y muebles, limpieza diaria y final de la vivienda, y garantía por escrito del trabajo realizado. Sin costes ocultos. Solicita tu presupuesto personalizado para obtener un precio cerrado sin sorpresas."
       }
     }
   ]
@@ -171,22 +171,25 @@ const faqSchema = {
 ---
 
 <SiteLayout 
-  title="Pintura Exterior en Valencia | Fachadas Resistentes Desde 15€/m²"
-  description="Expertos en pintura interior de viviendas en Valencia. Precios competitivos desde 8€/m². Acabados de alta calidad para techos y paredes. Presupuesto gratuito."
-  keywords="pintura interior valencia, pintar paredes valencia, pintura casas valencia, precios pintura interior valencia, pintura techos valencia, pintores profesionales valencia"
-  canonical="https://pintores-valencia.com/servicios/pintura-interior/"
+  title="Quitar gotelé en Valencia desde 10 €/m² | Paredes lisas"
+  description="Especialistas en quitar gotelé y alisar paredes en Valencia. Lijado sin polvo, enlucido profesional y presupuesto en 24h. Precio alisar paredes Valencia desde 10€/m²."
+  keywords="quitar gotele valencia, alisar paredes valencia, alisado paredes valencia, alisado de paredes en valencia, alisar gotele en valencia, precio alisar paredes valencia, precio quitar gotele valencia, eliminar gotele valencia"
+  canonical="https://pintores-valencia.com/servicios/quitar-gotele/"
   schema={[localBusinessSchema, faqSchema]}
   ogImage="/og-home.webp"
 >
   <main class="flex-1">
     <!-- Breadcrumbs and Hero Section -->
+
       <section class="bg-gradient-to-br from-slate-50 to-blue-50">
       <!-- Breadcrumbs -->
         <div class="container mx-auto px-4">
           <Breadcrumbs items={[
               { label: "Servicios", href: "/servicios/" },
-              { label: "Pintura Interior" }
+              { label: "Quitar Gotelé" }
             ]}  client:load />
+  
+
       
 
       <!-- Hero Content -->
@@ -196,14 +199,14 @@ const faqSchema = {
           <!-- Left side - Content -->
           <div>
             <!-- Title -->
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pintura Interior de Viviendas en Valencia</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Quitar Gotelé y Alisar Paredes en Valencia</h1>
             
             <!-- Subtitle -->
-            <p class="text-xl text-gray-700 mb-6">Pintores profesionales para techos y paredes en Valencia. Desde 8€/m²</p>
+            <p class="text-xl text-gray-700 mb-6">Especialistas en alisado de paredes en Valencia con lijado sin polvo y acabado profesional</p>
             
             <!-- Price -->
             <div class="mb-6">
-              <span class="text-2xl font-bold text-accent">desde 8€/m² <span class="text-sm text-gray-500 font-normal">Material incluido</span></span>
+              <span class="text-2xl font-bold text-accent">desde 10€/m² <span class="text-sm text-gray-500 font-normal">Material incluido</span></span>
             </div>
             
             <!-- CTAs -->
@@ -225,7 +228,7 @@ const faqSchema = {
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Materiales premium</span>
+                <span class="text-gray-700">Sin polvo</span>
               </div>
               <div class="flex items-center space-x-3">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -241,64 +244,63 @@ const faqSchema = {
               </div>
             </div>
           </div>
-
+          
           <!-- Right side - Image -->
           <div class="order-first lg:order-last">
             <div class="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src={pinturaInteriorImg.src} alt="Pintura interior de viviendas en Valencia - Pintores profesionales trabajando en paredes" width={pinturaInteriorImg.width} height={pinturaInteriorImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
+              <img src={quitarGoteleImg.src} alt="Eliminación de gotelé en Valencia con lijado profesional sin polvo - Alisado de paredes realizado por pintores profesionales" width={quitarGoteleImg.width} height={quitarGoteleImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
             </div>
           </div>
         </div>
       </div>
-      </div>
     </section>
 
-    <!-- Precio pintura interior Valencia -->
+    <!-- Precio alisar paredes Valencia -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">
-              Precios de Pintura Interior en Valencia
+              Precio de Alisar Paredes en Valencia
             </h2>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-              Presupuesto transparente desde 8€/m² con materiales y mano de obra incluidos
+              Presupuesto transparente desde 10€/m² con materiales incluidos
             </p>
           </div>
           
           <div class="space-y-6 text-gray-700 mb-10">
             <p class="text-lg leading-relaxed">
-              El <strong>precio de pintura interior en Valencia</strong> depende de la superficie a pintar, el tipo de pintura seleccionada y el estado de las paredes. Ofrecemos presupuestos cerrados y transparentes, sin sorpresas ni costes ocultos.
+              El <strong>precio de quitar gotelé en Valencia</strong> y el <strong>precio de alisar paredes en Valencia</strong> depende del tipo de gotelé, el estado de las paredes y los metros cuadrados de la vivienda. En todos los casos ofrecemos un presupuesto cerrado y transparente, sin sorpresas.
             </p>
             
             <p class="text-lg leading-relaxed">
-              Nuestros <strong>pintores profesionales en Valencia</strong> utilizan pinturas de alta calidad (Bruguer, Titan, Montó) con certificación ecológica, garantizando un acabado perfecto y duradero para tu vivienda.
+              Nuestros pintores profesionales utilizan pasta niveladora de alta calidad e imprimación selladora profesional, garantizando un acabado perfecto y duradero. Si lo deseas, también podemos encargarnos de la pintura final, para que no tengas que preocuparte por nada.
             </p>
           </div>
 
           <!-- Tabla de precios orientativos -->
           <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 mb-8">
-            <h3 class="text-2xl font-bold mb-6 text-center">Precios Orientativos de Pintura Interior</h3>
+            <h3 class="text-2xl font-bold mb-6 text-center">Precios Orientativos de Alisado de Paredes en Valencia</h3>
             
             <div class="grid md:grid-cols-2 gap-6">
-              <!-- Precio por superficie completa -->
+              <!-- Precio por superficie -->
               <div class="bg-white rounded-xl p-6 shadow-sm">
                 <h4 class="font-bold text-lg mb-4 text-gray-900">Por Superficie Completa</h4>
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
                     <span class="text-gray-700">Piso 70 m²</span>
-                    <span class="font-bold text-accent">desde 560€</span>
+                    <span class="font-bold text-accent">desde 700€</span>
                   </li>
                   <li class="flex justify-between items-center">
                     <span class="text-gray-700">Piso 90 m²</span>
-                    <span class="font-bold text-accent">desde 720€</span>
+                    <span class="font-bold text-accent">desde 900€</span>
                   </li>
                   <li class="flex justify-between items-center">
                     <span class="text-gray-700">Piso 120 m²</span>
-                    <span class="font-bold text-accent">desde 960€</span>
+                    <span class="font-bold text-accent">desde 1.200€</span>
                   </li>
                 </ul>
-                <p class="text-sm text-gray-500 mt-4">*Incluye preparación, imprimación y 2 manos</p>
+                <p class="text-sm text-gray-500 mt-4">*Incluye lijado, enlucido e imprimación</p>
               </div>
 
               <!-- Precio por habitación -->
@@ -311,11 +313,11 @@ const faqSchema = {
                   </li>
                   <li class="flex justify-between items-center">
                     <span class="text-gray-700">Salón-comedor</span>
-                    <span class="font-bold text-accent">desde 250€</span>
+                    <span class="font-bold text-accent">desde 300€</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Techos completos</span>
-                    <span class="font-bold text-accent">desde 8€/m²</span>
+                    <span class="text-gray-700">Techo completo</span>
+                    <span class="font-bold text-accent">desde 10€/m²</span>
                   </li>
                 </ul>
                 <p class="text-sm text-gray-500 mt-4">*Precios pueden variar según estado</p>
@@ -324,19 +326,19 @@ const faqSchema = {
 
             <!-- Qué incluye el precio -->
             <div class="mt-8 bg-white rounded-xl p-6">
-              <h4 class="font-bold text-lg mb-4 text-gray-900">¿Qué Incluye el Precio de Pintura Interior?</h4>
+              <h4 class="font-bold text-lg mb-4 text-gray-900">¿Qué Incluye el Precio de Alisar Paredes?</h4>
               <div class="grid md:grid-cols-2 gap-4">
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Pinturas de alta calidad incluidas</span>
+                  <span class="text-gray-700">Lijado profesional sin polvo</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Preparación completa de superficies</span>
+                  <span class="text-gray-700">Enlucido y alisado fino</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
@@ -348,7 +350,7 @@ const faqSchema = {
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Mano de obra profesional</span>
+                  <span class="text-gray-700">Materiales profesionales incluidos</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
@@ -365,126 +367,30 @@ const faqSchema = {
               </div>
             </div>
 
-            <div class="mt-8 bg-white rounded-xl p-6">
-              <p class="text-lg text-gray-700 mb-6">
-                <strong>¿Quieres renovar tu vivienda?</strong> Consulta nuestro <strong>precio de pintura interior en Valencia</strong> y descubre cómo podemos transformar tus espacios con acabados profesionales de alta calidad.
-              </p>
-              <div class="flex justify-center text-center">
-                <a href="/presupuesto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-accent text-white hover:bg-accent/90 focus:ring-accent shadow-md hover:shadow-lg px-8 py-3 text-lg rounded-lg">
-                  Solicitar Presupuesto Gratuito
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Beneficios de pintura interior -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">
-              Beneficios de Pintar el Interior de tu Vivienda en Valencia
-            </h2>
-            <p class="text-xl text-gray-600">
-              Mejora la estética y el confort de tu hogar
+          <div class="mt-8 bg-white rounded-xl p-6">
+            <p class="text-lg text-gray-700 mb-6">
+              <strong>¿Quieres transformar tu hogar?</strong> Consulta nuestro <strong>precio de alisar paredes en Valencia</strong> y descubre cómo podemos mejorar tus espacios con nuestro servicio profesional de eliminación de gotelé.
             </p>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-6 mb-10">
-            <!-- Beneficio 1 -->
-            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-                    <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Acabado Perfecto y Duradero</h3>
-                  <p class="text-gray-700">
-                    La <strong>pintura interior en Valencia</strong> con productos de alta calidad garantiza un acabado profesional que mantiene su aspecto impecable durante años.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Beneficio 2 -->
-            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Ambientes Renovados y Luminosos</h3>
-                  <p class="text-gray-700">
-                    Pintar techos y paredes en tonos claros aumenta la luminosidad de tus espacios, creando ambientes más amplios y acogedores en tu vivienda.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Beneficio 3 -->
-            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path>
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Revaloriza tu Vivienda</h3>
-                  <p class="text-gray-700">
-                    Una vivienda con <strong>pintura interior profesional</strong> aumenta significativamente su valor de mercado y resulta más atractiva para posibles compradores o inquilinos.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Beneficio 4 -->
-            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Fácil Mantenimiento y Limpieza</h3>
-                  <p class="text-gray-700">
-                    Las <strong>pinturas modernas lavables</strong> permiten limpiar las paredes fácilmente, manteniendo tu vivienda en perfectas condiciones con mínimo esfuerzo.
-                  </p>
-                </div>
-              </div>
+            <div class="flex justify-center text-center">
+              <a href="/presupuesto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-accent text-white hover:bg-accent/90 focus:ring-accent shadow-md hover:shadow-lg px-8 py-3 text-lg rounded-lg">
+                Solicitar Presupuesto Gratuito
+              </a>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Cómo trabajamos: Proceso paso a paso -->
+    <!-- Cómo Quitamos el Gotelé en Valencia: Proceso Profesional -->
     <section class="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Cómo Pintamos el Interior de tu Vivienda en Valencia
+            Cómo Quitamos el Gotelé y Alisamos Paredes en Valencia
           </h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Proceso profesional en 4 pasos para garantizar acabados perfectos
+            Proceso paso a paso con técnica profesional y lijado sin polvo
           </p>
         </div>
         
@@ -497,9 +403,9 @@ const faqSchema = {
                   1
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Protección de Muebles y Suelos</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Protección Completa de Tu Hogar</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Antes de iniciar la <strong>pintura interior en Valencia</strong>, protegemos completamente todos tus muebles y suelos con plásticos y papel profesional. Sellamos puertas para evitar que el polvo se disperse por otras habitaciones de tu vivienda.
+                    Antes de empezar a <strong>quitar el gotelé en Valencia</strong>, protegemos todos los suelos, muebles y superficies con plásticos y papel profesional. Sellamos las puertas para evitar que el polvo se disperse por otras habitaciones de tu vivienda.
                   </p>
                 </div>
               </div>
@@ -512,9 +418,12 @@ const faqSchema = {
                   2
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Preparación de las Superficies</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Eliminación del Gotelé Sin Polvo</h3>
+                  <p class="text-gray-700 leading-relaxed mb-3">
+                    Utilizamos lijadoras profesionales con sistema de aspiración continua que eliminan el gotelé de techos y paredes sin generar apenas polvo. Esta técnica de <strong>alisado de paredes en Valencia</strong> es mucho más limpia que los métodos tradicionales.
+                  </p>
                   <p class="text-gray-700 leading-relaxed">
-                    Lijamos y reparamos todas las imperfecciones de <strong>paredes y techos</strong>. Aplicamos masilla profesional donde sea necesario y realizamos un lijado fino para conseguir superficies perfectamente lisas. Este paso es fundamental para obtener un acabado profesional duradero.
+                    Nuestros pintores profesionales trabajan con precisión para eliminar completamente la textura del gotelé, dejando una superficie uniforme lista para el siguiente paso.
                   </p>
                 </div>
               </div>
@@ -527,9 +436,12 @@ const faqSchema = {
                   3
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Aplicación de Pintura de Alta Calidad</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Enlucido y Alisado Profesional</h3>
+                  <p class="text-gray-700 leading-relaxed mb-3">
+                    Una vez eliminado el gotelé, aplicamos pasta niveladora de alta calidad para <strong>alisar paredes en Valencia</strong> con un acabado perfecto. Este enlucido rellena imperfecciones y crea una superficie completamente lisa.
+                  </p>
                   <p class="text-gray-700 leading-relaxed">
-                    Aplicamos imprimación selladora de calidad y <strong>dos manos de pintura</strong> con productos premium (Bruguer, Titan, Montó). Utilizamos técnica profesional que garantiza cobertura uniforme y acabado impecable en todas las superficies de tu vivienda en Valencia.
+                    Tras el enlucido, realizamos un lijado fino que garantiza un resultado impecable, preparando las paredes para la imprimación.
                   </p>
                 </div>
               </div>
@@ -542,9 +454,24 @@ const faqSchema = {
                   4
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Limpieza Final y Verificación de Calidad</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Imprimación Selladora</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Retiramos todas las protecciones y realizamos una <strong>limpieza completa</strong> de la vivienda. Inspeccionamos minuciosamente el trabajo para garantizar que cada detalle sea perfecto. Te entregamos tu hogar impecable y listo para disfrutar.
+                    Aplicamos una imprimación selladora profesional que fija la superficie, uniformiza la absorción y deja las paredes completamente listas para pintar. Este paso es fundamental para conseguir un acabado duradero y de calidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paso 5 -->
+            <div class="bg-white rounded-xl p-6 shadow-sm">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-10 h-10 bg-accent text-white rounded-full flex items-center justify-center text-base font-bold">
+                  5
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Limpieza Total</h3>
+                  <p class="text-gray-700 leading-relaxed">
+                    Terminamos cada jornada con una limpieza completa del área de trabajo. Aspiramos, retiramos todos los plásticos y protecciones, y dejamos tu vivienda en perfecto estado. La limpieza está incluida en el <strong>precio de alisar paredes en Valencia</strong>.
                   </p>
                 </div>
               </div>
@@ -554,11 +481,100 @@ const faqSchema = {
       </div>
     </section>
 
+    <!-- Beneficios de Alisar Paredes en Valencia -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Beneficios de Alisar Paredes y Quitar el Gotelé en Valencia
+            </h2>
+            <p class="text-xl text-gray-600">
+              Mejora la estética y el valor de tu vivienda
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-10">
+            <!-- Beneficio 1 -->
+            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Aspecto Moderno y Actual</h3>
+                  <p class="text-gray-700">
+                    El <strong>alisado de paredes en Valencia</strong> elimina el gotelé anticuado y da a tu hogar un aspecto contemporáneo y elegante que aumenta su valor de mercado.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Beneficio 2 -->
+            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Más Luminosidad</h3>
+                  <p class="text-gray-700">
+                    Las paredes lisas reflejan mejor la luz natural y artificial, haciendo que tus espacios parezcan más amplios y luminosos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Beneficio 3 -->
+            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Fácil Limpieza</h3>
+                  <p class="text-gray-700">
+                    Después de <strong>quitar el gotelé en Valencia</strong>, las paredes lisas son mucho más fáciles de limpiar y mantener, sin acumulación de polvo en texturas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Beneficio 4 -->
+            <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-xl p-6">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path>
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Revaloriza Tu Propiedad</h3>
+                  <p class="text-gray-700">
+                    Una vivienda con paredes lisas y modernas se vende o alquila mejor y a mejor precio en el mercado inmobiliario de Valencia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Contact Section -->
     <section class="py-12 bg-blue-600 text-white">
       <div class="container mx-auto px-4 text-center">
-        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Necesitas pintar tu casa?</h2>
-        <p class="text-xl mb-8">Te respondemos en menos de 24 horas</p>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Necesitas Quitar el Gotelé en Valencia?</h2>
+        <p class="text-xl mb-8">Presupuesto gratuito en menos de 24 horas</p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/presupuesto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-500 shadow-md hover:shadow-lg px-6 py-3 text-lg rounded-lg">
@@ -573,54 +589,51 @@ const faqSchema = {
         </div>
       </div>
     </section>
-
-    <!-- FAQ Optimizadas para SEO -->
-    <section class="py-16 bg-white">
+    
+    <!-- FAQ Optimizadas para SEO Local Valencia -->
+    <section class="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Preguntas Frecuentes sobre Pintura Interior en Valencia
+            Preguntas Frecuentes sobre Quitar Gotelé y Alisar Paredes en Valencia
           </h2>
           <p class="text-lg text-gray-600">
             Resolvemos todas tus dudas sobre nuestro servicio profesional
           </p>
         </div>
 
-        <div class="max-w-3xl mx-auto space-y-6">
+        <div class="max-w-4xl mx-auto space-y-6">
           <!-- FAQ 1 -->
-          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm">
-            <h3 class="font-bold text-lg mb-3 text-gray-900">
-              ¿Cuánto cuesta pintar las paredes de una vivienda en Valencia?
+          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-xl mb-3 text-gray-900">
+              ¿Cuánto cuesta quitar el gotelé y alisar las paredes en Valencia?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              El <strong>precio de pintura interior en Valencia</strong> parte desde <strong>8€/m²</strong> con materiales incluidos. Un piso de 70 m² cuesta desde 560€ y uno de 90 m² desde 720€. El precio final depende del estado de las paredes, el tipo de pintura seleccionada y los metros cuadrados a pintar. <strong>Solicita un presupuesto gratuito</strong> sin compromiso y te daremos un precio exacto para tu vivienda.
+              El <strong>precio de quitar gotelé en Valencia</strong> y <strong>alisar paredes</strong> parte desde <strong>10€/m²</strong> con todos los materiales incluidos (lijado, enlucido, imprimación). Los precios varían según el tamaño y el estado de las paredes. <strong>Solicita un presupuesto gratuito y personalizado</strong> para conocer el precio exacto de tu vivienda.
             </p>
           </div>
 
           <!-- FAQ 2 -->
-          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm">
-            <h3 class="font-bold text-lg mb-3 text-gray-900">
-              ¿Cuánto tiempo se tarda en pintar el interior de una casa?
+          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-xl mb-3 text-gray-900">
+              ¿Cuánto tiempo tardan en alisar las paredes de mi casa?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Para <strong>pintar el interior de una vivienda en Valencia</strong> de 70-90 m², el proceso completo tarda entre <strong>3 y 5 días laborables</strong>. Esto incluye la preparación de superficies (lijado y masillado), imprimación, aplicación de dos manos de pintura y limpieza final completa. El tiempo exacto depende del estado de las paredes y del número de habitaciones. Te proporcionaremos un calendario detallado con tu presupuesto.
+              El proceso completo de <strong>eliminar gotelé y alisar paredes</strong> en un piso estándar de 70-90 m² suele tardar entre <strong>3 y 5 días laborables</strong>. Esto depende del tamaño de la vivienda y el estado de las paredes. Para habitaciones individuales, podemos realizar el trabajo en 1-2 días. Te daremos un calendario exacto con el presupuesto.
             </p>
           </div>
 
           <!-- FAQ 3 -->
-          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm">
-            <h3 class="font-bold text-lg mb-3 text-gray-900">
-              ¿Qué incluye el precio de pintura interior?
+          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-xl mb-3 text-gray-900">
+              ¿Qué incluye el precio de quitar el gotelé en Valencia?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Nuestro <strong>precio de pintura interior en Valencia</strong> incluye todos los materiales profesionales (pinturas premium, imprimación, masilla), mano de obra especializada de pintores profesionales, preparación completa de superficies (lijado y masillado), protección de suelos y muebles, y limpieza completa final. Presupuesto gratuito sin costes ocultos.
+              El precio incluye todos los <strong>materiales profesionales</strong> (pasta niveladora, imprimación, lijas), mano de obra especializada, protección de suelos y muebles, limpieza diaria y final de la vivienda, y <strong>garantía por escrito</strong> del trabajo realizado. Sin costes ocultos. <strong>Solicita tu presupuesto personalizado</strong> para obtener un precio cerrado sin sorpresas.
             </p>
           </div>
         </div>
-      </div>
-    </section>
-          </div>
-        </div>
+
       </div>
     </section>
   </main>
