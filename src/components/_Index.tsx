@@ -353,7 +353,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               Reformas integrales con presupuesto claro
             </p>
             <p className="text-xl mb-12 text-white/90">
-              Realizamos reformas integrales en Valencia para viviendas, pisos, cocinas, baños y locales. Te ayudamos a renovar tu espacio con un trabajo cuidado, materiales de calidad y presupuesto claro desde el primer momento.
+              Hacemos reformas de cocinas, baños, pisos completos y locales en Valencia. Te ayudamos a renovar tu espacio con materiales de calidad, acabados cuidados y presupuesto cerrado desde el principio.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -412,10 +412,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Reformas en Valencia con un servicio claro y profesional
+              Reformas en Valencia con un servicio claro
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              Si estás buscando una <strong>empresa de reformas en Valencia</strong>, en nuestro equipo trabajamos cada proyecto de forma personalizada para conseguir un resultado práctico, duradero y bien acabado. Nos encargamos de reformas completas y parciales, adaptándonos al tipo de vivienda, al estado del inmueble y a lo que realmente necesitas.
+              Si buscas una <strong>empresa de reformas en Valencia</strong> que trabaje de forma seria y transparente, llevamos años ayudando a familias y negocios a renovar sus espacios. Hacemos <strong>reformas integrales</strong> completas y también trabajos más pequeños como cocinas, baños o cambios de distribución. Nos adaptamos a lo que cada proyecto necesita.
             </p>
           </div>
         </div>
@@ -426,10 +426,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Servicios de reformas que realizamos en Valencia
+              Qué tipo de reformas hacemos en Valencia
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Nos adaptamos a cada tipo de proyecto: desde reformas integrales completas hasta trabajos específicos en cocinas, baños o terrazas.
+              Desde <strong>reformas integrales</strong> de viviendas completas hasta trabajos específicos en cocinas, baños o locales comerciales. Nos encargamos de todo: albañilería, fontanería, electricidad, carpintería y acabados.
             </p>
           </div>
 
@@ -673,32 +673,32 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-              Reformas integrales en Valencia para viviendas, pisos y locales
+              Reformas para viviendas, pisos y locales en Valencia
             </h2>
             
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                <strong>¿Acabas de comprar un piso en Ruzafa o Benimaclet?</strong> Si quieres renovarlo completamente, nuestras <a href="/servicios/reformas-integrales-valencia/" className="text-primary hover:underline font-semibold">reformas integrales</a> incluyen todo: albañilería, fontanería, electricidad, carpintería, pintura y acabados. Te coordinamos todos los gremios para que no tengas que preocuparte de nada. Envíanos fotos y te decimos cuánto cuesta y cuánto tardamos.
+                ¿Acabas de comprar un piso y quieres reformarlo antes de mudarte? Hacemos <a href="/servicios/reformas-integrales-valencia/" className="text-primary hover:underline font-semibold">reformas integrales</a> en Valencia que incluyen todo: demoliciones, albañilería, fontanería, electricidad, carpintería y pintura. Te coordinamos todos los gremios para que no tengas que estar encima de cada detalle. Solo envíanos fotos y te decimos cuánto cuesta y cuándo podemos empezar.
               </p>
               
               <p>
-                <strong>¿Necesitas renovar la cocina?</strong> Hacemos <a href="/servicios/reformas-cocinas-valencia/" className="text-primary hover:underline font-semibold">reformas de cocinas completas</a> con diseño funcional, muebles de calidad, electrodomésticos y todas las instalaciones. Cambiamos azulejos, encimera, muebles y dejamos todo listo para que cocines a gusto. Ideal si quieres modernizar tu casa sin hacer una obra completa.
+                Si lo que necesitas es <a href="/servicios/reformas-cocinas-valencia/" className="text-primary hover:underline font-semibold">reformar la cocina</a>, cambiamos muebles, electrodomésticos, azulejos, encimera y todas las instalaciones. Diseñamos espacios funcionales que aprovechan bien cada metro. Ideal si quieres modernizar sin tener que hacer una obra completa en toda la casa.
               </p>
               
               <p>
-                <strong>¿El baño se ha quedado antiguo?</strong> Nuestras <a href="/servicios/reformas-banos-valencia/" className="text-primary hover:underline font-semibold">reformas de baños</a> incluyen impermeabilización correcta, plato de ducha, mamparas, sanitarios y azulejos. Todo con garantía y sin filtraciones. Trabajamos rápido y limpio para que puedas usar el baño cuanto antes.
+                Para <a href="/servicios/reformas-banos-valencia/" className="text-primary hover:underline font-semibold">reformas de baños</a> trabajamos con impermeabilización correcta, platos de ducha, mamparas, sanitarios y alicatados de calidad. Todo con garantía y sin problemas de filtraciones. Un baño bien hecho dura años sin darte dolores de cabeza.
               </p>
               
               <p>
-                <strong>¿Quieres renovar tu piso completo?</strong> Hacemos <a href="/servicios/reformas-pisos-valencia/" className="text-primary hover:underline font-semibold">reformas de pisos</a> en Valencia cambiando distribución si hace falta, actualizando instalaciones, poniendo suelos nuevos y pintando. Perfecto si acabas de heredar un piso viejo o quieres venderlo a buen precio.
+                ¿Quieres <a href="/servicios/reformas-pisos-valencia/" className="text-primary hover:underline font-semibold">renovar tu piso completo</a>? Cambiamos distribución si hace falta, actualizamos instalaciones anticuadas, ponemos suelos nuevos y dejamos todo pintado. Perfecto si has heredado un piso viejo o quieres venderlo a buen precio.
               </p>
               
               <p>
-                <strong>¿Tienes un local o negocio?</strong> Reformamos <a href="/servicios/reformas-locales-comerciales-valencia/" className="text-primary hover:underline font-semibold">locales comerciales</a> en horarios que no te interrumpan (noches o fines de semana). Hacemos el diseño, las instalaciones, los acabados y cumplimos los plazos para que abras a tiempo. Conocemos la normativa y te ayudamos con las licencias.
+                Para <a href="/servicios/reformas-locales-comerciales-valencia/" className="text-primary hover:underline font-semibold">locales y negocios</a> trabajamos en horarios que no interrumpan tu actividad. Hacemos el diseño, las instalaciones, los acabados y cumplimos los plazos para que puedas abrir a tiempo. Conocemos la normativa y te ayudamos con las licencias.
               </p>
 
               <p>
-                ¿Quieres saber cuánto cuesta tu reforma? Consulta nuestra <a href="/precios/" className="text-primary hover:underline font-semibold">página de precios</a> con tarifas orientativas o envíanos fotos para un presupuesto personalizado sin compromiso.
+                Si quieres ver precios orientativos, consulta nuestra <a href="/precios/" className="text-primary hover:underline font-semibold">página de precios</a> o envíanos fotos para un presupuesto sin compromiso.
               </p>
             </div>
           </div>
@@ -710,10 +710,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Por qué elegir nuestra empresa de reformas en Valencia
+              Por qué somos una buena opción para tu reforma
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Presupuesto detallado y sin compromiso, asesoramiento personalizado y materiales de calidad. Trabajamos con seriedad y dejamos cada reforma bien acabada.
+              Presupuesto detallado, asesoramiento claro y materiales que duran. Trabajamos con orden y dejamos cada reforma bien terminada.
             </p>
           </div>
 
@@ -747,11 +747,11 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 lg:p-10 h-[300px] sm:h-[400px] md:h-[450px] flex flex-col justify-center">
                 <div className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed space-y-3 sm:space-y-4 md:space-y-6">
                   <p>
-                    Llevamos años haciendo <a href="/servicios/reformas-integrales-valencia/" className="text-primary hover:underline"><strong>reformas integrales</strong></a>, <a href="/servicios/reformas-cocinas-valencia/" className="text-primary hover:underline"><strong>cocinas</strong></a>, <a href="/servicios/reformas-banos-valencia/" className="text-primary hover:underline"><strong>baños</strong></a> y <a href="/servicios/reformas-pisos-valencia/" className="text-primary hover:underline"><strong>pisos completos</strong></a> por toda Valencia capital y alrededores. También reformamos <a href="/servicios/reformas-locales-comerciales-valencia/" className="text-primary hover:underline"><strong>locales comerciales</strong></a> y hacemos reformas de fachadas.
+                    Llevamos años haciendo <a href="/servicios/reformas-integrales-valencia/" className="text-primary hover:underline"><strong>reformas integrales</strong></a>, <a href="/servicios/reformas-cocinas-valencia/" className="text-primary hover:underline"><strong>cocinas</strong></a>, <a href="/servicios/reformas-banos-valencia/" className="text-primary hover:underline"><strong>baños</strong></a> y <a href="/servicios/reformas-pisos-valencia/" className="text-primary hover:underline"><strong>pisos completos</strong></a> en Valencia y alrededores. También trabajamos en <a href="/servicios/reformas-locales-comerciales-valencia/" className="text-primary hover:underline"><strong>locales comerciales</strong></a> y hacemos reformas de fachadas.
                   </p>
                   
                   <p>
-                    Trabajamos con materiales de calidad y te damos <strong>garantía por escrito</strong> en cada reforma. <strong>Envíanos fotos de tu espacio</strong> y te mandamos presupuesto detallado en menos de 24 horas, sin que tengas que perder tiempo con visitas. Mira ejemplos de trabajos hechos en <a href="/trabajos/" className="text-primary hover:underline"><strong>proyectos realizados</strong></a>.
+                    Usamos materiales de calidad y damos <strong>garantía por escrito</strong> en cada proyecto. Si nos envías fotos de tu espacio, te mandamos presupuesto detallado en menos de 24 horas sin que tengas que esperarnos en casa. Mira ejemplos de trabajos hechos en <a href="/trabajos/" className="text-primary hover:underline"><strong>proyectos realizados</strong></a>.
                   </p>
                 </div>
               </div>
@@ -765,24 +765,24 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-              Cómo trabajamos nuestras reformas
+              Cómo trabajamos las reformas
             </h2>
             
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed mb-12">
               <p>
-                Llevamos <strong>más de 10 años</strong> haciendo <strong>reformas en Valencia</strong> y alrededores. Hemos ayudado a cientos de familias, negocios y comunidades a renovar sus espacios con buenos resultados. Nuestro equipo está formado por profesionales con experiencia en albañilería, fontanería, electricidad y acabados.
+                Llevamos <strong>más de 10 años</strong> haciendo <strong>obras y reformas en Valencia</strong>. Hemos ayudado a familias, propietarios y negocios a renovar sus espacios con buenos resultados. Nuestro equipo está formado por profesionales con experiencia en albañilería, fontanería, electricidad y acabados.
               </p>
               
               <p>
-                Sabemos que buscar una <strong>empresa de reformas de confianza</strong> no es fácil, por eso somos transparentes desde el principio. <strong>Envíanos fotos de lo que necesitas reformar</strong> y te mandamos presupuesto en menos de 24 horas, con todos los detalles: materiales, mano de obra, cuánto tardamos y qué garantía te damos. Sin perder tiempo con visitas ni esperas.
+                Sabemos que buscar una <strong>empresa de reformas de confianza</strong> no es fácil. Por eso somos transparentes desde el principio. Envíanos fotos de lo que quieres reformar y te mandamos presupuesto en menos de 24 horas con todos los detalles: materiales, mano de obra, cuánto tardamos y qué garantía te damos. Sin que tengas que estar en casa esperándonos.
               </p>
               
               <p>
-                Cumplimos los plazos que acordamos y dejamos tu casa limpia. Protegemos muebles, aspiramos el polvo cada día y al terminar lo limpiamos todo a fondo. Todos nuestros trabajos incluyen <strong>garantía por escrito</strong> y factura oficial con todos los datos.
+                Cumplimos los plazos acordados y dejamos tu casa limpia. Protegemos muebles, aspiramos cada día y al terminar lo limpiamos todo a fondo. Todos nuestros trabajos incluyen <strong>garantía por escrito</strong> y factura oficial.
               </p>
               
               <p>
-                Usamos <strong>materiales de calidad</strong> de marcas reconocidas porque una buena reforma se ve mejor y dura más. Además tenemos <strong>seguro de responsabilidad civil</strong> y cumplimos toda la normativa de prevención de riesgos.
+                Usamos <strong>materiales de calidad</strong> de marcas reconocidas porque una buena reforma se ve mejor y dura más. Además tenemos <strong>seguro de responsabilidad civil</strong> y cumplimos la normativa de prevención.
               </p>
             </div>
             
@@ -791,7 +791,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
                 <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Más de 10 años de experiencia</h3>
+                  <p className="font-semibold text-gray-900 mb-1">Más de 10 años de experiencia</p>
                   <p className="text-sm text-gray-600">Profesionales certificados en reformas</p>
                 </div>
               </div>
@@ -799,7 +799,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
                 <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Presupuesto por fotos en 24h</h3>
+                  <p className="font-semibold text-gray-900 mb-1">Presupuesto por fotos en 24h</p>
                   <p className="text-sm text-gray-600">Sin desplazamientos, detallado y sin compromiso</p>
                 </div>
               </div>
@@ -807,7 +807,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
                 <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Limpieza total incluida</h3>
+                  <p className="font-semibold text-gray-900 mb-1">Limpieza total incluida</p>
                   <p className="text-sm text-gray-600">Protección de muebles y limpieza diaria</p>
                 </div>
               </div>
@@ -815,7 +815,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
                 <Shield className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Garantía por escrito</h3>
+                  <p className="font-semibold text-gray-900 mb-1">Garantía por escrito</p>
                   <p className="text-sm text-gray-600">Factura oficial y seguro RC vigente</p>
                 </div>
               </div>
@@ -823,7 +823,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
                 <Star className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Materiales de calidad</h3>
+                  <p className="font-semibold text-gray-900 mb-1">Materiales de calidad</p>
                   <p className="text-sm text-gray-600">Marcas reconocidas y garantizadas</p>
                 </div>
               </div>
@@ -831,7 +831,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
                 <Building className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Valencia y área metropolitana</h3>
+                  <p className="font-semibold text-gray-900 mb-1">Valencia y área metropolitana</p>
                   <p className="text-sm text-gray-600">Servicio en toda la provincia</p>
                 </div>
               </div>
@@ -859,7 +859,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               Pedir presupuesto gratis
             </CustomButton>
             <CustomButton
-              variant="secondary"
+              variant="blue"
               size="lg"
               asChild
               href="/precios/"
@@ -879,13 +879,13 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Empresa de reformas en Valencia y alrededores
+              Hacemos reformas en Valencia capital y alrededores
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Trabajamos por toda Valencia capital: Ruzafa, El Carmen, Benimaclet, Campanar, Patraix, Extramurs, y todos los barrios. También nos desplazamos a localidades del área metropolitana como Torrent, Mislata, Paterna, Burjassot, Manises, Xirivella, Aldaia, Quart de Poblet, Alboraya y más. 
+              Trabajamos por toda la ciudad: Ruzafa, El Carmen, Benimaclet, Campanar, Patraix, Extramurs y todos los barrios. También nos desplazamos a Torrent, Mislata, Paterna, Burjassot, Manises, Xirivella, Aldaia, Quart de Poblet, Alboraya y otras localidades cercanas.
             </p>
             <p className="text-lg text-muted-foreground">
-              ¿Estás más lejos? Consúltanos tu zona y vemos si podemos llegar.
+              ¿Estás más lejos? Consúltanos tu zona y te decimos si podemos llegar.
             </p>
           </div>
         </div>
@@ -896,10 +896,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Preguntas Frecuentes
+              Preguntas frecuentes sobre reformas
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Las dudas más habituales sobre cómo trabajamos, precios y garantías.
+              Dudas habituales sobre cómo trabajamos, plazos, precios y garantías.
             </p>
           </div>
 
@@ -1003,7 +1003,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               Pedir presupuesto gratis
             </CustomButton>
             <CustomButton
-              variant="secondary"
+              variant="blue"
               size="lg"
               asChild
               href="tel:+34722208131"

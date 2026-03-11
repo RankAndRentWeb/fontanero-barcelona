@@ -15,10 +15,10 @@ export interface Props {
 }
 
 const { 
-  title = 'Pintores en Valencia - Pintores profesionales en Valencia', 
-  description = 'Pintores en Valencia. Servicios de pintura interior, exterior, lacado, papel pintado. Presupuesto gratis. 722 208 131',
+  title = 'Empresa de Reformas en Valencia | Presupuesto Gratis', 
+  description = 'Empresa de reformas en Valencia para cocinas, baños, pisos y reformas integrales. Presupuesto gratis, trabajo profesional y acabados de calidad.',
   canonical,
-  ogImage = 'https://pintores-valencia.com/og-home.webp',
+  ogImage = 'https://mejoresreformasvalencia.es/og-home.webp',
   noindex = false,
   schema = [],
   preloadImages = [],
@@ -26,18 +26,18 @@ const {
 } = Astro.props;
 
 const pathname = Astro.url.pathname;
-const canonicalURL = canonical || `https://pintores-valencia.com${pathname}`;
+const canonicalURL = canonical || `https://mejoresreformasvalencia.es${pathname}`;
 
 // Default JSON-LD for LocalBusiness
 const defaultSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': 'https://pintores-valencia.com/#business',
-  name: 'Pintores en Valencia',
-  url: 'https://pintores-valencia.com',
+  '@type': ['LocalBusiness', 'GeneralContractor'],
+  '@id': 'https://mejoresreformasvalencia.es/#business',
+  name: 'Reformas Valencia',
+  url: 'https://mejoresreformasvalencia.es',
   telephone: '+34722208131',
-  email: 'info@pintores-valencia.com',
-  description: 'Empresa profesional de pintores en Valencia capital y provincia. Trabajos de calidad con garantía escrita.',
+  email: 'info@mejoresreformasvalencia.es',
+  description: 'Empresa de reformas en Valencia especializada en reformas integrales, cocinas, baños, pisos y locales comerciales. Presupuesto gratis y trabajo profesional.',
   areaServed: {
     '@type': 'City',
     name: 'Valencia',
@@ -45,27 +45,34 @@ const defaultSchema = {
   },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Servicios de pintura',
+    name: 'Servicios de reformas',
     itemListElement: [
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Pintura interior'
+          name: 'Reformas integrales'
         }
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Pintura exterior'
+          name: 'Reformas de cocinas'
         }
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Quitar gotelé'
+          name: 'Reformas de baños'
+        }
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Reformas de pisos'
         }
       }
     ]
@@ -74,11 +81,11 @@ const defaultSchema = {
 };
 
 const combinedSchema = [defaultSchema, ...schema];
-const siteBrand = 'Pintores Valencia';
+const siteBrand = 'Reformas Valencia';
 
 const rawTitle = (title || '').trim();
-// Eliminar sufijo siempre, no volver a añadir marca
-const fullTitle = rawTitle.replace(/\s*-\s*Pintores Valencia\s*$/i, '').trim();
+// Eliminar sufijos antiguos si existen
+const fullTitle = rawTitle.replace(/\s*-\s*(Pintores Valencia|Reformas Valencia)\s*$/i, '').trim();
 
 ---
 
@@ -92,7 +99,7 @@ const fullTitle = rawTitle.replace(/\s*-\s*Pintores Valencia\s*$/i, '').trim();
   <link rel="canonical" href={canonicalURL} />
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/pintores-valencia-logo.png" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -100,7 +107,7 @@ const fullTitle = rawTitle.replace(/\s*-\s*Pintores Valencia\s*$/i, '').trim();
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={ogImage} />
-  <meta property="og:site_name" content="Pintores en Valencia" />
+  <meta property="og:site_name" content="Reformas Valencia" />
   <meta property="og:locale" content="es_ES" />
   
   <!-- Twitter -->
