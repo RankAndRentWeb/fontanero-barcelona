@@ -48,14 +48,14 @@ const RatingStars = ({ value = 5 }: { value?: number }) => (
 const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "HomeAndConstructionBusiness", "HousePainter"],
-    "@id": "https://pintores-valencia.com/#business",
-    name: "Pintores en Valencia",
-    description: "Empresa de pintura profesional en Valencia. Nos desplazamos a toda la ciudad y alrededores para servicios de pintura de interiores, exteriores, fachadas, comunidades y más.",
-    url: "https://pintores-valencia.com",
-    image: "https://pintores-valencia.com/og-home.webp",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness", "GeneralContractor"],
+    "@id": "https://mejoresreformasvalencia.es/#business",
+    name: "Reformas Valencia",
+    description: "Empresa de reformas en Valencia especializada en reformas integrales, cocinas, baños, pisos y locales. Presupuesto rápido y trabajo profesional.",
+    url: "https://mejoresreformasvalencia.es",
+    image: "https://mejoresreformasvalencia.es/og-home.webp",
     telephone: "+34722208131",
-    email: "info@pintores-valencia.com",
+    email: "info@mejoresreformasvalencia.es",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Valencia",
@@ -104,18 +104,18 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
       { "@type": "PostalCodeSpecification", postalCode: "46025", addressLocality: "Valencia", addressCountry: "ES" }
     ],
     knowsAbout: [
-      "Pintura de interiores y exteriores en Valencia",
-      "Eliminación de gotelé y alisado de paredes",
-      "Impermeabilización de terrazas y cubiertas",
-      "Rehabilitación y pintura de fachadas",
-      "Pintura de comunidades de vecinos",
-      "Instalación de papel pintado y vinilos decorativos",
-      "Lacado de puertas y carpintería",
-      "Pintura de locales comerciales",
-      "Barnizado de madera",
-      "Tratamientos anti-humedad",
-      "Reparación de grietas y fisuras",
-      "Aplicación de revestimientos impermeables"
+      "Reformas integrales en Valencia",
+      "Reformas de cocinas completas",
+      "Reformas de baños modernos",
+      "Reforma de pisos y viviendas",
+      "Reformas de locales comerciales",
+      "Reformas de terrazas y balcones",
+      "Reformas de chalets en Valencia",
+      "Reformas de fachadas de edificios",
+      "Instalación de pladur y falsos techos",
+      "Obras y reformas completas",
+      "Reforma vivienda Valencia",
+      "Reformas de casas antiguas"
     ],
     contactPoint: [{
       "@type": "ContactPoint",
@@ -126,86 +126,82 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
     }],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Servicios de Pintura en Valencia",
+      name: "Servicios de Reformas en Valencia",
       itemListElement: [
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Pintura Interior",
-            description: "Pintura completa de interiores con materiales premium y garantía",
-            url: "https://pintores-valencia.com/servicios/pintura-interior/",
+            name: "Reformas Integrales",
+            description: "Reformas completas de viviendas con gestión integral del proyecto",
+            url: "https://mejoresreformasvalencia.es/servicios/reformas-integrales-valencia/",
             areaServed: {
               "@type": "City",
               name: "Valencia",
               sameAs: "https://www.wikidata.org/wiki/Q8818"
             },
-            serviceType: "Interior Painting",
+            serviceType: "Home Renovation",
             provider: {
-              "@id": "https://pintores-valencia.com/#business"
+              "@id": "https://mejoresreformasvalencia.es/#business"
             }
           },
-          price: "12.00",
           priceCurrency: "EUR"
         },
         {
           "@type": "Offer", 
           itemOffered: {
             "@type": "Service",
-            name: "Quitar Gotelé",
-            description: "Eliminación de gotelé y alisado de paredes sin polvo",
-            url: "https://pintores-valencia.com/servicios/quitar-gotele/",
+            name: "Reformas de Cocinas",
+            description: "Reforma completa de cocinas con diseño personalizado",
+            url: "https://mejoresreformasvalencia.es/servicios/reformas-cocinas-valencia/",
             areaServed: {
               "@type": "City",
               name: "Valencia",
               sameAs: "https://www.wikidata.org/wiki/Q8818"
             },
-            serviceType: "Wall Smoothing",
+            serviceType: "Kitchen Renovation",
             provider: {
-              "@id": "https://pintores-valencia.com/#business"
+              "@id": "https://mejoresreformasvalencia.es/#business"
             }
           },
-          price: "10.00",
           priceCurrency: "EUR"
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Pintura Exterior y Fachadas",
-            description: "Pintura exterior resistente al clima con andamiaje incluido",
-            url: "https://pintores-valencia.com/servicios/pintura-exterior-fachadas/",
+            name: "Reformas de Baños",
+            description: "Renovación completa de baños con materiales de calidad",
+            url: "https://mejoresreformasvalencia.es/servicios/reformas-banos-valencia/",
             areaServed: {
               "@type": "City",
               name: "Valencia",
               sameAs: "https://www.wikidata.org/wiki/Q8818"
             },
-            serviceType: "Exterior Painting",
+            serviceType: "Bathroom Renovation",
             provider: {
-              "@id": "https://pintores-valencia.com/#business"
+              "@id": "https://mejoresreformasvalencia.es/#business"
             }
           },
-          price: "15.00",
           priceCurrency: "EUR"
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Impermeabilización",
-            description: "Impermeabilización de terrazas y fachadas con garantía",
-            url: "https://pintores-valencia.com/servicios/impermeabilizacion-terrazas/",
+            name: "Reformas de Pisos",
+            description: "Reforma integral de pisos y viviendas en Valencia",
+            url: "https://mejoresreformasvalencia.es/servicios/reformas-pisos-valencia/",
             areaServed: {
               "@type": "City",
               name: "Valencia",
               sameAs: "https://www.wikidata.org/wiki/Q8818"
             },
-            serviceType: "Waterproofing",
+            serviceType: "Apartment Renovation",
             provider: {
-              "@id": "https://pintores-valencia.com/#business"
+              "@id": "https://mejoresreformasvalencia.es/#business"
             }
           },
-          price: "25.00",
           priceCurrency: "EUR"
         }
       ]
@@ -218,26 +214,42 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "¿En cuánto tiempo dan el presupuesto?",
+        name: "¿Qué tipo de reformas realizáis?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Nos comprometemos a enviar el presupuesto en menos de 24 horas tras recibir la solicitud."
+          text: "Realizamos reformas integrales, cocinas, baños, pisos, locales comerciales, terrazas y fachadas en Valencia. Nos adaptamos a cada proyecto con materiales de calidad."
         }
       },
       {
         "@type": "Question", 
-        name: "¿Qué incluye el servicio?",
+        name: "¿Hacéis presupuestos sin compromiso?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Incluimos materiales, mano de obra, limpieza posterior y garantía escrita. Todo transparente en el presupuesto."
+          text: "Sí. Envíanos fotos de lo que necesitas reformar y te mandamos presupuesto detallado en menos de 24 horas, sin compromiso y sin visitas innecesarias."
         }
       },
       {
         "@type": "Question",
-        name: "¿Trabajan en toda Valencia?", 
+        name: "¿Trabajáis solo en Valencia capital?", 
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí, trabajamos en Valencia capital y en toda la provincia. Consultanos tu zona específica."
+          text: "Trabajamos en toda Valencia capital y en el área metropolitana (Torrent, Mislata, Paterna, Burjassot, Manises, etc.). Consúltanos tu zona."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "¿Se puede hacer una reforma parcial?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí, hacemos reformas completas e integrales, pero también reformas parciales de cocinas, baños o habitaciones. Nos adaptamos a lo que necesites."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "¿Cuánto tarda una reforma?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Depende del tipo y tamaño. Una cocina suele tardar 2-3 semanas, un baño 1-2 semanas y una reforma integral de piso 1-2 meses. Te damos calendario exacto en el presupuesto."
         }
       }
     ]
@@ -245,39 +257,39 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
 
   const services = [
     {
-      title: "Quitar gotelé",
-      description: "Eliminamos el gotelé y alisamos paredes",
-      link: "/servicios/quitar-gotele/",
-      icon: <Brush className="w-6 h-6" />,
-    },
-    {
-      title: "Pintura interior",
-      description: "Renovamos el interior de tu hogar",
-      link: "/servicios/pintura-interior/",
+      title: "Reformas de Cocinas",
+      description: "Reformamos tu cocina completa",
+      link: "/servicios/reformas-cocinas-valencia/",
       icon: <Home className="w-6 h-6" />,
     },
     {
-      title: "Fachadas",
-      description: "Pintamos exteriores con garantía",
-      link: "/servicios/pintura-exterior-fachadas/",
-      icon: <Building className="w-6 h-6" />,
-    },
-    {
-      title: "Impermeabilización",
-      description: "Protegemos terrazas y fachadas",
-      link: "/servicios/impermeabilizacion-terrazas/",
+      title: "Reformas de Baños",
+      description: "Baños modernos y funcionales",
+      link: "/servicios/reformas-banos-valencia/",
       icon: <Shield className="w-6 h-6" />,
     },
     {
-      title: "Locales comerciales",
-      description: "Pintamos tu negocio profesionalmente",
-      link: "/servicios/pintura-locales-comerciales/",
+      title: "Reformas Integrales",
+      description: "Reforma completa de tu vivienda",
+      link: "/servicios/reformas-integrales-valencia/",
       icon: <Building className="w-6 h-6" />,
     },
     {
-      title: "Comunidades",
-      description: "Servicios para comunidades de propietarios",
-      link: "/servicios/pintura-comunidades/",
+      title: "Reformas de Pisos",
+      description: "Renovamos tu piso por completo",
+      link: "/servicios/reformas-pisos-valencia/",
+      icon: <Home className="w-6 h-6" />,
+    },
+    {
+      title: "Reformas de Terrazas",
+      description: "Aprovecha tu espacio exterior",
+      link: "/servicios/reforma-terraza-valencia/",
+      icon: <Shield className="w-6 h-6" />,
+    },
+    {
+      title: "Locales Comerciales",
+      description: "Reformamos tu negocio",
+      link: "/servicios/reformas-locales-comerciales-valencia/",
       icon: <Building className="w-6 h-6" />,
     },
   ];
@@ -286,38 +298,34 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
     {
       name: "María García",
       location: "Russafa, Valencia",
-      text: "Excelente trabajo. Terminaron en el plazo acordado y dejaron todo impecable.",
+      text: "Nos reformaron la cocina completa. Trabajo impecable, cumplieron los plazos y el resultado es espectacular.",
       rating: 5,
     },
     {
       name: "José Martínez",
       location: "Benimaclet, Valencia",
-      text: "Muy profesionales. El presupuesto fue ajustado y cumplieron con todo lo prometido.",
+      text: "Reforma integral de nuestro piso. Muy profesionales, presupuesto claro y acabados perfectos. 100% recomendable.",
       rating: 5,
     },
     {
       name: "Ana López",
       location: "Centro, Valencia",
-      text: "Recomiendo totalmente. Trabajo de calidad y atención excelente.",
+      text: "Reformaron el baño en tiempo récord. Materiales de calidad y atención excelente. Volveremos a contar con ellos.",
       rating: 5,
     },
   ];
 
-  // Meta Title actualizado según solicitud
-  const homeTitle = "Pintores en Valencia | Pintura de pisos, fachadas y gotelé (Presupuesto 24h)";
-  const homeDesc =
-    "Empresa de pintores profesionales en Valencia. Presupuesto en 24h, limpieza incluida, seguro RC y garantía escrita. ☎️ 722 208 131";
-  const homeCanon = "https://pintores-valencia.com";
+  const homeCanon = "https://mejoresreformasvalencia.es";
 
   return (
     <>
       <SEOHead
-        title={homeTitle}
-        description={homeDesc}
+        title="Empresa de Reformas en Valencia | Reformas Integrales y Presupuesto"
+        description="Empresa de reformas en Valencia especializada en reformas integrales, cocinas, baños y pisos. Presupuesto rápido, trabajo profesional y acabado cuidado."
         canonicalUrl={homeCanon}
         schema={[localBusinessSchema, faqSchema]}
         preloadImages={heroImage ? [heroImage.src] : []}
-        ogImage="https://pintores-valencia.com/og-home.jpg"
+        ogImage="https://mejoresreformasvalencia.es/og-home.jpg"
       />
 
       {/* Hero Section - Background image with overlay */}
@@ -326,7 +334,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
           <>
             <img 
               src={heroImage.src} 
-              alt="Pintor profesional trabajando en Valencia" 
+              alt="Empresa de reformas trabajando en Valencia" 
               fetchPriority="high"
               loading="eager"
               width={heroImage.width}
@@ -339,13 +347,13 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="relative z-10 container mx-auto px-4 py-20 text-white">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Empresa de reformas en Valencia
+              Empresa de Reformas en Valencia
             </h1>
             <p className="text-2xl md:text-3xl mb-8 font-medium">
-              Presupuesto en menos de 24h
+              Reformas integrales con presupuesto claro
             </p>
             <p className="text-xl mb-12 text-white/90">
-              Envíanos unas fotos y te damos precio | +10 años de experiencia | Garantía escrita
+              Realizamos reformas integrales en Valencia para viviendas, pisos, cocinas, baños y locales. Te ayudamos a renovar tu espacio con un trabajo cuidado, materiales de calidad y presupuesto claro desde el primer momento.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -380,15 +388,15 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-white" />
-                <span className="font-medium">Presupuesto 24h</span>
+                <span className="font-medium">Presupuesto gratuito</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-white" />
-                <span className="font-medium">Limpieza incluida</span>
+                <span className="font-medium">Reforma a medida</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-white" />
-                <span className="font-medium">Seguro RC</span>
+                <span className="font-medium">Acabados profesionales</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-white" />
@@ -399,280 +407,298 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         </div>
       </section>
 
-   {/* Services Section */}
-<section className="py-16 bg-background">
-  <div className="container mx-auto px-4">
-    <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        Nuestros Servicios de Reformas en Valencia
-      </h2>
-      <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-6">
-        Reformamos pisos, casas, locales y comunidades en Valencia con <strong>materiales de calidad</strong> y sin complicarte la vida. Envíanos unas fotos de lo que necesitas y te mandamos un presupuesto sin que tengas que esperarnos en casa.
-      </p>
-      <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-        Como <strong>empresa de reformas en Valencia</strong>, trabajamos con materiales de marcas reconocidas y nos encargamos de todo: desde preparar las superficies hasta dejarte el espacio limpio. Factura oficial y <strong>garantía por escrito</strong> en cada proyecto.
-      </p>
-    </div>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-      
-      {/* Quitar Gotelé */}
-      <Card className="hover:shadow-card transition-shadow duration-300">
-        <CardContent className="p-6">
-          <div className="flex items-center space-x-3 mb-3">
-            <div className="p-2 bg-primary/10 rounded-lg text-primary">
-              <Brush className="w-6 h-6" />
-            </div>
-            <h3 className="text-lg font-semibold">Cocinas</h3>
+      {/* Introducción Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Reformas en Valencia con un servicio claro y profesional
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+              Si estás buscando una <strong>empresa de reformas en Valencia</strong>, en nuestro equipo trabajamos cada proyecto de forma personalizada para conseguir un resultado práctico, duradero y bien acabado. Nos encargamos de reformas completas y parciales, adaptándonos al tipo de vivienda, al estado del inmueble y a lo que realmente necesitas.
+            </p>
           </div>
-          <p className="text-muted-foreground mb-4">
-            Reformamos cocinas en Valencia sin llenar tu casa de polvo. Usamos lijadoras con aspiración continua, enlucimos, alisamos y dejamos todo listo para pintar. Perfecto para darle un aire nuevo a pisos antiguos. Protegemos muebles y limpiamos al terminar cada día.
-          </p>
-          <ul className="text-sm text-muted-foreground space-y-2 mb-4">
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Sistema sin polvo</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Trabajo perfecto</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Listo para reformar</span>
-            </li>
-          </ul>
-          <Button
-            asChild
-            size="sm"
-            className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
-          >
-            <a href="/servicios/quitar-gotele/">Ver detalles</a>
-          </Button>
-        </CardContent>
-      </Card>
+        </div>
+      </section>
 
-      {/* Pintura Interior */}
-      <Card className="hover:shadow-card transition-shadow duration-300">
-        <CardContent className="p-6">
-          <div className="flex items-center space-x-3 mb-3">
-            <div className="p-2 bg-primary/10 rounded-lg text-primary">
-              <Home className="w-6 h-6" />
-            </div>
-            <h3 className="text-lg font-semibold">Integrales</h3>
+      {/* Services Section */}
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Servicios de reformas que realizamos en Valencia
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Nos adaptamos a cada tipo de proyecto: desde reformas integrales completas hasta trabajos específicos en cocinas, baños o terrazas.
+            </p>
           </div>
-          <p className="text-muted-foreground mb-4">
-            Reformamos pisos, casas y oficinas en Valencia con materiales de calidad. Preparamos las paredes, tapamos grietas pequeñas, imprimamos y damos dos manos de acabado. Ideal si quieres renovar tu casa antes de venderla, alquilarla o simplemente disfrutarla como nueva.
-          </p>
-          <ul className="text-sm text-muted-foreground space-y-2 mb-4">
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Materiales premium lavables</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Protección de muebles</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Limpieza total incluida</span>
-            </li>
-          </ul>
-          <Button
-            asChild
-            size="sm"
-            className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
-          >
-            <a href="/servicios/pintura-interior/">Ver detalles</a>
-          </Button>
-        </CardContent>
-      </Card>
 
-      {/* Fachadas */}
-      <Card className="hover:shadow-card transition-shadow duration-300">
-        <CardContent className="p-6">
-          <div className="flex items-center space-x-3 mb-3">
-            <div className="p-2 bg-primary/10 rounded-lg text-primary">
-              <Building className="w-6 h-6" />
-            </div>
-            <h3 className="text-lg font-semibold">Exterior y Fachadas</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            
+            {/* Reformas de Cocinas */}
+            <Card className="hover:shadow-card transition-shadow duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="p-2 bg-primary/10 rounded-lg text-primary">
+                    <Home className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-semibold">Reformas de Cocinas</h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Reformamos cocinas completas en Valencia con diseño funcional, materiales de calidad y acabados profesionales. Electricidad, fontanería, alicatado, muebles y electrodomésticos.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-2 mb-4">
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Diseño personalizado</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Materiales de calidad</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Gestión completa</span>
+                  </li>
+                </ul>
+                <Button
+                  asChild
+                  size="sm"
+                  className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
+                >
+                  <a href="/servicios/reformas-cocinas-valencia/">Ver detalles</a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Reformas de Baños */}
+            <Card className="hover:shadow-card transition-shadow duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="p-2 bg-primary/10 rounded-lg text-primary">
+                    <Shield className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-semibold">Reformas de Baños</h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Renovación completa de baños con instalaciones modernas, impermeabilización correcta y acabados duraderos. Platos de ducha, mamparas, sanitarios y revestimientos.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-2 mb-4">
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Impermeabilización garantizada</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Instalaciones certificadas</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Acabados impecables</span>
+                  </li>
+                </ul>
+                <Button
+                  asChild
+                  size="sm"
+                  className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
+                >
+                  <a href="/servicios/reformas-banos-valencia/">Ver detalles</a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Reformas Integrales */}
+            <Card className="hover:shadow-card transition-shadow duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="p-2 bg-primary/10 rounded-lg text-primary">
+                    <Building className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-semibold">Reformas Integrales</h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Reforma completa de viviendas en Valencia. Nos encargamos de todo: albañilería, instalaciones, carpintería, pintura y acabados. Proyecto, licencias y ejecución.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-2 mb-4">
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Gestión integral del proyecto</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Todos los gremios coordinados</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Presupuesto cerrado</span>
+                  </li>
+                </ul>
+                <Button
+                  asChild
+                  size="sm"
+                  className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
+                >
+                  <a href="/servicios/reformas-integrales-valencia/">Ver detalles</a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Reformas de Pisos */}
+            <Card className="hover:shadow-card transition-shadow duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="p-2 bg-primary/10 rounded-lg text-primary">
+                    <Home className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-semibold">Reformas de Pisos</h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Renovamos pisos completos en Valencia: distribución, instalaciones, pavimentos, pintura y carpintería. Ideal para actualizar antes de vender o alquilar.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-2 mb-4">
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Renovación completa</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Calendario definido</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Limpieza incluida</span>
+                  </li>
+                </ul>
+                <Button
+                  asChild
+                  size="sm"
+                  className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
+                >
+                  <a href="/servicios/reformas-pisos-valencia/">Ver detalles</a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Reformas de Terrazas */}
+            <Card className="hover:shadow-card transition-shadow duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="p-2 bg-primary/10 rounded-lg text-primary">
+                    <Shield className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-semibold">Reformas de Terrazas</h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Impermeabilización, pavimentos exteriores, cerramientos y acabados para terrazas. Solucionamos filtraciones y aprovechamos el espacio exterior.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-2 mb-4">
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Impermeabilización efectiva</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Pavimentos resistentes</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Garantía por escrito</span>
+                  </li>
+                </ul>
+                <Button
+                  asChild
+                  size="sm"
+                  className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
+                >
+                  <a href="/servicios/reforma-terraza-valencia/">Ver detalles</a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Locales Comerciales */}
+            <Card className="hover:shadow-card transition-shadow duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="p-2 bg-primary/10 rounded-lg text-primary">
+                    <Building className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-semibold">Locales Comerciales</h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Reformas de locales, tiendas, oficinas y restaurantes en Valencia. Trabajamos en horarios flexibles para no interrumpir tu actividad comercial.
+                </p>
+                <ul className="text-sm text-muted-foreground space-y-2 mb-4">
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Horarios nocturnos</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Mínima interrupción</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-primary" />
+                    <span>Cumplimiento normativa</span>
+                  </li>
+                </ul>
+                <Button
+                  asChild
+                  size="sm"
+                  className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
+                >
+                  <a href="/servicios/reformas-locales-comerciales-valencia/">Ver detalles</a>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
-          <p className="text-muted-foreground mb-4">
-            Reformamos fachadas en Valencia con productos impermeables y anti-moho que aguantan bien el clima mediterráneo. Limpiamos a presión, arreglamos grietas, imprimamos y aplicamos revestimientos elásticos. Montamos andamios certificados y tenemos seguro de responsabilidad civil.
-          </p>
-          <ul className="text-sm text-muted-foreground space-y-2 mb-4">
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Productos impermeables</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Andamios certificados</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Seguro RC incluido</span>
-            </li>
-          </ul>
-          <Button
-            asChild
-            size="sm"
-            className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
-          >
-            <a href="/servicios/pintura-exterior-fachadas/">Ver detalles</a>
-          </Button>
-        </CardContent>
-      </Card>
 
-      {/* Impermeabilización */}
-      <Card className="hover:shadow-card transition-shadow duration-300">
-        <CardContent className="p-6">
-          <div className="flex items-center space-x-3 mb-3">
-            <div className="p-2 bg-primary/10 rounded-lg text-primary">
-              <Shield className="w-6 h-6" />
-            </div>
-            <h3 className="text-lg font-semibold">Baños</h3>
+          <div className="text-center">
+            <p className="text-muted-foreground mb-6">
+              También realizamos reformas de fachadas, instalación de pladur, reformas de chalets y mucho más.
+            </p>
+            <CustomButton 
+              variant="accent" 
+              size="lg" 
+              asChild 
+              href="/servicios/"
+            >
+              Ver todos los servicios
+            </CustomButton>
           </div>
-          <p className="text-muted-foreground mb-4">
-            Arreglamos filtraciones en terrazas, balcones y cubiertas en Valencia aplicando membranas líquidas o láminas asfálticas de calidad. Sellamos juntas y desagües, y dejamos acabados por los que puedes andar sin problema. Protegemos tu casa de humedades y goteras con <strong>garantía por escrito</strong>.
-          </p>
-          <ul className="text-sm text-muted-foreground space-y-2 mb-4">
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Sistemas certificados</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Garantía por escrito</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Acabados transitables</span>
-            </li>
-          </ul>
-          <Button
-            asChild
-            size="sm"
-            className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
-          >
-            <a href="/servicios/impermeabilizacion-terrazas/">Ver detalles</a>
-          </Button>
-        </CardContent>
-      </Card>
-
-      {/* Locales Comerciales */}
-      <Card className="hover:shadow-card transition-shadow duration-300">
-        <CardContent className="p-6">
-          <div className="flex items-center space-x-3 mb-3">
-            <div className="p-2 bg-primary/10 rounded-lg text-primary">
-              <Building className="w-6 h-6" />
-            </div>
-            <h3 className="text-lg font-semibold">Locales Comerciales</h3>
-          </div>
-          <p className="text-muted-foreground mb-4">
-             Reformamos tu local, tienda, oficina o restaurante en Valencia en horarios que no te compliquen (noches o fines de semana). Usamos productos resistentes al tránsito, igualamos colores corporativos exactos (Pantone/RAL) y cumplimos los plazos que acordemos.
-          </p>
-          <ul className="text-sm text-muted-foreground space-y-2 mb-4">
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Horarios flexibles</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Sin interrumpir negocio</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Colores corporativos</span>
-            </li>
-          </ul>
-          <Button
-            asChild
-            size="sm"
-            className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
-          >
-            <a href="/servicios/pintura-locales-comerciales/">Ver detalles</a>
-          </Button>
-        </CardContent>
-      </Card>
-
-      {/* Comunidades */}
-      <Card className="hover:shadow-card transition-shadow duration-300">
-        <CardContent className="p-6">
-          <div className="flex items-center space-x-3 mb-3">
-            <div className="p-2 bg-primary/10 rounded-lg text-primary">
-              <Building className="w-6 h-6" />
-            </div>
-            <h3 className="text-lg font-semibold">Comunidades de Vecinos</h3>
-          </div>
-          <p className="text-muted-foreground mb-4">
-            Reformamos escaleras, portales, garajes y fachadas de comunidades de vecinos en Valencia. Hablamos con presidentes y administradores, trabajamos por fases para molestar lo menos posible y usamos productos resistentes para zonas de mucho paso. Señalizamos, protegemos accesos y limpiamos cada día.
-          </p>
-          <ul className="text-sm text-muted-foreground space-y-2 mb-4">
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Coordinación total</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Productos extra-resistentes</span>
-            </li>
-            <li className="flex items-center space-x-2">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              <span>Trabajo por fases</span>
-            </li>
-          </ul>
-          <Button
-            asChild
-            size="sm"
-            className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
-          >
-            <a href="/servicios/pintura-comunidades/">Ver detalles</a>
-          </Button>
-        </CardContent>
-      </Card>
-    </div>
-
-    <div className="text-center">
-      <CustomButton 
-        variant="accent" 
-        size="lg" 
-        asChild 
-        href="/servicios/"
-      >
-        Ver todos los servicios
-      </CustomButton>
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
       {/* Nueva sección: ¿Qué servicio necesitas? */}
-      <section className="py-16 bg-gradient-to-br from-primary/5 to-slate-50">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-              ¿Qué Necesitas Reformar?
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+              Reformas integrales en Valencia para viviendas, pisos y locales
             </h2>
             
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                <strong>Acabas de comprar un piso en Ruzafa o Benimaclet</strong> y quieres darle una mano de pintura antes de mudarte? Con nuestro servicio de <a href="/servicios/pintura-interior/" className="text-primary hover:underline font-semibold">pintura interior</a> renovamos tu casa completa: preparamos paredes, tapamos imperfecciones, imprimamos y damos dos manos de acabado con pinturas lavables de calidad. Envíanos fotos y te decimos cuánto cuesta sin que tengas que estar en casa esperándonos.
+                <strong>¿Acabas de comprar un piso en Ruzafa o Benimaclet?</strong> Si quieres renovarlo completamente, nuestras <a href="/servicios/reformas-integrales-valencia/" className="text-primary hover:underline font-semibold">reformas integrales</a> incluyen todo: albañilería, fontanería, electricidad, carpintería, pintura y acabados. Te coordinamos todos los gremios para que no tengas que preocuparte de nada. Envíanos fotos y te decimos cuánto cuesta y cuánto tardamos.
               </p>
               
               <p>
-                <strong>¿Tienes un piso antiguo con gotelé?</strong> Si esas paredes con textura ya no te gustan, podemos <a href="/servicios/quitar-gotele/" className="text-primary hover:underline font-semibold">quitarlo y dejarte todo liso</a>. Lijamos sin llenar de polvo (usamos aspiración), enlucimos y alisamos hasta que quede perfecto para pintar. Es una buena forma de modernizar tu casa y que valga más si decides venderla.
+                <strong>¿Necesitas renovar la cocina?</strong> Hacemos <a href="/servicios/reformas-cocinas-valencia/" className="text-primary hover:underline font-semibold">reformas de cocinas completas</a> con diseño funcional, muebles de calidad, electrodomésticos y todas las instalaciones. Cambiamos azulejos, encimera, muebles y dejamos todo listo para que cocines a gusto. Ideal si quieres modernizar tu casa sin hacer una obra completa.
               </p>
               
               <p>
-                <strong>¿Se te cuela el agua por la terraza?</strong> Si tienes problemas de filtraciones en Patraix, Campanar o donde sea, nuestro servicio de <a href="/servicios/impermeabilizacion-terrazas/" className="text-primary hover:underline font-semibold">impermeabilización</a> lo arregla de verdad. Aplicamos membranas o láminas de calidad, sellamos juntas y desagües, y te damos <strong>garantía por escrito</strong> para que estés tranquilo.
+                <strong>¿El baño se ha quedado antiguo?</strong> Nuestras <a href="/servicios/reformas-banos-valencia/" className="text-primary hover:underline font-semibold">reformas de baños</a> incluyen impermeabilización correcta, plato de ducha, mamparas, sanitarios y azulejos. Todo con garantía y sin filtraciones. Trabajamos rápido y limpio para que puedas usar el baño cuanto antes.
               </p>
               
               <p>
-                <strong>¿Tu fachada tiene moho o se está cayendo la pintura?</strong> Pintamos <a href="/servicios/pintura-exterior-fachadas/" className="text-primary hover:underline font-semibold">fachadas de edificios, chalets y locales</a> con productos impermeables que aguantan bien la lluvia y el sol mediterráneo. Montamos andamios certificados y tenemos seguro de responsabilidad civil.
+                <strong>¿Quieres renovar tu piso completo?</strong> Hacemos <a href="/servicios/reformas-pisos-valencia/" className="text-primary hover:underline font-semibold">reformas de pisos</a> en Valencia cambiando distribución si hace falta, actualizando instalaciones, poniendo suelos nuevos y pintando. Perfecto si acabas de heredar un piso viejo o quieres venderlo a buen precio.
               </p>
               
               <p>
-                <strong>¿Tienes un local o negocio que renovar?</strong> Pintamos <a href="/servicios/pintura-locales-comerciales/" className="text-primary hover:underline font-semibold">locales comerciales</a> en horarios que no te compliquen (noches o fines de semana). Igualamos colores corporativos exactos y cumplimos los plazos que necesites.
+                <strong>¿Tienes un local o negocio?</strong> Reformamos <a href="/servicios/reformas-locales-comerciales-valencia/" className="text-primary hover:underline font-semibold">locales comerciales</a> en horarios que no te interrumpan (noches o fines de semana). Hacemos el diseño, las instalaciones, los acabados y cumplimos los plazos para que abras a tiempo. Conocemos la normativa y te ayudamos con las licencias.
+              </p>
+
+              <p>
+                ¿Quieres saber cuánto cuesta tu reforma? Consulta nuestra <a href="/precios/" className="text-primary hover:underline font-semibold">página de precios</a> con tarifas orientativas o envíanos fotos para un presupuesto personalizado sin compromiso.
               </p>
             </div>
           </div>
@@ -684,11 +710,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Reformas en Valencia con Garantía y Limpieza
+              Por qué elegir nuestra empresa de reformas en Valencia
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Usamos buenos materiales, dejamos todo limpio y damos <strong>garantía por escrito</strong>. 
-              Sin complicarte: envíanos fotos y te presupuestamos en menos de 24 horas.
+              Presupuesto detallado y sin compromiso, asesoramiento personalizado y materiales de calidad. Trabajamos con seriedad y dejamos cada reforma bien acabada.
             </p>
           </div>
 
@@ -701,7 +726,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                 <figure className="relative rounded-3xl overflow-hidden shadow-lg">
                   <img
                     src={featureImage.src}
-                    alt="Pintor aplicando pintura de interior"
+                    alt="Equipo profesional realizando reformas en Valencia"
                     loading="lazy"
                     width={featureImage.width}
                     height={featureImage.height}
@@ -722,11 +747,11 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 lg:p-10 h-[300px] sm:h-[400px] md:h-[450px] flex flex-col justify-center">
                 <div className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed space-y-3 sm:space-y-4 md:space-y-6">
                   <p>
-                    Llevamos años pintando <a href="/servicios/pintura-interior/" className="text-primary hover:underline"><strong>pisos</strong></a>, <a href="/servicios/pintura-exterior-fachadas/" className="text-primary hover:underline"><strong>fachadas</strong></a>, <a href="/servicios/pintura-locales-comerciales/" className="text-primary hover:underline"><strong>locales</strong></a> y comunidades por toda la ciudad y alrededores. También hacemos <a href="/servicios/impermeabilizacion-terrazas/" className="text-primary hover:underline"><strong>impermeabilizaciones</strong></a> para que no se te cuele el agua por la terraza.
+                    Llevamos años haciendo <a href="/servicios/reformas-integrales-valencia/" className="text-primary hover:underline"><strong>reformas integrales</strong></a>, <a href="/servicios/reformas-cocinas-valencia/" className="text-primary hover:underline"><strong>cocinas</strong></a>, <a href="/servicios/reformas-banos-valencia/" className="text-primary hover:underline"><strong>baños</strong></a> y <a href="/servicios/reformas-pisos-valencia/" className="text-primary hover:underline"><strong>pisos completos</strong></a> por toda Valencia capital y alrededores. También reformamos <a href="/servicios/reformas-locales-comerciales-valencia/" className="text-primary hover:underline"><strong>locales comerciales</strong></a> y hacemos reformas de fachadas.
                   </p>
                   
                   <p>
-                    Trabajamos con materiales de calidad y te damos <strong>garantía por escrito</strong> en cada trabajo. <strong>Envíanos unas fotos de lo que necesitas</strong> y te mandamos presupuesto en menos de 24 horas, sin que tengas que perder tiempo con visitas. Mira ejemplos de trabajos hechos en <a href="/trabajos/" className="text-primary hover:underline"><strong>proyectos realizados</strong></a>.
+                    Trabajamos con materiales de calidad y te damos <strong>garantía por escrito</strong> en cada reforma. <strong>Envíanos fotos de tu espacio</strong> y te mandamos presupuesto detallado en menos de 24 horas, sin que tengas que perder tiempo con visitas. Mira ejemplos de trabajos hechos en <a href="/trabajos/" className="text-primary hover:underline"><strong>proyectos realizados</strong></a>.
                   </p>
                 </div>
               </div>
@@ -735,29 +760,29 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         </div>
       </section>
 
-      {/* Sección: Por qué elegirnos */}
+      {/* Proceso de Trabajo */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-              Por Qué Contratarnos
+              Cómo trabajamos nuestras reformas
             </h2>
             
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed mb-12">
               <p>
-                Llevamos <strong>más de 10 años</strong> pintando por toda la ciudad y alrededores. Hemos ayudado a cientos de familias, negocios y comunidades a renovar sus espacios con buenos resultados. Nuestro equipo se forma continuamente para estar al día en técnicas y materiales, así que trabajamos bien y con seriedad.
+                Llevamos <strong>más de 10 años</strong> haciendo <strong>reformas en Valencia</strong> y alrededores. Hemos ayudado a cientos de familias, negocios y comunidades a renovar sus espacios con buenos resultados. Nuestro equipo está formado por profesionales con experiencia en albañilería, fontanería, electricidad y acabados.
               </p>
               
               <p>
-                Sabemos que buscar <strong>un pintor de confianza</strong> no es fácil, por eso somos transparentes desde el principio. <strong>Envíanos unas fotos de lo que necesitas pintar</strong> y te mandamos presupuesto en menos de 24 horas, con todos los detalles: materiales, mano de obra, cuánto tardamos y qué garantía te damos. Sin perder tiempo con visitas ni esperas.
+                Sabemos que buscar una <strong>empresa de reformas de confianza</strong> no es fácil, por eso somos transparentes desde el principio. <strong>Envíanos fotos de lo que necesitas reformar</strong> y te mandamos presupuesto en menos de 24 horas, con todos los detalles: materiales, mano de obra, cuánto tardamos y qué garantía te damos. Sin perder tiempo con visitas ni esperas.
               </p>
               
               <p>
-                Cumplimos los plazos que acordamos y dejamos tu casa limpia. Protegemos suelos y muebles, aspiramos el polvo cada día y al terminar lo limpiamos todo a fondo. Todos nuestros trabajos incluyen <strong>garantía por escrito</strong> para que estés tranquilo.
+                Cumplimos los plazos que acordamos y dejamos tu casa limpia. Protegemos muebles, aspiramos el polvo cada día y al terminar lo limpiamos todo a fondo. Todos nuestros trabajos incluyen <strong>garantía por escrito</strong> y factura oficial con todos los datos.
               </p>
               
               <p>
-                Usamos <strong>materiales de calidad</strong> de marcas reconocidas (Bruguer, Jotun, Titan) porque una buena pintura se ve mejor y dura más. Además tenemos <strong>seguro de responsabilidad civil</strong> y cumplimos toda la normativa de prevención de riesgos.
+                Usamos <strong>materiales de calidad</strong> de marcas reconocidas porque una buena reforma se ve mejor y dura más. Además tenemos <strong>seguro de responsabilidad civil</strong> y cumplimos toda la normativa de prevención de riesgos.
               </p>
             </div>
             
@@ -767,7 +792,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                 <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Más de 10 años de experiencia</h3>
-                  <p className="text-sm text-gray-600">Pintores profesionales certificados en Valencia</p>
+                  <p className="text-sm text-gray-600">Profesionales certificados en reformas</p>
                 </div>
               </div>
               
@@ -783,7 +808,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                 <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Limpieza total incluida</h3>
-                  <p className="text-sm text-gray-600">Protección de muebles y aspirado diario</p>
+                  <p className="text-sm text-gray-600">Protección de muebles y limpieza diaria</p>
                 </div>
               </div>
               
@@ -799,7 +824,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                 <Star className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Materiales de calidad</h3>
-                  <p className="text-sm text-gray-600">Bruguer, Jotun y Titan</p>
+                  <p className="text-sm text-gray-600">Marcas reconocidas y garantizadas</p>
                 </div>
               </div>
               
@@ -815,40 +840,59 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section - Precios */}
       <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            ¿Quieres saber cuánto cuesta?
+            Presupuesto de reformas en Valencia
           </h2>
-          <p className="text-xl mb-8 text-white">
-            Envíanos fotos y te presupuestamos en menos de 24h
+          <p className="text-xl mb-8 text-white max-w-2xl mx-auto">
+            El precio depende del tipo de obra, metros, materiales e instalaciones. Envíanos fotos y te damos un presupuesto detallado en menos de 24h.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <CustomButton
               variant="accent"
               size="lg"
               asChild
-              href="/presupuesto"
+              href="/presupuesto/"
             >
               Pedir presupuesto gratis
             </CustomButton>
             <CustomButton
-              variant="primary"
+              variant="secondary"
               size="lg"
               asChild
-              href="tel:+34722208131"
-              className="flex items-center space-x-2"
+              href="/precios/"
+              className="bg-white text-primary hover:bg-white/90"
             >
-              <Phone className="w-5 h-5" aria-hidden="true" />
-              <span>722 208 131</span>
+              Ver precios orientativos
             </CustomButton>
+          </div>
+          <p className="text-white/90">
+            O llámanos: <a href="tel:+34722208131" className="font-bold hover:underline">722 208 131</a>
+          </p>
+        </div>
+      </section>
+
+      {/* Zonas */}
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-primary/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Empresa de reformas en Valencia y alrededores
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Trabajamos por toda Valencia capital: Ruzafa, El Carmen, Benimaclet, Campanar, Patraix, Extramurs, y todos los barrios. También nos desplazamos a localidades del área metropolitana como Torrent, Mislata, Paterna, Burjassot, Manises, Xirivella, Aldaia, Quart de Poblet, Alboraya y más. 
+            </p>
+            <p className="text-lg text-muted-foreground">
+              ¿Estás más lejos? Consúltanos tu zona y vemos si podemos llegar.
+            </p>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gradient-to-br from-slate-50 to-primary/5">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -863,10 +907,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  ¿Cuánto tardáis en pintar un piso?
+                  ¿Qué tipo de reformas realizáis?
                 </h3>
                 <p className="text-muted-foreground">
-                  Depende del tamaño y del estado. Un piso normal de 70-80 m² nos lleva entre 4 y 6 días: preparamos, pintamos dos manos y limpiamos. Si hay que quitar gotelé, sumamos 2-3 días más. Te diremos el calendario exacto cuando te mandemos el presupuesto.
+                  Hacemos reformas integrales completas, reformas de cocinas, baños, pisos, terrazas, locales comerciales, fachadas e instalación de pladur. Nos adaptamos a cada proyecto, desde trabajos pequeños hasta reformas completas.
                 </p>
               </CardContent>
             </Card>
@@ -874,10 +918,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  ¿Cómo calculais el precio?
+                  ¿Hacéis presupuestos sin compromiso?
                 </h3>
                 <p className="text-muted-foreground">
-                  Depende de la superficie, el tipo de trabajo (interior, exterior, quitar gotelé), el estado de las paredes y la calidad de pintura. Como referencia, pintar el interior de un piso suele estar entre 8-15€/m². <strong>Envíanos unas fotos</strong> de lo que necesitas y te damos un presupuesto cerrado, sin sorpresas.
+                  Sí. Envíanos fotos de lo que necesitas reformar (por WhatsApp o email) y te mandamos un presupuesto detallado en menos de 24 horas, totalmente gratis y sin compromiso. No hace falta que nos esperes en casa para una visita.
                 </p>
               </CardContent>
             </Card>
@@ -885,10 +929,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  ¿Los materiales están incluidos?
+                  ¿Cuánto tarda una reforma?
                 </h3>
                 <p className="text-muted-foreground">
-                  Sí, el presupuesto incluye todo: materiales de calidad, mano de obra y limpieza. Trabajamos con pinturas de marcas conocidas (Bruguer, Jotun, Titan). Si quieres aportar tú la pintura o elegir otra gama, te ajustamos el precio sin problema.
+                  Depende del tipo y tamaño. Una cocina suele tardar 2-3 semanas, un baño completo 1-2 semanas y una reforma integral de piso entre 1 y 2 meses. Te damos un calendario exacto en el presupuesto y cumplimos los plazos.
                 </p>
               </CardContent>
             </Card>
@@ -896,10 +940,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  ¿Trabajáis en fin de semana?
+                  ¿Trabajáis solo en Valencia capital?
                 </h3>
                 <p className="text-muted-foreground">
-                  Sí, sobre todo en locales comerciales para no interrumpir el negocio. En casas particulares solemos ir de lunes a viernes, pero si necesitas otro horario (noches, sábados) nos adaptamos. Cuéntanos qué necesitas y buscamos la mejor forma.
+                  Trabajamos en toda Valencia capital y en el área metropolitana: Torrent, Mislata, Paterna, Burjassot, Manises, Xirivella, Aldaia, Quart de Poblet, Alboraya, etc. Si estás en otra zona, consúltanos y vemos si podemos llegar.
                 </p>
               </CardContent>
             </Card>
@@ -907,10 +951,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  ¿Cómo trabajáis en comunidades de vecinos?
+                  ¿Se puede hacer una reforma parcial?
                 </h3>
                 <p className="text-muted-foreground">
-                  Hablamos con el presidente o administrador, planificamos por fases para molestar lo mínimo y trabajamos de forma ordenada. Ponemos señales, protegemos accesos y limpiamos cada día. Os vamos mandando fotos y avisando de cómo va todo para que estéis informados.
+                  Sí, hacemos tanto reformas integrales como reformas parciales. Puedes reformar solo la cocina, solo el baño, cambiar el suelo de una habitación o pintar el piso completo. Nos adaptamos a lo que necesites y a tu presupuesto.
                 </p>
               </CardContent>
             </Card>
@@ -918,10 +962,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  ¿Dónde trabajáis?
+                  ¿Qué incluye el presupuesto?
                 </h3>
                 <p className="text-muted-foreground">
-                  Por toda la ciudad: Ruzafa, El Carmen, Benimaclet, Campanar, Patraix y demás barrios. También vamos a los pueblos de alrededor (Torrent, Mislata, Paterna, Burjassot, Manises, Xirivella, Aldaia, Quart de Poblet...). Si estás más lejos, cuéntanos y vemos si podemos ir.
+                  El presupuesto incluye materiales, mano de obra, gestión de escombros, limpieza final y garantía por escrito. Te especificamos todo de forma transparente para que sepas exactamente qué estás contratando. Si quieres aportar tú algún material, te ajustamos el precio.
                 </p>
               </CardContent>
             </Card>
@@ -932,10 +976,42 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   ¿Dais factura y garantía?
                 </h3>
                 <p className="text-muted-foreground">
-                  Sí, siempre. Somos una empresa legal con todos los papeles al día. Te damos factura oficial con IVA y <strong>garantía por escrito</strong> en todos los trabajos. Además tenemos seguro de responsabilidad civil para que estés tranquilo.
+                  Sí, siempre. Somos una empresa legal con todos los papeles en regla. Te damos factura oficial con IVA y garantía por escrito en todos los trabajos. También tenemos seguro de responsabilidad civil para que estés tranquilo.
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section className="py-16 bg-gradient-to-br from-primary to-primary/90 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            Pide tu presupuesto para reformar en Valencia
+          </h2>
+          <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
+            Envíanos fotos de lo que quieres reformar y te damos presupuesto detallado en menos de 24 horas
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <CustomButton
+              variant="accent"
+              size="lg"
+              asChild
+              href="/presupuesto/"
+            >
+              Pedir presupuesto gratis
+            </CustomButton>
+            <CustomButton
+              variant="secondary"
+              size="lg"
+              asChild
+              href="tel:+34722208131"
+              className="bg-white text-primary hover:bg-white/90 flex items-center space-x-2"
+            >
+              <Phone className="w-5 h-5" aria-hidden="true" />
+              <span>722 208 131</span>
+            </CustomButton>
           </div>
         </div>
       </section>
