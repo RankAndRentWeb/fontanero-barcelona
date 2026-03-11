@@ -40,7 +40,11 @@ export default function SiteFooter() {
               <li><a href="/servicios/reformas-cocinas-valencia/" className="text-white/80 hover:text-white transition-colors">Reformas de Cocinas</a></li>
               <li><a href="/servicios/reformas-banos-valencia/" className="text-white/80 hover:text-white transition-colors">Reformas de Baños</a></li>
               <li><a href="/servicios/reformas-integrales-valencia/" className="text-white/80 hover:text-white transition-colors">Reformas Integrales</a></li>
-              <li><a href="/presupuesto/" className="text-white font-medium hover:text-white/80 transition-colors">Solicitar presupuesto</a></li>
+              <li><a href="/servicios/reformas-pisos-valencia/" className="text-white/80 hover:text-white transition-colors">Reformas de Pisos</a></li>
+              <li><a href="/servicios/reformas-locales-comerciales-valencia/" className="text-white/80 hover:text-white transition-colors">Locales Comerciales</a></li>
+              <li><a href="/servicios/reforma-terraza-valencia/" className="text-white/80 hover:text-white transition-colors">Reformas de Terrazas</a></li>
+              <li><a href="/precios/" className="text-white/80 hover:text-white transition-colors">Precios de Reformas</a></li>
+              <li><a href="/presupuesto/" className="text-white font-medium hover:text-white/80 transition-colors">Pedir Presupuesto</a></li>
             </ul>
           </div>
 
