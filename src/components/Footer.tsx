@@ -9,21 +9,21 @@ export default function SiteFooter() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img 
-                src="/pintores-valencia-logo.png" 
-                alt="Pintores en Valencia" 
+                src="/reformas-valencia-logo.png" 
+                alt="Reformas Valencia" 
                 className="w-8 h-8"
                 loading="lazy"
               />
-              <h4 className="font-semibold text-lg text-white">Pintores en Valencia</h4>
+              <p className="font-semibold text-lg text-white">Reformas Valencia</p>
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
-              Especialistas en pintura profesional en Valencia capital y provincia.
+              Empresa de reformas integrales en Valencia. Cocinas, baños, pisos y locales comerciales.
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h5 className="font-semibold text-white mb-4">Navegación</h5>
+            <p className="font-semibold text-white mb-4">Navegación</p>
             <ul className="space-y-2 text-sm">
               <li><a href="/" className="text-white/80 hover:text-white transition-colors">Inicio</a></li>
               <li><a href="/servicios/" className="text-white/80 hover:text-white transition-colors">Servicios</a></li>
@@ -35,18 +35,18 @@ export default function SiteFooter() {
 
           {/* Services */}
           <div>
-            <h5 className="font-semibold text-white mb-4">Servicios</h5>
+            <p className="font-semibold text-white mb-4">Servicios</p>
             <ul className="space-y-2 text-sm">
-              <li><a href="/servicios/pintura-interior/" className="text-white/80 hover:text-white transition-colors">Pintura Interior</a></li>
-              <li><a href="/servicios/quitar-gotele/" className="text-white/80 hover:text-white transition-colors">Quitar Gotelé</a></li>
-              <li><a href="/servicios/" className="text-white/80 hover:text-white transition-colors">Todos los servicios</a></li>
+              <li><a href="/servicios/reformas-cocinas-valencia/" className="text-white/80 hover:text-white transition-colors">Reformas de Cocinas</a></li>
+              <li><a href="/servicios/reformas-banos-valencia/" className="text-white/80 hover:text-white transition-colors">Reformas de Baños</a></li>
+              <li><a href="/servicios/reformas-integrales-valencia/" className="text-white/80 hover:text-white transition-colors">Reformas Integrales</a></li>
               <li><a href="/presupuesto/" className="text-white font-medium hover:text-white/80 transition-colors">Solicitar presupuesto</a></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h5 className="font-semibold text-white mb-4">Contacto</h5>
+            <p className="font-semibold text-white mb-4">Contacto</p>
             <div className="space-y-2 text-sm">
               <div>
                 <a href="tel:+34722208131" className="text-white font-medium hover:text-white/80 transition-colors">
@@ -54,8 +54,8 @@ export default function SiteFooter() {
                 </a>
               </div>
               <div>
-                <a href="mailto:info@pintores-valencia.com" className="text-white/80 hover:text-white transition-colors">
-                  info@pintores-valencia.com
+                <a href="mailto:info@mejoresreformasvalencia.es" className="text-white/80 hover:text-white transition-colors">
+                  info@mejoresreformasvalencia.es
                 </a>
               </div>
               <div className="text-white/80">Valencia, España</div>
@@ -68,7 +68,7 @@ export default function SiteFooter() {
         <div className="border-t border-white/20 mt-6 pt-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             <div className="text-white/80">
-              © 2025 Pintores en Valencia. Todos los derechos reservados.
+              © 2025 Reformas Valencia. Todos los derechos reservados.
             </div>
             <div className="flex gap-6">
               <a href="/aviso-legal/" className="text-white/80 hover:text-white transition-colors">
