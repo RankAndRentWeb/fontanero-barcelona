@@ -1,16 +1,16 @@
 ---
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.tsx';
-import pinturaInteriorImg from '../../../assets/pintor-profesional-interior-valencia.jpg';
+import cocinaInteriorImg from '../../../assets/pintor-profesional-interior-valencia.jpg';
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-  "@id": "https://pintores-valencia.com/#business",
-  "name": "Pintores en Valencia",
-  "description": "Empresa de pintura profesional en Valencia. Nos desplazamos a toda la ciudad y alrededores para servicios de pintura de interiores, exteriores, fachadas, comunidades y más.",
-  "url": "https://pintores-valencia.com",
-  "image": "https://pintores-valencia.com/og-home.webp",
+  "@id": "https://mejoresreformasvalencia.es/#business",
+  "name": "Reformas en Valencia",
+  "description": "Empresa especializada en reformas de cocinas en Valencia. Renovación completa con mobiliario, encimeras, revestimientos, fontanería y electricidad.",
+  "url": "https://mejoresreformasvalencia.es",
+  "image": "https://mejoresreformasvalencia.es/og-home.webp",
   "telephone": "+34722208131",
   "address": {
     "@type": "PostalAddress",
@@ -19,7 +19,7 @@ const localBusinessSchema = {
     "addressCountry": "ES"
   },
   "openingHours": ["Mo-Sa 08:00-20:00"],
-  "priceRange": "€€",
+  "priceRange": "€€€",
   "areaServed": [
     {
       "@type": "City",
@@ -60,78 +60,78 @@ const localBusinessSchema = {
     { "@type": "PostalCodeSpecification", "postalCode": "46025", "addressLocality": "Valencia", "addressCountry": "ES" }
   ],
   "knowsAbout": [
-    "Pintura de interiores y exteriores en Valencia",
-    "Eliminación de gotelé y alisado de paredes",
-    "Impermeabilización de terrazas y cubiertas",
-    "Rehabilitación y pintura de fachadas",
-    "Pintura de comunidades de vecinos",
-    "Instalación de papel pintado y vinilos decorativos",
-    "Lacado de puertas y carpintería",
-    "Pintura de locales comerciales",
-    "Barnizado de madera",
-    "Tratamientos anti-humedad",
-    "Reparación de grietas y fisuras",
-    "Aplicación de revestimientos impermeables"
+    "Reformas de cocinas en Valencia",
+    "Renovación completa de cocinas",
+    "Instalación de mobiliario de cocina",
+    "Cambio de encimeras y revestimientos",
+    "Fontanería y electricidad en cocinas",
+    "Optimización de distribución de cocinas",
+    "Reforma integral de cocinas",
+    "Alicatado y pavimento de cocinas",
+    "Iluminación LED en cocinas",
+    "Instalación de electrodomésticos",
+    "Diseño 3D de cocinas",
+    "Reformas de cocinas y baños"
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Catálogo de Pintura Interior en Valencia",
+    "name": "Catálogo de Reformas de Cocinas en Valencia",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Pintura Interior de Viviendas en Valencia",
-          "description": "Pintura profesional de paredes y techos interiores con acabados de alta calidad",
+          "name": "Reforma Cocina Básica Valencia",
+          "description": "Reforma de cocina con mobiliario, encimera, revestimientos y fontanería básica",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Interior Painting",
+          "serviceType": "Kitchen Renovation",
           "provider": {
-            "@id": "https://pintores-valencia.com/#business"
+            "@id": "https://mejoresreformasvalencia.es/#business"
           }
         },
-        "price": "8.00",
+        "price": "4000.00",
         "priceCurrency": "EUR"
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Pintura Piso 70m² Completo",
-          "description": "Servicio completo de pintura interior para piso estándar de 70 metros cuadrados",
+          "name": "Reforma Cocina Completa Valencia",
+          "description": "Reforma integral de cocina con mobiliario a medida, encimera Silestone, alicatado completo y electrodomésticos",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Apartment Interior Painting",
+          "serviceType": "Complete Kitchen Renovation",
           "provider": {
-            "@id": "https://pintores-valencia.com/#business"
+            "@id": "https://mejoresreformasvalencia.es/#business"
           }
         },
-        "price": "560.00",
+        "price": "8000.00",
         "priceCurrency": "EUR"
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Pintura Piso 90m² Completo",
-          "description": "Servicio completo de pintura interior para piso grande de 90 metros cuadrados",
+          "name": "Reforma Cocina Premium Valencia",
+          "description": "Reforma cocina de alta gama con diseño personalizado, materiales premium y electrodomésticos integrados",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Apartment Interior Painting",
+          "serviceType": "Premium Kitchen Renovation",
           "provider": {
-            "@id": "https://pintores-valencia.com/#business"
+            "@id": "https://mejoresreformasvalencia.es/#business"
           }
         },
-        "price": "720.00",
+        "price": "15000.00",
         "priceCurrency": "EUR"
       }
     ]
@@ -144,26 +144,26 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Cuánto cuesta pintar las paredes de una vivienda en Valencia?",
+      "name": "¿Cuánto cuesta una reforma de cocina en Valencia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El precio de pintura interior en Valencia parte desde 8€/m² con materiales incluidos. Un piso de 70 m² cuesta desde 560€ y uno de 90 m² desde 720€. El precio final depende del estado de las paredes y tipo de pintura. Solicita presupuesto gratuito sin compromiso."
+        "text": "El precio de una reforma de cocina en Valencia varía según tamaño y calidad. Una cocina básica empieza desde 4.000€, una reforma completa desde 8.000€ y una reforma premium desde 15.000€. Incluye mobiliario, encimeras, revestimientos, fontanería y electricidad. Presupuesto gratuito sin compromiso."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto tiempo se tarda en pintar el interior de una casa?",
+      "name": "¿Cuánto tiempo tarda una reforma de cocina?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Para pintar el interior de una vivienda en Valencia de 70-90 m², el proceso completo tarda entre 3 y 5 días laborables. Esto incluye preparación de superficies, imprimación, dos manos de pintura y limpieza final. El tiempo exacto depende del estado de las paredes."
+        "text": "Una reforma completa de cocina en Valencia tarda entre 10 y 15 días laborables. Esto incluye demolición, fontanería, electricidad, alicatado, instalación de mobiliario y encimeras. El tiempo exacto depende del alcance de la reforma y la complejidad del proyecto."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Qué incluye el precio de pintura interior?",
+      "name": "¿Qué incluye una reforma integral de cocina?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El precio de pintura interior en Valencia incluye todos los materiales profesionales (pinturas de calidad, imprimación, masilla), mano de obra especializada, preparación de superficies, protección de suelos y muebles, y limpieza completa final. Presupuesto gratuito sin costes ocultos."
+        "text": "Una reforma integral de cocina en Valencia incluye: demolición de la cocina antigua, instalaciones de fontanería y electricidad nuevas, alicatado de paredes, pavimento, mobiliario a medida con herrajes de calidad, encimera, fregadero, grifería, iluminación LED y conexión de electrodomésticos. Todo llave en mano."
       }
     }
   ]
@@ -171,10 +171,10 @@ const faqSchema = {
 ---
 
 <SiteLayout 
-  title="Pintura Exterior en Valencia | Fachadas Resistentes Desde 15€/m²"
-  description="Expertos en pintura interior de viviendas en Valencia. Precios competitivos desde 8€/m². Acabados de alta calidad para techos y paredes. Presupuesto gratuito."
-  keywords="pintura interior valencia, pintar paredes valencia, pintura casas valencia, precios pintura interior valencia, pintura techos valencia, pintores profesionales valencia"
-  canonical="https://pintores-valencia.com/servicios/pintura-interior/"
+  title="Reformas de Cocinas en Valencia | Presupuesto Gratis"
+  description="Empresa especializada en reformas de cocinas en Valencia. Renovamos distribución, mobiliario, encimeras, suelos e iluminación con presupuesto gratis."
+  keywords="reformas cocinas valencia, cocina integral valencia, empresas de reformas de cocinas en valencia, reforma integral cocina valencia, reformas de cocina valencia, reformas cocinas y baños valencia"
+  canonical="https://mejoresreformasvalencia.es/servicios/reformas-cocinas-valencia/"
   schema={[localBusinessSchema, faqSchema]}
   ogImage="/og-home.webp"
 >
@@ -185,7 +185,7 @@ const faqSchema = {
         <div class="container mx-auto px-4">
           <Breadcrumbs items={[
               { label: "Servicios", href: "/servicios/" },
-              { label: "Pintura Interior" }
+              { label: "Reformas de Cocinas" }
             ]}  client:load />
       
 
@@ -196,14 +196,14 @@ const faqSchema = {
           <!-- Left side - Content -->
           <div>
             <!-- Title -->
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pintura Interior de Viviendas en Valencia</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Reformas de Cocinas en Valencia</h1>
             
             <!-- Subtitle -->
-            <p class="text-xl text-gray-700 mb-6">Pintores profesionales para techos y paredes en Valencia. Desde 8€/m²</p>
+            <p class="text-xl text-gray-700 mb-6">Renovamos tu cocina con mobiliario, encimeras y acabados profesionales</p>
             
             <!-- Price -->
             <div class="mb-6">
-              <span class="text-2xl font-bold text-accent">desde 8€/m² <span class="text-sm text-gray-500 font-normal">Material incluido</span></span>
+              <span class="text-2xl font-bold text-accent">desde 4.000€ <span class="text-sm text-gray-500 font-normal">Cocina completa</span></span>
             </div>
             
             <!-- CTAs -->
@@ -225,19 +225,19 @@ const faqSchema = {
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Materiales premium</span>
+                <span class="text-gray-700">Diseño 3D gratuito</span>
               </div>
               <div class="flex items-center space-x-3">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Acabado perfecto</span>
+                <span class="text-gray-700">Mobiliario incluido</span>
               </div>
               <div class="flex items-center space-x-3">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Limpieza incluida</span>
+                <span class="text-gray-700">Garantía total</span>
               </div>
             </div>
           </div>
@@ -245,7 +245,7 @@ const faqSchema = {
           <!-- Right side - Image -->
           <div class="order-first lg:order-last">
             <div class="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src={pinturaInteriorImg.src} alt="Pintura interior de viviendas en Valencia - Pintores profesionales trabajando en paredes" width={pinturaInteriorImg.width} height={pinturaInteriorImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
+              <img src={cocinaInteriorImg.src} alt="Reforma de cocina en Valencia - Cocina moderna con mobiliario blanco y encimera" width={cocinaInteriorImg.width} height={cocinaInteriorImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
             </div>
           </div>
         </div>
@@ -253,121 +253,121 @@ const faqSchema = {
       </div>
     </section>
 
-    <!-- Precio pintura interior Valencia -->
+    <!-- Precio reforma cocina Valencia -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">
-              Precios de Pintura Interior en Valencia
+              Precios de Reformas de Cocinas en Valencia
             </h2>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-              Presupuesto transparente desde 8€/m² con materiales y mano de obra incluidos
+              Presupuesto transparente desde 4.000€ con mobiliario, encimeras y acabados incluidos
             </p>
           </div>
           
           <div class="space-y-6 text-gray-700 mb-10">
             <p class="text-lg leading-relaxed">
-              El <strong>precio de pintura interior en Valencia</strong> depende de la superficie a pintar, el tipo de pintura seleccionada y el estado de las paredes. Ofrecemos presupuestos cerrados y transparentes, sin sorpresas ni costes ocultos.
+              El <strong>precio de una reforma de cocina en Valencia</strong> depende del tamaño, la calidad de los materiales, el mobiliario elegido y el alcance de la reforma. Ofrecemos presupuestos cerrados y transparentes, sin sorpresas ni costes ocultos.
             </p>
             
             <p class="text-lg leading-relaxed">
-              Nuestros <strong>pintores profesionales en Valencia</strong> utilizan pinturas de alta calidad (Bruguer, Titan, Montó) con certificación ecológica, garantizando un acabado perfecto y duradero para tu vivienda.
+              Nuestras <strong>reformas de cocinas en Valencia</strong> incluyen coordinación total de gremios (fontanería, electricidad, alicatado, carpintería), materiales de calidad contrastada y acabados profesionales que transforman tu cocina en un espacio funcional y moderno.
             </p>
           </div>
 
           <!-- Tabla de precios orientativos -->
           <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 mb-8">
-            <h3 class="text-2xl font-bold mb-6 text-center">Precios Orientativos de Pintura Interior</h3>
+            <h3 class="text-2xl font-bold mb-6 text-center">Precios Orientativos Reformas de Cocinas</h3>
             
             <div class="grid md:grid-cols-2 gap-6">
-              <!-- Precio por superficie completa -->
+              <!-- Precio por tipo de reforma -->
               <div class="bg-white rounded-xl p-6 shadow-sm">
-                <h4 class="font-bold text-lg mb-4 text-gray-900">Por Superficie Completa</h4>
+                <h4 class="font-bold text-lg mb-4 text-gray-900">Según Tipo de Reforma</h4>
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Piso 70 m²</span>
-                    <span class="font-bold text-accent">desde 560€</span>
+                    <span class="text-gray-700">Cocina básica</span>
+                    <span class="font-bold text-accent">desde 4.000€</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Piso 90 m²</span>
-                    <span class="font-bold text-accent">desde 720€</span>
+                    <span class="text-gray-700">Cocina completa</span>
+                    <span class="font-bold text-accent">desde 8.000€</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Piso 120 m²</span>
-                    <span class="font-bold text-accent">desde 960€</span>
+                    <span class="text-gray-700">Cocina premium</span>
+                    <span class="font-bold text-accent">desde 15.000€</span>
                   </li>
                 </ul>
-                <p class="text-sm text-gray-500 mt-4">*Incluye preparación, imprimación y 2 manos</p>
+                <p class="text-sm text-gray-500 mt-4">*Incluye mobiliario, encimera y alicatado</p>
               </div>
 
-              <!-- Precio por habitación -->
+              <!-- Precio por tamaño -->
               <div class="bg-white rounded-xl p-6 shadow-sm">
-                <h4 class="font-bold text-lg mb-4 text-gray-900">Por Habitaciones</h4>
+                <h4 class="font-bold text-lg mb-4 text-gray-900">Según Tamaño</h4>
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Habitación individual</span>
-                    <span class="font-bold text-accent">desde 150€</span>
+                    <span class="text-gray-700">Cocina pequeña (6-8 m²)</span>
+                    <span class="font-bold text-accent">desde 4.500€</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Salón-comedor</span>
-                    <span class="font-bold text-accent">desde 250€</span>
+                    <span class="text-gray-700">Cocina media (9-12 m²)</span>
+                    <span class="font-bold text-accent">desde 7.000€</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Techos completos</span>
-                    <span class="font-bold text-accent">desde 8€/m²</span>
+                    <span class="text-gray-700">Cocina grande (+12 m²)</span>
+                    <span class="font-bold text-accent">desde 10.000€</span>
                   </li>
                 </ul>
-                <p class="text-sm text-gray-500 mt-4">*Precios pueden variar según estado</p>
+                <p class="text-sm text-gray-500 mt-4">*Precios varían según acabados</p>
               </div>
             </div>
 
             <!-- Qué incluye el precio -->
             <div class="mt-8 bg-white rounded-xl p-6">
-              <h4 class="font-bold text-lg mb-4 text-gray-900">¿Qué Incluye el Precio de Pintura Interior?</h4>
+              <h4 class="font-bold text-lg mb-4 text-gray-900">¿Qué Incluye una Reforma Integral de Cocina?</h4>
               <div class="grid md:grid-cols-2 gap-4">
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Pinturas de alta calidad incluidas</span>
+                  <span class="text-gray-700">Mobiliario a medida con herrajes</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Preparación completa de superficies</span>
+                  <span class="text-gray-700">Encimera y fregadero incluidos</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Imprimación selladora</span>
+                  <span class="text-gray-700">Alicatado y revestimientos</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Mano de obra profesional</span>
+                  <span class="text-gray-700">Fontanería y electricidad nuevas</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Protección de suelos y muebles</span>
+                  <span class="text-gray-700">Iluminación LED integrada</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Limpieza completa final</span>
+                  <span class="text-gray-700">Coordinación total de gremios</span>
                 </div>
               </div>
             </div>
 
             <div class="mt-8 bg-white rounded-xl p-6">
               <p class="text-lg text-gray-700 mb-6">
-                <strong>¿Quieres renovar tu vivienda?</strong> Consulta nuestro <strong>precio de pintura interior en Valencia</strong> y descubre cómo podemos transformar tus espacios con acabados profesionales de alta calidad.
+                <strong>¿Quieres renovar tu cocina?</strong> Consulta nuestros <strong>precios de reformas de cocinas en Valencia</strong> y descubre cómo podemos transformar tu espacio con acabados profesionales y materiales de calidad.
               </p>
               <div class="flex justify-center text-center">
                 <a href="/presupuesto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-accent text-white hover:bg-accent/90 focus:ring-accent shadow-md hover:shadow-lg px-8 py-3 text-lg rounded-lg">
@@ -380,16 +380,16 @@ const faqSchema = {
       </div>
     </section>
 
-    <!-- Beneficios de pintura interior -->
+    <!-- Beneficios de reforma cocina -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">
-              Beneficios de Pintar el Interior de tu Vivienda en Valencia
+              Beneficios de Reformar tu Cocina en Valencia
             </h2>
             <p class="text-xl text-gray-600">
-              Mejora la estética y el confort de tu hogar
+              Transforma el corazón de tu hogar con una reforma profesional
             </p>
           </div>
 
@@ -404,9 +404,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Acabado Perfecto y Duradero</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Funcionalidad y Diseño</h3>
                   <p class="text-gray-700">
-                    La <strong>pintura interior en Valencia</strong> con productos de alta calidad garantiza un acabado profesional que mantiene su aspecto impecable durante años.
+                    Una <strong>reforma de cocina en Valencia</strong> optimiza la distribución, mejora el flujo de trabajo y crea un espacio más funcional adaptado a tus necesidades diarias.
                   </p>
                 </div>
               </div>
@@ -421,9 +421,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Ambientes Renovados y Luminosos</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Modernización Completa</h3>
                   <p class="text-gray-700">
-                    Pintar techos y paredes en tonos claros aumenta la luminosidad de tus espacios, creando ambientes más amplios y acogedores en tu vivienda.
+                    Renueva mobiliario, electrodomésticos, instalaciones y acabados para disfrutar de una cocina moderna, eficiente y adaptada a tus gustos actuales.
                   </p>
                 </div>
               </div>
@@ -439,9 +439,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Revaloriza tu Vivienda</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Aumenta el Valor de tu Vivienda</h3>
                   <p class="text-gray-700">
-                    Una vivienda con <strong>pintura interior profesional</strong> aumenta significativamente su valor de mercado y resulta más atractiva para posibles compradores o inquilinos.
+                    Una <strong>cocina renovada profesionalmente</strong> incrementa significativamente el valor de tu vivienda y resulta más atractiva para posibles compradores.
                   </p>
                 </div>
               </div>
@@ -456,17 +456,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Fácil Mantenimiento y Limpieza</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Ahorro Energético</h3>
                   <p class="text-gray-700">
-                    Las <strong>pinturas modernas lavables</strong> permiten limpiar las paredes fácilmente, manteniendo tu vivienda en perfectas condiciones con mínimo esfuerzo.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                    Nuevos electrodomésticos eficientes, iluminación LED y mejor aislamiento reducen el consumo energético y tus facturas mensuales.
                   </p>
                 </div>
               </div>
@@ -481,10 +473,10 @@ const faqSchema = {
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Cómo Pintamos el Interior de tu Vivienda en Valencia
+            Cómo Reformamos tu Cocina en Valencia
           </h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Proceso profesional en 4 pasos para garantizar acabados perfectos
+            Proceso profesional paso a paso para garantizar acabados perfectos
           </p>
         </div>
         
@@ -497,9 +489,9 @@ const faqSchema = {
                   1
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Protección de Muebles y Suelos</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Visita y Diseño 3D Gratuito</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Antes de iniciar la <strong>pintura interior en Valencia</strong>, protegemos completamente todos tus muebles y suelos con plásticos y papel profesional. Sellamos puertas para evitar que el polvo se disperse por otras habitaciones de tu vivienda.
+                    Visitamos tu cocina, tomamos medidas y creamos un <strong>diseño 3D profesional sin coste</strong>. Te asesoramos sobre la mejor distribución, mobiliario y acabados según tus necesidades y presupuesto para la <strong>reforma de tu cocina en Valencia</strong>.
                   </p>
                 </div>
               </div>
@@ -512,9 +504,9 @@ const faqSchema = {
                   2
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Preparación de las Superficies</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Demolición y Preparación</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Lijamos y reparamos todas las imperfecciones de <strong>paredes y techos</strong>. Aplicamos masilla profesional donde sea necesario y realizamos un lijado fino para conseguir superficies perfectamente lisas. Este paso es fundamental para obtener un acabado profesional duradero.
+                    Retiramos el <strong>mobiliario antiguo, alicatados y elementos obsoletos</strong>. Protegemos el resto de la vivienda del polvo y escombros. Preparamos las superficies para las nuevas instalaciones de fontanería y electricidad.
                   </p>
                 </div>
               </div>
@@ -527,9 +519,9 @@ const faqSchema = {
                   3
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Aplicación de Pintura de Alta Calidad</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Instalaciones y Alicatado</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Aplicamos imprimación selladora de calidad y <strong>dos manos de pintura</strong> con productos premium (Bruguer, Titan, Montó). Utilizamos técnica profesional que garantiza cobertura uniforme y acabado impecable en todas las superficies de tu vivienda en Valencia.
+                    Renovamos las <strong>instalaciones de fontanería y electricidad</strong>. Colocamos alicatado en paredes y suelo con materiales de calidad. Coordinamos todos los gremios especializados para garantizar acabados perfectos en tu cocina.
                   </p>
                 </div>
               </div>
@@ -542,9 +534,9 @@ const faqSchema = {
                   4
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Limpieza Final y Verificación de Calidad</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Mobiliario y Acabados Finales</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Retiramos todas las protecciones y realizamos una <strong>limpieza completa</strong> de la vivienda. Inspeccionamos minuciosamente el trabajo para garantizar que cada detalle sea perfecto. Te entregamos tu hogar impecable y listo para disfrutar.
+                    Instalamos el <strong>mobiliario a medida, encimera, fregadero e iluminación LED</strong>. Realizamos ajustes finales y limpieza completa. Te entregamos tu cocina nueva lista para estrenar en Valencia.
                   </p>
                 </div>
               </div>
@@ -557,7 +549,7 @@ const faqSchema = {
     <!-- CTA Contact Section -->
     <section class="py-12 bg-blue-600 text-white">
       <div class="container mx-auto px-4 text-center">
-        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Necesitas pintar tu casa?</h2>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Quieres renovar tu cocina?</h2>
         <p class="text-xl mb-8">Te respondemos en menos de 24 horas</p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -579,7 +571,7 @@ const faqSchema = {
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Preguntas Frecuentes sobre Pintura Interior en Valencia
+            Preguntas Frecuentes sobre Reformas de Cocinas en Valencia
           </h2>
           <p class="text-lg text-gray-600">
             Resolvemos todas tus dudas sobre nuestro servicio profesional
@@ -590,30 +582,30 @@ const faqSchema = {
           <!-- FAQ 1 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm">
             <h3 class="font-bold text-lg mb-3 text-gray-900">
-              ¿Cuánto cuesta pintar las paredes de una vivienda en Valencia?
+              ¿Cuánto cuesta reformar una cocina en Valencia?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              El <strong>precio de pintura interior en Valencia</strong> parte desde <strong>8€/m²</strong> con materiales incluidos. Un piso de 70 m² cuesta desde 560€ y uno de 90 m² desde 720€. El precio final depende del estado de las paredes, el tipo de pintura seleccionada y los metros cuadrados a pintar. <strong>Solicita un presupuesto gratuito</strong> sin compromiso y te daremos un precio exacto para tu vivienda.
+              El <strong>precio de una reforma de cocina en Valencia</strong> depende del alcance de los trabajos. Una <strong>reforma básica</strong> (mobiliario y encimera) parte desde <strong>4.000€</strong>, una <strong>reforma completa</strong> (con fontanería y alicatado) desde 8.000€, y una <strong>reforma premium</strong> (distribución completa) desde 15.000€. <strong>Solicita un presupuesto gratuito</strong> sin compromiso y te daremos un precio exacto para tu proyecto.
             </p>
           </div>
 
           <!-- FAQ 2 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm">
             <h3 class="font-bold text-lg mb-3 text-gray-900">
-              ¿Cuánto tiempo se tarda en pintar el interior de una casa?
+              ¿Cuánto tiempo se tarda en reformar una cocina?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Para <strong>pintar el interior de una vivienda en Valencia</strong> de 70-90 m², el proceso completo tarda entre <strong>3 y 5 días laborables</strong>. Esto incluye la preparación de superficies (lijado y masillado), imprimación, aplicación de dos manos de pintura y limpieza final completa. El tiempo exacto depende del estado de las paredes y del número de habitaciones. Te proporcionaremos un calendario detallado con tu presupuesto.
+              Una <strong>reforma de cocina completa en Valencia</strong> tarda entre <strong>2 y 4 semanas</strong> dependiendo del alcance. Una reforma básica (solo mobiliario) puede completarse en 1-2 semanas, mientras que una reforma integral con nuevas instalaciones requiere 3-4 semanas. Te proporcionaremos un calendario detallado con tu presupuesto.
             </p>
           </div>
 
           <!-- FAQ 3 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm">
             <h3 class="font-bold text-lg mb-3 text-gray-900">
-              ¿Qué incluye el precio de pintura interior?
+              ¿Qué incluye una reforma integral de cocina?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Nuestro <strong>precio de pintura interior en Valencia</strong> incluye todos los materiales profesionales (pinturas premium, imprimación, masilla), mano de obra especializada de pintores profesionales, preparación completa de superficies (lijado y masillado), protección de suelos y muebles, y limpieza completa final. Presupuesto gratuito sin costes ocultos.
+              Nuestra <strong>reforma integral de cocina en Valencia</strong> incluye mobiliario a medida, encimera de calidad (compacto, granito o cuarzo), fregadero y grifo, alicatado completo de paredes y suelo, renovación de fontanería y electricidad, iluminación LED, y coordinación de todos los gremios especializados. Presupuesto gratuito sin costes ocultos.
             </p>
           </div>
         </div>

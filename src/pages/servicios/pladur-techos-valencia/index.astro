@@ -1,16 +1,16 @@
 ---
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.tsx';
-import pinturaInteriorImg from '../../../assets/pintor-profesional-interior-valencia.jpg';
+import pladurTechosImg from '../../../assets/pintor-profesional-interior-valencia.jpg';
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-  "@id": "https://pintores-valencia.com/#business",
-  "name": "Pintores en Valencia",
-  "description": "Empresa de pintura profesional en Valencia. Nos desplazamos a toda la ciudad y alrededores para servicios de pintura de interiores, exteriores, fachadas, comunidades y más.",
-  "url": "https://pintores-valencia.com",
-  "image": "https://pintores-valencia.com/og-home.webp",
+  "@id": "https://mejoresreformasvalencia.es/#business",
+  "name": "Reformas en Valencia",
+  "description": "Empresa especializada en pladur y techos en Valencia. Instalamos falsos techos, tabiques y trasdosados con acabados profesionales y presupuesto claro.",
+  "url": "https://mejoresreformasvalencia.es",
+  "image": "https://mejoresreformasvalencia.es/og-home.webp",
   "telephone": "+34722208131",
   "address": {
     "@type": "PostalAddress",
@@ -19,7 +19,7 @@ const localBusinessSchema = {
     "addressCountry": "ES"
   },
   "openingHours": ["Mo-Sa 08:00-20:00"],
-  "priceRange": "€€",
+  "priceRange": "€€€",
   "areaServed": [
     {
       "@type": "City",
@@ -60,78 +60,78 @@ const localBusinessSchema = {
     { "@type": "PostalCodeSpecification", "postalCode": "46025", "addressLocality": "Valencia", "addressCountry": "ES" }
   ],
   "knowsAbout": [
-    "Pintura de interiores y exteriores en Valencia",
-    "Eliminación de gotelé y alisado de paredes",
-    "Impermeabilización de terrazas y cubiertas",
-    "Rehabilitación y pintura de fachadas",
-    "Pintura de comunidades de vecinos",
-    "Instalación de papel pintado y vinilos decorativos",
-    "Lacado de puertas y carpintería",
-    "Pintura de locales comerciales",
-    "Barnizado de madera",
-    "Tratamientos anti-humedad",
-    "Reparación de grietas y fisuras",
-    "Aplicación de revestimientos impermeables"
+    "Reformas techos Valencia",
+    "Pladur techos Valencia",
+    "Techos de pladur Valencia",
+    "Falsos techos Valencia",
+    "Tabiques de pladur Valencia",
+    "Trabajos de pladur en Valencia",
+    "Trasdosados de pladur",
+    "Aislamiento térmico con pladur",
+    "Aislamiento acústico con pladur",
+    "Ocultación de instalaciones en techos",
+    "Renovación interior con sistemas de pladur",
+    "Empresa de pladur y techos en Valencia"
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Catálogo de Pintura Interior en Valencia",
+    "name": "Catálogo de Pladur y Techos en Valencia",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Pintura Interior de Viviendas en Valencia",
-          "description": "Pintura profesional de paredes y techos interiores con acabados de alta calidad",
+          "name": "Instalación de Falsos Techos de Pladur",
+          "description": "Montaje de techos de pladur para renovar espacios, ocultar instalaciones y mejorar aislamiento",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Interior Painting",
+          "serviceType": "Drywall Ceiling Installation",
           "provider": {
-            "@id": "https://pintores-valencia.com/#business"
+            "@id": "https://mejoresreformasvalencia.es/#business"
           }
         },
-        "price": "8.00",
+        "price": "32.00",
         "priceCurrency": "EUR"
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Pintura Piso 70m² Completo",
-          "description": "Servicio completo de pintura interior para piso estándar de 70 metros cuadrados",
+          "name": "Tabiques de Pladur para Distribución Interior",
+          "description": "Ejecución de tabiques de pladur para redistribuir estancias y mejorar funcionalidad",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Apartment Interior Painting",
+          "serviceType": "Drywall Partition Installation",
           "provider": {
-            "@id": "https://pintores-valencia.com/#business"
+            "@id": "https://mejoresreformasvalencia.es/#business"
           }
         },
-        "price": "560.00",
+        "price": "38.00",
         "priceCurrency": "EUR"
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Pintura Piso 90m² Completo",
-          "description": "Servicio completo de pintura interior para piso grande de 90 metros cuadrados",
+          "name": "Trasdosados de Pladur con Aislamiento",
+          "description": "Trasdosados interiores para mejorar confort térmico y acústico en viviendas y locales",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Apartment Interior Painting",
+          "serviceType": "Drywall Lining Installation",
           "provider": {
-            "@id": "https://pintores-valencia.com/#business"
+            "@id": "https://mejoresreformasvalencia.es/#business"
           }
         },
-        "price": "720.00",
+        "price": "35.00",
         "priceCurrency": "EUR"
       }
     ]
@@ -144,26 +144,26 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Cuánto cuesta pintar las paredes de una vivienda en Valencia?",
+      "name": "¿Cuánto cuesta instalar un techo de pladur en Valencia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El precio de pintura interior en Valencia parte desde 8€/m² con materiales incluidos. Un piso de 70 m² cuesta desde 560€ y uno de 90 m² desde 720€. El precio final depende del estado de las paredes y tipo de pintura. Solicita presupuesto gratuito sin compromiso."
+        "text": "El precio depende de la superficie, altura, complejidad y acabados. Como referencia, la instalación de techos de pladur en Valencia parte desde 32€/m². Entregamos presupuesto detallado y sin compromiso."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto tiempo se tarda en pintar el interior de una casa?",
+      "name": "¿Cuánto tarda un trabajo de pladur y techos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Para pintar el interior de una vivienda en Valencia de 70-90 m², el proceso completo tarda entre 3 y 5 días laborables. Esto incluye preparación de superficies, imprimación, dos manos de pintura y limpieza final. El tiempo exacto depende del estado de las paredes."
+        "text": "Depende de los metros y del tipo de solución. Un falso techo estándar suele ejecutarse en 1 a 3 días por estancia, y un proyecto con tabiques o trasdosados puede requerir entre 3 y 7 días. Planificamos por fases para reducir molestias."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Qué incluye el precio de pintura interior?",
+      "name": "¿Qué incluye un falso techo y hacéis tabiques y trasdosados con aislamiento?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El precio de pintura interior en Valencia incluye todos los materiales profesionales (pinturas de calidad, imprimación, masilla), mano de obra especializada, preparación de superficies, protección de suelos y muebles, y limpieza completa final. Presupuesto gratuito sin costes ocultos."
+        "text": "Incluye estructura metálica, placas de pladur, juntas, remates y acabado listo para terminación final. También realizamos tabiques y trasdosados con aislamiento térmico y acústico. Trabajamos en Valencia capital y alrededores con presupuesto sin compromiso."
       }
     }
   ]
@@ -171,10 +171,10 @@ const faqSchema = {
 ---
 
 <SiteLayout 
-  title="Pintura Exterior en Valencia | Fachadas Resistentes Desde 15€/m²"
-  description="Expertos en pintura interior de viviendas en Valencia. Precios competitivos desde 8€/m². Acabados de alta calidad para techos y paredes. Presupuesto gratuito."
-  keywords="pintura interior valencia, pintar paredes valencia, pintura casas valencia, precios pintura interior valencia, pintura techos valencia, pintores profesionales valencia"
-  canonical="https://pintores-valencia.com/servicios/pintura-interior/"
+  title="Pladur y Techos en Valencia | Presupuesto Gratis"
+  description="Empresa especializada en pladur y techos en Valencia. Instalamos falsos techos, tabiques y soluciones interiores con presupuesto gratis y acabados profesionales."
+  keywords="reformas techos valencia, pladur techos valencia, techos de pladur valencia, falsos techos valencia, tabiques de pladur valencia, trabajos de pladur en valencia"
+  canonical="https://mejoresreformasvalencia.es/servicios/pladur-techos-valencia"
   schema={[localBusinessSchema, faqSchema]}
   ogImage="/og-home.webp"
 >
@@ -185,7 +185,7 @@ const faqSchema = {
         <div class="container mx-auto px-4">
           <Breadcrumbs items={[
               { label: "Servicios", href: "/servicios/" },
-              { label: "Pintura Interior" }
+              { label: "Pladur y Techos" }
             ]}  client:load />
       
 
@@ -196,19 +196,19 @@ const faqSchema = {
           <!-- Left side - Content -->
           <div>
             <!-- Title -->
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pintura Interior de Viviendas en Valencia</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pladur y Techos en Valencia</h1>
             
             <!-- Subtitle -->
-            <p class="text-xl text-gray-700 mb-6">Pintores profesionales para techos y paredes en Valencia. Desde 8€/m²</p>
+            <p class="text-xl text-gray-700 mb-6">Instalamos techos de pladur, falsos techos y tabiques con ejecución limpia, rápida y acabados profesionales</p>
             
             <!-- Price -->
             <div class="mb-6">
-              <span class="text-2xl font-bold text-accent">desde 8€/m² <span class="text-sm text-gray-500 font-normal">Material incluido</span></span>
+              <span class="text-2xl font-bold text-accent">desde 32€/m² <span class="text-sm text-gray-500 font-normal">Techos de pladur</span></span>
             </div>
             
             <!-- CTAs -->
             <div class="flex flex-col sm:flex-row gap-4 mb-8">
-              <a href="/presupuesto/" class="h-11 px-6 rounded-md bg-accent hover:bg-accent/90 text-white font-semibold shadow flex items-center justify-center">
+                <a href="/contacto/" class="h-11 px-6 rounded-md bg-accent hover:bg-accent/90 text-white font-semibold shadow flex items-center justify-center">
                 Presupuesto Gratis
               </a>
               <a href="tel:+34722208131" class="h-11 px-6 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-semibold inline-flex items-center justify-center gap-2">
@@ -225,19 +225,19 @@ const faqSchema = {
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Materiales premium</span>
+                <span class="text-gray-700">Falsos techos y techos de pladur</span>
               </div>
               <div class="flex items-center space-x-3">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Acabado perfecto</span>
+                <span class="text-gray-700">Tabiques y trasdosados a medida</span>
               </div>
               <div class="flex items-center space-x-3">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Limpieza incluida</span>
+                <span class="text-gray-700">Aislamiento y acabado profesional</span>
               </div>
             </div>
           </div>
@@ -245,7 +245,7 @@ const faqSchema = {
           <!-- Right side - Image -->
           <div class="order-first lg:order-last">
             <div class="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src={pinturaInteriorImg.src} alt="Pintura interior de viviendas en Valencia - Pintores profesionales trabajando en paredes" width={pinturaInteriorImg.width} height={pinturaInteriorImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
+              <img src={pladurTechosImg.src} alt="Instalación de pladur y falsos techos en Valencia con acabado profesional" width={pladurTechosImg.width} height={pladurTechosImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
             </div>
           </div>
         </div>
@@ -253,124 +253,124 @@ const faqSchema = {
       </div>
     </section>
 
-    <!-- Precio pintura interior Valencia -->
+    <!-- Precio pladur y techos Valencia -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">
-              Precios de Pintura Interior en Valencia
+              Precios de Pladur y Techos en Valencia
             </h2>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-              Presupuesto transparente desde 8€/m² con materiales y mano de obra incluidos
+              Presupuesto claro según metros, tipo de techo y complejidad de la instalación
             </p>
           </div>
           
           <div class="space-y-6 text-gray-700 mb-10">
             <p class="text-lg leading-relaxed">
-              El <strong>precio de pintura interior en Valencia</strong> depende de la superficie a pintar, el tipo de pintura seleccionada y el estado de las paredes. Ofrecemos presupuestos cerrados y transparentes, sin sorpresas ni costes ocultos.
+              El <strong>precio de reformas techos Valencia</strong> y trabajos de pladur depende de la superficie, la altura, el diseño y si hay que integrar iluminación o mejorar aislamiento. Trabajamos con presupuesto detallado y sin costes ocultos.
             </p>
             
             <p class="text-lg leading-relaxed">
-              Nuestros <strong>pintores profesionales en Valencia</strong> utilizan pinturas de alta calidad (Bruguer, Titan, Montó) con certificación ecológica, garantizando un acabado perfecto y duradero para tu vivienda.
+              Nuestro equipo ejecuta <strong>trabajos de pladur en Valencia</strong> con perfilería y placas de calidad, cuidando nivelación, remates y limpieza para que el resultado sea funcional y estético.
             </p>
           </div>
 
           <!-- Tabla de precios orientativos -->
           <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 mb-8">
-            <h3 class="text-2xl font-bold mb-6 text-center">Precios Orientativos de Pintura Interior</h3>
+            <h3 class="text-2xl font-bold mb-6 text-center">Precios Orientativos de Pladur y Techos</h3>
             
             <div class="grid md:grid-cols-2 gap-6">
               <!-- Precio por superficie completa -->
               <div class="bg-white rounded-xl p-6 shadow-sm">
-                <h4 class="font-bold text-lg mb-4 text-gray-900">Por Superficie Completa</h4>
+                <h4 class="font-bold text-lg mb-4 text-gray-900">Techos de Pladur</h4>
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Piso 70 m²</span>
-                    <span class="font-bold text-accent">desde 560€</span>
+                    <span class="text-gray-700">Estancia 20 m²</span>
+                    <span class="font-bold text-accent">desde 640€</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Piso 90 m²</span>
-                    <span class="font-bold text-accent">desde 720€</span>
+                    <span class="text-gray-700">Espacio 40 m²</span>
+                    <span class="font-bold text-accent">desde 1.280€</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Piso 120 m²</span>
-                    <span class="font-bold text-accent">desde 960€</span>
+                    <span class="text-gray-700">Superficie 80 m²</span>
+                    <span class="font-bold text-accent">desde 2.560€</span>
                   </li>
                 </ul>
-                <p class="text-sm text-gray-500 mt-4">*Incluye preparación, imprimación y 2 manos</p>
+                <p class="text-sm text-gray-500 mt-4">*Incluye estructura, placas, juntas y remates</p>
               </div>
 
               <!-- Precio por habitación -->
               <div class="bg-white rounded-xl p-6 shadow-sm">
-                <h4 class="font-bold text-lg mb-4 text-gray-900">Por Habitaciones</h4>
+                <h4 class="font-bold text-lg mb-4 text-gray-900">Tabiques y Trasdosados</h4>
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Habitación individual</span>
-                    <span class="font-bold text-accent">desde 150€</span>
+                    <span class="text-gray-700">Tabique de pladur</span>
+                    <span class="font-bold text-accent">desde 38€/m²</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Salón-comedor</span>
-                    <span class="font-bold text-accent">desde 250€</span>
+                    <span class="text-gray-700">Trasdosado interior</span>
+                    <span class="font-bold text-accent">desde 35€/m²</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Techos completos</span>
-                    <span class="font-bold text-accent">desde 8€/m²</span>
+                    <span class="text-gray-700">Foseado perimetral</span>
+                    <span class="font-bold text-accent">desde 24€/ml</span>
                   </li>
                 </ul>
-                <p class="text-sm text-gray-500 mt-4">*Precios pueden variar según estado</p>
+                <p class="text-sm text-gray-500 mt-4">*Precios orientativos según diseño y obra</p>
               </div>
             </div>
 
             <!-- Qué incluye el precio -->
             <div class="mt-8 bg-white rounded-xl p-6">
-              <h4 class="font-bold text-lg mb-4 text-gray-900">¿Qué Incluye el Precio de Pintura Interior?</h4>
+              <h4 class="font-bold text-lg mb-4 text-gray-900">¿Qué Incluye el Precio de Pladur y Techos?</h4>
               <div class="grid md:grid-cols-2 gap-4">
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Pinturas de alta calidad incluidas</span>
+                  <span class="text-gray-700">Perfilería y placas de pladur</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Preparación completa de superficies</span>
+                  <span class="text-gray-700">Replanteo y nivelación de estructura</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Imprimación selladora</span>
+                  <span class="text-gray-700">Formación de juntas y remates</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Mano de obra profesional</span>
+                  <span class="text-gray-700">Montaje profesional de techos y tabiques</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Protección de suelos y muebles</span>
+                  <span class="text-gray-700">Protección de la zona de trabajo</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Limpieza completa final</span>
+                  <span class="text-gray-700">Limpieza y revisión final</span>
                 </div>
               </div>
             </div>
 
             <div class="mt-8 bg-white rounded-xl p-6">
               <p class="text-lg text-gray-700 mb-6">
-                <strong>¿Quieres renovar tu vivienda?</strong> Consulta nuestro <strong>precio de pintura interior en Valencia</strong> y descubre cómo podemos transformar tus espacios con acabados profesionales de alta calidad.
+                <strong>¿Quieres renovar tus interiores?</strong> Te ayudamos con <strong>pladur techos Valencia</strong>, falsos techos y divisiones funcionales con acabados profesionales y presupuesto claro.
               </p>
               <div class="flex justify-center text-center">
-                <a href="/presupuesto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-accent text-white hover:bg-accent/90 focus:ring-accent shadow-md hover:shadow-lg px-8 py-3 text-lg rounded-lg">
+                <a href="/contacto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-accent text-white hover:bg-accent/90 focus:ring-accent shadow-md hover:shadow-lg px-8 py-3 text-lg rounded-lg">
                   Solicitar Presupuesto Gratuito
                 </a>
               </div>
@@ -380,16 +380,16 @@ const faqSchema = {
       </div>
     </section>
 
-    <!-- Beneficios de pintura interior -->
+    <!-- Beneficios de pladur y techos -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">
-              Beneficios de Pintar el Interior de tu Vivienda en Valencia
+              Beneficios de Instalar Pladur y Techos en Valencia
             </h2>
             <p class="text-xl text-gray-600">
-              Mejora la estética y el confort de tu hogar
+              Soluciones interiores funcionales, limpias y con acabado profesional
             </p>
           </div>
 
@@ -404,9 +404,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Acabado Perfecto y Duradero</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Acabado Uniforme y Profesional</h3>
                   <p class="text-gray-700">
-                    La <strong>pintura interior en Valencia</strong> con productos de alta calidad garantiza un acabado profesional que mantiene su aspecto impecable durante años.
+                    Los <strong>techos de pladur Valencia</strong> permiten conseguir superficies limpias, niveladas y listas para un acabado final de alta calidad.
                   </p>
                 </div>
               </div>
@@ -421,9 +421,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Ambientes Renovados y Luminosos</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Ocultación de Instalaciones</h3>
                   <p class="text-gray-700">
-                    Pintar techos y paredes en tonos claros aumenta la luminosidad de tus espacios, creando ambientes más amplios y acogedores en tu vivienda.
+                    Los <strong>falsos techos Valencia</strong> ayudan a ocultar cableado, conductos y otros elementos técnicos sin perder estética ni accesibilidad.
                   </p>
                 </div>
               </div>
@@ -439,9 +439,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Revaloriza tu Vivienda</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Mejora Térmica y Acústica</h3>
                   <p class="text-gray-700">
-                    Una vivienda con <strong>pintura interior profesional</strong> aumenta significativamente su valor de mercado y resulta más atractiva para posibles compradores o inquilinos.
+                    Con trasdosados y tabiques bien ejecutados puedes integrar aislamiento y mejorar el confort diario de vivienda o local comercial.
                   </p>
                 </div>
               </div>
@@ -456,9 +456,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Fácil Mantenimiento y Limpieza</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Reforma Interior Rápida y Limpia</h3>
                   <p class="text-gray-700">
-                    Las <strong>pinturas modernas lavables</strong> permiten limpiar las paredes fácilmente, manteniendo tu vivienda en perfectas condiciones con mínimo esfuerzo.
+                    Los <strong>tabiques de pladur Valencia</strong> y techos registrables permiten renovar la distribución del espacio con obra seca y menor suciedad.
                   </p>
                 </div>
               </div>
@@ -481,10 +481,10 @@ const faqSchema = {
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Cómo Pintamos el Interior de tu Vivienda en Valencia
+            Cómo Trabajamos el Pladur y Techos en Valencia
           </h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Proceso profesional en 4 pasos para garantizar acabados perfectos
+            Proceso profesional en 4 pasos para garantizar ejecución precisa y buenos acabados
           </p>
         </div>
         
@@ -497,9 +497,9 @@ const faqSchema = {
                   1
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Protección de Muebles y Suelos</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Visita Técnica y Medición</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Antes de iniciar la <strong>pintura interior en Valencia</strong>, protegemos completamente todos tus muebles y suelos con plásticos y papel profesional. Sellamos puertas para evitar que el polvo se disperse por otras habitaciones de tu vivienda.
+                    Revisamos el espacio, tomamos medidas reales y definimos la solución más adecuada para techos, tabiques o trasdosados según uso y presupuesto.
                   </p>
                 </div>
               </div>
@@ -512,9 +512,9 @@ const faqSchema = {
                   2
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Preparación de las Superficies</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Replanteo y Estructura</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Lijamos y reparamos todas las imperfecciones de <strong>paredes y techos</strong>. Aplicamos masilla profesional donde sea necesario y realizamos un lijado fino para conseguir superficies perfectamente lisas. Este paso es fundamental para obtener un acabado profesional duradero.
+                    Marcamos niveles, colocamos perfilería y preparamos el soporte para asegurar estabilidad y alineación en toda la instalación.
                   </p>
                 </div>
               </div>
@@ -527,9 +527,9 @@ const faqSchema = {
                   3
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Aplicación de Pintura de Alta Calidad</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Montaje de Placas y Remates</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Aplicamos imprimación selladora de calidad y <strong>dos manos de pintura</strong> con productos premium (Bruguer, Titan, Montó). Utilizamos técnica profesional que garantiza cobertura uniforme y acabado impecable en todas las superficies de tu vivienda en Valencia.
+                    Instalamos placas de pladur, realizamos juntas, cantoneras y remates para dejar una base lista para el acabado final con estándar profesional.
                   </p>
                 </div>
               </div>
@@ -542,9 +542,9 @@ const faqSchema = {
                   4
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Limpieza Final y Verificación de Calidad</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Revisión, Limpieza y Entrega</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Retiramos todas las protecciones y realizamos una <strong>limpieza completa</strong> de la vivienda. Inspeccionamos minuciosamente el trabajo para garantizar que cada detalle sea perfecto. Te entregamos tu hogar impecable y listo para disfrutar.
+                    Comprobamos nivelación, encuentros y acabado, retiramos protecciones y entregamos el espacio limpio, listo para uso o para la fase final de decoración.
                   </p>
                 </div>
               </div>
@@ -557,11 +557,11 @@ const faqSchema = {
     <!-- CTA Contact Section -->
     <section class="py-12 bg-blue-600 text-white">
       <div class="container mx-auto px-4 text-center">
-        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Necesitas pintar tu casa?</h2>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Necesitas pladur y techos en tu reforma?</h2>
         <p class="text-xl mb-8">Te respondemos en menos de 24 horas</p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/presupuesto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-500 shadow-md hover:shadow-lg px-6 py-3 text-lg rounded-lg">
+          <a href="/contacto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-500 shadow-md hover:shadow-lg px-6 py-3 text-lg rounded-lg">
             Pedir presupuesto gratis
           </a>
           <a href="tel:+34722208131" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-white text-blue-600 hover:bg-gray-100 focus:ring-blue-500 shadow-md hover:shadow-lg px-6 py-3 text-lg rounded-lg gap-2">
@@ -579,7 +579,7 @@ const faqSchema = {
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Preguntas Frecuentes sobre Pintura Interior en Valencia
+            Preguntas Frecuentes sobre Pladur y Techos en Valencia
           </h2>
           <p class="text-lg text-gray-600">
             Resolvemos todas tus dudas sobre nuestro servicio profesional
@@ -590,30 +590,30 @@ const faqSchema = {
           <!-- FAQ 1 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm">
             <h3 class="font-bold text-lg mb-3 text-gray-900">
-              ¿Cuánto cuesta pintar las paredes de una vivienda en Valencia?
+              ¿Cuánto cuesta instalar un techo de pladur en Valencia?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              El <strong>precio de pintura interior en Valencia</strong> parte desde <strong>8€/m²</strong> con materiales incluidos. Un piso de 70 m² cuesta desde 560€ y uno de 90 m² desde 720€. El precio final depende del estado de las paredes, el tipo de pintura seleccionada y los metros cuadrados a pintar. <strong>Solicita un presupuesto gratuito</strong> sin compromiso y te daremos un precio exacto para tu vivienda.
+              El precio depende de la superficie, altura, complejidad y acabados. Como referencia, la instalación de <strong>techos de pladur Valencia</strong> parte desde <strong>32€/m²</strong>. Te damos presupuesto detallado y sin compromiso.
             </p>
           </div>
 
           <!-- FAQ 2 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm">
             <h3 class="font-bold text-lg mb-3 text-gray-900">
-              ¿Cuánto tiempo se tarda en pintar el interior de una casa?
+              ¿Cuánto tarda un trabajo de pladur y techos?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Para <strong>pintar el interior de una vivienda en Valencia</strong> de 70-90 m², el proceso completo tarda entre <strong>3 y 5 días laborables</strong>. Esto incluye la preparación de superficies (lijado y masillado), imprimación, aplicación de dos manos de pintura y limpieza final completa. El tiempo exacto depende del estado de las paredes y del número de habitaciones. Te proporcionaremos un calendario detallado con tu presupuesto.
+              Depende de los metros y del tipo de solución. Un falso techo estándar suele ejecutarse en <strong>1 a 3 días por estancia</strong>, y un proyecto con tabiques o trasdosados puede requerir entre <strong>3 y 7 días</strong>. Planificamos por fases para reducir molestias.
             </p>
           </div>
 
           <!-- FAQ 3 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm">
             <h3 class="font-bold text-lg mb-3 text-gray-900">
-              ¿Qué incluye el precio de pintura interior?
+              ¿Qué incluye un falso techo y hacéis tabiques y trasdosados con aislamiento?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Nuestro <strong>precio de pintura interior en Valencia</strong> incluye todos los materiales profesionales (pinturas premium, imprimación, masilla), mano de obra especializada de pintores profesionales, preparación completa de superficies (lijado y masillado), protección de suelos y muebles, y limpieza completa final. Presupuesto gratuito sin costes ocultos.
+              Incluye estructura metálica, placas de pladur, juntas, remates y acabado listo para terminación final. También hacemos <strong>tabiques de pladur Valencia</strong> y trasdosados con aislamiento térmico y acústico. Trabajamos en Valencia capital y alrededores con presupuesto sin compromiso.
             </p>
           </div>
         </div>

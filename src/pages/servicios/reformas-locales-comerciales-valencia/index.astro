@@ -1,16 +1,16 @@
 ---
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.tsx';
-import localComercialImg from '../../../assets/pintura-locales-comerciales-valencia-trabajo-nocturno.jpg';
+import reformaLocalImg from '../../../assets/pintura-locales-comerciales-valencia-trabajo-nocturno.jpg';
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-  "@id": "https://pintores-valencia.com/#business",
-  "name": "Pintores en Valencia",
-  "description": "Empresa de pintura profesional en Valencia. Nos desplazamos a toda la ciudad y alrededores para servicios de pintura de interiores, exteriores, fachadas, comunidades y más.",
-  "url": "https://pintores-valencia.com",
-  "image": "https://pintores-valencia.com/og-home.webp",
+  "@id": "https://mejoresreformasvalencia.es/#business",
+  "name": "Reformas en Valencia",
+  "description": "Empresa especializada en reformas de locales comerciales en Valencia. Acondicionamos espacios de negocio con ejecución profesional y enfoque funcional.",
+  "url": "https://mejoresreformasvalencia.es",
+  "image": "https://mejoresreformasvalencia.es/og-home.webp",
   "telephone": "+34722208131",
   "address": {
     "@type": "PostalAddress",
@@ -19,7 +19,7 @@ const localBusinessSchema = {
     "addressCountry": "ES"
   },
   "openingHours": ["Mo-Sa 08:00-20:00"],
-  "priceRange": "€€",
+  "priceRange": "€€€",
   "areaServed": [
     {
       "@type": "City",
@@ -60,40 +60,59 @@ const localBusinessSchema = {
     { "@type": "PostalCodeSpecification", "postalCode": "46025", "addressLocality": "Valencia", "addressCountry": "ES" }
   ],
   "knowsAbout": [
-    "Pintura de interiores y exteriores en Valencia",
-    "Eliminación de gotelé y alisado de paredes",
-    "Impermeabilización de terrazas y cubiertas",
-    "Rehabilitación y pintura de fachadas",
-    "Pintura de comunidades de vecinos",
-    "Instalación de papel pintado y vinilos decorativos",
-    "Lacado de puertas y carpintería",
-    "Pintura de locales comerciales",
-    "Barnizado de madera",
-    "Tratamientos anti-humedad",
-    "Reparación de grietas y fisuras",
-    "Aplicación de revestimientos impermeables"
+    "Reformas locales comerciales Valencia",
+    "Reforma de local comercial en Valencia",
+    "Acondicionamiento de locales comerciales Valencia",
+    "Reforma integral local comercial Valencia",
+    "Redistribución de espacios para negocios",
+    "Suelos, revestimientos y techos para locales",
+    "Instalaciones eléctricas y fontanería en locales",
+    "Modernización de imagen comercial",
+    "Reformas parciales de locales",
+    "Reformas integrales de locales",
+    "Coordinación de gremios en obras comerciales",
+    "Empresa de reformas de locales comerciales en Valencia"
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Catálogo de Pintura de Locales Comerciales en Valencia",
+    "name": "Catálogo de Reformas de Locales Comerciales en Valencia",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Pintura de Locales Comerciales",
-          "description": "Pintura profesional de locales comerciales sin interrumpir la actividad",
+          "name": "Reforma Parcial de Local Comercial",
+          "description": "Acondicionamiento parcial de local con mejora de distribución y acabados",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Commercial Painting",
+          "serviceType": "Partial Commercial Renovation",
           "provider": {
-            "@id": "https://pintores-valencia.com/#business"
+            "@id": "https://mejoresreformasvalencia.es/#business"
           }
         },
-        "price": "10.00",
+        "price": "9000.00",
+        "priceCurrency": "EUR"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Reforma Integral de Local Comercial",
+          "description": "Reforma integral de local con instalaciones, suelos, techos y acabados",
+          "areaServed": {
+            "@type": "City",
+            "name": "Valencia",
+            "sameAs": "https://www.wikidata.org/wiki/Q8818"
+          },
+          "serviceType": "Complete Commercial Renovation",
+          "provider": {
+            "@id": "https://mejoresreformasvalencia.es/#business"
+          }
+        },
+        "price": "18000.00",
         "priceCurrency": "EUR"
       }
     ]
@@ -106,34 +125,34 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Pueden trabajar por las noches o fines de semana?",
+      "name": "¿Cuánto cuesta reformar un local comercial en Valencia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, trabajamos noches, madrugadas, fines de semana y festivos sin recargo adicional para no interrumpir la actividad del negocio."
+        "text": "El precio depende de metros, estado y alcance. Un acondicionamiento parcial puede partir desde 9.000€ y una reforma integral desde 18.000€. Entregamos presupuesto sin compromiso y con partidas detalladas."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Qué tipos de negocios atienden?",
+      "name": "¿Cuánto tarda una reforma de local?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Restaurantes, oficinas, tiendas, clínicas, peluquerías, talleres, naves, centros comerciales y cualquier tipo de local comercial."
+        "text": "Una reforma parcial suele durar entre 2 y 4 semanas. Una reforma integral puede estar entre 5 y 10 semanas según complejidad. Organizamos plazos para reducir al máximo el impacto en la actividad."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto tiempo tarda un local comercial?",
+      "name": "¿Qué incluye una reforma de local comercial?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Un local pequeño 1-2 noches. Un local grande 3-5 noches. Planificamos para minimizar el cierre del negocio."
+        "text": "Incluye demolición, redistribución, instalaciones eléctricas y fontanería, suelos, revestimientos, techos y acabados finales. Adaptamos el proyecto a la actividad y al flujo real del negocio."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Utilizan pinturas especiales?",
+      "name": "¿Hacéis acondicionamiento para distintos tipos de negocio y adaptáis distribución e instalaciones?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, pinturas lavables, antibacterianas y de secado rápido según el negocio. Para restaurantes resistentes a grasas, para clínicas antibacterianas."
+        "text": "Sí. Hacemos acondicionamiento de locales comerciales Valencia para tiendas, oficinas, clínicas, restauración y otros negocios, adaptando distribución, instalaciones y acabados en Valencia capital y alrededores."
       }
     }
   ]
@@ -141,10 +160,10 @@ const faqSchema = {
 ---
 
 <SiteLayout 
-  title="Pintura de locales comerciales en Valencia desde 10€/m²"
-  description="Pintamos tu local comercial sin interrumpir tu negocio. Trabajamos noches y fines de semana. Secado rápido. Presupuesto gratis en 24h."
-  keywords="pintura locales comerciales valencia, pintar negocio valencia, pintura oficinas valencia, pintura restaurantes valencia, precio pintar local valencia"
-  canonical="https://pintores-valencia.com/servicios/pintura-locales-comerciales/"
+  title="Reformas de Locales Comerciales en Valencia | Presupuesto Gratis"
+  description="Empresa especializada en reformas de locales comerciales en Valencia. Acondicionamos espacios para negocios con presupuesto gratis, ejecución profesional y enfoque funcional."
+  keywords="reformas locales comerciales valencia, reforma de local comercial en valencia, empresa de reformas de locales comerciales en valencia, acondicionamiento de locales comerciales valencia, reforma integral local comercial valencia"
+  canonical="https://mejoresreformasvalencia.es/servicios/reformas-locales-comerciales-valencia/"
   schema={[localBusinessSchema, faqSchema]}
   ogImage="/og-home.webp"
 >
@@ -155,7 +174,7 @@ const faqSchema = {
       <div class="container mx-auto px-4">
         <Breadcrumbs items={[
             { label: "Servicios", href: "/servicios/" },
-            { label: "Locales Comerciales" }
+            { label: "Reformas de Locales Comerciales" }
           ]} client:load />
       </div>
 
@@ -166,14 +185,14 @@ const faqSchema = {
             <!-- Left side - Content -->
             <div>
               <!-- Title -->
-              <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pintura de locales comerciales en Valencia</h1>
+              <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Reformas de Locales Comerciales en Valencia</h1>
               
               <!-- Subtitle -->
-              <p class="text-xl text-gray-700 mb-6">Pintamos tu negocio sin interrumpir la actividad comercial. Trabajamos noches y fines de semana</p>
+              <p class="text-xl text-gray-700 mb-6">Reformamos y acondicionamos locales comerciales con enfoque funcional, imagen cuidada y plazos organizados para afectar lo mínimo al negocio</p>
               
               <!-- Price -->
               <div class="mb-6">
-                <span class="text-2xl font-bold text-accent">desde 10€/m² <span class="text-sm text-gray-500 font-normal">Material incluido</span></span>
+                <span class="text-2xl font-bold text-accent">desde 9.000€ <span class="text-sm text-gray-500 font-normal">Reforma parcial</span></span>
               </div>
               
               <!-- CTAs -->
@@ -195,19 +214,19 @@ const faqSchema = {
                   <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Trabajo nocturno</span>
+                  <span class="text-gray-700">Acondicionamiento funcional</span>
                 </div>
                 <div class="flex items-center space-x-3">
                   <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Sin interrupciones</span>
+                  <span class="text-gray-700">Plazos organizados</span>
                 </div>
                 <div class="flex items-center space-x-3">
                   <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Secado rápido</span>
+                  <span class="text-gray-700">Ejecución profesional</span>
                 </div>
               </div>
             </div>
@@ -215,7 +234,7 @@ const faqSchema = {
             <!-- Right side - Image -->
             <div class="order-first lg:order-last">
               <div class="relative rounded-2xl overflow-hidden shadow-xl">
-                <img src={localComercialImg.src} alt="Pintura de locales comerciales en Valencia - Pintores profesionales trabajando en un negocio" width={localComercialImg.width} height={localComercialImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
+                <img src={reformaLocalImg.src} alt="Reforma de local comercial en Valencia con acondicionamiento profesional" width={reformaLocalImg.width} height={reformaLocalImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
               </div>
             </div>
           </div>
@@ -229,20 +248,20 @@ const faqSchema = {
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">
-              Precio de Pintar Locales Comerciales en Valencia
+              Precio de Reformas de Locales Comerciales en Valencia
             </h2>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-              Presupuesto transparente desde 10€/m² con materiales incluidos
+              Presupuesto transparente según alcance y necesidades del negocio
             </p>
           </div>
           
           <div class="space-y-6 text-gray-700">
             <p class="text-lg leading-relaxed">
-              El <strong>precio de pintar un local comercial en Valencia</strong> depende del tipo de negocio, la superficie total, el tipo de pintura requerida y la complejidad del trabajo. En todos los casos ofrecemos un <strong>presupuesto cerrado, detallado y transparente</strong>, sin sorpresas.
+              El <strong>precio de una reforma de local comercial en Valencia</strong> depende de los metros, el estado actual del espacio y el tipo de adaptación que necesita el negocio. En todos los casos trabajamos con <strong>presupuesto cerrado, detallado y transparente</strong>.
             </p>
             
             <p class="text-lg leading-relaxed">
-              <strong>Sin recargos por trabajo nocturno o fines de semana.</strong> Trabajamos cuando tu negocio está cerrado para no interrumpir la actividad comercial. Utilizamos <strong>pinturas específicas según el tipo de negocio</strong>:
+              Organizamos la obra por fases para reducir al máximo el impacto en la actividad. Realizamos <strong>acondicionamiento de locales comerciales Valencia</strong> adaptando distribución, instalaciones y acabados según cada negocio:
             </p>
 
             <ul class="space-y-3 ml-6">
@@ -250,24 +269,24 @@ const faqSchema = {
                 <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1 mr-3" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span><strong>Clínicas y consultas médicas:</strong> pinturas lavables y antibacterianas</span>
+                <span><strong>Clínicas y consultas:</strong> distribución funcional, instalaciones técnicas y acabados higiénicos</span>
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1 mr-3" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span><strong>Restaurantes y bares:</strong> pinturas resistentes a grasas y humedad</span>
+                <span><strong>Hostelería:</strong> adaptación de sala, barra, cocina y zonas de servicio</span>
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1 mr-3" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span><strong>Tiendas y comercios:</strong> pinturas de secado rápido y alta durabilidad</span>
+                <span><strong>Tiendas y oficinas:</strong> reforma de imagen comercial, iluminación y recorridos de cliente</span>
               </li>
             </ul>
 
             <p class="text-lg leading-relaxed">
-              El precio siempre incluye <strong>preparación completa de superficies, imprimación profesional y acabado de alta calidad</strong>. No tendrás que preocuparte por nada más.
+              El precio incluye <strong>demolición, albañilería, instalaciones, suelos, revestimientos, techos y acabados finales</strong> según proyecto. Te acompañamos de principio a fin.
             </p>
           </div>
         </div>
@@ -279,10 +298,10 @@ const faqSchema = {
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Nuestro Proceso Paso a Paso
+            Nuestro Proceso de Reforma Paso a Paso
           </h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Así trabajamos para pintar tu local sin interrumpir tu negocio
+            Así trabajamos para reformar tu local con plazos organizados y ejecución profesional
           </p>
         </div>
         
@@ -295,9 +314,9 @@ const faqSchema = {
                   1
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Visita y Planificación</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Visita Técnica y Definición de Proyecto</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Visitamos tu local para evaluar el trabajo necesario y <strong>planificar según los horarios de tu negocio</strong>. Coordinamos el trabajo para que puedas seguir operando con normalidad.
+                    Visitamos el local para analizar distribución, instalaciones y necesidades del negocio. Definimos una propuesta realista para una <strong>reforma integral local comercial Valencia</strong> o parcial, según tu objetivo.
                   </p>
                 </div>
               </div>
@@ -310,9 +329,9 @@ const faqSchema = {
                   2
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Protección del Mobiliario</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Plan de Obra y Organización de Plazos</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Realizamos <strong>protección completa de muebles, equipos, productos y zonas sensibles</strong>. Cubrimos todo con lonas profesionales y cinta de carrocero para evitar cualquier daño o mancha.
+                    Marcamos fases, tiempos y prioridades para afectar lo mínimo a la actividad. Si el negocio está en marcha, organizamos el trabajo para mantener operativas las zonas clave.
                   </p>
                 </div>
               </div>
@@ -325,9 +344,9 @@ const faqSchema = {
                   3
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Preparación de Superficies</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Demolición y Adaptación del Espacio</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    <strong>Limpieza profunda, lijado y reparación</strong> de grietas o imperfecciones. Este paso es fundamental para garantizar un acabado profesional y duradero que resista el uso intensivo del local comercial.
+                    Ejecutamos demoliciones controladas, redistribución de tabiques y preparación de base para adaptar el local al funcionamiento real del negocio.
                   </p>
                 </div>
               </div>
@@ -340,9 +359,9 @@ const faqSchema = {
                   4
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Aplicación de Pintura Específica</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Instalaciones y Acabados Técnicos</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Uso de <strong>pinturas técnicas según el tipo de negocio</strong>: antibacterianas para clínicas, lavables y resistentes para restaurantes, o de secado rápido para comercios. Aplicamos imprimación y dos capas de acabado.
+                    Renovamos instalaciones eléctricas y fontanería, techos, suelos y revestimientos. Ajustamos cada solución al tipo de actividad y normativa aplicable.
                   </p>
                 </div>
               </div>
@@ -355,9 +374,9 @@ const faqSchema = {
                   5
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Acabado y Retoques</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Revisión y Ajustes Finales</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Aplicación de <strong>acabados finales y revisión completa</strong> del trabajo realizado. Nos aseguramos de que cada detalle esté perfecto antes de retirar las protecciones.
+                    Revisamos detalles de ejecución, funcionalidad y remates para que el local quede listo para operar con imagen renovada y buen rendimiento diario.
                   </p>
                 </div>
               </div>
@@ -370,9 +389,9 @@ const faqSchema = {
                   6
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Limpieza y Entrega</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Entrega y Garantía</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    <strong>Limpieza total del local</strong> y retirada de todas las protecciones. Tu negocio quedará completamente listo para abrir al día siguiente, sin olores fuertes ni residuos.
+                    Entregamos el local limpio y con garantía por escrito. Te explicamos cada partida ejecutada para que tengas control total del resultado.
                   </p>
                 </div>
               </div>
@@ -385,7 +404,7 @@ const faqSchema = {
     <!-- CTA Contact Section -->
     <section class="py-12 bg-blue-600 text-white">
       <div class="container mx-auto px-4 text-center">
-        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Necesitas pintar tu local?</h2>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Necesitas reformar tu local comercial?</h2>
         <p class="text-xl mb-8">Te respondemos en menos de 24 horas</p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -407,7 +426,7 @@ const faqSchema = {
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Preguntas Frecuentes sobre Pintura de Locales Comerciales
+            Preguntas Frecuentes sobre Reformas de Locales Comerciales
           </h2>
           <p class="text-lg text-gray-600">
             Resolvemos todas tus dudas sobre nuestro servicio profesional
@@ -418,40 +437,40 @@ const faqSchema = {
           <!-- FAQ 1 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 class="font-bold text-xl mb-3 text-gray-900">
-              ¿Pueden trabajar por las noches o fines de semana?
+              ¿Cuánto cuesta reformar un local comercial en Valencia?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              <strong>Sí, sin recargo adicional.</strong> Nos especializamos en trabajos fuera del horario comercial para no interrumpir la actividad del negocio. Trabajamos noches, madrugadas, fines de semana y festivos cuando tu local está cerrado.
+              El precio depende de metros, estado y alcance. Un acondicionamiento parcial puede partir desde 9.000€ y una reforma integral desde 18.000€. Entregamos <strong>presupuesto sin compromiso</strong> y con partidas detalladas.
             </p>
           </div>
 
           <!-- FAQ 2 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 class="font-bold text-xl mb-3 text-gray-900">
-              ¿Qué tipos de negocios atienden?
+              ¿Cuánto tarda una reforma de local?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Atendemos <strong>todo tipo de locales comerciales</strong>: restaurantes, oficinas, tiendas, clínicas, peluquerías, centros de estética, talleres, naves industriales, consultas médicas, gimnasios, centros comerciales y cualquier espacio comercial que necesite renovación.
+              Una reforma parcial suele durar entre 2 y 4 semanas. Una reforma integral puede estar entre 5 y 10 semanas según complejidad. Organizamos plazos para reducir al máximo el impacto en la actividad.
             </p>
           </div>
 
           <!-- FAQ 3 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 class="font-bold text-xl mb-3 text-gray-900">
-              ¿Cuánto tiempo tarda un local comercial?
+              ¿Qué incluye una reforma de local comercial?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Depende del tamaño y estado del local. Un <strong>local pequeño (50m²) puede estar listo en 1-2 noches</strong>. Locales grandes pueden requerir <strong>3-5 noches</strong>. Siempre planificamos el trabajo para minimizar el tiempo de cierre del negocio.
+              Incluye demolición, redistribución, instalaciones eléctricas y fontanería, suelos, revestimientos, techos y acabados finales. Adaptamos el proyecto a la actividad y al flujo real del negocio.
             </p>
           </div>
 
           <!-- FAQ 4 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 class="font-bold text-xl mb-3 text-gray-900">
-              ¿Utilizan pinturas especiales para locales comerciales?
+              ¿Hacéis acondicionamiento para distintos tipos de negocio y adaptáis distribución e instalaciones?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Sí, utilizamos <strong>pinturas específicas según el tipo de negocio</strong>: pinturas lavables y antibacterianas para clínicas, pinturas resistentes a grasas y humedad para restaurantes, y pinturas de secado rápido y alta durabilidad para tiendas y comercios.
+              Sí. Hacemos <strong>acondicionamiento de locales comerciales Valencia</strong> para tiendas, oficinas, clínicas, restauración y otros negocios, adaptando distribución, instalaciones y acabados en Valencia capital y alrededores.
             </p>
           </div>
         </div>

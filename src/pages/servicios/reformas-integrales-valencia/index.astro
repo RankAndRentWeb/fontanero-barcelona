@@ -1,16 +1,16 @@
 ---
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.tsx';
-import quitarGoteleImg from '../../../assets/quitar-gotelé-valencia.png';
+import reformaIntegralImg from '../../../assets/quitar-gotelé-valencia.png';
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-  "@id": "https://pintores-valencia.com/#business",
-  "name": "Pintores en Valencia",
-  "description": "Empresa de pintura profesional en Valencia. Nos desplazamos a toda la ciudad y alrededores para servicios de pintura de interiores, exteriores, fachadas, comunidades y más.",
-  "url": "https://pintores-valencia.com",
-  "image": "https://pintores-valencia.com/og-home.webp",
+  "@id": "https://mejoresreformasvalencia.es/#business",
+  "name": "Reformas en Valencia",
+  "description": "Empresa de reformas integrales en Valencia para viviendas, pisos, chalets y locales. Coordinamos todo el proyecto con ejecución profesional.",
+  "url": "https://mejoresreformasvalencia.es",
+  "image": "https://mejoresreformasvalencia.es/og-home.webp",
   "telephone": "+34722208131",
   "address": {
     "@type": "PostalAddress",
@@ -19,7 +19,7 @@ const localBusinessSchema = {
     "addressCountry": "ES"
   },
   "openingHours": ["Mo-Sa 08:00-20:00"],
-  "priceRange": "€€",
+  "priceRange": "€€€",
   "areaServed": [
     {
       "@type": "City",
@@ -60,78 +60,78 @@ const localBusinessSchema = {
     { "@type": "PostalCodeSpecification", "postalCode": "46025", "addressLocality": "Valencia", "addressCountry": "ES" }
   ],
   "knowsAbout": [
-    "Pintura de interiores y exteriores en Valencia",
-    "Eliminación de gotelé y alisado de paredes",
-    "Impermeabilización de terrazas y cubiertas",
-    "Rehabilitación y pintura de fachadas",
-    "Pintura de comunidades de vecinos",
-    "Instalación de papel pintado y vinilos decorativos",
-    "Lacado de puertas y carpintería",
-    "Pintura de locales comerciales",
-    "Barnizado de madera",
-    "Tratamientos anti-humedad",
-    "Reparación de grietas y fisuras",
-    "Aplicación de revestimientos impermeables"
+    "Reformas integrales en Valencia",
+    "Reforma completa de viviendas y pisos",
+    "Reformas de diseño en Valencia",
+    "Redistribución de espacios interiores",
+    "Albañilería y tabiquería",
+    "Renovación de fontanería y electricidad",
+    "Reforma de cocinas y baños",
+    "Instalación de pavimentos y revestimientos",
+    "Coordinación de gremios en obra",
+    "Reformas integrales en chalets",
+    "Reformas integrales en locales comerciales",
+    "Gestión global del proyecto de reforma"
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Catálogo de Eliminación de Gotelé en Valencia",
+    "name": "Catálogo de Reformas Integrales en Valencia",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Quitar Gotelé y Alisar Paredes en Valencia",
-          "description": "Eliminación profesional de gotelé con lijado sin polvo y alisado completo de paredes",
+          "name": "Reforma Integral Piso 70m²",
+          "description": "Reforma integral completa con albañilería, instalaciones, pavimentos y acabados",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Wall Smoothing Service",
+          "serviceType": "Complete Home Renovation",
           "provider": {
-            "@id": "https://pintores-valencia.com/#business"
+            "@id": "https://mejoresreformasvalencia.es/#business"
           }
         },
-        "price": "10.00",
+        "price": "18000.00",
         "priceCurrency": "EUR"
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Alisado de Gotelé en Habitación Individual",
-          "description": "Servicio de eliminación de gotelé y alisado para habitaciones individuales",
+          "name": "Reforma Integral Piso 90m²",
+          "description": "Renovación integral de vivienda con redistribución, cocina, baño e instalaciones",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Room Wall Smoothing",
+          "serviceType": "Comprehensive Apartment Renovation",
           "provider": {
-            "@id": "https://pintores-valencia.com/#business"
+            "@id": "https://mejoresreformasvalencia.es/#business"
           }
         },
-        "price": "350.00",
+        "price": "25000.00",
         "priceCurrency": "EUR"
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Quitar Gotelé Piso Completo 70m²",
-          "description": "Eliminación completa de gotelé y alisado de paredes para piso estándar",
+          "name": "Reforma Integral Chalet o Local",
+          "description": "Proyecto integral con coordinación total de gremios y gestión completa de obra",
           "areaServed": {
             "@type": "City",
             "name": "Valencia",
             "sameAs": "https://www.wikidata.org/wiki/Q8818"
           },
-          "serviceType": "Apartment Wall Smoothing",
+          "serviceType": "Turnkey Renovation Project",
           "provider": {
-            "@id": "https://pintores-valencia.com/#business"
+            "@id": "https://mejoresreformasvalencia.es/#business"
           }
         },
-        "price": "1200.00",
+        "price": "32000.00",
         "priceCurrency": "EUR"
       }
     ]
@@ -144,26 +144,26 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Cuánto cuesta quitar el gotelé y alisar las paredes en Valencia?",
+      "name": "¿Cuánto cuesta una reforma integral en Valencia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El precio de quitar gotelé en Valencia y alisar paredes parte desde 10€/m² con todos los materiales incluidos (lijado, enlucido, imprimación). Los precios varían según el tamaño y el estado de las paredes. Solicita un presupuesto gratuito y personalizado para conocer el precio exacto de tu vivienda."
+        "text": "El precio de una reforma integral en Valencia depende de metros, calidades y alcance del proyecto. Como referencia, una vivienda de 70 m² puede partir desde 18.000€, una de 90 m² desde 25.000€ y proyectos más amplios desde 32.000€. Incluye coordinación de gremios, planificación y ejecución profesional."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto tiempo tardan en alisar las paredes de mi casa?",
+      "name": "¿Cuánto tarda una reforma integral?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El proceso completo de eliminar gotelé y alisar paredes en un piso estándar de 70-90 m² suele tardar entre 3 y 5 días laborables. Esto depende del tamaño de la vivienda y el estado de las paredes. Para habitaciones individuales, podemos realizar el trabajo en 1-2 días. Te daremos un calendario exacto con el presupuesto."
+        "text": "Una reforma integral en Valencia suele tardar entre 6 y 12 semanas según tamaño, redistribución de espacios y complejidad técnica. Antes de empezar, definimos un calendario de obra detallado para que tengas plazos claros desde el primer día."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Qué incluye el precio de quitar el gotelé en Valencia?",
+      "name": "¿Qué incluye una reforma integral?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El precio incluye todos los materiales profesionales (pasta niveladora, imprimación, lijas), mano de obra especializada, protección de suelos y muebles, limpieza diaria y final de la vivienda, y garantía por escrito del trabajo realizado. Sin costes ocultos. Solicita tu presupuesto personalizado para obtener un precio cerrado sin sorpresas."
+        "text": "Incluye albañilería, fontanería, electricidad, revestimientos, pavimentos, carpintería, reforma de cocina y baño si forma parte del alcance, además de coordinación de gremios y gestión global del proyecto. Presupuesto cerrado y seguimiento continuo de obra."
       }
     }
   ]
@@ -171,10 +171,10 @@ const faqSchema = {
 ---
 
 <SiteLayout 
-  title="Quitar gotelé en Valencia desde 10 €/m² | Paredes lisas"
-  description="Especialistas en quitar gotelé y alisar paredes en Valencia. Lijado sin polvo, enlucido profesional y presupuesto en 24h. Precio alisar paredes Valencia desde 10€/m²."
-  keywords="quitar gotele valencia, alisar paredes valencia, alisado paredes valencia, alisado de paredes en valencia, alisar gotele en valencia, precio alisar paredes valencia, precio quitar gotele valencia, eliminar gotele valencia"
-  canonical="https://pintores-valencia.com/servicios/quitar-gotele/"
+  title="Reformas Integrales en Valencia | Presupuesto Gratis"
+  description="Empresa de reformas integrales en Valencia para viviendas, pisos, chalets y locales. Coordinamos todo el proyecto con presupuesto gratis y ejecución profesional."
+  keywords="reformas integrales valencia, empresas reformas integrales valencia, reformas integrales en valencia, empresa de reformas integrales en valencia, reformas de diseño valencia"
+  canonical="https://mejoresreformasvalencia.es/servicios/reformas-integrales-valencia"
   schema={[localBusinessSchema, faqSchema]}
   ogImage="/og-home.webp"
 >
@@ -186,7 +186,7 @@ const faqSchema = {
         <div class="container mx-auto px-4">
           <Breadcrumbs items={[
               { label: "Servicios", href: "/servicios/" },
-              { label: "Quitar Gotelé" }
+              { label: "Reformas Integrales" }
             ]}  client:load />
   
 
@@ -199,14 +199,14 @@ const faqSchema = {
           <!-- Left side - Content -->
           <div>
             <!-- Title -->
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Quitar Gotelé y Alisar Paredes en Valencia</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Reformas Integrales en Valencia</h1>
             
             <!-- Subtitle -->
-            <p class="text-xl text-gray-700 mb-6">Especialistas en alisado de paredes en Valencia con lijado sin polvo y acabado profesional</p>
+            <p class="text-xl text-gray-700 mb-6">Reforma completa de viviendas y locales con coordinación de gremios, diseño funcional y ejecución profesional de principio a fin</p>
             
             <!-- Price -->
             <div class="mb-6">
-              <span class="text-2xl font-bold text-accent">desde 10€/m² <span class="text-sm text-gray-500 font-normal">Material incluido</span></span>
+              <span class="text-2xl font-bold text-accent">desde 18.000€ <span class="text-sm text-gray-500 font-normal">Proyecto integral</span></span>
             </div>
             
             <!-- CTAs -->
@@ -228,19 +228,19 @@ const faqSchema = {
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Sin polvo</span>
+                <span class="text-gray-700">Coordinación de gremios</span>
               </div>
               <div class="flex items-center space-x-3">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Acabado perfecto</span>
+                <span class="text-gray-700">Presupuesto claro</span>
               </div>
               <div class="flex items-center space-x-3">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Limpieza incluida</span>
+                <span class="text-gray-700">Gestión global de obra</span>
               </div>
             </div>
           </div>
@@ -248,76 +248,76 @@ const faqSchema = {
           <!-- Right side - Image -->
           <div class="order-first lg:order-last">
             <div class="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src={quitarGoteleImg.src} alt="Eliminación de gotelé en Valencia con lijado profesional sin polvo - Alisado de paredes realizado por pintores profesionales" width={quitarGoteleImg.width} height={quitarGoteleImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
+              <img src={reformaIntegralImg.src} alt="Reforma integral en Valencia con renovación completa de vivienda" width={reformaIntegralImg.width} height={reformaIntegralImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Precio alisar paredes Valencia -->
+    <!-- Precio reformas integrales Valencia -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">
-              Precio de Alisar Paredes en Valencia
+              Precio de Reformas Integrales en Valencia
             </h2>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-              Presupuesto transparente desde 10€/m² con materiales incluidos
+              Presupuesto transparente según metros, alcance y calidades
             </p>
           </div>
           
           <div class="space-y-6 text-gray-700 mb-10">
             <p class="text-lg leading-relaxed">
-              El <strong>precio de quitar gotelé en Valencia</strong> y el <strong>precio de alisar paredes en Valencia</strong> depende del tipo de gotelé, el estado de las paredes y los metros cuadrados de la vivienda. En todos los casos ofrecemos un presupuesto cerrado y transparente, sin sorpresas.
+              El <strong>precio de una reforma integral en Valencia</strong> depende de los metros cuadrados, la redistribución de espacios, el estado inicial del inmueble y las calidades elegidas. En todos los casos trabajamos con presupuesto cerrado y planificación clara, sin sorpresas.
             </p>
             
             <p class="text-lg leading-relaxed">
-              Nuestros pintores profesionales utilizan pasta niveladora de alta calidad e imprimación selladora profesional, garantizando un acabado perfecto y duradero. Si lo deseas, también podemos encargarnos de la pintura final, para que no tengas que preocuparte por nada.
+              Como <strong>empresa de reformas integrales en Valencia</strong>, coordinamos albañilería, fontanería, electricidad, revestimientos, pavimentos y carpintería en una sola obra. También integramos cocina y baño dentro del proyecto si lo necesitas.
             </p>
           </div>
 
           <!-- Tabla de precios orientativos -->
           <div class="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 mb-8">
-            <h3 class="text-2xl font-bold mb-6 text-center">Precios Orientativos de Alisado de Paredes en Valencia</h3>
+            <h3 class="text-2xl font-bold mb-6 text-center">Precios Orientativos de Reformas Integrales en Valencia</h3>
             
             <div class="grid md:grid-cols-2 gap-6">
-              <!-- Precio por superficie -->
+              <!-- Precio por tipología -->
               <div class="bg-white rounded-xl p-6 shadow-sm">
-                <h4 class="font-bold text-lg mb-4 text-gray-900">Por Superficie Completa</h4>
+                <h4 class="font-bold text-lg mb-4 text-gray-900">Por Vivienda Completa</h4>
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
                     <span class="text-gray-700">Piso 70 m²</span>
-                    <span class="font-bold text-accent">desde 700€</span>
+                    <span class="font-bold text-accent">desde 18.000€</span>
                   </li>
                   <li class="flex justify-between items-center">
                     <span class="text-gray-700">Piso 90 m²</span>
-                    <span class="font-bold text-accent">desde 900€</span>
+                    <span class="font-bold text-accent">desde 25.000€</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Piso 120 m²</span>
-                    <span class="font-bold text-accent">desde 1.200€</span>
+                    <span class="text-gray-700">Chalet 120 m²</span>
+                    <span class="font-bold text-accent">desde 32.000€</span>
                   </li>
                 </ul>
-                <p class="text-sm text-gray-500 mt-4">*Incluye lijado, enlucido e imprimación</p>
+                <p class="text-sm text-gray-500 mt-4">*Incluye proyecto integral y coordinación completa</p>
               </div>
 
-              <!-- Precio por habitación -->
+              <!-- Precio por partidas clave -->
               <div class="bg-white rounded-xl p-6 shadow-sm">
-                <h4 class="font-bold text-lg mb-4 text-gray-900">Por Habitaciones</h4>
+                <h4 class="font-bold text-lg mb-4 text-gray-900">Partidas Habituales</h4>
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Habitación individual</span>
-                    <span class="font-bold text-accent">desde 150€</span>
+                    <span class="text-gray-700">Reforma cocina completa</span>
+                    <span class="font-bold text-accent">desde 8.000€</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Salón-comedor</span>
-                    <span class="font-bold text-accent">desde 300€</span>
+                    <span class="text-gray-700">Reforma baño completo</span>
+                    <span class="font-bold text-accent">desde 4.500€</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Techo completo</span>
-                    <span class="font-bold text-accent">desde 10€/m²</span>
+                    <span class="text-gray-700">Instalaciones integrales</span>
+                    <span class="font-bold text-accent">desde 6.000€</span>
                   </li>
                 </ul>
                 <p class="text-sm text-gray-500 mt-4">*Precios pueden variar según estado</p>
@@ -326,50 +326,50 @@ const faqSchema = {
 
             <!-- Qué incluye el precio -->
             <div class="mt-8 bg-white rounded-xl p-6">
-              <h4 class="font-bold text-lg mb-4 text-gray-900">¿Qué Incluye el Precio de Alisar Paredes?</h4>
+              <h4 class="font-bold text-lg mb-4 text-gray-900">¿Qué Incluye una Reforma Integral?</h4>
               <div class="grid md:grid-cols-2 gap-4">
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Lijado profesional sin polvo</span>
+                  <span class="text-gray-700">Planificación y gestión global de obra</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Enlucido y alisado fino</span>
+                  <span class="text-gray-700">Albañilería y redistribución de espacios</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Imprimación selladora</span>
+                  <span class="text-gray-700">Fontanería y electricidad nuevas</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Materiales profesionales incluidos</span>
+                  <span class="text-gray-700">Pavimentos y revestimientos</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Protección de suelos y muebles</span>
+                  <span class="text-gray-700">Carpintería interior y acabados</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Limpieza completa final</span>
+                  <span class="text-gray-700">Limpieza final y entrega con garantía</span>
                 </div>
               </div>
             </div>
 
           <div class="mt-8 bg-white rounded-xl p-6">
             <p class="text-lg text-gray-700 mb-6">
-              <strong>¿Quieres transformar tu hogar?</strong> Consulta nuestro <strong>precio de alisar paredes en Valencia</strong> y descubre cómo podemos mejorar tus espacios con nuestro servicio profesional de eliminación de gotelé.
+              <strong>¿Quieres reformar tu vivienda al completo?</strong> Consulta nuestro presupuesto de <strong>reformas integrales en Valencia</strong> y te ayudamos a definir un proyecto realista, funcional y bien ejecutado.
             </p>
             <div class="flex justify-center text-center">
               <a href="/presupuesto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-accent text-white hover:bg-accent/90 focus:ring-accent shadow-md hover:shadow-lg px-8 py-3 text-lg rounded-lg">
@@ -382,15 +382,15 @@ const faqSchema = {
       </div>
     </section>
 
-    <!-- Cómo Quitamos el Gotelé en Valencia: Proceso Profesional -->
+    <!-- Cómo Ejecutamos Reformas Integrales en Valencia -->
     <section class="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Cómo Quitamos el Gotelé y Alisamos Paredes en Valencia
+            Cómo Trabajamos una Reforma Integral en Valencia
           </h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Proceso paso a paso con técnica profesional y lijado sin polvo
+            Proceso paso a paso con planificación, coordinación y ejecución profesional
           </p>
         </div>
         
@@ -403,9 +403,9 @@ const faqSchema = {
                   1
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Protección Completa de Tu Hogar</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Visita Técnica y Definición del Proyecto</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Antes de empezar a <strong>quitar el gotelé en Valencia</strong>, protegemos todos los suelos, muebles y superficies con plásticos y papel profesional. Sellamos las puertas para evitar que el polvo se disperse por otras habitaciones de tu vivienda.
+                    Empezamos con una visita técnica para conocer necesidades, distribución actual y objetivos del cliente. Definimos alcance, calidades y prioridades para una <strong>reforma integral en Valencia</strong> bien planteada desde el inicio.
                   </p>
                 </div>
               </div>
@@ -418,12 +418,12 @@ const faqSchema = {
                   2
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Eliminación del Gotelé Sin Polvo</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Presupuesto Cerrado y Plan de Obra</h3>
                   <p class="text-gray-700 leading-relaxed mb-3">
-                    Utilizamos lijadoras profesionales con sistema de aspiración continua que eliminan el gotelé de techos y paredes sin generar apenas polvo. Esta técnica de <strong>alisado de paredes en Valencia</strong> es mucho más limpia que los métodos tradicionales.
+                    Entregamos un presupuesto detallado por partidas y un calendario realista de ejecución. Así sabes qué se hace, cuándo se hace y cuánto cuesta cada fase, sin sorpresas.
                   </p>
                   <p class="text-gray-700 leading-relaxed">
-                    Nuestros pintores profesionales trabajan con precisión para eliminar completamente la textura del gotelé, dejando una superficie uniforme lista para el siguiente paso.
+                    A partir de ahí organizamos los recursos y la secuencia de trabajos para que la obra avance de forma ordenada.
                   </p>
                 </div>
               </div>
@@ -436,12 +436,12 @@ const faqSchema = {
                   3
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Enlucido y Alisado Profesional</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Ejecución de Obra y Coordinación de Gremios</h3>
                   <p class="text-gray-700 leading-relaxed mb-3">
-                    Una vez eliminado el gotelé, aplicamos pasta niveladora de alta calidad para <strong>alisar paredes en Valencia</strong> con un acabado perfecto. Este enlucido rellena imperfecciones y crea una superficie completamente lisa.
+                    Ejecutamos albañilería, fontanería, electricidad, pavimentos y revestimientos con coordinación continua de gremios. Nos ocupamos de que cada fase entre en tiempo y forma.
                   </p>
                   <p class="text-gray-700 leading-relaxed">
-                    Tras el enlucido, realizamos un lijado fino que garantiza un resultado impecable, preparando las paredes para la imprimación.
+                    Si el proyecto lo requiere, integramos reforma de cocina y baño dentro de la misma planificación.
                   </p>
                 </div>
               </div>
@@ -454,9 +454,9 @@ const faqSchema = {
                   4
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Imprimación Selladora</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Acabados y Revisión de Calidad</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Aplicamos una imprimación selladora profesional que fija la superficie, uniformiza la absorción y deja las paredes completamente listas para pintar. Este paso es fundamental para conseguir un acabado duradero y de calidad.
+                    Cerramos la obra con acabados finales, repasos y control de calidad en cada estancia para asegurar funcionalidad, estética y durabilidad.
                   </p>
                 </div>
               </div>
@@ -469,9 +469,9 @@ const faqSchema = {
                   5
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Limpieza Total</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Entrega Final y Garantía</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Terminamos cada jornada con una limpieza completa del área de trabajo. Aspiramos, retiramos todos los plásticos y protecciones, y dejamos tu vivienda en perfecto estado. La limpieza está incluida en el <strong>precio de alisar paredes en Valencia</strong>.
+                    Entregamos la vivienda o local limpio, revisado y listo para uso. Incluimos garantía por escrito y seguimiento post-obra para que tengas respaldo real.
                   </p>
                 </div>
               </div>
@@ -481,16 +481,16 @@ const faqSchema = {
       </div>
     </section>
 
-    <!-- Beneficios de Alisar Paredes en Valencia -->
+    <!-- Beneficios de Reformas Integrales en Valencia -->
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">
-              Beneficios de Alisar Paredes y Quitar el Gotelé en Valencia
+              Beneficios de una Reforma Integral en Valencia
             </h2>
             <p class="text-xl text-gray-600">
-              Mejora la estética y el valor de tu vivienda
+              Mejora funcional, estética y valor real de tu inmueble
             </p>
           </div>
 
@@ -504,9 +504,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Aspecto Moderno y Actual</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Vivienda Mejor Aprovechada</h3>
                   <p class="text-gray-700">
-                    El <strong>alisado de paredes en Valencia</strong> elimina el gotelé anticuado y da a tu hogar un aspecto contemporáneo y elegante que aumenta su valor de mercado.
+                    Una <strong>reforma integral en Valencia</strong> permite redistribuir espacios para ganar comodidad, funcionalidad y mejor circulación en el día a día.
                   </p>
                 </div>
               </div>
@@ -521,9 +521,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Más Luminosidad</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Coordinación Total en un Solo Proyecto</h3>
                   <p class="text-gray-700">
-                    Las paredes lisas reflejan mejor la luz natural y artificial, haciendo que tus espacios parezcan más amplios y luminosos.
+                    Coordinamos todos los oficios para que no tengas que gestionar varios proveedores. Un solo equipo, un calendario y un responsable de obra.
                   </p>
                 </div>
               </div>
@@ -538,9 +538,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Fácil Limpieza</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Instalaciones Renovadas y Seguras</h3>
                   <p class="text-gray-700">
-                    Después de <strong>quitar el gotelé en Valencia</strong>, las paredes lisas son mucho más fáciles de limpiar y mantener, sin acumulación de polvo en texturas.
+                    Actualizamos fontanería y electricidad para que tu vivienda o local sea más eficiente, segura y preparada para los próximos años.
                   </p>
                 </div>
               </div>
@@ -556,9 +556,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Revaloriza Tu Propiedad</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Mayor Valor de Mercado</h3>
                   <p class="text-gray-700">
-                    Una vivienda con paredes lisas y modernas se vende o alquila mejor y a mejor precio en el mercado inmobiliario de Valencia.
+                    Las <strong>reformas de diseño en Valencia</strong>, cuando están bien ejecutadas, aumentan el valor del inmueble y mejoran su salida en venta o alquiler.
                   </p>
                 </div>
               </div>
@@ -573,8 +573,8 @@ const faqSchema = {
     <!-- CTA Contact Section -->
     <section class="py-12 bg-blue-600 text-white">
       <div class="container mx-auto px-4 text-center">
-        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Necesitas Quitar el Gotelé en Valencia?</h2>
-        <p class="text-xl mb-8">Presupuesto gratuito en menos de 24 horas</p>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Necesitas una Reforma Integral en Valencia?</h2>
+        <p class="text-xl mb-8">Presupuesto gratuito y planificación clara desde el primer día</p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/presupuesto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-500 shadow-md hover:shadow-lg px-6 py-3 text-lg rounded-lg">
@@ -590,12 +590,12 @@ const faqSchema = {
       </div>
     </section>
     
-    <!-- FAQ Optimizadas para SEO Local Valencia -->
+    <!-- FAQ Optimizadas para Reformas Integrales -->
     <section class="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Preguntas Frecuentes sobre Quitar Gotelé y Alisar Paredes en Valencia
+            Preguntas Frecuentes sobre Reformas Integrales en Valencia
           </h2>
           <p class="text-lg text-gray-600">
             Resolvemos todas tus dudas sobre nuestro servicio profesional
@@ -606,30 +606,30 @@ const faqSchema = {
           <!-- FAQ 1 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 class="font-bold text-xl mb-3 text-gray-900">
-              ¿Cuánto cuesta quitar el gotelé y alisar las paredes en Valencia?
+              ¿Cuánto cuesta una reforma integral en Valencia?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              El <strong>precio de quitar gotelé en Valencia</strong> y <strong>alisar paredes</strong> parte desde <strong>10€/m²</strong> con todos los materiales incluidos (lijado, enlucido, imprimación). Los precios varían según el tamaño y el estado de las paredes. <strong>Solicita un presupuesto gratuito y personalizado</strong> para conocer el precio exacto de tu vivienda.
+              El precio depende de metros, estado del inmueble y nivel de acabados. Como referencia, una reforma integral de 70 m² parte desde 18.000€ y una de 90 m² desde 25.000€. Si hay redistribución o calidades superiores, el importe se ajusta. <strong>Te damos presupuesto sin compromiso</strong> tras una visita técnica.
             </p>
           </div>
 
           <!-- FAQ 2 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 class="font-bold text-xl mb-3 text-gray-900">
-              ¿Cuánto tiempo tardan en alisar las paredes de mi casa?
+              ¿Cuánto tarda una reforma integral?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              El proceso completo de <strong>eliminar gotelé y alisar paredes</strong> en un piso estándar de 70-90 m² suele tardar entre <strong>3 y 5 días laborables</strong>. Esto depende del tamaño de la vivienda y el estado de las paredes. Para habitaciones individuales, podemos realizar el trabajo en 1-2 días. Te daremos un calendario exacto con el presupuesto.
+              Una reforma integral suele tardar entre <strong>6 y 12 semanas</strong>, según tamaño, complejidad técnica y si incluye cocina, baño o redistribución de espacios. Planificamos el calendario por fases para que sepas en todo momento cómo avanza la obra.
             </p>
           </div>
 
           <!-- FAQ 3 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 class="font-bold text-xl mb-3 text-gray-900">
-              ¿Qué incluye el precio de quitar el gotelé en Valencia?
+              ¿Qué incluye una reforma integral?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              El precio incluye todos los <strong>materiales profesionales</strong> (pasta niveladora, imprimación, lijas), mano de obra especializada, protección de suelos y muebles, limpieza diaria y final de la vivienda, y <strong>garantía por escrito</strong> del trabajo realizado. Sin costes ocultos. <strong>Solicita tu presupuesto personalizado</strong> para obtener un precio cerrado sin sorpresas.
+              Incluye albañilería, fontanería, electricidad, revestimientos, pavimentos, carpintería, reforma de cocina y baño si forma parte del alcance, además de coordinación de gremios y gestión global del proyecto. Entregamos <strong>presupuesto cerrado y garantía por escrito</strong>.
             </p>
           </div>
         </div>
