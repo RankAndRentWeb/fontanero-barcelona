@@ -120,7 +120,7 @@ const Contacto = () => {
             required
             value={formData.mensaje}
             onChange={handleChange}
-            placeholder="Cuéntanos qué necesitas pintar"
+            placeholder="Cuéntanos qué reforma necesitas"
           />
         </div>
 
