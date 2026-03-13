@@ -4,9 +4,9 @@ const PoliticaPrivacidad = () => {
   return (
     <>
       <SEOHead
-        title="Política de Privacidad - Pintores en Valencia"
-        description="Política de privacidad y protección de datos de Pintores en Valencia. Información sobre el tratamiento de datos personales según RGPD."
-        canonicalUrl="https://pintores-valencia.com/politica-privacidad"
+        title="Política de Privacidad - Mejores Reformas Valencia"
+        description="Política de privacidad de mejoresreformasvalencia.es. Información sobre tratamiento de datos personales y derechos de los usuarios."
+        canonicalUrl="https://mejoresreformasvalencia.es/politica-privacidad/"
         noindex={true}
       />
 
@@ -25,10 +25,10 @@ const PoliticaPrivacidad = () => {
               <div className="bg-muted/50 p-6 rounded-lg mb-6">
                 <h3 className="font-semibold mb-3">Responsable del tratamiento:</h3>
                 <ul className="space-y-1">
-                  <li><strong>Responsable:</strong> Pintores en Valencia</li>
-                  <li><strong>Teléfono:</strong> +34 722 208 131</li>
-                  <li><strong>Email:</strong> info@pintores-valencia.com</li>
-                  <li><strong>Domicilio:</strong> Valencia, España</li>
+                  <li><strong>Responsable:</strong> Edgar Berrio Jiménez</li>
+                  <li><strong>Dominio:</strong> https://mejoresreformasvalencia.es</li>
+                  <li><strong>Email:</strong> info@mejoresreformasvalencia.es</li>
+                  <li><strong>Datos adicionales de identificación:</strong> se facilitarán cuando proceda conforme a la normativa aplicable.</li>
                 </ul>
               </div>
             </section>
@@ -37,10 +37,9 @@ const PoliticaPrivacidad = () => {
               <h2 className="text-2xl font-semibold mb-4">Finalidad del Tratamiento</h2>
               <p className="mb-4">Los datos personales que nos proporcione serán tratados con las siguientes finalidades:</p>
               <ul className="list-disc list-inside space-y-2 mb-4">
-                <li><strong>Gestión de consultas y presupuestos:</strong> Para atender sus solicitudes de información y elaborar presupuestos personalizados.</li>
-                <li><strong>Prestación de servicios:</strong> Para la correcta prestación de nuestros servicios de pintura profesional.</li>
-                <li><strong>Comunicación comercial:</strong> Para enviarle información sobre nuestros servicios y ofertas (solo con su consentimiento previo).</li>
-                <li><strong>Cumplimiento legal:</strong> Para cumplir con las obligaciones legales aplicables a nuestra actividad.</li>
+                <li><strong>Gestión de contacto:</strong> Atender solicitudes de contacto, información y presupuesto enviadas por el usuario.</li>
+                <li><strong>Gestión precontractual:</strong> Preparar y remitir propuestas relacionadas con los servicios de reformas solicitados.</li>
+                <li><strong>Cumplimiento legal:</strong> Atender las obligaciones legales que resulten aplicables en cada caso.</li>
               </ul>
             </section>
 
@@ -48,10 +47,9 @@ const PoliticaPrivacidad = () => {
               <h2 className="text-2xl font-semibold mb-4">Base Jurídica</h2>
               <p className="mb-4">La base jurídica para el tratamiento de sus datos es:</p>
               <ul className="list-disc list-inside space-y-2 mb-4">
-                <li><strong>Consentimiento:</strong> Para el envío de comunicaciones comerciales</li>
-                <li><strong>Ejecución contractual:</strong> Para la prestación de servicios solicitados</li>
-                <li><strong>Interés legítimo:</strong> Para la gestión de consultas y atención al cliente</li>
-                <li><strong>Cumplimiento legal:</strong> Para cumplir obligaciones fiscales y contables</li>
+                <li><strong>Consentimiento del interesado:</strong> al enviar voluntariamente formularios de contacto o solicitud de presupuesto.</li>
+                <li><strong>Medidas precontractuales:</strong> cuando el usuario solicita expresamente información o presupuesto para un servicio.</li>
+                <li><strong>Cumplimiento legal:</strong> cuando exista una obligación normativa aplicable.</li>
               </ul>
             </section>
 
@@ -59,24 +57,19 @@ const PoliticaPrivacidad = () => {
               <h2 className="text-2xl font-semibold mb-4">Categorías de Datos</h2>
               <p className="mb-4">Los tipos de datos personales que tratamos son:</p>
               <ul className="list-disc list-inside space-y-2 mb-4">
-                <li>Datos identificativos: nombre, apellidos, teléfono, email</li>
-                <li>Datos de contacto: dirección, localidad</li>
-                <li>Datos del proyecto: tipo de trabajo, superficie, presupuesto</li>
-                <li>Datos de navegación: dirección IP, cookies (según nuestra política de cookies)</li>
+                <li>Datos identificativos y de contacto: nombre, teléfono, email y datos facilitados en el mensaje.</li>
+                <li>Datos sobre la solicitud: tipo de reforma, alcance aproximado y otra información que el usuario decida compartir.</li>
+                <li>Datos técnicos de navegación estrictamente necesarios para el funcionamiento del sitio, conforme a la política de cookies.</li>
               </ul>
             </section>
 
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Conservación de Datos</h2>
               <p className="mb-4">
-                Sus datos personales se conservarán durante el tiempo necesario para cumplir con la finalidad 
-                para la que se recogieron y, en cualquier caso, durante los plazos establecidos por la legislación aplicable:
+                Sus datos personales se conservarán durante el tiempo necesario para atender su solicitud y para
+                mantener el seguimiento de la misma. Cuando corresponda, se conservarán además durante los plazos
+                exigidos por la normativa aplicable.
               </p>
-              <ul className="list-disc list-inside space-y-2 mb-4">
-                <li>Datos de clientes: 6 años (obligaciones fiscales)</li>
-                <li>Datos de consultas: 2 años desde la última comunicación</li>
-                <li>Comunicaciones comerciales: hasta que retire su consentimiento</li>
-              </ul>
             </section>
 
             <section className="mb-8">
@@ -91,17 +84,16 @@ const PoliticaPrivacidad = () => {
                 <li><strong>Oposición:</strong> Oponerse al tratamiento por motivos de su situación particular</li>
               </ul>
               <p className="mb-4">
-                Para ejercer estos derechos, puede contactarnos en: <strong>info@pintores-valencia.com</strong> 
-                o <strong>+34 722 208 131</strong>
+                Para ejercer estos derechos, puede contactarnos en: <strong>info@mejoresreformasvalencia.es</strong>
               </p>
             </section>
 
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Comunicación de Datos</h2>
               <p className="mb-4">
-                Sus datos personales no serán comunicados a terceros, salvo obligación legal o consentimiento expreso. 
-                En caso de utilizar proveedores de servicios (hosting, software, etc.), estos actuarán como encargados 
-                del tratamiento bajo nuestras instrucciones.
+                Con carácter general, no se prevén cesiones de datos a terceros, salvo obligación legal.
+                En caso de que intervengan proveedores que presten servicios necesarios para el funcionamiento
+                de la web o la atención de solicitudes, actuarán como encargados del tratamiento conforme a la normativa.
               </p>
             </section>
 
@@ -117,7 +109,7 @@ const PoliticaPrivacidad = () => {
               <h2 className="text-2xl font-semibold mb-4">Reclamaciones</h2>
               <p className="mb-4">
                 Si considera que el tratamiento de sus datos no se ajusta a la normativa vigente, puede presentar 
-                una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).
+                una reclamación ante la Agencia Española de Protección de Datos (AEPD): www.aepd.es.
               </p>
             </section>
 
@@ -132,7 +124,7 @@ const PoliticaPrivacidad = () => {
 
             <div className="mt-12 p-4 bg-primary/10 rounded-lg">
               <p className="text-sm text-center">
-                <strong>Última actualización:</strong> Septiembre 2025
+                <strong>Última actualización:</strong> abril 2026
               </p>
             </div>
           </div>

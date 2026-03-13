@@ -4,9 +4,9 @@ const AvisoLegal = () => {
   return (
     <>
       <SEOHead
-        title="Aviso Legal - Pintores en Valencia"
-        description="Aviso legal de Pintores en Valencia. Información legal, términos de uso y condiciones del servicio de pintura profesional."
-        canonicalUrl="https://pintores-valencia.com/aviso-legal"
+        title="Aviso Legal - Mejores Reformas Valencia"
+        description="Aviso legal de mejoresreformasvalencia.es. Información sobre titularidad, uso del sitio y condiciones generales."
+        canonicalUrl="https://mejoresreformasvalencia.es/aviso-legal/"
         noindex={true}
       />
 
@@ -26,10 +26,10 @@ const AvisoLegal = () => {
               <div className="bg-muted/50 p-6 rounded-lg mb-6">
                 <h3 className="font-semibold mb-3">Datos del titular:</h3>
                 <ul className="space-y-1">
-                  <li><strong>Denominación social:</strong> Pintores en Valencia</li>
-                  <li><strong>Teléfono:</strong> +34 722 208 131</li>
-                  <li><strong>Email:</strong> info@pintores-valencia.com</li>
-                  <li><strong>Domicilio:</strong> Valencia, España</li>
+                  <li><strong>Titular:</strong> Edgar Berrio Jiménez</li>
+                  <li><strong>Dominio:</strong> https://mejoresreformasvalencia.es</li>
+                  <li><strong>Email de contacto:</strong> info@mejoresreformasvalencia.es</li>
+                  <li><strong>Datos identificativos adicionales:</strong> no se publican en esta versión provisional y se facilitarán cuando proceda legalmente.</li>
                 </ul>
               </div>
             </section>
@@ -39,8 +39,8 @@ const AvisoLegal = () => {
               <p className="mb-4">
                 El presente sitio web tiene por objeto facilitar al público en general el conocimiento de las 
                 actividades que esta organización realiza y de los servicios que presta, en particular servicios 
-                profesionales de pintura interior y exterior, eliminación de gotelé, impermeabilización y 
-                trabajos de albañilería menor en Valencia y provincia.
+                de información y captación de solicitudes de contacto, información y presupuesto relacionadas 
+                con servicios de reformas en Valencia y alrededores.
               </p>
             </section>
 
@@ -67,6 +67,11 @@ const AvisoLegal = () => {
                 Desde el sitio web, es posible que se redirija a contenidos de terceros. Dado que el titular 
                 del sitio web no puede controlar siempre los contenidos introducidos por los terceros en sus 
                 respectivas páginas web, no asume ningún tipo de responsabilidad respecto a dichos contenidos.
+              </p>
+              <p className="mb-4">
+                La información publicada en este sitio tiene carácter informativo y orientativo. Los importes,
+                plazos o condiciones mostrados no constituyen oferta vinculante hasta su confirmación en un
+                presupuesto personalizado.
               </p>
             </section>
 
@@ -101,7 +106,7 @@ const AvisoLegal = () => {
 
             <div className="mt-12 p-4 bg-primary/10 rounded-lg">
               <p className="text-sm text-center">
-                <strong>Última actualización:</strong> Septiembre 2025
+                <strong>Última actualización:</strong> abril 2026
               </p>
             </div>
           </div>
