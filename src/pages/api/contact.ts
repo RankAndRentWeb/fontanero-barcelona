@@ -8,9 +8,16 @@ const resend = new Resend(import.meta.env.RESEND_API_KEY);
 export const POST: APIRoute = async ({ request }) => {
   const { nombre, telefono, email, mensaje } = await request.json();
 
+  const contactFromRaw = import.meta.env.CONTACT_FROM;
+  const contactTo = import.meta.env.CONTACT_TO;
+
+  const from = contactFromRaw?.includes("<")
+    ? contactFromRaw
+    : `Reformas Valencia <${contactFromRaw}>`;
+
   await resend.emails.send({
-    from: "Pintores Valencia <no-reply@pintores-valencia.com>",
-    to: "info@pintores-valencia.com",
+    from,
+    to: [contactTo],
     subject: `Nuevo lead web · ${nombre} (${telefono})`,
     text: `
 Nuevo lead desde la web:
@@ -31,7 +38,7 @@ ${mensaje}
         <p style="margin:0 0 4px 0;"><strong>Mensaje:</strong></p>
         <p style="white-space:pre-line; margin:0 0 12px 0;">${mensaje}</p>
         <hr style="border:none; border-top:1px solid #e5e7eb; margin:16px 0;" />
-        <p style="font-size:12px; color:#6b7280; margin:0;">Lead generado automáticamente desde pintores-valencia.com</p>
+        <p style="font-size:12px; color:#6b7280; margin:0;">Lead generado automáticamente desde la web de Reformas Valencia</p>
       </div>
     `,
   });
