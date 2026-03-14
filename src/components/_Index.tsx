@@ -320,7 +320,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
   return (
     <>
       <SEOHead
-        title="Reformas Valencia: Integrales, Cocinas y Baños | Empresa"
+        title="Empresa de Reformas en Valencia | Reformas Integrales y Presupuesto"
         description="Empresa de reformas en Valencia especializada en reformas integrales, cocinas, baños y pisos. Presupuesto rápido, trabajo profesional y acabado cuidado."
         canonicalUrl={homeCanon}
         schema={[localBusinessSchema, faqSchema]}
