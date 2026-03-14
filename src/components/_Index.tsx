@@ -350,10 +350,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               Empresa de Reformas en Valencia
             </h1>
             <p className="text-2xl md:text-3xl mb-8 font-medium">
-              Especialistas en Reformas Integrales y Viviendas
+              Especialistas en Reformas Integrales y Parciales
             </p>
             <p className="text-xl mb-12 text-white/90">
-              Gestionamos la <strong>reforma integral de tu vivienda en Valencia</strong>. Coordinamos todos los gremios (albañilería, fontanería, electricidad) para cumplir los plazos acordados y garantizar acabados profesionales.
+              Realizamos reformas de <strong>cocinas, baños y pisos completos</strong> en Valencia. Coordinamos a todos los gremios para cumplir los plazos y ofrecerte un presupuesto detallado y sin sorpresas.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
