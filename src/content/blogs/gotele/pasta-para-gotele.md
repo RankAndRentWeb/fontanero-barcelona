@@ -57,6 +57,6 @@ Si te interesa conocer más sobre los precios de alisar paredes, consulta nuestr
 
 Si crees que la pasta para gotelé es la solución ideal para tus paredes, ¡no dudes en pedir un presupuesto! Nuestros expertos te ayudarán en todo el proceso para conseguir un acabado liso y profesional. Pide tu presupuesto gratuito y transforma tus paredes con un acabado moderno.
 
-[Solicita tu presupuesto gratuito aquí](/presupuesto/) y descubre cómo podemos ayudarte a conseguir paredes lisas y perfectas.
+[Solicita tu presupuesto gratuito aquí](/contacto/) y descubre cómo podemos ayudarte a conseguir paredes lisas y perfectas.
 
 ¿No sabes si es el momento de quitar el gotelé? Consulta nuestro artículo sobre [cómo quitar gotelé fácilmente](/blog/gotele/como-quitar-gotele-paredes/).

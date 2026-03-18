@@ -56,10 +56,10 @@ Alisar las paredes con gotelé tiene varias ventajas, pero también algunas desv
 
 Para obtener un presupuesto preciso para alisar las paredes con gotelé, lo mejor es contactar con varios profesionales. Pide presupuestos detallados y asegúrate de que se especifiquen todos los costos, incluyendo los materiales, la mano de obra y los posibles gastos adicionales. Si el trabajo es grande o tiene dificultades adicionales, como gotelé grueso o superficies difíciles de alcanzar, el precio puede ser más alto.
 
-Descubre más sobre los **precios de alisar paredes** en nuestra página de [presupuesto para alisar paredes](/presupuesto/).
+Descubre más sobre los **precios de alisar paredes** en nuestra página de [presupuesto para alisar paredes](/contacto/).
 
 ## ¿Listo para alisar tus paredes con gotelé? Pide tu presupuesto sin compromiso
 
 Si estás listo para alisar tus paredes y modernizar tu hogar, ¡no dudes en pedir tu presupuesto! Nuestro equipo de expertos te proporcionará un presupuesto transparente y ajustado, sin sorpresas. Te ayudaremos a conseguir el acabado perfecto por el mejor precio.
 
-[Solicita tu presupuesto gratuito aquí](/presupuesto/) y comienza a transformar tus paredes hoy mismo.
+[Solicita tu presupuesto gratuito aquí](/contacto/) y comienza a transformar tus paredes hoy mismo.

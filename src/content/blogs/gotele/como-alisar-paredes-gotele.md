@@ -62,4 +62,4 @@ Si estás considerando eliminar el gotelé en lugar de alisarlo, consulta nuestr
 
 Si decides alisar tus paredes de gotelé, asegúrate de seguir todos los pasos para obtener un resultado duradero y profesional. Si prefieres que un experto lo haga por ti, ¡no dudes en pedir tu presupuesto gratuito! Nuestro equipo te ayudará a conseguir el acabado perfecto para tu hogar.
 
-[Solicita tu presupuesto gratuito aquí](/presupuesto/) y descubre más sobre las opciones de [quitar gotelé profesionalmente](/servicios/quitar-gotele/).
+[Solicita tu presupuesto gratuito aquí](/contacto/) y descubre más sobre las opciones de [quitar gotelé profesionalmente](/servicios/quitar-gotele/).

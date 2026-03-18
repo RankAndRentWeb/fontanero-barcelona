@@ -55,10 +55,10 @@ Quitar el gotelé puede ser una excelente opción si deseas un acabado moderno y
 
 Para obtener un presupuesto exacto, lo mejor es contactar con un profesional que pueda evaluar el trabajo. Muchos servicios ofrecen presupuestos gratuitos, por lo que te recomendamos pedir al menos tres presupuestos de diferentes empresas para comparar precios y servicios. Asegúrate de especificar el tipo de gotelé que tienes y el tamaño de las superficies que necesitas tratar.
 
-Descubre más sobre [presupuestos para quitar gotelé](/presupuesto/) y consigue una cotización personalizada.
+Descubre más sobre [presupuestos para quitar gotelé](/contacto/) y consigue una cotización personalizada.
 
 ## ¿Listo para quitar el gotelé? Pide tu presupuesto sin compromiso
 
 Quitar el gotelé puede transformar el aspecto de tu hogar, pero es importante saber qué esperar en cuanto a costos y tiempo. Si estás listo para comenzar, ¡no dudes en pedir tu presupuesto! Nuestro equipo te ayudará a encontrar la mejor solución para tus paredes, al mejor precio posible.
 
-[Solicita tu presupuesto gratuito aquí](/presupuesto/) y descubre cuánto te costará quitar el gotelé de tus paredes.
+[Solicita tu presupuesto gratuito aquí](/contacto/) y descubre cuánto te costará quitar el gotelé de tus paredes.

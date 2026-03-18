@@ -78,7 +78,7 @@ Inconvenientes: polvo si no hay aspiración, tiempo prolongado y necesidad de t�
 ## ¿Lo hago yo o contrato un profesional?
 Hacerlo uno mismo es viable en superficies pequeñas y gotelé al temple. En grandes superficies, techos altos, fisuras, gotelé plástico muy duro o necesidad de acabado impecable conviene un profesional con lijado aspirado y masillas técnicas. Si estás en Valencia y prefieres que lo realice un profesional:
 - Servicio: <a href="/servicios/quitar-gotele/" class="text-blue-600 hover:underline">Quitar gotelé en Valencia</a>  
-- Presupuesto: <a href="/presupuesto/" class="text-blue-600 hover:underline">Solicitar presupuesto</a>  
+- Presupuesto: <a href="/contacto/" class="text-blue-600 hover:underline">Solicitar presupuesto</a>  
 
 ## Conclusión
 Quitar el gotelé es un proceso accesible en concepto, pero exigente en ejecución fina. Con pasos ordenados, herramientas adecuadas y paciencia se logra un buen resultado y paredes lisas; en viviendas grandes o soportes complejos suele ser más eficiente delegarlo. Si necesitas orientación o presupuesto, puedes consultarlo sin compromiso.

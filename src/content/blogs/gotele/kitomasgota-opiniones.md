@@ -55,4 +55,4 @@ Descubre más sobre las opciones de [reformas para alisar paredes](/servicios/qu
 
 Si estás buscando una manera económica de eliminar el gotelé y darle a tus paredes un acabado más limpio, Kitomasgota podría ser una excelente opción. Si prefieres dejar este trabajo en manos de expertos, ¡no dudes en pedir tu presupuesto! Nuestro equipo te ayudará a transformar tu hogar rápidamente.
 
-[Solicita tu presupuesto gratuito aquí](/presupuesto/) y descubre la mejor manera de eliminar el gotelé de tus paredes.
+[Solicita tu presupuesto gratuito aquí](/contacto/) y descubre la mejor manera de eliminar el gotelé de tus paredes.

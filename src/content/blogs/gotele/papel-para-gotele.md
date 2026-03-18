@@ -53,4 +53,4 @@ Si estás considerando eliminar el gotelé en lugar de cubrirlo, consulta nuestr
 
 Si te ha convencido que el papel para gotelé es la opción adecuada para ti, ¡no dudes en pedir tu presupuesto! Nuestros expertos te ayudarán a elegir el mejor papel y te guiarán en el proceso de aplicación para que consigas el acabado perfecto para tu hogar.
 
-[Solicita tu presupuesto gratuito aquí](/presupuesto/) y descubre cómo podemos ayudarte a transformar tus paredes.
+[Solicita tu presupuesto gratuito aquí](/contacto/) y descubre cómo podemos ayudarte a transformar tus paredes.

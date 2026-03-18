@@ -363,7 +363,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-white shadow-lg font-bold text-lg py-4 px-8"
               >
-                <a href="/presupuesto/" className="flex items-center justify-center">
+                <a href="/contacto/" className="flex items-center justify-center">
                   Presupuesto Gratis
                 </a>
               </Button>
@@ -854,7 +854,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               variant="accent"
               size="lg"
               asChild
-              href="/presupuesto/"
+              href="/contacto/"
             >
               Pedir presupuesto gratis
             </CustomButton>
@@ -998,7 +998,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               variant="accent"
               size="lg"
               asChild
-              href="/presupuesto/"
+              href="/contacto/"
             >
               Pedir presupuesto gratis
             </CustomButton>

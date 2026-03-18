@@ -169,7 +169,7 @@ Servicios recomendados: <a href="/servicios/quitar-gotele/" class="text-blue-600
 
 ## Conclusión
 
-El **gotelé** fue funcional y económico en su contexto histórico (años 60–80), pero hoy se reemplaza para mejorar luz, decoración y valor del inmueble. Identificar si es **temple vs plástico** antes de eliminarlo optimiza tiempo y coste. Si quieres resultado profesional limpio y rápido, pide <a href="/presupuesto/" class="text-blue-600 hover:underline">presupuesto para alisar paredes</a> sin compromiso.
+El **gotelé** fue funcional y económico en su contexto histórico (años 60–80), pero hoy se reemplaza para mejorar luz, decoración y valor del inmueble. Identificar si es **temple vs plástico** antes de eliminarlo optimiza tiempo y coste. Si quieres resultado profesional limpio y rápido, pide <a href="/contacto/" class="text-blue-600 hover:underline">presupuesto para alisar paredes</a> sin compromiso.
 
 <!-- FAQ con diseño consistente (nuevas preguntas) -->
 <section class="py-12 bg-white">

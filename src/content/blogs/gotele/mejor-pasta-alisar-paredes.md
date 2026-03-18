@@ -68,4 +68,4 @@ Descubre más sobre las opciones de [reformas para alisar paredes](/servicios/qu
 
 Si has decidido alisar tus paredes, asegúrate de elegir la pasta adecuada para obtener los mejores resultados. Si necesitas ayuda para elegir la mejor opción o prefieres que un profesional se encargue del trabajo, ¡no dudes en pedir tu presupuesto gratuito! Nuestro equipo de expertos te ayudará a transformar tus paredes en superficies lisas y modernas.
 
-[Solicita tu presupuesto gratuito aquí](/presupuesto/) y comienza a transformar tus paredes hoy mismo.
+[Solicita tu presupuesto gratuito aquí](/contacto/) y comienza a transformar tus paredes hoy mismo.
