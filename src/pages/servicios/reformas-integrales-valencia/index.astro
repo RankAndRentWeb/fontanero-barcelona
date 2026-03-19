@@ -3,138 +3,21 @@ import SiteLayout from '../../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.tsx';
 import reformaIntegralImg from '../../../assets/quitar-gotelé-valencia.png';
 
-const localBusinessSchema = {
+const serviceSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-  "@id": "https://mejoresreformasvalencia.es/#business",
-  "name": "Reformas en Valencia",
-  "description": "Empresa de reformas integrales en Valencia para viviendas, pisos, chalets y locales. Coordinamos todo el proyecto con ejecución profesional.",
-  "url": "https://mejoresreformasvalencia.es",
-  "image": "https://mejoresreformasvalencia.es/og-home.webp",
-  "telephone": "+34722208131",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Valencia",
-    "addressRegion": "Comunitat Valenciana",
+  "@type": "Service",
+  "@id": "https://mejoresreformasvalencia.es/servicios/reformas-integrales-valencia/#service",
+  "name": "Reformas Integrales en Valencia",
+  "description": "Servicio de reformas integrales en Valencia para viviendas, pisos, chalets y locales, con coordinación de gremios y gestión completa de obra.",
+  "url": "https://mejoresreformasvalencia.es/servicios/reformas-integrales-valencia/",
+  "serviceType": "Reformas integrales",
+  "areaServed": {
+    "@type": "City",
+    "name": "Valencia",
     "addressCountry": "ES"
   },
-  "openingHours": ["Mo-Sa 08:00-20:00"],
-  "priceRange": "€€€",
-  "areaServed": [
-    {
-      "@type": "City",
-      "name": "Valencia",
-      "containedInPlace": {
-        "@type": "AdministrativeArea",
-        "name": "Comunitat Valenciana"
-      }
-    },
-    // Centro histórico y Ciutat Vella
-    { "@type": "PostalCodeSpecification", "postalCode": "46001", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46002", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46003", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Eixample
-    { "@type": "PostalCodeSpecification", "postalCode": "46004", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46005", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46006", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46007", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46008", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46009", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46010", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Extramurs y otras zonas
-    { "@type": "PostalCodeSpecification", "postalCode": "46011", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46012", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46013", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46014", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46015", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46016", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46017", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46018", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46019", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46020", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Campanar, Benimaclet, Poblados marítimos
-    { "@type": "PostalCodeSpecification", "postalCode": "46021", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46022", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46023", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46024", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46025", "addressLocality": "Valencia", "addressCountry": "ES" }
-  ],
-  "knowsAbout": [
-    "Reformas integrales en Valencia",
-    "Reforma completa de viviendas y pisos",
-    "Reformas de diseño en Valencia",
-    "Redistribución de espacios interiores",
-    "Albañilería y tabiquería",
-    "Renovación de fontanería y electricidad",
-    "Reforma de cocinas y baños",
-    "Instalación de pavimentos y revestimientos",
-    "Coordinación de gremios en obra",
-    "Reformas integrales en chalets",
-    "Reformas integrales en locales comerciales",
-    "Gestión global del proyecto de reforma"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Catálogo de Reformas Integrales en Valencia",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Integral Piso 70m²",
-          "description": "Reforma integral completa con albañilería, instalaciones, pavimentos y acabados",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Complete Home Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "18000.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Integral Piso 90m²",
-          "description": "Renovación integral de vivienda con redistribución, cocina, baño e instalaciones",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Comprehensive Apartment Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "25000.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Integral Chalet o Local",
-          "description": "Proyecto integral con coordinación total de gremios y gestión completa de obra",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Turnkey Renovation Project",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "32000.00",
-        "priceCurrency": "EUR"
-      }
-    ]
+  "provider": {
+    "@id": "https://mejoresreformasvalencia.es/#business"
   }
 };
 
@@ -174,11 +57,11 @@ const faqSchema = {
   title="Reformas Integrales en Valencia | Presupuesto Gratis"
   description="Empresa de reformas integrales en Valencia para viviendas, pisos, chalets y locales. Coordinamos todo el proyecto con presupuesto gratis y ejecución profesional."
   keywords="reformas integrales valencia, empresas reformas integrales valencia, reformas integrales en valencia, empresa de reformas integrales en valencia, reformas de diseño valencia"
-  canonical="https://mejoresreformasvalencia.es/servicios/reformas-integrales-valencia"
-  schema={[localBusinessSchema, faqSchema]}
+  canonical="https://mejoresreformasvalencia.es/servicios/reformas-integrales-valencia/"
+  schema={[serviceSchema, faqSchema]}
   ogImage="/og-home.webp"
 >
-  <main class="flex-1">
+
     <!-- Breadcrumbs and Hero Section -->
 
       <section class="bg-gradient-to-br from-slate-50 to-green-50">
@@ -636,5 +519,5 @@ const faqSchema = {
 
       </div>
     </section>
-  </main>
+
 </SiteLayout>
