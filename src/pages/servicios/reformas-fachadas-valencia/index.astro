@@ -1,140 +1,27 @@
 ---
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.tsx';
-import fachadaExteriorImg from '../../../assets/pintura-exterior-fachadas-valencia-pintores-profesionales.jpg';
+import fachadaExteriorImg from '../../../assets/fachada-exterior-valencia.jpg';
 
-const localBusinessSchema = {
+const fachadaServiceSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-  "@id": "https://mejoresreformasvalencia.es/#business",
-  "name": "Reformas en Valencia",
-  "description": "Empresa especializada en reformas y rehabilitación de fachadas en Valencia. Reparación de grietas, impermeabilización, saneado de paramentos y renovación estética exterior.",
-  "url": "https://mejoresreformasvalencia.es",
-  "image": "https://mejoresreformasvalencia.es/og-home.webp",
-  "telephone": "+34722208131",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Valencia",
-    "addressRegion": "Comunitat Valenciana",
+  "@type": "Service",
+  "@id": "https://mejoresreformasvalencia.es/servicios/reformas-fachadas-valencia/#service",
+  "name": "Reformas de Fachadas en Valencia",
+  "description": "Servicio de reformas y rehabilitación de fachadas en Valencia, incluyendo reparación de grietas, impermeabilización y renovación de revestimientos exteriores.",
+  "url": "https://mejoresreformasvalencia.es/servicios/reformas-fachadas-valencia/",
+  "serviceType": "Reformas y rehabilitación de fachadas",
+  "areaServed": {
+    "@type": "City",
+    "name": "Valencia",
     "addressCountry": "ES"
   },
-  "openingHours": ["Mo-Sa 08:00-20:00"],
-  "priceRange": "€€",
-  "areaServed": [
-    {
-      "@type": "City",
-      "name": "Valencia",
-      "containedInPlace": {
-        "@type": "AdministrativeArea",
-        "name": "Comunitat Valenciana"
-      }
-    },
-    // Centro histórico y Ciutat Vella
-    { "@type": "PostalCodeSpecification", "postalCode": "46001", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46002", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46003", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Eixample
-    { "@type": "PostalCodeSpecification", "postalCode": "46004", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46005", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46006", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46007", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46008", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46009", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46010", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Extramurs y otras zonas
-    { "@type": "PostalCodeSpecification", "postalCode": "46011", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46012", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46013", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46014", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46015", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46016", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46017", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46018", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46019", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46020", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Campanar, Benimaclet, Poblados marítimos
-    { "@type": "PostalCodeSpecification", "postalCode": "46021", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46022", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46023", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46024", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46025", "addressLocality": "Valencia", "addressCountry": "ES" }
-  ],
-  "knowsAbout": [
-    "Reformas de fachadas en Valencia",
-    "Rehabilitación de fachadas y paramentos exteriores",
-    "Reparación de grietas y fisuras en fachadas",
-    "Impermeabilización de fachadas y terrazas",
-    "Saneado de revestimientos exteriores deteriorados",
-    "Renovación estética de fachadas de edificios",
-    "Rehabilitación de edificios y comunidades de vecinos",
-    "Tratamientos anti-humedad en cerramientos exteriores",
-    "Proyectado de mortero y enfoscado en exteriores",
-    "Revisión y mantenimiento preventivo de fachadas",
-    "Reforma de fachadas en chalets y viviendas unifamiliares",
-    "Consolidación de cornisas y elementos decorativos"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Catálogo de Reformas y Rehabilitación de Fachadas en Valencia",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Rehabilitación de Fachada Básica Valencia",
-          "description": "Saneado, reparación de grietas e impermeabilización de fachada exterior",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Facade Rehabilitation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "1500.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Completa de Fachada Valencia",
-          "description": "Reforma integral de fachada con nuevo revestimiento, impermeabilización y acabados exteriores",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Complete Facade Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "4500.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Rehabilitación de Fachada de Edificio Valencia",
-          "description": "Rehabilitación completa de fachadas de edificios y comunidades con andamio y garantía",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Building Facade Restoration",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "9000.00",
-        "priceCurrency": "EUR"
-      }
-    ]
+  "provider": {
+    "@id": "https://mejoresreformasvalencia.es/#business",
+    "name": "Reformas Valencia",
+    "url": "https://mejoresreformasvalencia.es",
+    "telephone": "+34722208131",
+    "email": "info@mejoresreformasvalencia.es"
   }
 };
 
@@ -175,10 +62,10 @@ const faqSchema = {
   description="Empresa especializada en reformas de fachadas en Valencia. Rehabilitación, reparación, impermeabilización y mejora exterior de edificios con presupuesto gratis."
   keywords="reformas fachadas valencia, reforma de fachadas en valencia, empresas de reformas de fachadas en valencia, rehabilitación de fachadas valencia, renovación de fachadas valencia, reparación de fachadas valencia"
   canonical="https://mejoresreformasvalencia.es/servicios/reformas-fachadas-valencia/"
-  schema={[localBusinessSchema, faqSchema]}
+  schema={[fachadaServiceSchema, faqSchema]}
   ogImage="/og-home.webp"
 >
-  <main class="flex-1">
+  <div class="flex-1">
     <!-- Breadcrumbs and Hero Section -->
 
       <section class="bg-gradient-to-br from-slate-50 to-green-50">
@@ -555,7 +442,6 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Acabado Profesional Impecable</h3>
                   <h3 class="font-bold text-lg text-gray-900 mb-2">Ejecución Profesional y Coordinada</h3>
                   <p class="text-gray-700">
                     Nuestro equipo gestiona todos los gremios necesarios: oficiales de construcción, impermeabilizadores y especialistas en revestimientos exteriores. Un solo interlocutor, planificación clara y resultado garantizado.
@@ -631,5 +517,5 @@ const faqSchema = {
       </div>
     </section>
 
-  </main>
+  </div>
 </SiteLayout>
