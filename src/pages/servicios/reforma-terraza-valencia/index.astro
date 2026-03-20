@@ -1,140 +1,23 @@
 ---
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.tsx';
-import fachadaExteriorImg from '../../../assets/impermeabilizacion-terraza-cubierta-valencia-profesional.jpg';
+import terrazaHeroImg from '../../../assets/impermeabilizacion-terraza-cubierta-valencia-profesional.jpg';
 
-const localBusinessSchema = {
+const serviceSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-  "@id": "https://mejoresreformasvalencia.es/#business",
-  "name": "Reformas en Valencia",
-  "description": "Empresa especializada en reforma de terrazas en Valencia. Suelos exteriores, impermeabilización, cerramientos y mejora funcional del espacio exterior.",
-  "url": "https://mejoresreformasvalencia.es",
-  "image": "https://mejoresreformasvalencia.es/og-home.webp",
-  "telephone": "+34722208131",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Valencia",
-    "addressRegion": "Comunitat Valenciana",
+  "@type": "Service",
+  "@id": "https://mejoresreformasvalencia.es/servicios/reforma-terraza-valencia/#service",
+  "name": "Reforma de Terrazas en Valencia",
+  "description": "Servicio de reforma de terrazas en Valencia con impermeabilizaciÃ³n, renovaciÃ³n de suelos exteriores, cerramientos y mejoras de confort para uso diario.",
+  "url": "https://mejoresreformasvalencia.es/servicios/reforma-terraza-valencia/",
+  "serviceType": "Reforma de terrazas",
+  "areaServed": {
+    "@type": "City",
+    "name": "Valencia",
     "addressCountry": "ES"
   },
-  "openingHours": ["Mo-Sa 08:00-20:00"],
-  "priceRange": "€€€",
-  "areaServed": [
-    {
-      "@type": "City",
-      "name": "Valencia",
-      "containedInPlace": {
-        "@type": "AdministrativeArea",
-        "name": "Comunitat Valenciana"
-      }
-    },
-    // Centro histórico y Ciutat Vella
-    { "@type": "PostalCodeSpecification", "postalCode": "46001", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46002", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46003", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Eixample
-    { "@type": "PostalCodeSpecification", "postalCode": "46004", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46005", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46006", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46007", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46008", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46009", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46010", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Extramurs y otras zonas
-    { "@type": "PostalCodeSpecification", "postalCode": "46011", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46012", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46013", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46014", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46015", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46016", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46017", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46018", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46019", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46020", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Campanar, Benimaclet, Poblados marítimos
-    { "@type": "PostalCodeSpecification", "postalCode": "46021", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46022", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46023", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46024", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46025", "addressLocality": "Valencia", "addressCountry": "ES" }
-  ],
-  "knowsAbout": [
-    "Reforma terraza Valencia",
-    "Reformas terrazas Valencia",
-    "Impermeabilización de terrazas y cubiertas",
-    "Pavimentos exteriores antideslizantes",
-    "Suelos exteriores resistentes",
-    "Cerramientos de terraza",
-    "Mejora de drenaje en terrazas",
-    "Protección frente a humedad",
-    "Renovación estética de terrazas",
-    "Rehabilitación de terrazas en comunidades",
-    "Adecuación de terrazas para uso diario",
-    "Reformas exteriores en viviendas y locales"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Catálogo de Reforma de Terrazas en Valencia",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Básica de Terraza en Valencia",
-          "description": "Reforma de terraza con impermeabilización y mejora de pavimento exterior",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Terrace Renovation Service",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "1800.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Terraza Media (hasta 20m²)",
-          "description": "Renovación de terraza con suelos exteriores, drenaje e impermeabilización",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Mid-size Terrace Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "3200.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Integral de Terraza (hasta 40m²)",
-          "description": "Reforma completa de terraza con pavimento, impermeabilización y cerramiento opcional",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Complete Terrace Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "5500.00",
-        "priceCurrency": "EUR"
-      }
-    ]
+  "provider": {
+    "@id": "https://mejoresreformasvalencia.es/#business"
   }
 };
 
@@ -144,34 +27,34 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Cuánto cuesta reformar una terraza en Valencia?",
+      "name": "Â¿CuÃ¡nto cuesta reformar una terraza en Valencia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El precio de una reforma de terraza en Valencia depende del tamaño, estado inicial y tipo de acabados. Como referencia, una terraza pequeña puede partir desde 1.800€, una terraza media desde 3.200€ y una reforma integral desde 5.500€. Te damos presupuesto cerrado y sin compromiso."
+        "text": "El precio de una reforma de terraza en Valencia depende del tamaÃ±o, estado inicial y tipo de acabados. Como referencia, una terraza pequeÃ±a puede partir desde 1.800â‚¬, una terraza media desde 3.200â‚¬ y una reforma integral desde 5.500â‚¬. Te damos presupuesto cerrado y sin compromiso."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto tarda una reforma de terraza?",
+      "name": "Â¿CuÃ¡nto tarda una reforma de terraza?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Una reforma de terraza suele tardar entre 4 y 10 días laborables según los trabajos: preparación de base, impermeabilización, pavimento exterior, drenaje y acabados. Si se añade cerramiento o soluciones especiales, puede requerir más tiempo."
+        "text": "Una reforma de terraza suele tardar entre 4 y 10 dÃ­as laborables segÃºn los trabajos: preparaciÃ³n de base, impermeabilizaciÃ³n, pavimento exterior, drenaje y acabados. Si se aÃ±ade cerramiento o soluciones especiales, puede requerir mÃ¡s tiempo."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Qué incluye una reforma de terraza?",
+      "name": "Â¿QuÃ© incluye una reforma de terraza?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Incluye diagnóstico inicial, preparación de superficie, impermeabilización, mejora de drenaje, instalación de suelos exteriores resistentes y remates finales. Si lo necesitas, también realizamos cerramientos para ganar uso y confort durante todo el año."
+        "text": "Incluye diagnÃ³stico inicial, preparaciÃ³n de superficie, impermeabilizaciÃ³n, mejora de drenaje, instalaciÃ³n de suelos exteriores resistentes y remates finales. Si lo necesitas, tambiÃ©n realizamos cerramientos para ganar uso y confort durante todo el aÃ±o."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Hacéis impermeabilización, suelos y cerramientos en Valencia y alrededores?",
+      "name": "Â¿HacÃ©is impermeabilizaciÃ³n, suelos y cerramientos en Valencia y alrededores?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí. Realizamos reformas de terrazas en Valencia capital y alrededores, incluyendo impermeabilización, pavimentos exteriores, drenaje y cerramientos según cada proyecto."
+        "text": "SÃ­. Realizamos reformas de terrazas en Valencia capital y alrededores, incluyendo impermeabilizaciÃ³n, pavimentos exteriores, drenaje y cerramientos segÃºn cada proyecto."
       }
     }
   ]
@@ -180,13 +63,13 @@ const faqSchema = {
 
 <SiteLayout 
   title="Reforma de Terrazas en Valencia | Presupuesto Gratis"
-  description="Empresa especializada en reforma de terrazas en Valencia. Suelos, impermeabilización, cerramientos y mejora del espacio exterior con presupuesto gratis."
-  keywords="reforma terraza valencia, reformas terrazas valencia"
-  canonical="https://mejoresreformasvalencia.es/servicios/reforma-terraza-valencia"
-  schema={[localBusinessSchema, faqSchema]}
+  description="Empresa especializada en reforma de terrazas en Valencia. ImpermeabilizaciÃ³n, suelos exteriores, cerramientos, pÃ©rgolas e iluminaciÃ³n exterior con presupuesto gratis."
+  keywords="reforma de terrazas en valencia, impermeabilizaciÃ³n terrazas valencia, cerramientos de terraza valencia, suelos exteriores valencia"
+  canonical="https://mejoresreformasvalencia.es/servicios/reforma-terraza-valencia/"
+  schema={[serviceSchema, faqSchema]}
   ogImage="/og-home.webp"
 >
-  <main class="flex-1">
+
     <!-- Breadcrumbs and Hero Section -->
 
       <section class="bg-gradient-to-br from-slate-50 to-green-50">
@@ -210,11 +93,11 @@ const faqSchema = {
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Reforma de Terrazas en Valencia</h1>
             
             <!-- Subtitle -->
-            <p class="text-xl text-gray-700 mb-6">Mejoramos tu terraza con pavimentos resistentes, impermeabilización y soluciones funcionales para disfrutar del espacio exterior todo el año</p>
+            <p class="text-xl text-gray-700 mb-6">Transformamos tu terraza con impermeabilizaciÃ³n, suelos exteriores, cerramientos, pÃ©rgolas e iluminaciÃ³n para disfrutarla todo el aÃ±o.</p>
             
             <!-- Price -->
             <div class="mb-6">
-              <span class="text-2xl font-bold text-accent">desde 1.800€ <span class="text-sm text-gray-500 font-normal">Proyecto completo</span></span>
+              <span class="text-2xl font-bold text-accent">desde 1.800â‚¬ <span class="text-sm text-gray-500 font-normal">Reforma de terraza bÃ¡sica</span></span>
             </div>
             
             <!-- CTAs -->
@@ -236,19 +119,19 @@ const faqSchema = {
                 <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Impermeabilización duradera</span>
+                <span class="text-gray-700">ImpermeabilizaciÃ³n y drenaje</span>
               </div>
               <div class="flex items-center space-x-3">
                 <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Suelos exteriores resistentes</span>
+                <span class="text-gray-700">Suelos exteriores y cerramientos</span>
               </div>
               <div class="flex items-center space-x-3">
                 <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Presupuesto claro</span>
+                <span class="text-gray-700">Presupuesto cerrado y garantÃ­a</span>
               </div>
             </div>
           </div>
@@ -256,7 +139,7 @@ const faqSchema = {
           <!-- Right side - Image -->
           <div class="order-first lg:order-last">
             <div class="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src={fachadaExteriorImg.src} alt="Reforma de terraza en Valencia con mejora de suelos e impermeabilización" width={fachadaExteriorImg.width} height={fachadaExteriorImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
+              <img src={terrazaHeroImg.src} alt="Reforma de terraza en Valencia con mejora de suelos e impermeabilizaciÃ³n" width={terrazaHeroImg.width} height={terrazaHeroImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
             </div>
           </div>
         </div>
@@ -272,17 +155,17 @@ const faqSchema = {
               Precio de Reforma de Terrazas en Valencia
             </h2>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-              Presupuesto transparente según estado, tamaño y acabados
+              Presupuesto transparente segÃºn metros, estado y nivel de acabados
             </p>
           </div>
           
           <div class="space-y-6 text-gray-700 mb-10">
             <p class="text-lg leading-relaxed">
-              El <strong>precio de reforma terraza Valencia</strong> depende de los metros cuadrados, estado del soporte, sistema de impermeabilización, tipo de pavimento exterior y si se incluye cerramiento. En todos los casos trabajamos con presupuesto cerrado y planificación clara.
+              El <strong>precio de una reforma de terraza en Valencia</strong> depende de los metros cuadrados, el estado del soporte, el sistema de impermeabilizaciÃ³n, el tipo de pavimento exterior y si se incluye cerramiento o pÃ©rgola.
             </p>
             
             <p class="text-lg leading-relaxed">
-              Como empresa local, ejecutamos una mejora integral de terrazas: reparación de base, drenaje, impermeabilización, instalación de suelos exteriores y remates finales. El objetivo es una terraza cómoda, estética y duradera para uso diario.
+              En todos los casos trabajamos con presupuesto cerrado y planificaciÃ³n clara: preparaciÃ³n de base, drenaje, impermeabilizaciÃ³n, instalaciÃ³n de suelos exteriores, iluminaciÃ³n y remates finales.
             </p>
           </div>
 
@@ -296,88 +179,88 @@ const faqSchema = {
                 <h4 class="font-bold text-lg mb-4 text-gray-900">Por Tipo de Terraza</h4>
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Terraza 20 m²</span>
-                    <span class="font-bold text-accent">desde 1.800€</span>
+                    <span class="text-gray-700">Terraza pequeÃ±a (hasta 15 mÂ²)</span>
+                    <span class="font-bold text-accent">desde 1.800â‚¬</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Terraza 30 m²</span>
-                    <span class="font-bold text-accent">desde 3.200€</span>
+                    <span class="text-gray-700">Terraza media (15-30 mÂ²)</span>
+                    <span class="font-bold text-accent">desde 3.200â‚¬</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Terraza 40 m²</span>
-                    <span class="font-bold text-accent">desde 5.500€</span>
+                    <span class="text-gray-700">Terraza grande (+30 mÂ²)</span>
+                    <span class="font-bold text-accent">desde 5.500â‚¬</span>
                   </li>
                 </ul>
-                <p class="text-sm text-gray-500 mt-4">*Incluye impermeabilización, pavimento y remates</p>
+                <p class="text-sm text-gray-500 mt-4">*Incluye impermeabilizaciÃ³n, pavimento exterior y remates</p>
               </div>
 
               <!-- Precio por zonas -->
               <div class="bg-white rounded-xl p-6 shadow-sm">
-                <h4 class="font-bold text-lg mb-4 text-gray-900">Por Zonas Específicas</h4>
+                <h4 class="font-bold text-lg mb-4 text-gray-900">Por Zonas EspecÃ­ficas</h4>
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Impermeabilización completa</span>
-                    <span class="font-bold text-accent">desde 900€</span>
+                    <span class="text-gray-700">ImpermeabilizaciÃ³n completa</span>
+                    <span class="font-bold text-accent">desde 900â‚¬</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Pavimento exterior resistente</span>
-                    <span class="font-bold text-accent">desde 650€</span>
+                    <span class="text-gray-700">Pavimento exterior antideslizante</span>
+                    <span class="font-bold text-accent">desde 650â‚¬</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Cerramiento de terraza</span>
-                    <span class="font-bold text-accent">desde 1.400€</span>
+                    <span class="text-gray-700">Cerramiento o pÃ©rgola ligera</span>
+                    <span class="font-bold text-accent">desde 1.400â‚¬</span>
                   </li>
                 </ul>
-                <p class="text-sm text-gray-500 mt-4">*Precios pueden variar según estado</p>
+                <p class="text-sm text-gray-500 mt-4">*Precios pueden variar segÃºn estado y materiales</p>
               </div>
             </div>
 
-            <!-- Qué incluye el precio -->
+            <!-- QuÃ© incluye el precio -->
             <div class="mt-8 bg-white rounded-xl p-6">
-              <h4 class="font-bold text-lg mb-4 text-gray-900">¿Qué Incluye una Reforma de Terraza?</h4>
+              <h4 class="font-bold text-lg mb-4 text-gray-900">Â¿QuÃ© Incluye una Reforma de Terraza?</h4>
               <div class="grid md:grid-cols-2 gap-4">
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Inspección técnica y asesoramiento</span>
+                  <span class="text-gray-700">InspecciÃ³n tÃ©cnica y planificaciÃ³n</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Preparación y nivelación de base</span>
+                  <span class="text-gray-700">PreparaciÃ³n y nivelaciÃ³n de base</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Reparación de grietas y puntos de humedad</span>
+                  <span class="text-gray-700">ImpermeabilizaciÃ³n y mejora de drenaje</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Sistema de impermeabilización</span>
+                  <span class="text-gray-700">InstalaciÃ³n de pavimento exterior</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Instalación de pavimento exterior</span>
+                  <span class="text-gray-700">Cerramientos, pÃ©rgolas e iluminaciÃ³n exterior</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Remates, limpieza y garantía</span>
+                  <span class="text-gray-700">Remates, limpieza y garantÃ­a por escrito</span>
                 </div>
               </div>
             </div>
 
           <div class="mt-8 bg-white rounded-xl p-6">
             <p class="text-lg text-gray-700 mb-6">
-              <strong>¿Quieres aprovechar mejor tu terraza?</strong> Consulta nuestro <strong>precio de reforma de terrazas en Valencia</strong> y te preparamos una propuesta clara, realista y sin compromiso.
+              <strong>Â¿Quieres aprovechar mejor tu terraza?</strong> Consulta nuestro <strong>precio de reforma de terrazas en Valencia</strong> y te preparamos una propuesta clara y sin compromiso.
             </p>
             <div class="flex justify-center text-center">
               <a href="/contacto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-accent text-white hover:bg-accent/90 focus:ring-accent shadow-md hover:shadow-lg px-8 py-3 text-lg rounded-lg">
@@ -390,15 +273,15 @@ const faqSchema = {
       </div>
     </section>
 
-    <!-- Cómo Reformamos Terrazas en Valencia: Proceso Profesional -->
+    <!-- CÃ³mo Reformamos Terrazas en Valencia: Proceso Profesional -->
     <section class="py-16 bg-gradient-to-br from-slate-50 to-green-50">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Cómo Reformamos tu Terraza en Valencia
+            CÃ³mo Reformamos tu Terraza en Valencia
           </h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Proceso paso a paso para lograr un espacio exterior funcional, estético y duradero
+            Proceso paso a paso para lograr un espacio exterior funcional, estÃ©tico y duradero
           </p>
         </div>
         
@@ -411,9 +294,9 @@ const faqSchema = {
                   1
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Visita Técnica y Diseño de Solución</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Visita y PlanificaciÃ³n de la Reforma</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Analizamos el estado de la terraza, detectamos humedades, problemas de drenaje y desgaste del pavimento. Te proponemos una solución adaptada a tu uso diario y al presupuesto disponible.
+                    Analizamos el estado de la terraza, tomamos medidas y definimos contigo distribuciÃ³n, materiales y acabados. Te entregamos un plan de obra claro y realista.
                   </p>
                 </div>
               </div>
@@ -426,12 +309,12 @@ const faqSchema = {
                   2
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Preparación de Base y Reparaciones</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">PreparaciÃ³n y DemoliciÃ³n Controlada</h3>
                   <p class="text-gray-700 leading-relaxed mb-3">
-                    Retiramos elementos deteriorados, nivelamos superficies y reparamos grietas o zonas dañadas para asegurar una base sólida antes de impermeabilizar y colocar el nuevo pavimento.
+                    Retiramos elementos deteriorados, preparamos la base y corregimos desniveles para dejar el soporte listo antes de impermeabilizar y colocar los nuevos acabados.
                   </p>
                   <p class="text-gray-700 leading-relaxed">
-                    Esta fase es clave para conseguir una terraza duradera y evitar patologías futuras.
+                    Esta fase evita patologÃ­as futuras y mejora la durabilidad de toda la reforma.
                   </p>
                 </div>
               </div>
@@ -444,9 +327,9 @@ const faqSchema = {
                   3
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Impermeabilización y Drenaje</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">ImpermeabilizaciÃ³n y Base TÃ©cnica</h3>
                   <p class="text-gray-700 leading-relaxed mb-3">
-                    Aplicamos el sistema de impermeabilización adecuado y mejoramos pendientes o puntos de evacuación para evitar acumulaciones de agua y filtraciones.
+                    Aplicamos el sistema de impermeabilizaciÃ³n adecuado y mejoramos pendientes o puntos de evacuaciÃ³n para evitar acumulaciones de agua y filtraciones.
                   </p>
                   <p class="text-gray-700 leading-relaxed">
                     Trabajamos con materiales resistentes al sol, lluvia y cambios de temperatura para un rendimiento prolongado.
@@ -462,9 +345,9 @@ const faqSchema = {
                   4
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Instalación de Suelos y Cerramientos</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">InstalaciÃ³n de Suelos, Cerramientos y Elementos</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Colocamos pavimentos exteriores antideslizantes y de bajo mantenimiento. Si lo necesitas, incorporamos cerramientos para ganar confort y aprovechar mejor la terraza durante todo el año.
+                    Colocamos pavimentos exteriores antideslizantes y de bajo mantenimiento. Si lo necesitas, incorporamos cerramientos, pÃ©rgolas e iluminaciÃ³n exterior para ganar confort y uso diario.
                   </p>
                 </div>
               </div>
@@ -477,9 +360,9 @@ const faqSchema = {
                   5
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Revisión Final y Entrega</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Acabados Finales y Entrega</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Revisamos acabados, juntas, desagües y funcionalidad general. Entregamos la terraza limpia, lista para usar y con garantía por escrito.
+                    Revisamos acabados, juntas, drenaje e iluminaciÃ³n. Entregamos la terraza limpia, lista para usar y con garantÃ­a por escrito.
                   </p>
                 </div>
               </div>
@@ -497,7 +380,7 @@ const faqSchema = {
             Beneficios de Reformar tu Terraza en Valencia
           </h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Más confort, mejor estética y mayor aprovechamiento del espacio exterior
+            MÃ¡s confort, mejor estÃ©tica y mayor aprovechamiento del espacio exterior
           </p>
         </div>
         
@@ -512,9 +395,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Protección frente a Humedad</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">ProtecciÃ³n frente a Humedad e Intemperie</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Una buena impermeabilización evita filtraciones, humedades y daños en la vivienda. Es la base para que la terraza se mantenga en buen estado durante años.
+                    Una buena impermeabilizaciÃ³n evita filtraciones, humedades y daÃ±os en la vivienda. Es la base para que la terraza se mantenga en buen estado durante aÃ±os.
                   </p>
                 </div>
               </div>
@@ -529,9 +412,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Ahorro a Medio y Largo Plazo</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">MÃ¡s Aprovechamiento del Espacio Exterior</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Una reforma bien hecha reduce averías y reparaciones futuras. Invertir ahora en una terraza bien ejecutada evita costes mayores después.
+                    Una terraza bien distribuida se convierte en una zona Ãºtil para descanso, comidas o reuniones durante gran parte del aÃ±o.
                   </p>
                 </div>
               </div>
@@ -546,9 +429,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Más Valor para tu Inmueble</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Mejora EstÃ©tica y Confort Diario</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Una terraza renovada, funcional y con buenos acabados aumenta el valor de la vivienda y mejora su atractivo para venta o alquiler.
+                    Renovar suelos, cerramientos y acabados aporta una imagen mÃ¡s cuidada y un uso mucho mÃ¡s cÃ³modo del espacio exterior.
                   </p>
                 </div>
               </div>
@@ -563,9 +446,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Uso Diario Más Cómodo</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">RevalorizaciÃ³n del Inmueble</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Con suelos resistentes, buen drenaje y una distribución pensada, la terraza se convierte en un espacio realmente útil y agradable todo el año.
+                    Una reforma de terraza bien ejecutada mejora el valor de la vivienda y su atractivo para venta o alquiler.
                   </p>
                 </div>
               </div>
@@ -578,8 +461,8 @@ const faqSchema = {
     <!-- CTA Contact Section -->
     <section class="py-12 bg-primary text-white">
       <div class="container mx-auto px-4 text-center">
-        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Necesitas Reformar tu Terraza en Valencia?</h2>
-        <p class="text-xl mb-8">Presupuesto gratuito en menos de 24 horas</p>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Â¿Necesitas Reformar tu Terraza en Valencia?</h2>
+        <p class="text-xl mb-8">Te ayudamos a diseÃ±ar un espacio exterior funcional y duradero</p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/contacto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-accent text-white hover:bg-accent/90 focus:ring-accent shadow-md hover:shadow-lg px-6 py-3 text-lg rounded-lg">
@@ -611,44 +494,44 @@ const faqSchema = {
           <!-- FAQ 1 -->
           <div class="bg-white rounded-xl p-6 border-2 border-gray-100">
             <h3 class="font-bold text-lg text-gray-900 mb-3">
-              ¿Cuánto cuesta reformar una terraza en Valencia?
+              Â¿CuÃ¡nto cuesta reformar una terraza en Valencia?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              El precio depende de los metros, el estado de la base, el tipo de pavimento y si se incluye cerramiento. Como referencia, una terraza pequeña puede partir desde 1.800€, una media desde 3.200€ y una reforma integral desde 5.500€. Siempre entregamos <strong>presupuesto sin compromiso</strong>.
+              El precio depende de los metros, el estado de la base, el tipo de pavimento y si se incluye cerramiento. Como referencia, una terraza pequeÃ±a puede partir desde 1.800â‚¬, una media desde 3.200â‚¬ y una reforma integral desde 5.500â‚¬. Siempre entregamos <strong>presupuesto sin compromiso</strong>.
             </p>
           </div>
 
           <!-- FAQ 2 -->
           <div class="bg-white rounded-xl p-6 border-2 border-gray-100">
             <h3 class="font-bold text-lg text-gray-900 mb-3">
-              ¿Cuánto tarda una reforma de terraza?
+              Â¿CuÃ¡nto tarda una reforma de terraza?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Normalmente entre <strong>4 y 10 días laborables</strong>, según el alcance de la obra. Si hay que rehacer base, mejorar drenaje o instalar cerramientos, el plazo puede ampliarse. Definimos tiempos claros antes de empezar.
+              Normalmente entre <strong>4 y 10 dÃ­as laborables</strong>, segÃºn el alcance de la obra. Si hay que rehacer base, mejorar drenaje o instalar cerramientos, el plazo puede ampliarse. Definimos tiempos claros antes de empezar.
             </p>
           </div>
 
           <!-- FAQ 3 -->
           <div class="bg-white rounded-xl p-6 border-2 border-gray-100">
             <h3 class="font-bold text-lg text-gray-900 mb-3">
-              ¿Qué incluye una reforma de terraza?
+              Â¿QuÃ© incluye una reforma de terraza?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Incluye diagnóstico, preparación de superficie, impermeabilización, pavimentos exteriores resistentes, mejora de drenaje y remates finales. Si lo necesitas, también incorporamos cerramientos para aumentar el confort del espacio.
+              Incluye diagnÃ³stico, preparaciÃ³n de superficie, impermeabilizaciÃ³n, pavimentos exteriores resistentes, mejora de drenaje y remates finales. Si lo necesitas, tambiÃ©n incorporamos cerramientos para aumentar el confort del espacio.
             </p>
           </div>
 
           <!-- FAQ 4 -->
           <div class="bg-white rounded-xl p-6 border-2 border-gray-100">
             <h3 class="font-bold text-lg text-gray-900 mb-3">
-              ¿Hacéis impermeabilización, suelos y cerramientos en Valencia y alrededores?
+              Â¿HacÃ©is impermeabilizaciÃ³n, suelos y cerramientos en Valencia y alrededores?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Sí. Trabajamos en Valencia capital y alrededores realizando reformas terrazas Valencia con impermeabilización, suelos exteriores y cerramientos según cada necesidad. Te asesoramos para conseguir una solución duradera y funcional.
+              SÃ­. Trabajamos en Valencia capital y alrededores realizando reformas de terrazas con impermeabilizaciÃ³n, suelos exteriores y cerramientos segÃºn cada necesidad.
             </p>
           </div>
         </div>
       </div>
     </section>
-  </main>
+
 </SiteLayout>
