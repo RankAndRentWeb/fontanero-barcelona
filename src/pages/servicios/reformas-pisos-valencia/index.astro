@@ -3,138 +3,21 @@ import SiteLayout from '../../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.tsx';
 import reformaPisoImg from '../../../assets/instalacion-papel-pintado-vinilos-decorativos-valencia.jpg';
 
-const localBusinessSchema = {
+const serviceSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-  "@id": "https://mejoresreformasvalencia.es/#business",
-  "name": "Reformas en Valencia",
-  "description": "Empresa especializada en reformas de pisos en Valencia. Renovamos distribución, cocina, baño, suelos e instalaciones con ejecución profesional.",
-  "url": "https://mejoresreformasvalencia.es",
-  "image": "https://mejoresreformasvalencia.es/og-home.webp",
-  "telephone": "+34722208131",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Valencia",
-    "addressRegion": "Comunitat Valenciana",
+  "@type": "Service",
+  "@id": "https://mejoresreformasvalencia.es/servicios/reformas-pisos-valencia/#service",
+  "name": "Reformas de Pisos en Valencia",
+  "description": "Servicio de reformas de pisos en Valencia con reforma parcial o integral, redistribuciÃ³n, cocina, baÃ±o, suelos e instalaciones.",
+  "url": "https://mejoresreformasvalencia.es/servicios/reformas-pisos-valencia/",
+  "serviceType": "Reformas de pisos",
+  "areaServed": {
+    "@type": "City",
+    "name": "Valencia",
     "addressCountry": "ES"
   },
-  "openingHours": ["Mo-Sa 08:00-20:00"],
-  "priceRange": "€€€",
-  "areaServed": [
-    {
-      "@type": "City",
-      "name": "Valencia",
-      "containedInPlace": {
-        "@type": "AdministrativeArea",
-        "name": "Comunitat Valenciana"
-      }
-    },
-    // Centro histórico y Ciutat Vella
-    { "@type": "PostalCodeSpecification", "postalCode": "46001", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46002", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46003", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Eixample
-    { "@type": "PostalCodeSpecification", "postalCode": "46004", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46005", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46006", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46007", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46008", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46009", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46010", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Extramurs y otras zonas
-    { "@type": "PostalCodeSpecification", "postalCode": "46011", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46012", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46013", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46014", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46015", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46016", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46017", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46018", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46019", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46020", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Campanar, Benimaclet, Poblados marítimos
-    { "@type": "PostalCodeSpecification", "postalCode": "46021", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46022", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46023", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46024", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46025", "addressLocality": "Valencia", "addressCountry": "ES" }
-  ],
-  "knowsAbout": [
-    "Reformas pisos Valencia",
-    "Reforma de pisos Valencia",
-    "Reforma integral piso Valencia",
-    "Redistribución de espacios en pisos",
-    "Renovación de cocina y baño en pisos",
-    "Suelos y revestimientos para vivienda",
-    "Instalaciones de fontanería y electricidad",
-    "Modernización integral de viviendas",
-    "Coordinación de gremios en reformas",
-    "Acabados duraderos para pisos",
-    "Reformas de pisos en Valencia",
-    "Reformar piso Valencia"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Catálogo de Reformas de Pisos en Valencia",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Parcial de Piso en Valencia",
-          "description": "Reforma parcial de piso con mejora de acabados, suelos y espacios principales",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Partial Apartment Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "12000.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Integral Piso 70m²",
-          "description": "Reforma integral de piso con cocina, baño, suelos e instalaciones",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Complete Apartment Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "22000.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Integral Piso 90m²",
-          "description": "Reforma integral de piso con redistribución, cocina y baño completos",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Full Home Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "29000.00",
-        "priceCurrency": "EUR"
-      }
-    ]
+  "provider": {
+    "@id": "https://mejoresreformasvalencia.es/#business"
   }
 };
 
@@ -144,42 +27,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Cuánto cuesta reformar un piso en Valencia?",
+      "name": "Â¿CuÃ¡nto cuesta reformar un piso en Valencia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El precio depende de metros, estado inicial y calidades. Una reforma parcial puede partir desde 12.000€, y una reforma integral de piso en Valencia suele moverse desde 22.000€ en adelante. Te damos presupuesto cerrado sin compromiso."
+        "text": "El precio depende de metros, estado inicial y calidades. Una reforma parcial puede partir desde 12.000â‚¬, y una reforma integral de piso en Valencia suele moverse desde 22.000â‚¬ en adelante. Te damos presupuesto cerrado sin compromiso."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto tarda una reforma de piso?",
+      "name": "Â¿CuÃ¡nto tarda una reforma de piso?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Una reforma parcial suele tardar entre 3 y 5 semanas. Una reforma integral de piso en Valencia puede durar entre 6 y 10 semanas según alcance y redistribución de espacios. Planificamos plazos claros desde el inicio."
+        "text": "Una reforma parcial suele tardar entre 3 y 5 semanas. Una reforma integral de piso en Valencia puede durar entre 6 y 10 semanas segÃºn alcance y redistribuciÃ³n de espacios. Planificamos plazos claros desde el inicio."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Qué incluye una reforma integral de piso?",
+      "name": "Â¿QuÃ© incluye una reforma integral de piso?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Incluye demolición, albañilería, fontanería, electricidad, suelos, revestimientos, carpintería, acabados finales y renovación de cocina y baño si está en el alcance del proyecto."
+        "text": "Incluye demoliciÃ³n, albaÃ±ilerÃ­a, fontanerÃ­a, electricidad, suelos, revestimientos, carpinterÃ­a, acabados finales y renovaciÃ³n de cocina y baÃ±o si estÃ¡ en el alcance del proyecto."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Hacéis redistribución de espacios y reforma de cocina y baño?",
+      "name": "Â¿HacÃ©is redistribuciÃ³n de espacios y reforma de cocina y baÃ±o?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí. Realizamos redistribución de espacios y renovamos cocina y baño dentro de la reforma de piso. Coordinamos todos los gremios para ejecutar la obra de forma ordenada y con acabados duraderos."
+        "text": "SÃ­. Realizamos redistribuciÃ³n de espacios y renovamos cocina y baÃ±o dentro de la reforma de piso. Coordinamos todos los gremios para ejecutar la obra de forma ordenada y con acabados duraderos."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Trabajáis en Valencia capital y alrededores?",
+      "name": "Â¿TrabajÃ¡is en Valencia capital y alrededores?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, trabajamos en Valencia capital y alrededores. Realizamos visita técnica y presupuesto sin compromiso para valorar tu piso y definir la mejor propuesta de reforma."
+        "text": "SÃ­, trabajamos en Valencia capital y alrededores. Realizamos visita tÃ©cnica y presupuesto sin compromiso para valorar tu piso y definir la mejor propuesta de reforma."
       }
     }
   ]
@@ -188,13 +71,12 @@ const faqSchema = {
 
 <SiteLayout 
   title="Reformas de Pisos en Valencia | Presupuesto Gratis"
-  description="Empresa especializada en reformas de pisos en Valencia. Renovamos distribución, acabados, cocina, baño, suelos e instalaciones con presupuesto gratis."
-  keywords="reformas pisos valencia, reforma de pisos valencia, reforma integral piso valencia, reformas de pisos en valencia, reformar piso valencia"
-  canonical="https://mejoresreformasvalencia.es/servicios/reformas-pisos-valencia"
-  schema={[localBusinessSchema, faqSchema]}
+  description="Empresa especializada en reformas de pisos en Valencia. Reforma parcial o integral, cocina, baÃ±o, suelos e instalaciones con presupuesto gratis."
+  keywords="reformas pisos valencia, reforma de pisos valencia, reforma integral de piso en valencia, reformas de pisos en valencia, reformar tu piso en valencia"
+  canonical="https://mejoresreformasvalencia.es/servicios/reformas-pisos-valencia/"
+  schema={[serviceSchema, faqSchema]}
   ogImage="/og-home.webp"
 >
-  <main class="flex-1">
     <!-- Breadcrumbs and Hero Section -->
 
       <section class="bg-gradient-to-br from-slate-50 to-green-50">
@@ -218,11 +100,11 @@ const faqSchema = {
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Reformas de Pisos en Valencia</h1>
             
             <!-- Subtitle -->
-            <p class="text-xl text-gray-700 mb-6">Reforma parcial o integral de pisos con coordinación de gremios, mejora de cocina y baño, y acabados duraderos</p>
+            <p class="text-xl text-gray-700 mb-6">Reforma parcial o integral de pisos con coordinaciÃ³n de gremios, mejora de cocina y baÃ±o, y acabados duraderos</p>
             
             <!-- Price -->
             <div class="mb-6">
-              <span class="text-2xl font-bold text-accent">desde 12.000€ <span class="text-sm text-gray-500 font-normal">Reforma parcial</span></span>
+              <span class="text-2xl font-bold text-accent">desde 12.000â‚¬ <span class="text-sm text-gray-500 font-normal">Reforma parcial</span></span>
             </div>
             
             <!-- CTAs -->
@@ -244,7 +126,7 @@ const faqSchema = {
                 <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-gray-700">Coordinación de gremios</span>
+                <span class="text-gray-700">CoordinaciÃ³n de gremios</span>
               </div>
               <div class="flex items-center space-x-3">
                 <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -264,7 +146,7 @@ const faqSchema = {
           <!-- Right side - Image -->
           <div class="order-first lg:order-last">
             <div class="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src={reformaPisoImg.src} alt="Reforma de piso en Valencia con renovación integral de vivienda" width={reformaPisoImg.width} height={reformaPisoImg.height} class="w-full h-auto object-cover" loading="lazy">
+              <img src={reformaPisoImg.src} alt="Reforma integral de piso en Valencia con acabados modernos" width={reformaPisoImg.width} height={reformaPisoImg.height} class="w-full h-auto object-cover" loading="lazy">
             </div>
           </div>
         </div>
@@ -280,17 +162,17 @@ const faqSchema = {
               Precio de Reformas de Pisos en Valencia
             </h2>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-              Presupuesto transparente según alcance, metros y calidades
+              Presupuesto transparente segÃºn alcance, metros y calidades
             </p>
           </div>
           
           <div class="space-y-6 text-gray-700 mb-10">
             <p class="text-lg leading-relaxed">
-              El <strong>precio de reformar piso Valencia</strong> depende del tamaño de la vivienda, el estado inicial, la redistribución de espacios y las calidades elegidas. En todos los casos trabajamos con presupuesto cerrado y planificación por fases.
+              El <strong>precio de reformar un piso en Valencia</strong> depende del tamaÃ±o de la vivienda, el estado inicial, la redistribuciÃ³n de espacios y las calidades elegidas. En todos los casos trabajamos con presupuesto cerrado y planificaciÃ³n por fases.
             </p>
             
             <p class="text-lg leading-relaxed">
-              Como empresa de reformas de pisos en Valencia, coordinamos albañilería, fontanería, electricidad, suelos, revestimientos y carpintería. También renovamos cocina y baño dentro del mismo proyecto para una modernización completa de la vivienda.
+              Como empresa de reformas de pisos en Valencia, coordinamos albaÃ±ilerÃ­a, fontanerÃ­a, electricidad, suelos, revestimientos y carpinterÃ­a. TambiÃ©n renovamos cocina y baÃ±o dentro del mismo proyecto para una modernizaciÃ³n completa de la vivienda.
             </p>
           </div>
 
@@ -304,19 +186,19 @@ const faqSchema = {
                 <h4 class="font-bold text-lg mb-4 text-gray-900">Por Tipo de Reforma</h4>
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Reforma parcial piso 70m²</span>
-                    <span class="font-bold text-accent">desde 12.000€</span>
+                    <span class="text-gray-700">Reforma parcial piso 70mÂ²</span>
+                    <span class="font-bold text-accent">desde 12.000â‚¬</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Reforma integral piso 70m²</span>
-                    <span class="font-bold text-accent">desde 22.000€</span>
+                    <span class="text-gray-700">Reforma integral de piso en Valencia (70mÂ²)</span>
+                    <span class="font-bold text-accent">desde 22.000â‚¬</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Reforma integral piso 90m²</span>
-                    <span class="font-bold text-accent">desde 29.000€</span>
+                    <span class="text-gray-700">Reforma integral de piso en Valencia (90mÂ²)</span>
+                    <span class="font-bold text-accent">desde 29.000â‚¬</span>
                   </li>
                 </ul>
-                <p class="text-sm text-gray-500 mt-4">*Incluye materiales, mano de obra y gestión de obra</p>
+                <p class="text-sm text-gray-500 mt-4">*Incluye materiales, mano de obra y gestiÃ³n de obra</p>
               </div>
 
               <!-- Precio por partidas -->
@@ -325,42 +207,42 @@ const faqSchema = {
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
                     <span class="text-gray-700">Reforma cocina completa</span>
-                    <span class="font-bold text-accent">desde 8.000€</span>
+                    <span class="font-bold text-accent">desde 8.000â‚¬</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Reforma baño completo</span>
-                    <span class="font-bold text-accent">desde 4.500€</span>
+                    <span class="text-gray-700">Reforma baÃ±o completo</span>
+                    <span class="font-bold text-accent">desde 4.500â‚¬</span>
                   </li>
                   <li class="flex justify-between items-center">
                     <span class="text-gray-700">Instalaciones completas</span>
-                    <span class="font-bold text-accent">desde 6.000€</span>
+                    <span class="font-bold text-accent">desde 6.000â‚¬</span>
                   </li>
                 </ul>
-                <p class="text-sm text-gray-500 mt-4">*Precios pueden variar según calidades</p>
+                <p class="text-sm text-gray-500 mt-4">*Precios pueden variar segÃºn calidades</p>
               </div>
             </div>
 
-            <!-- Qué incluye el precio -->
+            <!-- QuÃ© incluye el precio -->
             <div class="mt-8 bg-white rounded-xl p-6">
-              <h4 class="font-bold text-lg mb-4 text-gray-900">¿Qué Incluye una Reforma de Piso?</h4>
+              <h4 class="font-bold text-lg mb-4 text-gray-900">Â¿QuÃ© Incluye una Reforma de Piso?</h4>
               <div class="grid md:grid-cols-2 gap-4">
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Demolición y retirada de materiales</span>
+                  <span class="text-gray-700">DemoliciÃ³n y retirada de materiales</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Albañilería y redistribución de espacios</span>
+                  <span class="text-gray-700">AlbaÃ±ilerÃ­a y redistribuciÃ³n de espacios</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Fontanería y electricidad</span>
+                  <span class="text-gray-700">FontanerÃ­a y electricidad</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
@@ -372,20 +254,20 @@ const faqSchema = {
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Cocina y baño dentro del proyecto</span>
+                  <span class="text-gray-700">Cocina y baÃ±o dentro del proyecto</span>
                 </div>
                 <div class="flex items-start space-x-3">
                   <svg class="w-5 h-5 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
-                  <span class="text-gray-700">Limpieza final y garantía</span>
+                  <span class="text-gray-700">Limpieza final y garantÃ­a</span>
                 </div>
               </div>
             </div>
 
           <div class="mt-8 bg-white rounded-xl p-6">
             <p class="text-lg text-gray-700 mb-6">
-              <strong>¿Quieres renovar tu vivienda al completo?</strong> Consulta nuestro <strong>presupuesto de reformas de pisos en Valencia</strong> y te ayudamos a planificar una reforma realista, funcional y bien ejecutada.
+              <strong>Â¿Quieres renovar tu vivienda al completo?</strong> Consulta nuestro <strong>presupuesto de reformas de pisos en Valencia</strong> y te ayudamos a planificar una reforma realista, funcional y bien ejecutada.
             </p>
             <div class="flex justify-center text-center">
               <a href="/contacto/" class="inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 bg-accent text-white hover:bg-accent/90 focus:ring-accent shadow-md hover:shadow-lg px-8 py-3 text-lg rounded-lg">
@@ -403,10 +285,10 @@ const faqSchema = {
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Cómo Reformamos Pisos en Valencia
+            CÃ³mo Reformamos Pisos en Valencia
           </h2>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Proceso paso a paso con planificación y coordinación profesional
+            Proceso paso a paso con planificaciÃ³n y coordinaciÃ³n profesional
           </p>
         </div>
         
@@ -419,9 +301,9 @@ const faqSchema = {
                   1
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Visita Técnica y Definición del Proyecto</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Visita TÃ©cnica y DefiniciÃ³n del Proyecto</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Realizamos visita al piso para analizar estado, necesidades y objetivos. Definimos alcance, distribución y calidades para una <strong>reforma de pisos en Valencia</strong> alineada con tu presupuesto.
+                    Realizamos visita al piso para analizar estado, necesidades y objetivos. Definimos alcance, distribuciÃ³n y calidades para una <strong>reforma de pisos en Valencia</strong> alineada con tu presupuesto.
                   </p>
                 </div>
               </div>
@@ -436,7 +318,7 @@ const faqSchema = {
                 <div class="flex-1">
                   <h3 class="font-bold text-xl text-gray-900 mb-3">Plan de Obra y Presupuesto Cerrado</h3>
                   <p class="text-gray-700 leading-relaxed mb-3">
-                    Entregamos un presupuesto detallado por partidas y calendario de ejecución. Así sabes qué se hace, cuándo se hace y cuánto cuesta cada fase, sin sorpresas.
+                    Entregamos un presupuesto detallado por partidas y calendario de ejecuciÃ³n. AsÃ­ sabes quÃ© se hace, cuÃ¡ndo se hace y cuÃ¡nto cuesta cada fase, sin sorpresas.
                   </p>
                   <p class="text-gray-700 leading-relaxed">
                     Coordinamos recursos y tiempos para que la obra avance de forma ordenada.
@@ -452,9 +334,9 @@ const faqSchema = {
                   3
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Demolición y Redistribución</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">DemoliciÃ³n y RedistribuciÃ³n</h3>
                   <p class="text-gray-700 leading-relaxed mb-3">
-                    Ejecutamos derribos controlados, albañilería y redistribución de espacios cuando el proyecto lo requiere, mejorando funcionalidad y circulación interior.
+                    Ejecutamos derribos controlados, albaÃ±ilerÃ­a y redistribuciÃ³n de espacios cuando el proyecto lo requiere, mejorando funcionalidad y circulaciÃ³n interior.
                   </p>
                   <p class="text-gray-700 leading-relaxed">
                     Esta fase permite adaptar el piso a las necesidades reales de uso diario.
@@ -472,7 +354,7 @@ const faqSchema = {
                 <div class="flex-1">
                   <h3 class="font-bold text-xl text-gray-900 mb-3">Instalaciones y Acabados</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Renovamos fontanería y electricidad, colocamos suelos y revestimientos, y ejecutamos acabados en cocina y baño para una modernización completa de la vivienda.
+                    Renovamos fontanerÃ­a y electricidad, colocamos suelos y revestimientos, y ejecutamos acabados en cocina y baÃ±o para una modernizaciÃ³n completa de la vivienda.
                   </p>
                 </div>
               </div>
@@ -500,9 +382,9 @@ const faqSchema = {
                   6
                 </div>
                 <div class="flex-1">
-                  <h3 class="font-bold text-xl text-gray-900 mb-3">Postventa y Garantía</h3>
+                  <h3 class="font-bold text-xl text-gray-900 mb-3">Postventa y GarantÃ­a</h3>
                   <p class="text-gray-700 leading-relaxed">
-                    Incluimos garantía por escrito y acompañamiento post-obra para resolver cualquier ajuste final.
+                    Incluimos garantÃ­a por escrito y acompaÃ±amiento post-obra para resolver cualquier ajuste final.
                   </p>
                 </div>
               </div>
@@ -521,7 +403,7 @@ const faqSchema = {
               Beneficios de Reformar tu Piso en Valencia
             </h2>
             <p class="text-xl text-gray-600">
-              Más funcionalidad, mejor estética y mayor valor para tu vivienda
+              MÃ¡s funcionalidad, mejor estÃ©tica y mayor valor para tu vivienda
             </p>
           </div>
 
@@ -535,9 +417,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Mejor Distribución del Espacio</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Mejor DistribuciÃ³n del Espacio</h3>
                   <p class="text-gray-700">
-                    Una <strong>reforma integral piso valencia</strong> permite adaptar la vivienda a tu forma de vivir, ganando amplitud útil y mejorando la circulación entre estancias.
+                    Una <strong>reforma integral de piso en Valencia</strong> permite adaptar la vivienda a tu forma de vivir, ganando amplitud Ãºtil y mejorando la circulaciÃ³n entre estancias.
                   </p>
                 </div>
               </div>
@@ -552,9 +434,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Coordinación de Todo el Proyecto</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">CoordinaciÃ³n de Todo el Proyecto</h3>
                   <p class="text-gray-700">
-                    Coordinamos todos los gremios y fases de obra para que no tengas que gestionar múltiples proveedores.
+                    Coordinamos todos los gremios y fases de obra para que no tengas que gestionar mÃºltiples proveedores.
                   </p>
                 </div>
               </div>
@@ -569,9 +451,9 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Mejora de Cocina y Baño</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">Mejora de Cocina y BaÃ±o</h3>
                   <p class="text-gray-700">
-                    Renovar cocina y baño dentro de la reforma mejora confort diario, eficiencia y valor del inmueble.
+                    Renovar cocina y baÃ±o dentro de la reforma mejora confort diario, eficiencia y valor del inmueble.
                   </p>
                 </div>
               </div>
@@ -587,7 +469,7 @@ const faqSchema = {
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-lg text-gray-900 mb-2">Revalorización del Inmueble</h3>
+                  <h3 class="font-bold text-lg text-gray-900 mb-2">RevalorizaciÃ³n del Inmueble</h3>
                   <p class="text-gray-700">
                     Una reforma de pisos en Valencia bien ejecutada mejora el precio de venta o alquiler y aumenta el atractivo del piso en el mercado.
                   </p>
@@ -604,7 +486,7 @@ const faqSchema = {
     <!-- CTA Contact Section -->
     <section class="py-12 bg-primary text-white">
       <div class="container mx-auto px-4 text-center">
-        <h2 class="text-2xl md:text-3xl font-bold mb-4">¿Quieres Reformar tu Piso en Valencia?</h2>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Â¿Quieres Reformar tu Piso en Valencia?</h2>
         <p class="text-xl mb-8">Te respondemos en menos de 24 horas</p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -637,50 +519,50 @@ const faqSchema = {
           <!-- FAQ 1 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 class="font-bold text-xl mb-3 text-gray-900">
-              ¿Cuánto cuesta reformar un piso en Valencia?
+              Â¿CuÃ¡nto cuesta reformar un piso en Valencia?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              El precio depende de metros, estado inicial y calidades elegidas. Una reforma parcial puede partir desde 12.000€ y una reforma integral de piso en Valencia desde 22.000€. Te preparamos <strong>presupuesto sin compromiso</strong> tras visita técnica.
+              El precio depende de metros, estado inicial y calidades elegidas. Una reforma parcial puede partir desde 12.000â‚¬ y una reforma integral de piso en Valencia desde 22.000â‚¬. Te preparamos <strong>presupuesto sin compromiso</strong> tras visita tÃ©cnica.
             </p>
           </div>
 
           <!-- FAQ 2 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 class="font-bold text-xl mb-3 text-gray-900">
-              ¿Cuánto tarda una reforma de piso?
+              Â¿CuÃ¡nto tarda una reforma de piso?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Una reforma parcial suele durar entre 3 y 5 semanas. Una reforma integral piso Valencia normalmente entre 6 y 10 semanas, según redistribución y complejidad de instalaciones.
+              Una reforma parcial suele durar entre 3 y 5 semanas. Una reforma integral de piso en Valencia normalmente entre 6 y 10 semanas, segÃºn redistribuciÃ³n y complejidad de instalaciones.
             </p>
           </div>
 
           <!-- FAQ 3 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 class="font-bold text-xl mb-3 text-gray-900">
-              ¿Qué incluye una reforma integral de piso?
+              Â¿QuÃ© incluye una reforma integral de piso?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Incluye demolición, albañilería, fontanería, electricidad, suelos, revestimientos, carpintería y acabados. También podemos renovar cocina y baño dentro del proyecto.
+              Incluye demoliciÃ³n, albaÃ±ilerÃ­a, fontanerÃ­a, electricidad, suelos, revestimientos, carpinterÃ­a y acabados. TambiÃ©n podemos renovar cocina y baÃ±o dentro del proyecto.
             </p>
           </div>
 
           <!-- FAQ 4 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 class="font-bold text-xl mb-3 text-gray-900">
-              ¿Hacéis redistribución de espacios y reforma de cocina y baño?
+              Â¿HacÃ©is redistribuciÃ³n de espacios y reforma de cocina y baÃ±o?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Sí. Podemos redistribuir espacios y ejecutar mejoras de cocina y baño dentro de la reforma para modernizar el piso de forma completa y coherente.
+              SÃ­. Podemos redistribuir espacios y ejecutar mejoras de cocina y baÃ±o dentro de la reforma para modernizar el piso de forma completa y coherente.
             </p>
           </div>
 
           <!-- FAQ 5 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 class="font-bold text-xl mb-3 text-gray-900">
-              ¿Trabajáis en Valencia capital y alrededores?
+              Â¿TrabajÃ¡is en Valencia capital y alrededores?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Sí, trabajamos en Valencia capital y alrededores. Realizamos visita, propuesta técnica y presupuesto para reformar piso Valencia con una planificación clara desde el primer día.
+              SÃ­, trabajamos en Valencia capital y alrededores. Realizamos visita, propuesta tÃ©cnica y presupuesto para reformar tu piso en Valencia con una planificaciÃ³n clara desde el primer dÃ­a.
             </p>
           </div>
         </div>
@@ -688,5 +570,4 @@ const faqSchema = {
       </div>
     </section>
 
-  </main>
 </SiteLayout>
