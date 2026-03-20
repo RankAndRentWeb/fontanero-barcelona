@@ -10,6 +10,7 @@ export interface Props {
   ogImage?: string;
   noindex?: boolean;
   schema?: object[];
+  includeBusinessSchema?: boolean;
   preloadImages?: string[];
   noBrandSuffix?: boolean;
 }
@@ -21,6 +22,7 @@ const {
   ogImage = 'https://mejoresreformasvalencia.es/og-home.webp',
   noindex = false,
   schema = [],
+  includeBusinessSchema = true,
   preloadImages = [],
   noBrandSuffix = false
 } = Astro.props;
@@ -80,7 +82,7 @@ const defaultSchema = {
   openingHours: 'Mo-Sa 08:00-20:00'
 };
 
-const combinedSchema = [defaultSchema, ...schema];
+const combinedSchema = includeBusinessSchema ? [defaultSchema, ...schema] : [...schema];
 const siteBrand = 'Reformas Valencia';
 
 const rawTitle = (title || '').trim();

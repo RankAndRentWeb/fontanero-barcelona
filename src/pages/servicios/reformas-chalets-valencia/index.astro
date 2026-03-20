@@ -3,176 +3,18 @@ import SiteLayout from '../../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.tsx';
 import reformaChaletImg from '../../../assets/pintura-comunidades-valencia-fachada-edificio.jpg';
 
-const localBusinessSchema = {
+const serviceSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-  "@id": "https://mejoresreformasvalencia.es/#business",
-  "name": "Reformas en Valencia",
-  "description": "Empresa especializada en reformas de chalets en Valencia. Renovamos interiores, exteriores, terrazas, distribución e instalaciones con presupuesto claro.",
-  "url": "https://mejoresreformasvalencia.es",
-  "image": "https://mejoresreformasvalencia.es/og-home.webp",
-  "telephone": "+34722208131",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Valencia",
-    "addressRegion": "Comunitat Valenciana",
+  "@type": "Service",
+  "@id": "https://mejoresreformasvalencia.es/servicios/reformas-chalets-valencia/#service",
+  "name": "Reformas de Chalets en Valencia",
+  "description": "Servicio de reformas de chalets en Valencia con reforma parcial o integral, interior y exterior, redistribución, cocina, baño, terrazas e instalaciones.",
+  "url": "https://mejoresreformasvalencia.es/servicios/reformas-chalets-valencia/",
+  "serviceType": "Reformas de chalets",
+  "areaServed": {
+    "@type": "City",
+    "name": "Valencia",
     "addressCountry": "ES"
-  },
-  "openingHours": ["Mo-Sa 08:00-20:00"],
-  "priceRange": "€€€",
-  "areaServed": [
-    {
-      "@type": "City",
-      "name": "Valencia",
-      "containedInPlace": {
-        "@type": "AdministrativeArea",
-        "name": "Comunitat Valenciana"
-      }
-    },
-    // Centro histórico y Ciutat Vella
-    { "@type": "PostalCodeSpecification", "postalCode": "46001", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46002", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46003", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Eixample
-    { "@type": "PostalCodeSpecification", "postalCode": "46004", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46005", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46006", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46007", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46008", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46009", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46010", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Extramurs y otras zonas
-    { "@type": "PostalCodeSpecification", "postalCode": "46011", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46012", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46013", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46014", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46015", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46016", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46017", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46018", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46019", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46020", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Campanar, Benimaclet, Poblados marítimos
-    { "@type": "PostalCodeSpecification", "postalCode": "46021", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46022", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46023", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46024", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46025", "addressLocality": "Valencia", "addressCountry": "ES" }
-  ],
-  "knowsAbout": [
-    "Reformas de chalets Valencia",
-    "Reforma de chalet en Valencia",
-    "Reforma integral chalet Valencia",
-    "Rehabilitación de chalets Valencia",
-    "Renovación interior y exterior de chalet",
-    "Redistribución de espacios en viviendas unifamiliares",
-    "Reforma de cocinas y baños en chalets",
-    "Suelos y revestimientos para chalets",
-    "Instalaciones de fontanería y electricidad",
-    "Reformas de terrazas y porches",
-    "Coordinación de gremios en obra",
-    "Modernización completa de viviendas"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Catálogo de Reformas de Chalets en Valencia",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Parcial de Chalet",
-          "description": "Renovación parcial de interiores y exteriores en chalet",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Partial Chalet Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "18000.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Integral Chalet 120m²",
-          "description": "Reforma integral de chalet con cocina, baños, suelos e instalaciones",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Complete Chalet Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "35000.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Integral Chalet 180m²",
-          "description": "Modernización completa de chalet con interiores, exteriores y porche",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Premium Chalet Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "52000.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Exterior de Chalet",
-          "description": "Rehabilitación exterior, terrazas, porches y cerramientos",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Chalet Exterior Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "12000.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Proyecto Llave en Mano Chalet",
-          "description": "Reforma integral de chalet con coordinación total de gremios",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Turnkey Chalet Project",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "68000.00",
-        "priceCurrency": "EUR"
-      }
-    ]
   }
 };
 
@@ -206,10 +48,18 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "¿Renováis interior y exterior, incluyendo terrazas o porches?",
+      "name": "¿También reformáis exteriores, terrazas o porches?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí. Realizamos renovación interior y exterior de chalets, incluyendo terrazas, porches y otras zonas exteriores, con soluciones duraderas y acabados profesionales."
+        "text": "Sí. Reformamos zonas exteriores de chalet, incluyendo terrazas, porches y otros espacios anexos, con materiales adecuados para exterior y acabados duraderos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Trabajáis en Valencia capital y urbanizaciones de alrededor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, trabajamos en Valencia capital y en urbanizaciones de alrededor. Hacemos visita técnica y presupuesto sin compromiso para definir una reforma adaptada a tu chalet."
       }
     }
   ]
@@ -218,13 +68,13 @@ const faqSchema = {
 
 <SiteLayout 
   title="Reformas de Chalets en Valencia | Presupuesto Gratis"
-  description="Empresa especializada en reformas de chalets en Valencia. Renovamos interiores, exteriores, terrazas, distribución e instalaciones con presupuesto gratis."
-  keywords="reformas de chalets valencia, reforma de chalet en valencia, reforma integral chalet valencia, empresa de reformas de chalets en valencia, rehabilitación de chalets valencia"
-  canonical="https://mejoresreformasvalencia.es/servicios/reformas-chalets-valencia"
-  schema={[localBusinessSchema, faqSchema]}
+  description="Empresa especializada en reformas de chalets en Valencia. Reforma parcial o integral, interiores, exteriores, cocina, baño e instalaciones con presupuesto gratis."
+  keywords="reformas de chalets en valencia, reforma de chalet en valencia, reforma integral de chalet en valencia, empresa de reformas de chalets en valencia"
+  canonical="https://mejoresreformasvalencia.es/servicios/reformas-chalets-valencia/"
+  schema={[serviceSchema, faqSchema]}
+  includeBusinessSchema={false}
   ogImage="/og-home.webp"
 >
-  <main class="flex-1">
     <!-- Breadcrumbs and Hero Section -->
 
       <section class="bg-gradient-to-br from-slate-50 to-green-50">
@@ -294,7 +144,7 @@ const faqSchema = {
           <!-- Right side - Image -->
           <div class="order-first lg:order-last">
             <div class="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src={reformaChaletImg.src} alt="Reforma de chalet en Valencia con renovación integral de vivienda" width={reformaChaletImg.width} height={reformaChaletImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
+              <img src={reformaChaletImg.src} alt="Reforma integral de chalet en Valencia con acabados modernos" width={reformaChaletImg.width} height={reformaChaletImg.height} class="w-full h-auto object-cover" loading="eager" fetchpriority="high">
             </div>
           </div>
         </div>
@@ -316,7 +166,7 @@ const faqSchema = {
           
           <div class="space-y-6 text-gray-700 mb-10">
             <p class="text-lg leading-relaxed">
-              El <strong>precio de reformas de chalets Valencia</strong> depende de los metros construidos, el estado actual del inmueble, si la reforma es parcial o integral y las calidades elegidas. En todos los casos ofrecemos presupuesto cerrado y detallado.
+              El <strong>precio de reformar un chalet en Valencia</strong> depende de los metros construidos, el estado actual del inmueble, si la reforma es parcial o integral y las calidades elegidas. En todos los casos ofrecemos presupuesto cerrado y detallado.
             </p>
             
             <p class="text-lg leading-relaxed">
@@ -338,15 +188,15 @@ const faqSchema = {
                 <h4 class="font-bold text-lg mb-4 text-gray-900">Por Tipo de Proyecto</h4>
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Reforma parcial chalet</span>
+                    <span class="text-gray-700">Reforma parcial de chalet</span>
                     <span class="font-bold text-accent">desde 18.000€</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Reforma integral chalet 120m²</span>
+                    <span class="text-gray-700">Reforma integral de chalet en Valencia (120m²)</span>
                     <span class="font-bold text-accent">desde 35.000€</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Reforma integral chalet 180m²</span>
+                    <span class="text-gray-700">Reforma integral de chalet en Valencia (180m²)</span>
                     <span class="font-bold text-accent">desde 52.000€</span>
                   </li>
                 </ul>
@@ -358,11 +208,11 @@ const faqSchema = {
                 <h4 class="font-bold text-lg mb-4 text-gray-900">Partidas Habituales</h4>
                 <ul class="space-y-3">
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Reforma cocina chalet</span>
+                    <span class="text-gray-700">Reforma de cocina en chalet</span>
                     <span class="font-bold text-accent">desde 8.000€</span>
                   </li>
                   <li class="flex justify-between items-center">
-                    <span class="text-gray-700">Reforma baños chalet</span>
+                    <span class="text-gray-700">Reforma de baños en chalet</span>
                     <span class="font-bold text-accent">desde 4.500€</span>
                   </li>
                   <li class="flex justify-between items-center">
@@ -684,7 +534,7 @@ const faqSchema = {
               ¿Cuánto tarda una reforma de chalet?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Una reforma parcial suele durar entre 4 y 8 semanas. Una reforma integral chalet Valencia normalmente entre 10 y 18 semanas según redistribución de espacios, instalaciones y trabajos exteriores.
+              Una reforma parcial suele durar entre 4 y 8 semanas. Una reforma integral de chalet en Valencia normalmente entre 10 y 18 semanas según redistribución de espacios, instalaciones y trabajos exteriores.
             </p>
           </div>
 
@@ -701,15 +551,24 @@ const faqSchema = {
           <!-- FAQ 4 -->
           <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
             <h3 class="font-bold text-xl mb-3 text-gray-900">
-              ¿Renováis interior y exterior, incluyendo terrazas o porches?
+              ¿También reformáis exteriores, terrazas o porches?
             </h3>
             <p class="text-gray-700 leading-relaxed">
-              Sí. Realizamos renovación interior y exterior de chalets, incluyendo terrazas y porches, y trabajamos en Valencia capital y alrededores con garantía por escrito al finalizar la obra.
+              Sí. Reformamos zonas exteriores de chalet, incluyendo terrazas, porches y otros espacios anexos, con materiales adecuados para exterior y acabados duraderos.
+            </p>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-white border-2 border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <h3 class="font-bold text-xl mb-3 text-gray-900">
+              ¿Trabajáis en Valencia capital y urbanizaciones de alrededor?
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Sí, trabajamos en Valencia capital y urbanizaciones de alrededor. Realizamos visita técnica y presupuesto sin compromiso para planificar una reforma de chalet en Valencia adaptada a tu vivienda.
             </p>
           </div>
         </div>
 
       </div>
     </section>
-  </main>
 </SiteLayout>
