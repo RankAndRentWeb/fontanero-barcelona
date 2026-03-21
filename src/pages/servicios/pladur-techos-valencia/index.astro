@@ -3,138 +3,18 @@ import SiteLayout from '../../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.tsx';
 import pladurTechosImg from '../../../assets/pintor-profesional-interior-valencia.jpg';
 
-const localBusinessSchema = {
+const serviceSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-  "@id": "https://mejoresreformasvalencia.es/#business",
-  "name": "Reformas en Valencia",
-  "description": "Empresa especializada en pladur y techos en Valencia. Instalamos falsos techos, tabiques y trasdosados con acabados profesionales y presupuesto claro.",
-  "url": "https://mejoresreformasvalencia.es",
-  "image": "https://mejoresreformasvalencia.es/og-home.webp",
-  "telephone": "+34722208131",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Valencia",
-    "addressRegion": "Comunitat Valenciana",
+  "@type": "Service",
+  "@id": "https://mejoresreformasvalencia.es/servicios/pladur-techos-valencia/#service",
+  "name": "Pladur y Techos en Valencia",
+  "description": "Servicio de pladur y techos en Valencia para instalar falsos techos, tabiques y trasdosados con acabados profesionales.",
+  "url": "https://mejoresreformasvalencia.es/servicios/pladur-techos-valencia/",
+  "serviceType": "Pladur y techos",
+  "areaServed": {
+    "@type": "City",
+    "name": "Valencia",
     "addressCountry": "ES"
-  },
-  "openingHours": ["Mo-Sa 08:00-20:00"],
-  "priceRange": "€€€",
-  "areaServed": [
-    {
-      "@type": "City",
-      "name": "Valencia",
-      "containedInPlace": {
-        "@type": "AdministrativeArea",
-        "name": "Comunitat Valenciana"
-      }
-    },
-    // Centro histórico y Ciutat Vella
-    { "@type": "PostalCodeSpecification", "postalCode": "46001", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46002", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46003", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Eixample
-    { "@type": "PostalCodeSpecification", "postalCode": "46004", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46005", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46006", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46007", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46008", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46009", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46010", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Extramurs y otras zonas
-    { "@type": "PostalCodeSpecification", "postalCode": "46011", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46012", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46013", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46014", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46015", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46016", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46017", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46018", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46019", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46020", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Campanar, Benimaclet, Poblados marítimos
-    { "@type": "PostalCodeSpecification", "postalCode": "46021", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46022", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46023", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46024", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46025", "addressLocality": "Valencia", "addressCountry": "ES" }
-  ],
-  "knowsAbout": [
-    "Reformas techos Valencia",
-    "Pladur techos Valencia",
-    "Techos de pladur Valencia",
-    "Falsos techos Valencia",
-    "Tabiques de pladur Valencia",
-    "Trabajos de pladur en Valencia",
-    "Trasdosados de pladur",
-    "Aislamiento térmico con pladur",
-    "Aislamiento acústico con pladur",
-    "Ocultación de instalaciones en techos",
-    "Renovación interior con sistemas de pladur",
-    "Empresa de pladur y techos en Valencia"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Catálogo de Pladur y Techos en Valencia",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Instalación de Falsos Techos de Pladur",
-          "description": "Montaje de techos de pladur para renovar espacios, ocultar instalaciones y mejorar aislamiento",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Drywall Ceiling Installation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "32.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Tabiques de Pladur para Distribución Interior",
-          "description": "Ejecución de tabiques de pladur para redistribuir estancias y mejorar funcionalidad",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Drywall Partition Installation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "38.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Trasdosados de Pladur con Aislamiento",
-          "description": "Trasdosados interiores para mejorar confort térmico y acústico en viviendas y locales",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Drywall Lining Installation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "35.00",
-        "priceCurrency": "EUR"
-      }
-    ]
   }
 };
 
@@ -174,11 +54,11 @@ const faqSchema = {
   title="Pladur y Techos en Valencia | Presupuesto Gratis"
   description="Empresa especializada en pladur y techos en Valencia. Instalamos falsos techos, tabiques y soluciones interiores con presupuesto gratis y acabados profesionales."
   keywords="reformas techos valencia, pladur techos valencia, techos de pladur valencia, falsos techos valencia, tabiques de pladur valencia, trabajos de pladur en valencia"
-  canonical="https://mejoresreformasvalencia.es/servicios/pladur-techos-valencia"
-  schema={[localBusinessSchema, faqSchema]}
+  canonical="https://mejoresreformasvalencia.es/servicios/pladur-techos-valencia/"
+  schema={[serviceSchema, faqSchema]}
+  includeBusinessSchema={false}
   ogImage="/og-home.webp"
 >
-  <main class="flex-1">
     <!-- Breadcrumbs and Hero Section -->
       <section class="bg-gradient-to-br from-slate-50 to-green-50">
       <!-- Breadcrumbs -->
@@ -623,5 +503,4 @@ const faqSchema = {
         </div>
       </div>
     </section>
-  </main>
 </SiteLayout>
