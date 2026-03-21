@@ -3,119 +3,18 @@ import SiteLayout from '../../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.tsx';
 import reformaLocalImg from '../../../assets/pintura-locales-comerciales-valencia-trabajo-nocturno.jpg';
 
-const localBusinessSchema = {
+const serviceSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-  "@id": "https://mejoresreformasvalencia.es/#business",
-  "name": "Reformas en Valencia",
-  "description": "Empresa especializada en reformas de locales comerciales en Valencia. Acondicionamos espacios de negocio con ejecución profesional y enfoque funcional.",
-  "url": "https://mejoresreformasvalencia.es",
-  "image": "https://mejoresreformasvalencia.es/og-home.webp",
-  "telephone": "+34722208131",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Valencia",
-    "addressRegion": "Comunitat Valenciana",
+  "@type": "Service",
+  "@id": "https://mejoresreformasvalencia.es/servicios/reformas-locales-comerciales-valencia/#service",
+  "name": "Reformas de Locales Comerciales en Valencia",
+  "description": "Servicio de reformas de locales comerciales en Valencia para acondicionar espacios de negocio con enfoque funcional y ejecución profesional.",
+  "url": "https://mejoresreformasvalencia.es/servicios/reformas-locales-comerciales-valencia/",
+  "serviceType": "Reformas de locales comerciales",
+  "areaServed": {
+    "@type": "City",
+    "name": "Valencia",
     "addressCountry": "ES"
-  },
-  "openingHours": ["Mo-Sa 08:00-20:00"],
-  "priceRange": "€€€",
-  "areaServed": [
-    {
-      "@type": "City",
-      "name": "Valencia",
-      "containedInPlace": {
-        "@type": "AdministrativeArea",
-        "name": "Comunitat Valenciana"
-      }
-    },
-    // Centro histórico y Ciutat Vella
-    { "@type": "PostalCodeSpecification", "postalCode": "46001", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46002", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46003", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Eixample
-    { "@type": "PostalCodeSpecification", "postalCode": "46004", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46005", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46006", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46007", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46008", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46009", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46010", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Extramurs y otras zonas
-    { "@type": "PostalCodeSpecification", "postalCode": "46011", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46012", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46013", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46014", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46015", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46016", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46017", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46018", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46019", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46020", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Campanar, Benimaclet, Poblados marítimos
-    { "@type": "PostalCodeSpecification", "postalCode": "46021", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46022", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46023", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46024", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46025", "addressLocality": "Valencia", "addressCountry": "ES" }
-  ],
-  "knowsAbout": [
-    "Reformas locales comerciales Valencia",
-    "Reforma de local comercial en Valencia",
-    "Acondicionamiento de locales comerciales Valencia",
-    "Reforma integral local comercial Valencia",
-    "Redistribución de espacios para negocios",
-    "Suelos, revestimientos y techos para locales",
-    "Instalaciones eléctricas y fontanería en locales",
-    "Modernización de imagen comercial",
-    "Reformas parciales de locales",
-    "Reformas integrales de locales",
-    "Coordinación de gremios en obras comerciales",
-    "Empresa de reformas de locales comerciales en Valencia"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Catálogo de Reformas de Locales Comerciales en Valencia",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Parcial de Local Comercial",
-          "description": "Acondicionamiento parcial de local con mejora de distribución y acabados",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Partial Commercial Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "9000.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Integral de Local Comercial",
-          "description": "Reforma integral de local con instalaciones, suelos, techos y acabados",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Complete Commercial Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "18000.00",
-        "priceCurrency": "EUR"
-      }
-    ]
   }
 };
 
@@ -164,10 +63,10 @@ const faqSchema = {
   description="Empresa especializada en reformas de locales comerciales en Valencia. Acondicionamos espacios para negocios con presupuesto gratis, ejecución profesional y enfoque funcional."
   keywords="reformas locales comerciales valencia, reforma de local comercial en valencia, empresa de reformas de locales comerciales en valencia, acondicionamiento de locales comerciales valencia, reforma integral local comercial valencia"
   canonical="https://mejoresreformasvalencia.es/servicios/reformas-locales-comerciales-valencia/"
-  schema={[localBusinessSchema, faqSchema]}
+  schema={[serviceSchema, faqSchema]}
+  includeBusinessSchema={false}
   ogImage="/og-home.webp"
 >
-  <main class="flex-1">
     <!-- Breadcrumbs and Hero Section -->
     <section class="bg-gradient-to-br from-slate-50 to-green-50">
       <!-- Breadcrumbs -->
@@ -476,5 +375,4 @@ const faqSchema = {
         </div>
       </div>
     </section>
-  </main>
 </SiteLayout>
