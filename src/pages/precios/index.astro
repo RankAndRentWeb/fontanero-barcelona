@@ -2,141 +2,77 @@
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.tsx';
 
-const localBusinessSchema = {
+const pricesPageSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-  "@id": "https://mejoresreformasvalencia.es/#business",
-  "name": "Reformas en Valencia",
-  "description": "Empresa especializada en reformas en Valencia. Ofrecemos precios orientativos y presupuestos personalizados para cocinas, baños, pisos y reformas integrales.",
-  "url": "https://mejoresreformasvalencia.es",
-  "image": "https://mejoresreformasvalencia.es/og-home.webp",
-  "telephone": "+34722208131",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Valencia",
-    "addressRegion": "Comunitat Valenciana",
-    "addressCountry": "ES"
-  },
-  "openingHours": ["Mo-Sa 08:00-20:00"],
-  "priceRange": "€€€",
-  "areaServed": [
+  "@type": "CollectionPage",
+  "@id": "https://mejoresreformasvalencia.es/precios/#webpage",
+  "url": "https://mejoresreformasvalencia.es/precios/",
+  "name": "Precios de Reformas en Valencia",
+  "description": "Precios orientativos de reformas en Valencia para cocina, baño, pisos, locales y reformas integrales."
+};
+
+const offerCatalogSchema = {
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "@id": "https://mejoresreformasvalencia.es/precios/#offers",
+  "name": "Precios orientativos de reformas en Valencia",
+  "url": "https://mejoresreformasvalencia.es/precios/",
+  "itemListElement": [
     {
-      "@type": "City",
-      "name": "Valencia",
-      "containedInPlace": {
-        "@type": "AdministrativeArea",
-        "name": "Comunitat Valenciana"
+      "@type": "Offer",
+      "name": "Reforma de cocina",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "EUR",
+        "minPrice": "4500",
+        "maxPrice": "12000",
+        "description": "Rango orientativo"
       }
     },
-    // Centro histórico y Ciutat Vella
-    { "@type": "PostalCodeSpecification", "postalCode": "46001", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46002", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46003", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Eixample
-    { "@type": "PostalCodeSpecification", "postalCode": "46004", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46005", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46006", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46007", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46008", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46009", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46010", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Extramurs y otras zonas
-    { "@type": "PostalCodeSpecification", "postalCode": "46011", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46012", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46013", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46014", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46015", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46016", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46017", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46018", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46019", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46020", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Campanar, Benimaclet, Poblados marítimos
-    { "@type": "PostalCodeSpecification", "postalCode": "46021", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46022", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46023", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46024", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46025", "addressLocality": "Valencia", "addressCountry": "ES" }
-  ],
-  "knowsAbout": [
-    "Reformas Valencia precios",
-    "Presupuesto reforma Valencia",
-    "Presupuesto reformas Valencia",
-    "Reformas en Valencia presupuestos",
-    "Precio reforma cocina Valencia",
-    "Presupuesto reforma cocina Valencia",
-    "Presupuesto reforma baño Valencia",
-    "Reforma baño precio Valencia",
-    "Reforma integral Valencia precios",
-    "Presupuesto reforma integral Valencia",
-    "Precio reforma integral piso 100m2 Valencia",
-    "Reformas financiadas Valencia",
-    "Reformas económicas Valencia",
-    "Reformas integrales Valencia precios"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Catálogo de Precios de Reformas en Valencia",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma de Cocina en Valencia",
-          "description": "Reforma de cocina con opciones ajustadas en distribución, instalaciones y acabados",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Kitchen Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "4500.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma de Baño en Valencia",
-          "description": "Reforma de baño completa con renovación de fontanería, revestimientos y sanitarios",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Bathroom Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "3500.00",
-        "priceCurrency": "EUR"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reforma Integral de Piso en Valencia",
-          "description": "Reforma integral de vivienda con actualización de distribución, instalaciones y acabados",
-          "areaServed": {
-            "@type": "City",
-            "name": "Valencia",
-            "sameAs": "https://www.wikidata.org/wiki/Q8818"
-          },
-          "serviceType": "Full Home Renovation",
-          "provider": {
-            "@id": "https://mejoresreformasvalencia.es/#business"
-          }
-        },
-        "price": "28000.00",
-        "priceCurrency": "EUR"
+    {
+      "@type": "Offer",
+      "name": "Reforma de baño",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "EUR",
+        "minPrice": "3500",
+        "maxPrice": "8500",
+        "description": "Rango orientativo"
       }
-    ]
-  }
+    },
+    {
+      "@type": "Offer",
+      "name": "Reforma integral piso 100 m²",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "EUR",
+        "minPrice": "28000",
+        "maxPrice": "55000",
+        "description": "Rango orientativo"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Reforma parcial de piso",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "EUR",
+        "minPrice": "9000",
+        "maxPrice": "22000",
+        "description": "Rango orientativo"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Reforma de local comercial",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "EUR",
+        "minPrice": "12000",
+        "description": "Precio orientativo desde"
+      }
+    }
+  ]
 };
 ---
 
@@ -144,11 +80,11 @@ const localBusinessSchema = {
   title="Precios de Reformas en Valencia | Presupuesto Gratis"
   description="Consulta precios orientativos de reformas en Valencia: cocinas, baños, pisos y reformas integrales. Presupuesto gratis, opciones ajustadas y financiación disponible."
   keywords="reformas valencia precios, presupuesto reforma valencia, presupuesto reformas valencia, precio reforma cocina valencia, presupuesto reforma baño valencia, presupuesto reforma integral valencia, reforma integral valencia precios, reformas economicas valencia, reformas financiadas valencia, reformas en valencia presupuestos"
-  canonical="https://mejoresreformasvalencia.es/precios"
-  schema={[localBusinessSchema]}
+  canonical="https://mejoresreformasvalencia.es/precios/"
+  schema={[pricesPageSchema, offerCatalogSchema]}
+  includeBusinessSchema={false}
   ogImage="/og-home.webp"
 >
-  <main class="flex-1">
     <!-- Breadcrumbs and Hero Section -->
     <section class="bg-gradient-to-br from-slate-50 to-blue-50">
       <!-- Breadcrumbs -->
@@ -594,5 +530,4 @@ const localBusinessSchema = {
       </div>
       </div>
     </section>
-  </main>
 </SiteLayout>
