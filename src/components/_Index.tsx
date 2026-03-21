@@ -48,82 +48,18 @@ const RatingStars = ({ value = 5 }: { value?: number }) => (
 const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "HomeAndConstructionBusiness", "GeneralContractor"],
+    "@type": "GeneralContractor",
     "@id": "https://mejoresreformasvalencia.es/#business",
     name: "Reformas Valencia",
-    description: "Empresa de reformas en Valencia especializada en reformas integrales, cocinas, baños, pisos y locales. Presupuesto rápido y trabajo profesional.",
     url: "https://mejoresreformasvalencia.es",
-    image: "https://mejoresreformasvalencia.es/og-home.webp",
     telephone: "+34722208131",
     email: "info@mejoresreformasvalencia.es",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Valencia",
-      addressRegion: "Comunitat Valenciana",
-      addressCountry: "ES",
+    description: "Empresa de reformas en Valencia especializada en reformas integrales, cocinas, baños, pisos, terrazas y locales comerciales.",
+    areaServed: {
+      "@type": "City",
+      name: "Valencia"
     },
     openingHours: ["Mo-Sa 08:00-20:00"],
-    priceRange: "€€",
-    areaServed: [
-      {
-        "@type": "City",
-        name: "Valencia",
-        containedInPlace: {
-          "@type": "AdministrativeArea",
-          name: "Comunitat Valenciana"
-        }
-      },
-      // Centro histórico y Ciutat Vella
-      { "@type": "PostalCodeSpecification", postalCode: "46001", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46002", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46003", addressLocality: "Valencia", addressCountry: "ES" },
-      // Eixample
-      { "@type": "PostalCodeSpecification", postalCode: "46004", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46005", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46006", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46007", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46008", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46009", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46010", addressLocality: "Valencia", addressCountry: "ES" },
-      // Extramurs y otras zonas
-      { "@type": "PostalCodeSpecification", postalCode: "46011", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46012", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46013", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46014", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46015", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46016", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46017", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46018", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46019", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46020", addressLocality: "Valencia", addressCountry: "ES" },
-      // Campanar, Benimaclet, Poblados marítimos
-      { "@type": "PostalCodeSpecification", postalCode: "46021", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46022", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46023", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46024", addressLocality: "Valencia", addressCountry: "ES" },
-      { "@type": "PostalCodeSpecification", postalCode: "46025", addressLocality: "Valencia", addressCountry: "ES" }
-    ],
-    knowsAbout: [
-      "Reformas integrales en Valencia",
-      "Reformas de cocinas completas",
-      "Reformas de baños modernos",
-      "Reforma de pisos y viviendas",
-      "Reformas de locales comerciales",
-      "Reformas de terrazas y balcones",
-      "Reformas de chalets en Valencia",
-      "Reformas de fachadas de edificios",
-      "Instalación de pladur y falsos techos",
-      "Obras y reformas completas",
-      "Reforma vivienda Valencia",
-      "Reformas de casas antiguas"
-    ],
-    contactPoint: [{
-      "@type": "ContactPoint",
-      "telephone": "+34722208131",
-      "contactType": "customer service",
-      "areaServed": "ES",
-      "availableLanguage": ["Spanish", "Valencian"]
-    }],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Servicios de Reformas en Valencia",
@@ -132,77 +68,49 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Reformas Integrales",
-            description: "Reformas completas de viviendas con gestión integral del proyecto",
-            url: "https://mejoresreformasvalencia.es/servicios/reformas-integrales-valencia/",
-            areaServed: {
-              "@type": "City",
-              name: "Valencia",
-              sameAs: "https://www.wikidata.org/wiki/Q8818"
-            },
-            serviceType: "Home Renovation",
-            provider: {
-              "@id": "https://mejoresreformasvalencia.es/#business"
-            }
-          },
-          priceCurrency: "EUR"
-        },
-        {
-          "@type": "Offer", 
-          itemOffered: {
-            "@type": "Service",
-            name: "Reformas de Cocinas",
-            description: "Reforma completa de cocinas con diseño personalizado",
-            url: "https://mejoresreformasvalencia.es/servicios/reformas-cocinas-valencia/",
-            areaServed: {
-              "@type": "City",
-              name: "Valencia",
-              sameAs: "https://www.wikidata.org/wiki/Q8818"
-            },
-            serviceType: "Kitchen Renovation",
-            provider: {
-              "@id": "https://mejoresreformasvalencia.es/#business"
-            }
-          },
-          priceCurrency: "EUR"
+            name: "Reformas integrales en Valencia",
+            url: "https://mejoresreformasvalencia.es/servicios/reformas-integrales-valencia/"
+          }
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Reformas de Baños",
-            description: "Renovación completa de baños con materiales de calidad",
-            url: "https://mejoresreformasvalencia.es/servicios/reformas-banos-valencia/",
-            areaServed: {
-              "@type": "City",
-              name: "Valencia",
-              sameAs: "https://www.wikidata.org/wiki/Q8818"
-            },
-            serviceType: "Bathroom Renovation",
-            provider: {
-              "@id": "https://mejoresreformasvalencia.es/#business"
-            }
-          },
-          priceCurrency: "EUR"
+            name: "Reformas de cocinas en Valencia",
+            url: "https://mejoresreformasvalencia.es/servicios/reformas-cocinas-valencia/"
+          }
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Reformas de Pisos",
-            description: "Reforma integral de pisos y viviendas en Valencia",
-            url: "https://mejoresreformasvalencia.es/servicios/reformas-pisos-valencia/",
-            areaServed: {
-              "@type": "City",
-              name: "Valencia",
-              sameAs: "https://www.wikidata.org/wiki/Q8818"
-            },
-            serviceType: "Apartment Renovation",
-            provider: {
-              "@id": "https://mejoresreformasvalencia.es/#business"
-            }
-          },
-          priceCurrency: "EUR"
+            name: "Reformas de baños en Valencia",
+            url: "https://mejoresreformasvalencia.es/servicios/reformas-banos-valencia/"
+          }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Reformas de pisos en Valencia",
+            url: "https://mejoresreformasvalencia.es/servicios/reformas-pisos-valencia/"
+          }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Reformas de terrazas en Valencia",
+            url: "https://mejoresreformasvalencia.es/servicios/reforma-terraza-valencia/"
+          }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Reformas de locales comerciales en Valencia",
+            url: "https://mejoresreformasvalencia.es/servicios/reformas-locales-comerciales-valencia/"
+          }
         }
       ]
     }
@@ -221,16 +129,16 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         }
       },
       {
-        "@type": "Question", 
+        "@type": "Question",
         name: "¿Hacéis presupuestos sin compromiso?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí. Envíanos fotos de lo que necesitas reformar y te mandamos presupuesto detallado en menos de 24 horas, sin compromiso y sin visitas innecesarias."
+          text: "Sí. Envíanos fotos de lo que necesitas reformar y te mandamos un presupuesto detallado lo antes posible, sin compromiso y sin visitas innecesarias."
         }
       },
       {
         "@type": "Question",
-        name: "¿Trabajáis solo en Valencia capital?", 
+        name: "¿Trabajáis solo en Valencia capital?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "Trabajamos en toda Valencia capital y en el área metropolitana (Torrent, Mislata, Paterna, Burjassot, Manises, etc.). Consúltanos tu zona."
@@ -249,7 +157,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         name: "¿Cuánto tarda una reforma?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Depende del tipo y tamaño. Una cocina suele tardar 2-3 semanas, un baño 1-2 semanas y una reforma integral de piso 1-2 meses. Te damos calendario exacto en el presupuesto."
+          text: "Depende del tipo y tamaño. Una cocina suele tardar 2-3 semanas, un baño 1-2 semanas y una reforma integral de piso 1-2 meses. Te damos calendario orientativo en el presupuesto."
         }
       }
     ]
@@ -320,8 +228,8 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
   return (
     <>
       <SEOHead
-        title="Empresa de Reformas en Valencia | Reformas Integrales y Presupuesto"
-        description="Empresa de reformas en Valencia especializada en reformas integrales, cocinas, baños y pisos. Presupuesto rápido, trabajo profesional y acabado cuidado."
+        title="Reformas en Valencia | Reformas Integrales, Cocinas y Baños"
+        description="Empresa de reformas en Valencia especializada en reformas integrales, cocinas y baños. Presupuesto gratis, precios claros y acabados profesionales."
         canonicalUrl={homeCanon}
         schema={[localBusinessSchema, faqSchema]}
         preloadImages={heroImage ? [heroImage.src] : []}
@@ -400,7 +308,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-white" />
-                <span className="font-medium">Garantía incluida</span>
+                <span className="font-medium">Garantía en cada proyecto</span>
               </div>
             </div>
           </div>
@@ -602,7 +510,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Garantía por escrito</span>
+                    <span>Garantía en cada proyecto</span>
                   </li>
                 </ul>
                 <Button
@@ -686,7 +594,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               </p>
               
               <p>
-                Para <a href="/servicios/reformas-banos-valencia/" className="text-primary hover:underline font-semibold">baños</a> trabajamos con impermeabilización correcta, platos de ducha, mamparas, sanitarios y alicatados de calidad. Todo con garantía y sin problemas de filtraciones. Un baño bien hecho dura años sin darte quebraderos de cabeza.
+                Para <a href="/servicios/reformas-banos-valencia/" className="text-primary hover:underline font-semibold">baños</a> trabajamos con impermeabilización correcta, platos de ducha, mamparas, sanitarios y alicatados de calidad. Todo con garantía en cada proyecto y una ejecución cuidada para evitar problemas de filtraciones. Un baño bien hecho dura años sin darte quebraderos de cabeza.
               </p>
               
               <p>
@@ -694,7 +602,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               </p>
               
               <p>
-                Para <a href="/servicios/reformas-locales-comerciales-valencia/" className="text-primary hover:underline font-semibold">locales y negocios</a> trabajamos en horarios que no interrumpan tu actividad. Hacemos el diseño, las instalaciones, los acabados y cumplimos los plazos para que puedas abrir a tiempo. Conocemos la normativa y te ayudamos con las licencias.
+                Para <a href="/servicios/reformas-locales-comerciales-valencia/" className="text-primary hover:underline font-semibold">locales y negocios</a> trabajamos en horarios que no interrumpan tu actividad. Hacemos el diseño, las instalaciones y los acabados con una planificación clara para ayudarte a abrir cuanto antes. Conocemos la normativa y te ayudamos con las licencias.
               </p>
 
               <p>
@@ -751,88 +659,12 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   </p>
                   
                   <p>
-                    Usamos materiales de calidad y damos <strong>garantía por escrito</strong> en cada proyecto. Si nos envías fotos de tu espacio, te mandamos presupuesto detallado en menos de 24 horas sin que tengas que esperarnos en casa. Mira ejemplos de trabajos hechos en <a href="/trabajos/" className="text-primary hover:underline"><strong>proyectos realizados</strong></a>.
+                    Usamos materiales de calidad y ofrecemos <strong>garantía en cada proyecto</strong>. Si nos envías fotos de tu espacio, te damos una respuesta rápida con un presupuesto detallado sin que tengas que esperarnos en casa. Puedes ver nuestros <a href="/servicios/" className="text-primary hover:underline"><strong>servicios de reformas en Valencia</strong></a>.
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Proceso de Trabajo */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-              Cómo trabajamos las reformas
-            </h2>
-            
-            <div className="space-y-6 text-lg text-gray-700 leading-relaxed mb-12">
-              <p>
-                Llevamos <strong>más de 10 años</strong> realizando obras y reformas para familias, propietarios y negocios de Valencia. Hemos ayudado a renovar todo tipo de espacios con buenos resultados. Nuestro equipo está formado por profesionales con experiencia en albañilería, fontanería, electricidad y acabados.
-              </p>
-              
-              <p>
-                Sabemos que buscar una <strong>empresa de reformas de confianza</strong> no es fácil. Por eso somos transparentes desde el principio. Envíanos fotos de lo que quieres reformar y te mandamos presupuesto en menos de 24 horas con todos los detalles: materiales, mano de obra, cuánto tardamos y qué garantía te damos. Sin que tengas que estar en casa esperándonos.
-              </p>
-              
-              <p>
-                Cumplimos los plazos acordados y dejamos tu casa limpia. Protegemos muebles, aspiramos cada día y al terminar lo limpiamos todo a fondo. Todos nuestros trabajos incluyen <strong>garantía por escrito</strong> y factura oficial.
-              </p>
-              
-              <p>
-                Usamos <strong>materiales de calidad</strong> de marcas reconocidas porque una buena reforma se ve mejor y dura más. Además tenemos <strong>seguro de responsabilidad civil</strong> y cumplimos la normativa de prevención.
-              </p>
-            </div>
-            
-            {/* Grid de beneficios */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
-                <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <p className="font-semibold text-gray-900 mb-1">Más de 10 años de experiencia</p>
-                  <p className="text-sm text-gray-600">Profesionales certificados en reformas</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
-                <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <p className="font-semibold text-gray-900 mb-1">Presupuesto rápido por fotos</p>
-                  <p className="text-sm text-gray-600">Sin visitas, detallado y sin compromiso</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
-                <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <p className="font-semibold text-gray-900 mb-1">Limpieza total incluida</p>
-                  <p className="text-sm text-gray-600">Protección de muebles y limpieza diaria</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
-                <Shield className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <p className="font-semibold text-gray-900 mb-1">Garantía por escrito</p>
-                  <p className="text-sm text-gray-600">Factura oficial y seguro RC vigente</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
-                <Star className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <p className="font-semibold text-gray-900 mb-1">Materiales de calidad</p>
-                  <p className="text-sm text-gray-600">Marcas reconocidas y garantizadas</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3 p-4 bg-primary/5 rounded-lg">
-                <Building className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <p className="font-semibold text-gray-900 mb-1">Valencia y área metropolitana</p>
-                  <p className="text-sm text-gray-600">Servicio en toda la provincia</p>
+                  <p>
+                    Si estás comparando opciones, revisa <a href="/servicios/reformas-integrales-valencia/" className="text-primary hover:underline"><strong>reformas integrales en Valencia</strong></a>, <a href="/servicios/reformas-cocinas-valencia/" className="text-primary hover:underline"><strong>reformas de cocinas</strong></a> y <a href="/servicios/reformas-banos-valencia/" className="text-primary hover:underline"><strong>reformas de baños</strong></a>. También puedes consultar <a href="/precios/" className="text-primary hover:underline"><strong>precios orientativos de reformas</strong></a> o pedir presupuesto directo desde <a href="/contacto/" className="text-primary hover:underline"><strong>nuestra página de contacto</strong></a>.
+                  </p>
                 </div>
               </div>
             </div>
@@ -921,7 +753,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   ¿Hacéis presupuestos sin compromiso?
                 </h3>
                 <p className="text-muted-foreground">
-                  Sí. Envíanos fotos de lo que necesitas reformar (por WhatsApp o email) y te mandamos un presupuesto detallado en menos de 24 horas, totalmente gratis y sin compromiso. No hace falta que nos esperes en casa para una visita.
+                  Sí. Envíanos fotos de lo que necesitas reformar (por WhatsApp o email) y te mandamos un presupuesto detallado en el menor tiempo posible, totalmente gratis y sin compromiso. No hace falta que nos esperes en casa para una visita.
                 </p>
               </CardContent>
             </Card>
@@ -932,7 +764,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   ¿Cuánto tarda una reforma?
                 </h3>
                 <p className="text-muted-foreground">
-                  Depende del tipo y tamaño. Una cocina suele tardar 2-3 semanas, un baño completo 1-2 semanas y una reforma integral de piso entre 1 y 2 meses. Te damos un calendario exacto en el presupuesto y cumplimos los plazos.
+                  Depende del tipo y tamaño. Una cocina suele tardar 2-3 semanas, un baño completo 1-2 semanas y una reforma integral de piso entre 1 y 2 meses. Te damos un calendario orientativo en el presupuesto y trabajamos con seguimiento de plazos.
                 </p>
               </CardContent>
             </Card>
@@ -965,7 +797,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   ¿Qué incluye el presupuesto?
                 </h3>
                 <p className="text-muted-foreground">
-                  El presupuesto incluye materiales, mano de obra, gestión de escombros, limpieza final y garantía por escrito. Te especificamos todo de forma transparente para que sepas exactamente qué estás contratando. Si quieres aportar tú algún material, te ajustamos el precio.
+                  El presupuesto incluye materiales, mano de obra, gestión de escombros, limpieza final y condiciones de garantía por escrito. Te especificamos todo de forma transparente para que sepas exactamente qué estás contratando. Si quieres aportar tú algún material, te ajustamos el precio.
                 </p>
               </CardContent>
             </Card>
@@ -976,7 +808,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   ¿Dais factura y garantía?
                 </h3>
                 <p className="text-muted-foreground">
-                  Sí, siempre. Somos una empresa legal con todos los papeles en regla. Te damos factura oficial con IVA y garantía por escrito en todos los trabajos. También tenemos seguro de responsabilidad civil para que estés tranquilo.
+                  Trabajamos con factura y con las condiciones de garantía por escrito en cada proyecto. Si necesitas más detalle sobre la documentación, te lo explicamos antes de empezar la obra.
                 </p>
               </CardContent>
             </Card>
@@ -991,7 +823,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             Pide tu presupuesto para reformar en Valencia
           </h2>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Envíanos fotos de lo que quieres reformar y te damos presupuesto detallado en menos de 24 horas
+            Envíanos fotos de lo que quieres reformar y te damos una respuesta rápida con presupuesto detallado
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CustomButton
