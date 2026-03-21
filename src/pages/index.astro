@@ -3,12 +3,84 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import Index from '../components/_Index.tsx';
 import heroImg from '../assets/hero-pintores-valencia.webp';
 import featureImg from '../assets/pintor-profesional-valencia.jpg';
+
+const homeBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'GeneralContractor',
+  '@id': 'https://mejoresreformasvalencia.es/#business',
+  name: 'Reformas Valencia',
+  url: 'https://mejoresreformasvalencia.es',
+  telephone: '+34722208131',
+  email: 'info@mejoresreformasvalencia.es',
+  description: 'Empresa de reformas en Valencia especializada en reformas integrales, cocinas, baños, pisos, terrazas y locales comerciales.',
+  areaServed: {
+    '@type': 'City',
+    name: 'Valencia'
+  },
+  openingHours: ['Mo-Sa 08:00-20:00'],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Servicios de Reformas en Valencia',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Reformas integrales en Valencia',
+          url: 'https://mejoresreformasvalencia.es/servicios/reformas-integrales-valencia/'
+        }
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Reformas de cocinas en Valencia',
+          url: 'https://mejoresreformasvalencia.es/servicios/reformas-cocinas-valencia/'
+        }
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Reformas de baños en Valencia',
+          url: 'https://mejoresreformasvalencia.es/servicios/reformas-banos-valencia/'
+        }
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Reformas de pisos en Valencia',
+          url: 'https://mejoresreformasvalencia.es/servicios/reformas-pisos-valencia/'
+        }
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Reformas de terrazas en Valencia',
+          url: 'https://mejoresreformasvalencia.es/servicios/reforma-terraza-valencia/'
+        }
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Reformas de locales comerciales en Valencia',
+          url: 'https://mejoresreformasvalencia.es/servicios/reformas-locales-comerciales-valencia/'
+        }
+      }
+    ]
+  }
+};
 ---
 
 <SiteLayout 
   title="Reformas en Valencia | Reformas Integrales, Cocinas y Baños"
   description="Empresa de reformas en Valencia especializada en reformas integrales, cocinas y baños. Presupuesto gratis, precios claros y acabados profesionales."
   canonical="https://mejoresreformasvalencia.es/"
+  schema={[homeBusinessSchema]}
+  includeBusinessSchema={false}
   preloadImages={[heroImg.src]}
 >
   <Index client:load heroImage={heroImg} featureImage={featureImg} />
