@@ -5,73 +5,18 @@ import Contacto from "../../components/_Contacto";
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+  "@type": ["LocalBusiness", "GeneralContractor"],
   "@id": "https://mejoresreformasvalencia.es/#business",
   "name": "Reformas en Valencia",
-  "description": "Empresa de reformas en Valencia. Atendemos toda la ciudad y alrededores para cocinas, baños, pisos y reformas integrales.",
   "url": "https://mejoresreformasvalencia.es",
-  "image": "https://mejoresreformasvalencia.es/og-home.webp",
   "telephone": "+34722208131",
   "email": "info@mejoresreformasvalencia.es",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Valencia",
-    "addressRegion": "Comunitat Valenciana",
-    "addressCountry": "ES"
+  "description": "Empresa de reformas en Valencia. Atendemos toda la ciudad y alrededores para cocinas, baños, pisos y reformas integrales.",
+  "areaServed": {
+    "@type": "City",
+    "name": "Valencia"
   },
   "openingHours": ["Mo-Sa 08:00-20:00"],
-  "priceRange": "€€€",
-  "areaServed": [
-    {
-      "@type": "City",
-      "name": "Valencia",
-      "containedInPlace": {
-        "@type": "AdministrativeArea",
-        "name": "Comunitat Valenciana"
-      }
-    },
-    // Centro histórico y Ciutat Vella
-    { "@type": "PostalCodeSpecification", "postalCode": "46001", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46002", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46003", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Eixample
-    { "@type": "PostalCodeSpecification", "postalCode": "46004", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46005", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46006", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46007", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46008", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46009", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46010", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Extramurs y otras zonas
-    { "@type": "PostalCodeSpecification", "postalCode": "46011", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46012", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46013", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46014", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46015", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46016", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46017", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46018", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46019", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46020", "addressLocality": "Valencia", "addressCountry": "ES" },
-    // Campanar, Benimaclet, Poblados marítimos
-    { "@type": "PostalCodeSpecification", "postalCode": "46021", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46022", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46023", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46024", "addressLocality": "Valencia", "addressCountry": "ES" },
-    { "@type": "PostalCodeSpecification", "postalCode": "46025", "addressLocality": "Valencia", "addressCountry": "ES" }
-  ],
-  "knowsAbout": [
-    "Reformas de cocinas en Valencia",
-    "Reformas de baños en Valencia",
-    "Reformas integrales de pisos",
-    "Reformas de locales comerciales",
-    "Rehabilitación y mejora de interiores",
-    "Pladur y techos",
-    "Alicatados y suelos",
-    "Fontanería y electricidad en reformas",
-    "Presupuestos de reforma sin compromiso",
-    "Reformas en Valencia capital y alrededores"
-  ],
   "contactPoint": [{
     "@type": "ContactPoint",
     "telephone": "+34722208131",
@@ -87,8 +32,8 @@ const localBusinessSchema = {
   description="Contacta con nuestro equipo de reformas en Valencia. Solicita presupuesto gratis. Tel: 722 208 131. Atendemos Valencia capital y alrededores."
   keywords="contacto reformas valencia, telefono reformas valencia, presupuesto reforma"
   schema={[localBusinessSchema]}
+  includeBusinessSchema={false}
 >
-  <main>
     <section class="bg-gradient-to-br from-slate-50 to-blue-50">
       <div class="container mx-auto px-4">
         <Breadcrumbs items={[{ label: "Contacto" }]} client:load />
@@ -186,5 +131,4 @@ const localBusinessSchema = {
         </div>
       </div>
     </section>
-  </main>
 </SiteLayout>
