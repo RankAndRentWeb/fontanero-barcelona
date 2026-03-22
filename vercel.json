@@ -32,7 +32,6 @@
     { "source": "/pintura-comunidades", "destination": "/servicios/pintura-comunidades/", "permanent": true },
     { "source": "/blogs", "destination": "/blog/", "permanent": true },
     { "source": "/blogs/:category", "destination": "/blog/:category/", "permanent": true },
-    { "source": "/blogs/:category/:slug", "destination": "/blog/:category/:slug/", "permanent": true },
-    { "source": "/sitemap.xml", "destination": "/sitemap-index.xml", "permanent": true }
+    { "source": "/blogs/:category/:slug", "destination": "/blog/:category/:slug/", "permanent": true }
   ]
 }

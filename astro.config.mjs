@@ -5,7 +5,7 @@ import react from '@astrojs/react';
 import vercel from "@astrojs/vercel";
 
 export default defineConfig({
-  site: 'https://pintores-valencia.com',
+  site: 'https://mejoresreformasvalencia.es',
   trailingSlash: 'always',
   output: 'server',
   adapter: vercel(),
