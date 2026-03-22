@@ -4,6 +4,25 @@ import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
 import vercel from "@astrojs/vercel";
 
+const allowedSitemapPaths = new Set([
+  '/',
+  '/servicios/',
+  '/precios/',
+  '/contacto/',
+  '/aviso-legal/',
+  '/politica-privacidad/',
+  '/politica-cookies/',
+  '/servicios/pladur-techos-valencia/',
+  '/servicios/reforma-terraza-valencia/',
+  '/servicios/reformas-banos-valencia/',
+  '/servicios/reformas-chalets-valencia/',
+  '/servicios/reformas-cocinas-valencia/',
+  '/servicios/reformas-fachadas-valencia/',
+  '/servicios/reformas-integrales-valencia/',
+  '/servicios/reformas-locales-comerciales-valencia/',
+  '/servicios/reformas-pisos-valencia/'
+]);
+
 export default defineConfig({
   site: 'https://mejoresreformasvalencia.es',
   trailingSlash: 'always',
@@ -19,7 +38,10 @@ export default defineConfig({
       changefreq: 'weekly',
       priority: 0.7,
       lastmod: new Date(),
-      filter: (page) => !page.includes('404'),
+      filter: (page) => {
+        const { pathname } = new URL(page);
+        return allowedSitemapPaths.has(pathname);
+      },
       serialize: (item) => item,
       entryLimit: 45000
     }), 
