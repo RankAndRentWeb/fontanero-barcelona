@@ -17,8 +17,8 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    /* Verde corporativo #2D6A4F -> HSL 153 40% 30% */
-    --primary: 153 40% 30%;
+    /* Azul principal #1F3C88 -> HSL 223.4 62.9% 32.7% */
+    --primary: 223.4 62.9% 32.7%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -27,8 +27,8 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    /* Coral #FF6F61 -> HSL 5 100% 69% */
-    --accent: 5 100% 69%;
+    /* Naranja CTA #F97316 -> HSL 24.6 95% 53.1% */
+    --accent: 24.6 95% 53.1%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,18 +36,18 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 153 40% 30%;
+    --ring: 223.4 62.9% 32.7%;
 
     /* Design system tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(153 40% 30%), hsl(153 40% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(223.4 62.9% 32.7%), hsl(223.4 62.9% 42.7%));
 
     /* Gradiente CTA ajustado al nuevo acento */
-    --gradient-cta: linear-gradient(135deg, hsl(5 100% 69%), hsl(5 100% 79%));
+    --gradient-cta: linear-gradient(135deg, hsl(24.6 95% 53.1%), hsl(24.6 95% 63.1%));
 
-    --shadow-card: 0 4px 20px -2px hsl(153 40% 30% / 0.10);
+    --shadow-card: 0 4px 20px -2px hsl(223.4 62.9% 32.7% / 0.10);
 
     /* Sombra CTA con nuevo acento */
-    --shadow-cta: 0 8px 25px -5px hsl(5 100% 69% / 0.35);
+    --shadow-cta: 0 8px 25px -5px hsl(24.6 95% 53.1% / 0.35);
 
     --radius: 0.5rem;
 
