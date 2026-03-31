@@ -255,13 +255,13 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="relative z-10 container mx-auto px-4 py-20 text-white">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Empresa de Reformas en Valencia
+              Fontanero en Barcelona
             </h1>
             <p className="text-2xl md:text-3xl mb-8 font-medium">
-              Especialistas en Reformas Integrales y Parciales
+              Urgencias, <strong>fugas</strong>, <strong>desatascos</strong> y <strong>reparaciones de fontanería</strong> en Barcelona con respuesta rápida, presupuesto claro y servicio profesional.
             </p>
             <p className="text-xl mb-12 text-white/90">
-              Realizamos reformas de <strong>cocinas, baños y pisos completos</strong> en Valencia. Coordinamos a todos los gremios para cumplir los plazos y ofrecerte un presupuesto detallado y sin sorpresas.
+              Si necesitas un <strong>fontanero en Barcelona</strong>, atendemos viviendas, locales y comunidades con soluciones rápidas de <strong>fontanería en Barcelona</strong> y sin complicarte la vida.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -287,7 +287,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   className="flex items-center justify-center space-x-2"
                 >
                   <Phone className="w-5 h-5" />
-                  <span>722 208 131</span>
+                  <span>Llamar ahora</span>
                 </a>
               </Button>
             </div>
@@ -296,19 +296,19 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-white" />
-                <span className="font-medium">Presupuesto sin compromiso</span>
+                <span className="font-medium">Respuesta rápida</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-white" />
-                <span className="font-medium">Reforma a medida</span>
+                <span className="font-medium">Presupuesto claro</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-white" />
-                <span className="font-medium">Acabados profesionales</span>
+                <span className="font-medium">Servicio profesional</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-white" />
-                <span className="font-medium">Garantía en cada proyecto</span>
+                <span className="font-medium">Barcelona y alrededores</span>
               </div>
             </div>
           </div>
@@ -320,10 +320,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Tu empresa de obras y reformas en Valencia capital
+              Tu empresa de fontanería en Barcelona
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              Si buscas una <strong>empresa de reformas en Valencia</strong> que trabaje con transparencia, llevamos años ayudando a propietarios y negocios a renovar viviendas, pisos y locales. Desde <strong>reformas integrales</strong> hasta <strong>reformas de cocinas</strong>, baños o cambios de distribución. Nos encargamos de cada obra adaptándonos a lo que necesita cada proyecto.
+              Si buscas un <strong>fontanero en Barcelona</strong> que trabaje con claridad y sin marearte, te ayudamos con averías, reparaciones y mantenimiento en viviendas, negocios y comunidades. Realizamos <strong>fontanería en Barcelona</strong> con atención rápida y presupuesto detallado, para que sepas desde el principio qué se va a hacer y cuánto te va a costar. Puedes ver nuestro <a href="/servicios/" className="font-semibold hover:underline">servicio de fontanería en Barcelona</a> para elegir la solución que mejor encaja con tu caso.<br /><br />Trabajamos incidencias habituales como <a href="/servicios/fugas-agua-barcelona/" className="font-semibold hover:underline">fugas de agua en Barcelona</a>, fugas de gas, <a href="/servicios/desatascos-barcelona/" className="font-semibold hover:underline">desatascos en Barcelona</a>, tuberías obstruidas, arquetas, inodoros atascados y fregaderos que no tragan bien. Como <strong>empresa de fontanería en Barcelona</strong>, buscamos una cosa muy simple: resolver el problema bien, sin rodeos y sin dejarte una chapuza.
             </p>
           </div>
         </div>
@@ -334,39 +334,39 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Qué tipo de obras y reformas hacemos
+              Servicios de fontanería que realizamos en Barcelona
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Desde <strong>reformas integrales de viviendas</strong> completas hasta trabajos específicos como <strong>reformas de cocinas</strong>, baños, pisos o locales comerciales. Nos encargamos de todo: albañilería, fontanería, electricidad, carpintería y acabados.
+              Ofrecemos soluciones de reparaciones de fontanería en Barcelona para incidencias urgentes y trabajos habituales. Estos son algunos de los servicios más solicitados.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             
-            {/* Reformas de Cocinas */}
+            {/* Fugas de agua */}
             <Card className="hover:shadow-card transition-shadow duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 bg-primary/10 rounded-lg text-primary">
                     <Home className="w-6 h-6" />
                   </div>
-                  <h3 className="text-lg font-semibold">Reformas de Cocinas</h3>
+                  <h3 className="text-lg font-semibold">Fugas de agua</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Reformamos cocinas completas en Valencia con diseño funcional, materiales de calidad y acabados profesionales. Electricidad, fontanería, alicatado, muebles y electrodomésticos.
+                  Localizamos y reparamos <strong>fugas de agua en Barcelona</strong> en viviendas, comunidades y locales. Actuamos en escapes visibles, humedades, pérdidas ocultas y problemas en tuberías o conexiones.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-2 mb-4">
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Diseño personalizado</span>
+                    <span>Fugas visibles y ocultas</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Materiales de calidad</span>
+                    <span>Humedades y pérdidas</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Gestión completa</span>
+                    <span>Reparación de conexiones</span>
                   </li>
                 </ul>
                 <Button
@@ -374,35 +374,35 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   size="sm"
                   className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
                 >
-                  <a href="/servicios/reformas-cocinas-valencia/">Ver reformas de cocinas</a>
+                  <a href="/servicios/fugas-agua-barcelona/">Ver fugas de agua</a>
                 </Button>
               </CardContent>
             </Card>
 
-            {/* Reformas de Baños */}
+            {/* Fugas de gas */}
             <Card className="hover:shadow-card transition-shadow duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 bg-primary/10 rounded-lg text-primary">
                     <Shield className="w-6 h-6" />
                   </div>
-                  <h3 className="text-lg font-semibold">Reformas de Baños</h3>
+                  <h3 className="text-lg font-semibold">Fugas de gas</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Renovación completa de baños con instalaciones modernas, impermeabilización correcta y acabados duraderos. Platos de ducha, mamparas, sanitarios y revestimientos.
+                  Revisamos incidencias relacionadas con <strong>fugas de gas en Barcelona</strong> y actuamos con rapidez para detectar el problema y dejar la instalación en condiciones seguras.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-2 mb-4">
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Impermeabilización garantizada</span>
+                    <span>Revisión del punto afectado</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Instalaciones certificadas</span>
+                    <span>Intervención rápida</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Acabados impecables</span>
+                    <span>Actuación segura</span>
                   </li>
                 </ul>
                 <Button
@@ -410,35 +410,35 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   size="sm"
                   className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
                 >
-                  <a href="/servicios/reformas-banos-valencia/">Ver reformas de baños</a>
+                  <a href="/servicios/fugas-gas-barcelona/">Ver fugas de gas</a>
                 </Button>
               </CardContent>
             </Card>
 
-            {/* Reformas Integrales */}
+            {/* Desatascos */}
             <Card className="hover:shadow-card transition-shadow duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 bg-primary/10 rounded-lg text-primary">
                     <Building className="w-6 h-6" />
                   </div>
-                  <h3 className="text-lg font-semibold">Reformas Integrales</h3>
+                  <h3 className="text-lg font-semibold">Desatascos</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Reforma completa de viviendas en Valencia. Nos encargamos de todo: albañilería, instalaciones, carpintería, revestimientos y acabados. Proyecto, licencias y ejecución.
+                  Realizamos <strong>desatascos en Barcelona</strong> en fregaderos, bajantes, tuberías y desagües. Si el agua no corre como debería o hay malos olores, buscamos el origen y lo resolvemos.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-2 mb-4">
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Gestión integral del proyecto</span>
+                    <span>Desagües y bajantes</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Todos los gremios coordinados</span>
+                    <span>Malos olores</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Presupuesto cerrado</span>
+                    <span>Obstrucciones recurrentes</span>
                   </li>
                 </ul>
                 <Button
@@ -446,35 +446,35 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   size="sm"
                   className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
                 >
-                  <a href="/servicios/reformas-integrales-valencia/">Ver reformas integrales</a>
+                  <a href="/servicios/desatascos-barcelona/">Ver desatascos</a>
                 </Button>
               </CardContent>
             </Card>
 
-            {/* Reformas de Pisos */}
+            {/* Desatasco de tuberías */}
             <Card className="hover:shadow-card transition-shadow duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 bg-primary/10 rounded-lg text-primary">
                     <Home className="w-6 h-6" />
                   </div>
-                  <h3 className="text-lg font-semibold">Reformas de Pisos</h3>
+                  <h3 className="text-lg font-semibold">Desatasco de tuberías</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Renovamos pisos completos en Valencia: distribución, instalaciones, pavimentos, revestimientos y carpintería. Ideal para actualizar antes de vender o alquilar.
+                  Limpiamos y desobstruimos tuberías para eliminar acumulaciones, suciedad y residuos. Servicio de <strong>desatasco de tuberías en Barcelona</strong> para viviendas, cocinas y redes de evacuación.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-2 mb-4">
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Renovación completa</span>
+                    <span>Limpieza en profundidad</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Calendario definido</span>
+                    <span>Redes de evacuación</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Limpieza incluida</span>
+                    <span>Prevención de atascos</span>
                   </li>
                 </ul>
                 <Button
@@ -482,35 +482,35 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   size="sm"
                   className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
                 >
-                  <a href="/servicios/reformas-pisos-valencia/">Ver reformas de pisos</a>
+                  <a href="/servicios/desatasco-tuberias-barcelona/">Ver desatasco de tuberías</a>
                 </Button>
               </CardContent>
             </Card>
 
-            {/* Reformas de Terrazas */}
+            {/* Limpieza de arquetas */}
             <Card className="hover:shadow-card transition-shadow duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 bg-primary/10 rounded-lg text-primary">
                     <Shield className="w-6 h-6" />
                   </div>
-                  <h3 className="text-lg font-semibold">Reformas de Terrazas</h3>
+                  <h3 className="text-lg font-semibold">Limpieza de arquetas</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Impermeabilización, pavimentos exteriores, cerramientos y acabados para terrazas. Solucionamos filtraciones y aprovechamos el espacio exterior.
+                  Hacemos <strong>limpieza de arquetas en Barcelona</strong> para evitar atascos recurrentes, malos olores y problemas de evacuación en comunidades, casas y locales.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-2 mb-4">
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Impermeabilización efectiva</span>
+                    <span>Mantenimiento preventivo</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Pavimentos resistentes</span>
+                    <span>Control de olores</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Garantía en cada proyecto</span>
+                    <span>Mejor evacuación</span>
                   </li>
                 </ul>
                 <Button
@@ -518,35 +518,35 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   size="sm"
                   className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
                 >
-                  <a href="/servicios/reforma-terraza-valencia/">Ver reformas de terrazas</a>
+                  <a href="/servicios/limpieza-arquetas-barcelona/">Ver limpieza de arquetas</a>
                 </Button>
               </CardContent>
             </Card>
 
-            {/* Locales Comerciales */}
+            {/* Desatasco de WC y fregadero */}
             <Card className="hover:shadow-card transition-shadow duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 bg-primary/10 rounded-lg text-primary">
                     <Building className="w-6 h-6" />
                   </div>
-                  <h3 className="text-lg font-semibold">Locales Comerciales</h3>
+                  <h3 className="text-lg font-semibold">Desatasco de WC y fregadero</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Reformas de locales, tiendas, oficinas y restaurantes en Valencia. Trabajamos en horarios flexibles para no interrumpir tu actividad comercial.
+                  Si tienes el váter bloqueado, actuamos con servicio de <strong>desatasco de WC en Barcelona</strong> para eliminar el atasco sin dañar la instalación. También resolvemos <a href="/servicios/desatasco-fregadero-barcelona/" className="font-semibold hover:underline"><strong>desatasco de fregadero en Barcelona</strong></a> cuando el agua traga mal o el atasco ya es serio.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-2 mb-4">
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Horarios nocturnos</span>
+                    <span>Inodoros atascados</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Mínima interrupción</span>
+                    <span>Fregaderos obstruidos</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-primary" />
-                    <span>Cumplimiento normativa</span>
+                    <span>Recuperación rápida</span>
                   </li>
                 </ul>
                 <Button
@@ -554,7 +554,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
                   size="sm"
                   className="bg-white text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
                 >
-                  <a href="/servicios/reformas-locales-comerciales-valencia/">Ver reformas de locales</a>
+                  <a href="/servicios/desatasco-wc-barcelona/">Ver desatasco de WC</a>
                 </Button>
               </CardContent>
             </Card>
@@ -562,7 +562,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
 
           <div className="text-center">
             <p className="text-muted-foreground mb-6">
-              También realizamos reformas de fachadas, instalación de pladur, reformas de chalets y mucho más.
+              También atendemos todo tipo de incidencias habituales de fontanería en viviendas, locales y comunidades.
             </p>
             <CustomButton 
               variant="accent" 
@@ -581,32 +581,32 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-              Reformas de casas, pisos y locales en Valencia
+              ¿Qué problema de fontanería necesitas resolver?
             </h2>
             
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                ¿Acabas de comprar un piso y necesitas reformarlo antes de mudarte? Hacemos <a href="/servicios/reformas-integrales-valencia/" className="text-primary hover:underline font-semibold">reformas integrales</a> que incluyen todo: demoliciones, albañilería, fontanería, electricidad, carpintería y acabados. Te coordinamos todos los gremios para que no tengas que estar pendiente de cada detalle. Envíanos fotos y te decimos cuánto cuesta y cuándo podemos empezar.
+                ¿Has notado humedad, una factura de agua más alta de lo normal o una pérdida que no sabes de dónde sale? Revisamos <a href="/servicios/fugas-agua-barcelona/" className="text-primary hover:underline font-semibold"><strong>fugas de agua en Barcelona</strong></a> en pisos, casas, locales y comunidades para detectar el origen y repararlo cuanto antes.
               </p>
               
               <p>
-                Si lo que necesitas es <a href="/servicios/reformas-cocinas-valencia/" className="text-primary hover:underline font-semibold">renovar la cocina</a>, cambiamos muebles, electrodomésticos, azulejos, encimera y todas las instalaciones. Diseñamos espacios funcionales que aprovechan bien cada metro. Ideal si quieres modernizar sin hacer obra completa en toda la casa.
+                ¿Te preocupa una instalación con olor a gas o una posible pérdida? Actuamos en casos de <a href="/servicios/fugas-gas-barcelona/" className="text-primary hover:underline font-semibold"><strong>fugas de gas en Barcelona</strong></a> con intervención rápida y revisión del punto afectado para evitar riesgos.
               </p>
               
               <p>
-                Para <a href="/servicios/reformas-banos-valencia/" className="text-primary hover:underline font-semibold">baños</a> trabajamos con impermeabilización correcta, platos de ducha, mamparas, sanitarios y alicatados de calidad. Todo con garantía en cada proyecto y una ejecución cuidada para evitar problemas de filtraciones. Un baño bien hecho dura años sin darte quebraderos de cabeza.
+                ¿El agua del fregadero, lavabo o ducha baja muy lenta? Nuestro servicio de <a href="/servicios/desatascos-barcelona/" className="text-primary hover:underline font-semibold"><strong>desatascos en Barcelona</strong></a> está pensado para resolver obstrucciones habituales antes de que acaben en una avería mayor.
               </p>
               
               <p>
-                ¿Quieres <a href="/servicios/reformas-pisos-valencia/" className="text-primary hover:underline font-semibold">renovar tu piso completo</a>? Cambiamos distribución si hace falta, actualizamos instalaciones anticuadas, ponemos suelos nuevos y dejamos todos los acabados listos. Perfecto si has heredado un piso viejo o lo quieres vender a buen precio.
+                ¿Tienes un <a href="/servicios/desatasco-wc-barcelona/" className="text-primary hover:underline font-semibold"><strong>WC atascado</strong></a>, una <a href="/servicios/desatasco-tuberias-barcelona/" className="text-primary hover:underline font-semibold"><strong>tubería obstruida</strong></a> o una <a href="/servicios/limpieza-arquetas-barcelona/" className="text-primary hover:underline font-semibold"><strong>arqueta que da problemas</strong></a>? Podemos ayudarte con trabajos de desatasco y limpieza para recuperar el funcionamiento normal de la instalación.
               </p>
               
               <p>
-                Para <a href="/servicios/reformas-locales-comerciales-valencia/" className="text-primary hover:underline font-semibold">locales y negocios</a> trabajamos en horarios que no interrumpan tu actividad. Hacemos el diseño, las instalaciones y los acabados con una planificación clara para ayudarte a abrir cuanto antes. Conocemos la normativa y te ayudamos con las licencias.
+                Si quieres ver el detalle por especialidad, entra en nuestra página de <a href="/servicios/" className="text-primary hover:underline font-semibold">servicios de fontanería en Barcelona</a>.
               </p>
 
               <p>
-                Si quieres ver precios orientativos, consulta nuestra <a href="/precios/" className="text-primary hover:underline font-semibold">página de precios de reformas</a> o envíanos fotos para un presupuesto personalizado.
+                Si necesitas importes orientativos, puedes consultar la sección de <a href="/precios/" className="text-primary hover:underline font-semibold"><strong>precios de fontanería en Barcelona</strong></a>.
               </p>
             </div>
           </div>
@@ -618,10 +618,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Cómo trabajamos las reformas en Valencia
+              Fontaneros en Barcelona que trabajan con claridad
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Presupuesto detallado, materiales de calidad y trabajo ordenado. Así dejamos cada reforma bien terminada.
+              Sabemos que cuando alguien busca un <strong>fontanero Barcelona</strong>, normalmente no quiere leer teoría: quiere <strong>respuesta rápida</strong>, una explicación clara del problema y un presupuesto sin sorpresas.
             </p>
           </div>
 
@@ -655,15 +655,15 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-6 md:p-8 lg:p-10 h-[300px] sm:h-[400px] md:h-[450px] flex flex-col justify-center">
                 <div className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed space-y-3 sm:space-y-4 md:space-y-6">
                   <p>
-                    Llevamos años realizando <a href="/servicios/reformas-integrales-valencia/" className="text-primary hover:underline"><strong>reformas integrales</strong></a>, <a href="/servicios/reformas-cocinas-valencia/" className="text-primary hover:underline"><strong>cocinas</strong></a>, <a href="/servicios/reformas-banos-valencia/" className="text-primary hover:underline"><strong>baños</strong></a> y <a href="/servicios/reformas-pisos-valencia/" className="text-primary hover:underline"><strong>pisos completos</strong></a> en la ciudad y alrededores. También hacemos <strong>reformas de casas</strong>, <a href="/servicios/reformas-locales-comerciales-valencia/" className="text-primary hover:underline"><strong>locales comerciales</strong></a> y fachadas.
+                    Por eso trabajamos con una forma sencilla de hacer las cosas: <strong>respuesta rápida</strong>, diagnóstico claro y <strong>presupuesto claro</strong>. Atendemos trabajos de <strong>fontanería en Barcelona</strong> en viviendas particulares, negocios y comunidades.
                   </p>
                   
                   <p>
-                    Usamos materiales de calidad y ofrecemos <strong>garantía en cada proyecto</strong>. Si nos envías fotos de tu espacio, te damos una respuesta rápida con un presupuesto detallado sin que tengas que esperarnos en casa. Puedes ver nuestros <a href="/servicios/" className="text-primary hover:underline"><strong>servicios de reformas en Valencia</strong></a>.
+                    Nos centramos en resolver incidencias frecuentes de forma ordenada, con materiales adecuados y explicándote qué se hace en cada intervención. Si quieres una visión global, consulta nuestros <a href="/servicios/" className="text-primary hover:underline font-semibold">servicios de fontanería</a>.
                   </p>
 
                   <p>
-                    Si estás comparando opciones, revisa <a href="/servicios/reformas-integrales-valencia/" className="text-primary hover:underline"><strong>reformas integrales en Valencia</strong></a>, <a href="/servicios/reformas-cocinas-valencia/" className="text-primary hover:underline"><strong>reformas de cocinas</strong></a> y <a href="/servicios/reformas-banos-valencia/" className="text-primary hover:underline"><strong>reformas de baños</strong></a>. También puedes consultar <a href="/precios/" className="text-primary hover:underline"><strong>precios orientativos de reformas</strong></a> o pedir presupuesto directo desde <a href="/contacto/" className="text-primary hover:underline"><strong>nuestra página de contacto</strong></a>.
+                    <strong>Respuesta rápida</strong>: Atención ágil para averías y problemas urgentes. <strong>Presupuesto claro</strong>: Sin precios confusos ni explicaciones raras. <strong>Servicio profesional</strong>: Reparaciones y actuaciones bien ejecutadas. Todo tipo de incidencias: Fugas, desatascos, tuberías, arquetas, WC y fregaderos. Barcelona y alrededores: Servicio en distintos barrios y zonas cercanas. Trato directo: Te explicamos el problema de forma simple y clara.
                   </p>
                 </div>
               </div>
@@ -676,10 +676,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
       <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Presupuesto de reformas en Valencia
+            ¿Quieres saber el precio de un fontanero en Barcelona?
           </h2>
           <p className="text-xl mb-8 text-white max-w-2xl mx-auto">
-            El precio depende del tipo de obra, metros, materiales e instalaciones. Envíanos fotos y te damos un presupuesto detallado y personalizado sin coste.
+            Si estás comparando opciones y quieres saber el <strong>precio de un fontanero en Barcelona</strong>, podemos orientarte según el tipo de avería o trabajo. No todos los servicios cuestan lo mismo: depende de si hablamos de una fuga, un atasco, una limpieza de tuberías o una actuación más urgente.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <CustomButton
@@ -688,7 +688,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               asChild
               href="/contacto/"
             >
-              Pedir presupuesto gratis
+              Pedir presupuesto
             </CustomButton>
             <CustomButton
               variant="blue"
@@ -697,11 +697,11 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               href="/precios/"
               className="bg-white text-primary hover:bg-white/90"
             >
-              Consultar precios de reformas
+              Ver precios
             </CustomButton>
           </div>
           <p className="text-white/90">
-            O llámanos: <a href="tel:+34722208131" className="font-bold hover:underline">722 208 131</a>
+            Consulta nuestros <a href="/precios/" className="font-bold hover:underline"><strong>precios de fontanería en Barcelona</strong></a> o pídenos presupuesto directo desde <a href="/contacto/" className="font-bold hover:underline">contacto</a> y te respondemos con claridad.
           </p>
         </div>
       </section>
@@ -711,13 +711,13 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Reformas de viviendas en Valencia capital y área metropolitana
+              Servicio de fontanería en Barcelona y alrededores
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Hacemos <strong>reformas en general</strong> por toda la ciudad: Ruzafa, El Carmen, Benimaclet, Campanar, Patraix, Extramurs y todos los barrios. También trabajamos en Torrent, Mislata, Paterna, Burjassot, Manises, Xirivella, Aldaia, Quart de Poblet, Alboraya y otras localidades del área metropolitana y la provincia.
+              Trabajamos en Barcelona capital y también en municipios y zonas cercanas con <strong>servicio de fontanería en Barcelona y alrededores</strong>. Si buscas un <a href="/zonas/fontanero-hospitalet-de-llobregat/" className="font-semibold hover:underline"><strong>fontanero en Hospitalet de Llobregat</strong></a>, un <a href="/zonas/fontanero-cornella-de-llobregat/" className="font-semibold hover:underline"><strong>fontanero en Cornellà</strong></a>, <a href="/zonas/fontanero-sants-barcelona/" className="font-semibold hover:underline">Sants</a>, <a href="/zonas/fontanero-les-corts-barcelona/" className="font-semibold hover:underline">Les Corts</a>, <a href="/zonas/fontanero-sant-andreu-barcelona/" className="font-semibold hover:underline">Sant Andreu</a> o <a href="/zonas/fontanero-gracia-barcelona/" className="font-semibold hover:underline">Gràcia</a>, podemos ayudarte.
             </p>
             <p className="text-lg text-muted-foreground">
-              ¿Estás en otra zona? Consúltanos y te decimos si llegamos a tu localidad.
+              También puedes ver todas nuestras zonas de servicio en <a href="/zonas/" className="font-semibold hover:underline">/zonas/</a>.
             </p>
           </div>
         </div>
@@ -728,10 +728,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Preguntas frecuentes sobre reformas
+              Preguntas frecuentes
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Dudas habituales sobre cómo trabajamos, plazos, precios y garantías.
+              Resolvemos las dudas más habituales sobre nuestro servicio de fontanería en Barcelona.
             </p>
           </div>
 
@@ -739,10 +739,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  ¿Qué tipo de reformas realizáis?
+                  ¿Qué servicios de fontanería hacéis en Barcelona?
                 </h3>
                 <p className="text-muted-foreground">
-                  Hacemos reformas integrales completas, reformas de cocinas, baños, pisos, terrazas, locales comerciales, fachadas e instalación de pladur. Nos adaptamos a cada proyecto, desde trabajos pequeños hasta reformas completas.
+                  Realizamos trabajos de <strong>fontanería en Barcelona</strong> relacionados con fugas de agua, fugas de gas, desatascos, limpieza de tuberías, arquetas, inodoros y fregaderos, además de reparaciones habituales en viviendas, locales y comunidades. Puedes ver todos los detalles en <a href="/servicios/" className="font-semibold hover:underline">servicios</a>.
                 </p>
               </CardContent>
             </Card>
@@ -750,10 +750,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  ¿Hacéis presupuestos sin compromiso?
+                  ¿Atendéis urgencias?
                 </h3>
                 <p className="text-muted-foreground">
-                  Sí. Envíanos fotos de lo que necesitas reformar (por WhatsApp o email) y te mandamos un presupuesto detallado en el menor tiempo posible, totalmente gratis y sin compromiso. No hace falta que nos esperes en casa para una visita.
+                  Sí, también atendemos incidencias urgentes. Si tienes una fuga, un atasco grave o un problema que no puede esperar, lo mejor es llamarnos directamente o escribirnos desde <a href="/contacto/" className="font-semibold hover:underline">contacto</a>.
                 </p>
               </CardContent>
             </Card>
@@ -761,10 +761,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  ¿Cuánto tarda una reforma?
+                  ¿Cuál es el precio de un fontanero en Barcelona?
                 </h3>
                 <p className="text-muted-foreground">
-                  Depende del tipo y tamaño. Una cocina suele tardar 2-3 semanas, un baño completo 1-2 semanas y una reforma integral de piso entre 1 y 2 meses. Te damos un calendario orientativo en el presupuesto y trabajamos con seguimiento de plazos.
+                  Depende del tipo de servicio, la dificultad del trabajo y si hace falta una actuación urgente. Puedes consultar la página de <a href="/precios/" className="font-semibold hover:underline"><strong>precios de fontanería en Barcelona</strong></a> o pedirnos presupuesto para tu caso concreto.
                 </p>
               </CardContent>
             </Card>
@@ -772,10 +772,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  ¿Trabajáis solo en Valencia capital?
+                  ¿Trabajáis solo en Barcelona capital?
                 </h3>
                 <p className="text-muted-foreground">
-                  Trabajamos en toda Valencia capital y en el área metropolitana: Torrent, Mislata, Paterna, Burjassot, Manises, Xirivella, Aldaia, Quart de Poblet, Alboraya, etc. Si estás en otra zona, consúltanos y vemos si podemos llegar.
+                  No. Además de Barcelona, también trabajamos en zonas cercanas y municipios del área metropolitana.
                 </p>
               </CardContent>
             </Card>
@@ -783,10 +783,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  ¿Se puede hacer una reforma parcial?
+                  ¿Hacéis desatascos de WC y fregadero?
                 </h3>
                 <p className="text-muted-foreground">
-                  Sí, hacemos tanto reformas integrales como reformas parciales. Puedes reformar solo la cocina, solo el baño, cambiar el suelo de una habitación o hacer una reforma parcial en el piso. Nos adaptamos a lo que necesites y a tu presupuesto.
+                  Sí. Son dos de los servicios más habituales. También hacemos desatasco de tuberías y limpieza de arquetas cuando el problema viene de más atrás.
                 </p>
               </CardContent>
             </Card>
@@ -794,10 +794,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  ¿Qué incluye el presupuesto?
+                  ¿Podéis detectar fugas de agua?
                 </h3>
                 <p className="text-muted-foreground">
-                  El presupuesto incluye materiales, mano de obra, gestión de escombros, limpieza final y condiciones de garantía por escrito. Te especificamos todo de forma transparente para que sepas exactamente qué estás contratando. Si quieres aportar tú algún material, te ajustamos el precio.
+                  Sí. Revisamos pérdidas visibles y también casos en los que hay indicios de fuga aunque no se vea claramente el punto exacto. Puedes ampliar esta parte en <a href="/servicios/fugas-agua-barcelona/" className="font-semibold hover:underline">fugas de agua</a>.
                 </p>
               </CardContent>
             </Card>
@@ -805,10 +805,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
             <Card>
               <CardContent className="p-6">
                 <h3 className="font-semibold text-lg mb-2">
-                  ¿Dais factura y garantía?
+                  ¿Dónde puedo ver más servicios o pedir presupuesto?
                 </h3>
                 <p className="text-muted-foreground">
-                  Trabajamos con factura y con las condiciones de garantía por escrito en cada proyecto. Si necesitas más detalle sobre la documentación, te lo explicamos antes de empezar la obra.
+                  Puedes revisar todos los servicios en <a href="/servicios/" className="font-semibold hover:underline">/servicios/</a>, consultar precios en <a href="/precios/" className="font-semibold hover:underline">/precios/</a> o contactar directamente desde <a href="/contacto/" className="font-semibold hover:underline">/contacto/</a>.
                 </p>
               </CardContent>
             </Card>
@@ -820,10 +820,10 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
       <section className="py-16 bg-gradient-to-br from-primary to-primary/90 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Pide tu presupuesto para reformar en Valencia
+            ¿Necesitas un fontanero en Barcelona?
           </h2>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Envíanos fotos de lo que quieres reformar y te damos una respuesta rápida con presupuesto detallado
+            Cuéntanos qué problema tienes y te ayudamos a valorar la mejor solución. <strong>Servicio rápido</strong>, <strong>presupuesto claro</strong> y atención de <strong>fontanero en Barcelona</strong> para <strong>Barcelona y alrededores</strong>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CustomButton
@@ -842,7 +842,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
               className="bg-white text-primary hover:bg-white/90 flex items-center space-x-2"
             >
               <Phone className="w-5 h-5" aria-hidden="true" />
-              <span>722 208 131</span>
+              <span>Llamar ahora</span>
             </CustomButton>
           </div>
         </div>
