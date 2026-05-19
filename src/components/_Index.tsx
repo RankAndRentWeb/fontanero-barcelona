@@ -167,7 +167,7 @@ const Index = ({ heroImage, featureImage }: IndexProps = {}) => {
     {
       title: "Reformas de Cocinas",
       description: "Reformamos tu cocina completa",
-      link: "/servicios/reformas-cocinas-valencia/",
+      link: "/servicios/fugas-agua-barcelona/",
       icon: <Home className="w-6 h-6" />,
     },
     {

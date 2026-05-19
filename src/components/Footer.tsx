@@ -36,7 +36,7 @@ export default function SiteFooter() {
           <div>
             <p className="font-semibold text-white mb-4">Servicios</p>
             <ul className="space-y-2 text-sm">
-              <li><a href="/servicios/reformas-cocinas-valencia/" className="text-white/80 hover:text-white transition-colors">Reformas de Cocinas</a></li>
+              <li><a href="/servicios/fugas-agua-barcelona/" className="text-white/80 hover:text-white transition-colors">Reformas de Cocinas</a></li>
               <li><a href="/servicios/reformas-banos-valencia/" className="text-white/80 hover:text-white transition-colors">Reformas de Baños</a></li>
               <li><a href="/servicios/reformas-integrales-valencia/" className="text-white/80 hover:text-white transition-colors">Reformas Integrales</a></li>
               <li><a href="/servicios/reformas-pisos-valencia/" className="text-white/80 hover:text-white transition-colors">Reformas de Pisos</a></li>
